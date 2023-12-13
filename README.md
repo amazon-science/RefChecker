@@ -112,6 +112,12 @@ options:
   --openai_key OPENAI_KEY
               Path to the openai api key file. Required if the chatgpt or gpt4
               models are used.
+  --anthropic_key ANTHROPIC_KEY
+              Path to the Anthropic api key file. Required if the Anthropic Claude2
+              api is used.
+  --bedrock_region BEDROCK_REGION
+              AWS region where the bedrock api is deployed. Required if the bedrock
+              api is used.
   --use_retriever  
               Whether to use retrieval to find the reference for checking. Required
               if the reference field in input data is not provided.
