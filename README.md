@@ -105,7 +105,8 @@ options:
   --checker_name {gpt4,claude2,nli}
               Model used for checking whether the triplets are factual. Default: claude2.
   --retriever_name {google}
-              Model used for retrieving reference (currently only google is supported). Default: google.
+              Model used for retrieving reference (currently only google is supported).
+              Default: google.
   --aggregator_name {strict,soft,major}
               Aggregator used for aggregating the results from multiple triplets.
               Default: soft.
