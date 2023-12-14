@@ -30,12 +30,12 @@ def get_args():
     )
     parser.add_argument(
         '--extractor_name', type=str, default="claude2",
-        choices=["chatgpt", "gpt4", "claude2"],
+        choices=["gpt4", "claude2"],
         help="Model used for extracting triplets. Default: claude2."
     )
     parser.add_argument(
         "--checker_name", type=str, default="claude2",
-        choices=["chatgpt", "gpt4", "claude2", "nli"],
+        choices=["gpt4", "claude2", "nli"],
         help="Model used for checking whether the triplets are factual. "
         "Default: claude2."
     )
@@ -50,30 +50,30 @@ def get_args():
         help="Aggregator used for aggregating the results from multiple "
              "triplets. Default: soft.\n"
              "*  strict: If any of the triplets is Contradiction, the response"
-             " is Contradiction. If all of the triplets are Entailment, the "
-             "response is Entailment. Otherwise, the response is Neutral.\n"
+             " is Contradiction.\nIf all of the triplets are Entailment, the "
+             "response is Entailment. Otherwise, the\nresponse is Neutral.\n"
              "*  soft:   The ratio of each category is calculated.\n"
              "*  major:  The category with the most votes is selected."
     )
     parser.add_argument(
         "--openai_key", type=str, default="",
-        help="Path to the openai api key file. Required if the chatgpt or gpt4 "
-        "models are used."
+        help="Path to the openai api key file. Required if openAI models are"
+        " used."
     )
     parser.add_argument(
         "--anthropic_key", type=str, default="",
-        help="Path to the Anthropic api key file. Required if the Anthropic"
+        help="Path to the Anthropic api key file. Required if the Anthropic "
         "Claude2 api is used."
     )
     parser.add_argument(
-        "--bedrock_region", type=str, default="",
-        help="AWS region where the bedrock api is deployed. Required if the "
-        "bedrock api is used."
+        "--aws_bedrock_region", type=str, default="",
+        help="AWS region where the Amazon Bedrock api is deployed. Required if "
+        "the Amazon Bedrock api is used."
     )
     parser.add_argument(
         "--use_retrieval", action="store_true",
         help="Whether to use retrieval to find the reference for checking. "
-        "Required if the reference field in input data is not provided."
+        "Required if the reference\nfield in input data is not provided."
     )
     parser.add_argument(
         "--serper_api_key", type=str, default="",
@@ -94,7 +94,7 @@ def main():
         with open(args.anthropic_key, "r") as fp:
             os.environ["ANTHROPIC_API_KEY"] = fp.read().strip()
     if args.bedrock_region:
-        os.environ["aws_bedrock_region"] = args.bedrock_region
+        os.environ["aws_bedrock_region"] = args.aws_bedrock_region
     if args.serper_api_key:
         os.environ["SERPER_API_KEY"] = args.serper_api_key
 

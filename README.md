@@ -74,11 +74,14 @@ We provide a command-line interface to run BSChecker in a console:
 
 ```
 usage: bschecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
+                     [--cache_dir CACHE_DIR]
                      [--extractor_name {gpt4,claude2}]
                      [--checker_name {gpt4,claude2,nli}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
                      [--openai_key OPENAI_KEY]
+                     [--anthropic_key ANTHROPIC_KEY]
+                     [--aws_bedrock_region AWS_BEDROCK_REGION]
                      [--use_retrieval]
                      [--serper_api_key SERPER_API_KEY]
                      [{extract,check,extract-check}]
@@ -95,14 +98,16 @@ options:
               Input path to the json file.
   --output_path OUTPUT_PATH
               Output path to the result json file.
+  --cache_dir CACHE_DIR
+              Path to the cache directory. Default: ./.cache.
   --extractor_name {gpt4,claude2}
               Model used for extracting triplets. Default: claude2.
   --checker_name {gpt4,claude2,nli}
               Model used for checking whether the triplets are factual. Default: claude2.
   --retriever_name {google}
-              Model used for retrieving reference (currently only google is supported).
+              Model used for retrieving reference (currently only google is supported). Default: google.
   --aggregator_name {strict,soft,major}
-              Aggregator used for aggregating the results from multipletriplets.
+              Aggregator used for aggregating the results from multiple triplets.
               Default: soft.
               *  strict: If any of the triplets is Contradiction, the response is
               Contradiction. If all of the triplets are Entailment, the response is
@@ -110,14 +115,13 @@ options:
               *  soft:   The ratio of each category is calculated.
               *  major:  The category with the most votes is selected.
   --openai_key OPENAI_KEY
-              Path to the openai api key file. Required if the chatgpt or gpt4
-              models are used.
+              Path to the openai api key file. Required if openAI models are used.
   --anthropic_key ANTHROPIC_KEY
               Path to the Anthropic api key file. Required if the Anthropic Claude2
               api is used.
-  --bedrock_region BEDROCK_REGION
-              AWS region where the bedrock api is deployed. Required if the bedrock
-              api is used.
+  --aws_bedrock_region AWS_BEDROCK_REGION
+              AWS region where the Amazon Bedrock api is deployed. Required if the 
+              Amazon Bedrock api is used.
   --use_retriever  
               Whether to use retrieval to find the reference for checking. Required
               if the reference field in input data is not provided.
