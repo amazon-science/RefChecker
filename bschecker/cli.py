@@ -93,7 +93,7 @@ def main():
     if args.anthropic_key:
         with open(args.anthropic_key, "r") as fp:
             os.environ["ANTHROPIC_API_KEY"] = fp.read().strip()
-    if args.bedrock_region:
+    if args.aws_bedrock_region:
         os.environ["aws_bedrock_region"] = args.aws_bedrock_region
     if args.serper_api_key:
         os.environ["SERPER_API_KEY"] = args.serper_api_key
