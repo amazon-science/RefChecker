@@ -1,32 +1,32 @@
-# BSChecker for Fine-grained Hallucination Detection
+# RefChecker for Fine-grained Hallucination Detection
 | **[🔥 News](#news)** |
 **[🤖️ Demo](#demo_website)** |
 **[🚀 Quick Start](#quick_start)** |
 **[💾 Benchmark](#benchmark_dataset)** |
 **[📖 Docs](#documentation)** |
 
-BSChecker provides a standardized assessment framework to identify subtle hallucinations present in the outputs of large language models (LLMs). 
+RefChecker provides a standardized assessment framework to identify subtle hallucinations present in the outputs of large language models (LLMs). 
 <p align="center">
-  <img src="imgs/framework.png" alt="BSChecker Framework" 
+  <img src="imgs/framework.png" alt="RefChecker Framework" 
   style="width:800px">
   <br>
-  <b>Figure</b>: BSChecker Framework
+  <b>Figure</b>: RefChecker Framework
 </p>
 
 ## 🌟 Highlighted Features
 
-- **Finer granularity** - BSChecker breakdowns the claims in the LLM’s response into [knowledge triplets](#granularity), as opposed to paragraph, sentence or sub-sentence. Detecting at knowledge triplets will test the truthfulness of facts. Importantly, this finer granularity subsumes other coarse granularity and is therefore more informative and precise. One can arbitrarily roll up the granularity ladder to derive coarse level metrics if needed.
-- **Wider Coverage** - BSChecker differentiates [three distinctive settings](#setting_definitions) based on the quality and quantity of context provided for LLM’s response:
+- **Finer granularity** - RefChecker breakdowns the claims in the LLM’s response into [knowledge triplets](#granularity), as opposed to paragraph, sentence or sub-sentence. Detecting at knowledge triplets will test the truthfulness of facts. Importantly, this finer granularity subsumes other coarse granularity and is therefore more informative and precise. One can arbitrarily roll up the granularity ladder to derive coarse level metrics if needed.
+- **Wider Coverage** - RefChecker differentiates [three distinctive settings](#setting_definitions) based on the quality and quantity of context provided for LLM’s response:
     1. Zero Context: the prompt is a factual question without any context (eg. Open QA).
     2. Noisy Context: the prompt is a question as well as a list of retrieved document (eg. RAG).
     3. Accurate Context: the prompt is a question as well as one document (eg. Summarization).
-- **Human Evaluation** - BSChecker includes 2.1k [human annotated LLM’s responses](#benchmark_dataset) consist of 300 test samples, each responded by 7 popular LLMs: GPT4, GPT-3.5-Turbo, InstructGPT, Falcon (Falcon-40B-Instruct), Alpaca (Alpaca-7B), LLaMA2(70B-Chat) and Claude 2. We will release the data and results upon approval.
-- **Modular Architecture** — BSChecker is a 3-stage pipeline, consisting of a [claim extractor](https://github.com/amazon-science/bschecker-for-fine-grained-hallucination-detection/tree/main/bschecker/extractor) $E$, a [hallucination checker](https://github.com/amazon-science/bschecker-for-fine-grained-hallucination-detection/tree/main/bschecker/checker) $C$, and [aggregation rules](#aggregation) $\tau$. They can be invoked and configured individually from command-line. Other than the 3 core stages, there are 3 auxiliary components:
+- **Human Evaluation** - RefChecker includes 2.1k [human annotated LLM’s responses](#benchmark_dataset) consist of 300 test samples, each responded by 7 popular LLMs: GPT4, GPT-3.5-Turbo, InstructGPT, Falcon (Falcon-40B-Instruct), Alpaca (Alpaca-7B), LLaMA2(70B-Chat) and Claude 2. We will release the data and results upon approval.
+- **Modular Architecture** — RefChecker is a 3-stage pipeline, consisting of a [claim extractor](https://github.com/amazon-science/RefChecker/tree/main/RefChecker/extractor) $E$, a [hallucination checker](https://github.com/amazon-science/RefChecker/tree/main/RefChecker/checker) $C$, and [aggregation rules](#aggregation) $\tau$. They can be invoked and configured individually from command-line. Other than the 3 core stages, there are 3 auxiliary components:
     1. human labeling tool (coming soon) to label claims,
     2. call to search engine for Zero Context setting
     3. a [localization model](#localization) to map each knowledge triple back to the corresponding snippets of the reference.
 
-You can explore BSChecker in the following ways:
+You can explore RefChecker in the following ways:
 
 - **[Demo Website](#demo_website)** - Setup a website and check your responses with user interfaces. 
 - **[Quick Start](#quick_start)** - Setup the environment and check your responses in a console.
@@ -34,23 +34,23 @@ You can explore BSChecker in the following ways:
 
 <a id='news'></a>
 ## 🔥 News
-- [12/07/2023] BSChecker 0.1 release.
+- [12/07/2023] RefChecker 0.1 release.
 
 ## ❤️ Citation
-If you use BSChecker in your work, please cite us:
+If you use RefChecker in your work, please cite us:
 ```bibtex
-@article{hu-etal-2023-bschecker,
-  title = {BSChecker for Fine-grained Hallucination Detection},
+@article{hu-etal-2023-refchecker,
+  title = {RefChecker for Fine-grained Hallucination Detection},
   author = {Xiangkun Hu and Dongyu Ru and Qipeng Guo and Lin Qiu and Zheng Zhang},
   year = {2023},
-  url = {https://github.com/amazon-science/bschecker-for-fine-grained-hallucination-detection},
+  url = {https://github.com/amazon-science/RefChecker},
 }
 ```
 <a id='demo_website'></a>
 ## 🤖️ Demo Website
 <img src="imgs/demo.gif" alter="Demo" style="width:800px">
 
-You can first setup a [demo website](./demo/) and then use the web UI to try BSChecker as the animation shows above. There are four steps to perform hallucination detection in it:
+You can first setup a [demo website](./demo/) and then use the web UI to try RefChecker as the animation shows above. There are four steps to perform hallucination detection in it:
 
 1. **Extract Triplets**: You can start with typing what you want to check in the top-left box. Then click the `Next Step` button on the right side. The checker will extract triplets in your text and show them in the bottom-left area.
 2. **Gather Reference**: You can then add reference text in the top-right box and click the `Next Step` button. If you don’t have reference text, leave the box empty and click the button anyway. We will retrieve some references with the text to be checked using search engines.
@@ -70,10 +70,10 @@ python -m spacy download en_core_web_sm
 ```
 
 ### Usage
-We provide a command-line interface to run BSChecker in a console:
+We provide a command-line interface to run RefChecker in a console:
 
 ```
-usage: bschecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
+usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
                      [--extractor_name {gpt4,claude2}]
                      [--checker_name {gpt4,claude2,nli}]
@@ -133,7 +133,7 @@ options:
 
 To extract claim triplets from LLM-generated responses, do:
 ```bash
-bschecker-cli extract \
+refchecker-cli extract \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
   --extractor_name {gpt4,claude2}
@@ -152,7 +152,7 @@ In the output json file, each item is added with a `triplets` field, containing 
 
 To check hallucinations at triplet level, do:
 ```bash
-bschecker-cli check \
+refchecker-cli check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
   --checker_name {gpt4,claude2,nli} \
@@ -196,7 +196,7 @@ For using the google retriever and/or the OpenAI models, you should provide corr
 
 Finally, you can use the whole extraction and checking pipeline by:
 ```bash
-bschecker-cli extract-check \
+refchecker-cli extract-check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
   --extractor_name {gpt4,claude2} \
@@ -236,7 +236,7 @@ Hallucinations are claims made by LLMs not supported by factual knowledge, which
 
 When LLM generates a response, there is a great deal of variations as how contexts are provided which, in turn, determines where and how to identify the reference:
 
-- **Zero Context**: Users can ask the questions directly and the there is no access to any external knowledge sources, as often seen in chitchat conversations. In this case, LLMs rely on their own knowledge learned during pre-training, we call this scenario as *Zero Context*. Detecting hallucinations in Zero Context setting is challenging due to the lack of references. To ease the problem, our benchmark collects questions from Closed Book QA dataset that have human annotated references; we believe these data would have already been included in LLM’s training corpus. If BSChecker is deployed on new samples in this setting and the user lacks references, we activate the Google search API to find webpages that can serve as references. A more principled approach is to retrieve references from the training corpus; this remains a research topic. 
+- **Zero Context**: Users can ask the questions directly and the there is no access to any external knowledge sources, as often seen in chitchat conversations. In this case, LLMs rely on their own knowledge learned during pre-training, we call this scenario as *Zero Context*. Detecting hallucinations in Zero Context setting is challenging due to the lack of references. To ease the problem, our benchmark collects questions from Closed Book QA dataset that have human annotated references; we believe these data would have already been included in LLM’s training corpus. If RefChecker is deployed on new samples in this setting and the user lacks references, we activate the Google search API to find webpages that can serve as references. A more principled approach is to retrieve references from the training corpus; this remains a research topic. 
 - **Noisy Context**: In certain use cases, the references are provided in the prompt to ground the answer to external knowledge sources. This can be achieved through internet searches (e.g. New Bing) with the query or by retrieving from vertical domain data. This user scenario is typically known as Retrieval-Augmented Generation (RAG) in the literature. The retrieval step of this setting may introduce noisy content to the model and, for this reason, we term this setting as *Noisy Context*.
 - **Accurate Context**: There are some tasks about understanding or rewriting of a given document, such as closed-book question answering (QA), summarization or text rewritten as commonly seen in instruction-tuning tasks. We call this type of task as *Accurate Context*. 
 
@@ -307,12 +307,12 @@ Using automatic hallucination checker is a more scalable way for evaluating LLMs
 
 #### Triplet Extraction
 
-Our checking framework hinges on a key assumption: the decomposition of the original text into triplets facilitates finer-grained detection and more accurate evaluation. The extraction of these triplets plays a pivotal role in achieving this objective. We use LLMs to extract knowledge triplets from the given text. See [bschecker/extractor](https://github.com/amazon-science/bschecker-for-fine-grained-hallucination-detection/tree/main/bschecker/extractor) for further details and the usage of the knowledge extraction model.
+Our checking framework hinges on a key assumption: the decomposition of the original text into triplets facilitates finer-grained detection and more accurate evaluation. The extraction of these triplets plays a pivotal role in achieving this objective. We use LLMs to extract knowledge triplets from the given text. See [refchecker/extractor](https://github.com/amazon-science/RefChecker/tree/main/refchecker/extractor) for further details and the usage of the knowledge extraction model.
 
 
 #### Checker
 
-With triplets extracted for the given text, the checker $C$ in the second stage needs to predict hallucination labels on all extracted triplets. We are able to employ numerous existing zero-shot checkers without additional training. We mainly consider two varieties: LLM-based checkers and NLI-based checkers. LLM-based checkers query LLMs to obtain predictions, exhibiting noteworthy success in recent studies. NLI-based checkers adopts much smaller pre-trained language models (such as RoBERTa) to perform text classification, originating from the [natural language inference](https://arxiv.org/abs/1904.01172) task. See [bschecker/checker](https://github.com/amazon-science/bschecker-for-fine-grained-hallucination-detection/tree/main/bschecker/checker) for more details.
+With triplets extracted for the given text, the checker $C$ in the second stage needs to predict hallucination labels on all extracted triplets. We are able to employ numerous existing zero-shot checkers without additional training. We mainly consider two varieties: LLM-based checkers and NLI-based checkers. LLM-based checkers query LLMs to obtain predictions, exhibiting noteworthy success in recent studies. NLI-based checkers adopts much smaller pre-trained language models (such as RoBERTa) to perform text classification, originating from the [natural language inference](https://arxiv.org/abs/1904.01172) task. See [refchecker/checker](https://github.com/amazon-science/RefChecker/tree/main/refchecker/checker) for more details.
 
 <a id='aggregation'></a>
 
@@ -368,7 +368,7 @@ In this example, almost the whole reference should be regarded as the evidence. 
 
 
 ### Limitations and Call for Contributions
-Our BSChecker currently has certain limitations that we are actively addressing to enhance the framework. We invite more contributors to join the discussion and share their perspectives on these issues. There are improvements needed for all the components; the BSChecker architecture has a modular architecture that allows independent updates. Here are some helps we felt needed (We welcome contributions through pull requests):
+Our RefChecker currently has certain limitations that we are actively addressing to enhance the framework. We invite more contributors to join the discussion and share their perspectives on these issues. There are improvements needed for all the components; the RefChecker architecture has a modular architecture that allows independent updates. Here are some helps we felt needed (We welcome contributions through pull requests):
 
 - Lightweight and/or better-performing open-sourced extractor.
 - Lightweight and/or better-performing open-sourced checker. We had better luck with checker: we found zero-shot NLI-based checker works fine on average. However, it requires extra techniques to handle lengthy context and lags behind the GPT-4 checker in accurate/noisy-context settings. 
@@ -381,7 +381,7 @@ Then there is an array of related problems:
 - **Task Coverage Discrepancy** The expanding capabilities of LLMs span a wide range of tasks, while our benchmark primarily focuses on fundamental tasks like QA and summarization. As LLMs continue to evolve, we recognize the necessity of evolving our benchmark to cover a broader spectrum of tasks.
 - **Hallucination vs. Helpfulness** Our framework currently assesses only the quantity of hallucination, leaving room for manipulation by generating factually correct yet ultimately unhelpful responses. Introducing a measure of helpfulness in the leaderboard could enhance its comprehensiveness by adding another orthogonal axis for evaluation.
 
-Finally, while BSChecker is in the category of checkers that offer more explainability, it will be very interesting to compare with other approaches that rely on uncertainty at generation time (e.g. [SelfCheckGPT](https://arxiv.org/abs/2303.08896)).
+Finally, while RefChecker is in the category of checkers that offer more explainability, it will be very interesting to compare with other approaches that rely on uncertainty at generation time (e.g. [SelfCheckGPT](https://arxiv.org/abs/2303.08896)).
 
 
 ## 🔐 Security

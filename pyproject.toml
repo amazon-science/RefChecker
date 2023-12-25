@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bschecker"
+name = "refchecker"
 version = "0.1"
 description = ""
 authors = [
@@ -27,7 +27,7 @@ datasets = "^2.15.0"
 plotly = "^5.18.0"
 
 [tool.poetry.scripts]
-bschecker-cli = "bschecker.cli:main"
+refchecker-cli = "refchecker.cli:main"
 
 
 [build-system]

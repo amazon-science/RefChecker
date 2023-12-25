@@ -2,7 +2,7 @@ from .checker import Claude2Checker, GPT4Checker, NLIChecker
 from .extractor import Claude2Extractor, GPT4Extractor
 
 
-class BSChecker:
+class RefChecker:
     def __init__(
         self,
         claim_extractor_model:str='claude2',

@@ -1,5 +1,5 @@
 #!/bin/bash
-bschecker-cli extract \
+refchecker-cli extract \
   --input_path example/example_in.json \
   --output_path example/example_out_triplets.json \
   --extractor_name gpt4 \

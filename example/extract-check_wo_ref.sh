@@ -1,6 +1,6 @@
 #!/bin/bash
 # using google retriever requires access to claude2 for query generation
-bschecker-cli extract-check \
+refchecker-cli extract-check \
   --input_path example/example_in.json \
   --output_path example/example_out.json \
   --extractor_name gpt4 \

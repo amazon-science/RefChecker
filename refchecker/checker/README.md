@@ -3,7 +3,7 @@
 Our hallucination checkers take as input a reference document from retrieval or provided by users when querying LLMs, output a hallucination label chosen from `["Entailment", "Neutral", "Contradiction"]`. We provide [Claude2Checker](claude2_checker.py), [GPT4Checker](gpt4_checker.py) and [NLIChecker](nli_checker.py) with the usage demonstrated below.
 
 ```python
->>> from bschecker.checker import NLIChecker
+>>> from refchecker.checker import NLIChecker
 
 >>> checker = NLIChecker()
 >>> reference = (

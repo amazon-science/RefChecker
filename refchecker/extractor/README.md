@@ -4,7 +4,7 @@ In this work, we adopt LLMs as knowledge extraction models, leveraging their str
 
 
 ```python
->>> from bschecker.extractor import Claude2Extractor
+>>> from refchecker.extractor import Claude2Extractor
 
 >>> response = (
         "Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. "

@@ -11,8 +11,8 @@ from transformers import (
 from spacy.lang.en import English
 
 from miscellaneous import htmls #pre-defined visual components for showing the top step-by-step progress bar 
-from bschecker import GPT4Extractor, NLIChecker
-from bschecker.retriever import GoogleRetriever
+from refchecker import GPT4Extractor, NLIChecker
+from refchecker.retriever import GoogleRetriever
 
 
 enable_search_flag = True 
@@ -31,7 +31,7 @@ st.markdown("""
         </style>
         """, unsafe_allow_html=True)
 
-st.write("### BSChecker Demo")
+st.write("### RefChecker Demo")
 
 LABELS = ["Entailment", "Neutral", "Contradiction"]
 
