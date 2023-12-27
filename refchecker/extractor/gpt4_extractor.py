@@ -93,7 +93,7 @@ class GPT4Extractor(ExtractorBase):
             self.prompt_temp_wq = GPT4_TRIPLET_EXTRACTION_PROMPT_Q
             self.prompt_temp = GPT4_TRIPLET_EXTRACTION_PROMPT
     
-    def extract_claim_triplets(self, response, question=None):
+    def extract_claim_triplets(self, response, question=None, max_new_tokens=500):
         if question is None:
             prompt = self.prompt_temp.format(
                 input_text=response
@@ -106,7 +106,8 @@ class GPT4Extractor(ExtractorBase):
         gpt4_response = get_openai_model_response(
             prompt,
             temperature=0,
-            model='gpt-4'
+            model='gpt-4',
+            max_new_tokens=max_new_tokens
         )
         if gpt4_response and len(gpt4_response):
             kg_str = None

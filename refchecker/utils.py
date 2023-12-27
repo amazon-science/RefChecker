@@ -56,7 +56,13 @@ def split_text(text, segment_len=200):
     return segments
 
 
-def get_openai_model_response(prompt, temperature=0, model='gpt-3.5-turbo', n_choices=1):
+def get_openai_model_response(
+    prompt, 
+    temperature=0, 
+    model='gpt-3.5-turbo', 
+    n_choices=1,
+    max_new_tokens=500
+):
     global openai_client
     if not openai_client:
         openai_client = openai.OpenAI()
@@ -80,7 +86,8 @@ def get_openai_model_response(prompt, temperature=0, model='gpt-3.5-turbo', n_ch
                     model=model,
                     messages=messages,
                     temperature=temperature,
-                    n=n_choices
+                    n=n_choices,
+                    max_tokens=max_new_tokens
                 ).choices
             if n_choices == 1:
                 response = res_choices[0].message.content
@@ -98,7 +105,7 @@ def get_openai_model_response(prompt, temperature=0, model='gpt-3.5-turbo', n_ch
         return None
 
 
-def get_claude2_response(prompt, temperature=0, max_new_tokens=300):
+def get_claude2_response(prompt, temperature=0, max_new_tokens=500):
     if os.environ.get('aws_bedrock_region'):
         global bedrock
         if not bedrock:

@@ -76,6 +76,7 @@ We provide a command-line interface to run RefChecker in a console:
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
                      [--extractor_name {gpt4,claude2}]
+                     [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
                      [--checker_name {gpt4,claude2,nli}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
@@ -102,6 +103,8 @@ options:
               Path to the cache directory. Default: ./.cache.
   --extractor_name {gpt4,claude2}
               Model used for extracting triplets. Default: claude2.
+  --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
+              Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
   --checker_name {gpt4,claude2,nli}
               Model used for checking whether the triplets are factual. Default: claude2.
   --retriever_name {google}

@@ -1,6 +1,7 @@
 import os
 import json
 from argparse import ArgumentParser, RawTextHelpFormatter
+from tqdm import tqdm
 
 from .extractor import Claude2Extractor, GPT4Extractor
 from .checker import Claude2Checker, GPT4Checker, NLIChecker
@@ -32,6 +33,10 @@ def get_args():
         '--extractor_name', type=str, default="claude2",
         choices=["gpt4", "claude2"],
         help="Model used for extracting triplets. Default: claude2."
+    )
+    parser.add_argument(
+        '--extractor_max_new_tokens', type=int, default=500,
+        help="Max generated tokens of the extractor, set a larger value for longer documents. Default: 500"
     )
     parser.add_argument(
         "--checker_name", type=str, default="claude2",
@@ -127,12 +132,13 @@ def extract(args):
         input_data = json.load(fp)
     
     # extract triplets
+    print('Extracting')
     output_data = []
-    for item in input_data:
+    for item in tqdm(input_data):
         assert "response" in item, "response field is required"
         response = item["response"]
         question = item.get("question", None)
-        triplets = extractor.extract_claim_triplets(response, question)
+        triplets = extractor.extract_claim_triplets(response, question, max_new_tokens=args.extractor_max_new_tokens)
         out_item = {**item, **{"triplets": triplets}}
         output_data.append(out_item)
     with open(args.output_path, "w") as fp:
@@ -171,8 +177,9 @@ def check(args):
         input_data = json.load(fp)
     
     # check triplets
+    print('Checking')
     output_data = []
-    for item in input_data:
+    for item in tqdm(input_data):
         assert "triplets" in item, "triplets field is required"
         triplets = item["triplets"]
         if args.use_retrieval:

@@ -8,7 +8,7 @@ class ExtractorBase:
     ) -> None:
         self.claim_format = claim_format
 
-    def extract(self, response, question=None):
+    def extract(self, response, question=None, max_new_tokens=500):
         claims = None
         if self.claim_format == 'triplet':
             claims = self.extract_claim_triplets(
@@ -20,7 +20,8 @@ class ExtractorBase:
     def extract_claim_triplets(
         self,
         response,
-        question=None
+        question=None, 
+        max_new_tokens=500
     ):
         raise NotImplementedError
 

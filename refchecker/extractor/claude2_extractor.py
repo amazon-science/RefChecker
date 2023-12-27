@@ -92,7 +92,7 @@ class Claude2Extractor(ExtractorBase):
             self.prompt_temp_wq = CLAUDE2_TRIPLET_EXTRACTION_PROMPT_Q
             self.prompt_temp = CLAUDE2_TRIPLET_EXTRACTION_PROMPT
 
-    def extract_claim_triplets(self, response, question=None):
+    def extract_claim_triplets(self, response, question=None, max_new_tokens=500):
         if question is None:
             prompt = self.prompt_temp.format(
                 input_text=response
@@ -106,7 +106,7 @@ class Claude2Extractor(ExtractorBase):
         claude2_response = get_claude2_response(
             prompt=prompt,
             temperature=0,
-            max_new_tokens=500
+            max_new_tokens=max_new_tokens
         )
 
         if claude2_response and len(claude2_response):
