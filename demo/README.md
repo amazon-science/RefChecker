@@ -1,19 +1,43 @@
-## BSChecker Demo
+## RefChecker Demo
 
-You can run the BSChecker on your server. By default, it applies GPT-4 as the extractor and the NLI model as the checker. 
+You can run the RefChecker on your server. 
 
-### Run the Demo Locally
+### Export API Keys
 
-To run the demo, first set the OpenAI API key for the extractor, and Serper API key to use Google seach:
+To run the demo, we should first set the relevant API keys for the extractor and checker.
+
+- If we use OpenAI models (i.e. GPT-4), run the following command:
 ```bash
 export OPENAI_API_KEY=<your openai api key>
+```
+
+- To use Claude 2, if we have an Anthropic API Key, run:
+```bash
+export ANTHROPIC_API_KEY=<your anthropic api key>
+```
+
+If we are using Claude 2 on AWS Bedrock and running the demo on AWS, we need to export the region of the server:
+
+```bash
+export aws_bedrock_region=<your aws bedrock region, e.g. us-west-2>
+```
+
+- If we want to use Google search to find references, export the Serper API key:
+
+```bash
 export SERPER_API_KEY=<your serper api key>
 ```
 
-Then run the following command:
+### Run the Demo
+
+Execute the following command to run the demo:
 
 ```bash
-streamlit run demo/main.py
+streamlit run demo/main.py \
+    --server.port={port} -- \ # set the deploy port
+    --extractor={gpt4, claude2} \ # choose the extractor
+    --checker={gpt4, claude2, nli} \ # choose the checker
+    --enable_search # enable Google search
 ```
 
-It will print the URL for of the demo, you can open the URL in your browser to interact with the demo.
+It will print the URL of the demo, you can open it in your browser to interact with the demo.

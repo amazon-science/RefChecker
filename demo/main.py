@@ -1,9 +1,12 @@
-import streamlit as st
+import argparse
 from copy import deepcopy
-import streamlit.components.v1 as components
-import torch
-import time
+import os
 import numpy as np
+import sys
+
+import torch
+import streamlit as st
+import streamlit.components.v1 as components
 from transformers import (
     AutoModel, AutoTokenizer, AutoModelForSequenceClassification
 )
@@ -11,11 +14,39 @@ from transformers import (
 from spacy.lang.en import English
 
 from miscellaneous import htmls #pre-defined visual components for showing the top step-by-step progress bar 
-from refchecker import GPT4Extractor, NLIChecker
+from refchecker import GPT4Extractor, Claude2Extractor, GPT4Checker, Claude2Checker, NLIChecker
 from refchecker.retriever import GoogleRetriever
 
 
-enable_search_flag = True 
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    '--extractor', 
+    type=str, 
+    choices=['gpt4', 'claude2'],
+    required=True
+)
+parser.add_argument(
+    '--checker', 
+    type=str, 
+    choices=['gpt4', 'claude2', 'nli'],
+    required=True
+)
+parser.add_argument(
+    '--enable_search', 
+    action='store_true'
+)
+
+args = parser.parse_args()
+
+if args.extractor == 'gpt4' or args.checker == 'gpt4':
+    assert os.environ.get('OPENAI_API_KEY')
+
+if args.extractor == 'claude2' or args.checker == 'claude2':
+    assert os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('aws_bedrock_region')
+
+if args.enable_search:
+    assert os.environ.get('SERPER_API_KEY')
+
 # True for allowing search from google. If False, user needs to provide the reference in the text area
 
 st.set_page_config(layout="wide")
@@ -189,10 +220,27 @@ def search_it(text):
 def get_models():
     nlp = English()
     nlp.add_pipe("sentencizer")
+    extractor = None
+    if args.extractor == 'gpt4':
+        extractor = GPT4Extractor()
+    elif args.extractor == 'claude2':
+        extractor = Claude2Extractor()
+    
+    checker = None
+    if args.checker == 'gpt4':
+        checker = GPT4Checker()
+    elif args.checker == 'claude2':
+        checker = Claude2Checker()
+    elif args.checker == 'nli':
+        checker = NLIChecker()
+    
+    assert extractor
+    assert checker
+    
     models = {
-        'extractor': GPT4Extractor(),
-        'checker': NLIChecker(),
-        'retriever': GoogleRetriever(),
+        'extractor': extractor,
+        'checker': checker,
+        'retriever': GoogleRetriever() if args.enable_search else None,
         'localizer': Localizer(),
         'nlp': nlp
     }
@@ -344,7 +392,7 @@ if check_button or auto_run_flag:
             st.session_state['progress'] += 1
             st.rerun()
         elif st.session_state['progress'] ==1:
-            if len(text_ref)<2 and enable_search_flag: # need to search reference
+            if len(text_ref)<2 and args.enable_search: # need to search reference
                 with col2a_ph:
                     with st.spinner(text="Searching from Internet"):
                         text_ref = search_it(text_check)
