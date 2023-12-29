@@ -4,7 +4,7 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
 from .extractor import Claude2Extractor, GPT4Extractor, MixtralExtractor
-from .checker import Claude2Checker, GPT4Checker, NLIChecker
+from .checker import Claude2Checker, GPT4Checker, NLIChecker, AlignScoreChecker
 from .retriever import GoogleRetriever
 from .aggregator import strict_agg, soft_agg, major_agg
 
@@ -40,7 +40,7 @@ def get_args():
     )
     parser.add_argument(
         "--checker_name", type=str, default="claude2",
-        choices=["gpt4", "claude2", "nli"],
+        choices=["gpt4", "claude2", "nli", "alignscore"],
         help="Model used for checking whether the triplets are factual. "
         "Default: claude2."
     )
@@ -155,6 +155,8 @@ def check(args):
         checker = GPT4Checker()
     elif args.checker_name == "nli":
         checker = NLIChecker()
+    elif args.checker_name == "alignscore":
+        checker = AlignScoreChecker()
     else:
         raise NotImplementedError
     
