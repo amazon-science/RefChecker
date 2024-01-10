@@ -1,7 +1,7 @@
 import tiktoken
 
 
-from bschecker.utils import get_openai_model_response
+from refchecker.utils import get_openai_model_response
 from collector_base import ResponseCollectorBase
 
 class GPT4Turbo(ResponseCollectorBase):

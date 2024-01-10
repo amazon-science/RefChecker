@@ -1,0 +1,2789 @@
+[
+    {
+        "id": "167875",
+        "response": "\nbased on the provided passages, it is not clear if jimmy jazz sells fake shoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Validity of claim",
+                    "uncertain based on",
+                    "provided passages"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1098142",
+        "response": "\nThe process of renewing a Nexus card generally takes around three months.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renewing a Nexus card",
+                    "duration",
+                    "around three months"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "60339",
+        "response": "There are 335 calories in 1 cup of Beef Stroganoff with Noodles, 227 calories in 1 cup of Ground Beef Stroganoff, 361 calories in Ground Beef Stroganoff w/ Egg Noodles.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Beef Stroganoff with Noodles",
+                    "calories",
+                    "335 calories per cup"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff",
+                    "calories",
+                    "227 calories per cup"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff w/ Egg Noodles",
+                    "calories",
+                    "361 calories"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098131",
+        "response": "\nPassage 0's estimate of 8 hours to do a full 1040 with stock sales, itemized deductions, and rental properties seems about right, so it would likely take about that amount of time to do a 1040ez. Passage 1 suggests that 1 hour for form submission is unlikely, and Passage 4 lists one of the most common mistakes as social security number missing or incorrect, so it is likely that these are the reasons for the long wait time. H&R Block may also be backlogged because of the high demand for tax refunds this year.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Passage 1",
+                    "suggests",
+                    "1 hour for form submission is unlikely"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "One of most common mistakes",
+                    "is",
+                    "social security number missing or incorrect"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "H&R Block",
+                    "may be backlogged",
+                    "because of high demand for tax refunds this year"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "423918",
+        "response": "\nUnknown. Skype does not disclose information on whether or not their service is monitored.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Skype service",
+                    "monitored status",
+                    "Unknown"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Skype",
+                    "discloses monitoring information",
+                    "False"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "164058",
+        "response": "\nYes, BullGuard removes malware.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "BullGuard",
+                    "removes",
+                    "malware"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "431481",
+        "response": "\nBased on the provided passages, Willie McGee is not in the Baseball Hall of Fame.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "164078",
+        "response": "\nBased on the provided passages, burning sage does not appear to be an effective method for getting rid of mosquitoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "burning sage",
+                    "effective for getting rid of mosquitoes",
+                    "no"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "74518",
+        "response": "\nThe answer to this question is yes. The President can pardon himself under the Constitution's pardon clause.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President",
+                    "can pardon",
+                    "himself"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "President",
+                    "has power to pardon under",
+                    "Constitution's pardon clause"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "20924",
+        "response": "\nNo, they have not divorced.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Apollo and Phaedra",
+                    "marital status",
+                    "still married"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "196366",
+        "response": "\nThere is no single answer to this question. It depends on which of Grace Vanderwaal's social media accounts one is asking about.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "830068",
+        "response": "\nThe max charitable donation is $45,000.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "max charitable donation",
+                    "amount",
+                    "$45,000"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "424911",
+        "response": "\nnone of the provided passages provide a clear answer",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "853309",
+        "response": "\nPassage 0 provides no useful information about the weather in Branson. \n\nPassages 1, 2, and 6 tell us that the weather in Branson is generally mild, with highs in the low 90s and lows in the 50s and 60s. Shorts and short-sleeved shirts are generally appropriate, and rainfall is around 3.7 inches per month. \n\nPassages 3 and 7 provide information on the average temperatures in Branson by month. Generally, the weather is mild with temperatures in the 70s. \n\nPassage 4 shows the results of a search for \"Branson Weather and Seasons.\" The article provides information on the weather in Branson throughout the year. The article cautions that the weather is unpredictable and advises visitors to check the weather forecast before visiting. \n\nPassage 5 tells us that the weather in Missouri is unpredictable, with some years where people are still mowing grass at Thanksgiving. The temperature ranges from the",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "424287",
+        "response": "\nPassages 2 and 7 mention that Space Mountain is currently closed for the Star Wars Season of the Force event, and is expected to last until late-2016.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Space Mountain",
+                    "currently",
+                    "closed"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Space Mountain closure",
+                    "for",
+                    "Star Wars Season of the Force event"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Star Wars Season of the Force event",
+                    "expected to last until",
+                    "late-2016"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "71168",
+        "response": "\nThere is no clear answer to this question as the available passages offer contradicting information. Some sources cite that marijuana can lead to mental health issues, while others report that marijuana may be helpful in treating mental health conditions. It is important to note that correlation does not imply causation, so it is difficult to make a definitive statement about the effects of marijuana on mental health.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "marijuana",
+                    "effects on mental health",
+                    "unclear"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "available sources",
+                    "offer contradicting information about",
+                    "marijuana mental health effects"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some sources",
+                    "cite",
+                    "marijuana can lead to mental health issues"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other sources",
+                    "report",
+                    "marijuana may help treat mental health conditions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "definitive statement about",
+                    "marijuana mental health effects",
+                    "difficult to make"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "correlation",
+                    "does not imply",
+                    "causation"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "158999",
+        "response": "\nThere is no definitive answer to this question as different people seem to smell snakes differently. However, the majority of sources suggest that snakes do not have a strong smell.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "snakes",
+                    "have smell",
+                    "no definitive answer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "different people",
+                    "smell snakes",
+                    "differently"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "majority of sources",
+                    "suggest",
+                    "snakes do not have strong smell"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "144833",
+        "response": "\nPresident Obama did not invoke executive privilege.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President Obama",
+                    "invoked executive privilege",
+                    "False"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "71250",
+        "response": "\nBased on the provided passages, it is not clear if Melania Trump can speak Russian.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "ability to speak Russian",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "415165",
+        "response": "\nJohnny Rivers was married to Vicki Ellison from late 60s to late 70s. Johnny Rivers was married to Christi Marie Zabel from early 80s to late 80s. Johnny Rivers was married to Vicki Ellison in 1969 for about 10 months, they have 1 child Michael born 1969. He was married to Christi Zabel for 6 years from 1983 to 1988.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "was married to",
+                    "Vicki Ellison"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers marriage to Vicki Ellison",
+                    "time period",
+                    "from late 60s to late 70s"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "was married to",
+                    "Christi Marie Zabel"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers marriage to Christi Marie Zabel",
+                    "time period",
+                    "from early 80s to late 80s"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers marriage to Vicki Ellison",
+                    "year",
+                    "1969"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers marriage to Vicki Ellison",
+                    "duration",
+                    "about 10 months"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers and Vicki Ellison",
+                    "have child",
+                    "Michael"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael",
+                    "birth year",
+                    "1969"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers marriage to Christi Zabel",
+                    "duration",
+                    "6 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers marriage to Christi Zabel",
+                    "time period",
+                    "from 1983 to 1988"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "411030",
+        "response": "\nBased on the provided passages, it is difficult to say with certainty whether or not George Soros is an atheist. However, it does appear that he has some disagreements with the Catholic Church on certain social issues.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Soros",
+                    "has",
+                    "some disagreements with the Catholic Church"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Disagreements between George Soros and Catholic Church",
+                    "regarding",
+                    "certain social issues"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "168000",
+        "response": "\nBased on the given passages, it seems that Kia Sorento does have an interference engine.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kia Sorento",
+                    "has",
+                    "interference engine"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "73420",
+        "response": "\nYes, Singapore citizens can travel to Indonesia with less than six months on their passport, as long as they have another form of identification, such as a driver's license.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Singapore citizens",
+                    "can travel to",
+                    "Indonesia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Singapore citizens",
+                    "passport validity requirement",
+                    "less than 6 months"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Singapore citizens",
+                    "allowed to enter Indonesia",
+                    "with another identification (e.g. driver's license)"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1094146",
+        "response": "\nPassage 1 states \"Port of Gdansk: An Overview.\" and \"Gdansk, together with Gydnia and the resort town of Sopot, is known as the Tricity.\" which would lead one to believe that Gdansk is the main port in Poland. However, all of the other passages are inconclusive.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gdansk",
+                    "together with",
+                    "Gydnia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gdansk",
+                    "together with",
+                    "Sopot"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gdansk",
+                    "known as part of",
+                    "Tricity"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tricity",
+                    "consists of",
+                    "Gdansk"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tricity",
+                    "consists of",
+                    "Gydnia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tricity",
+                    "consists of",
+                    "Sopot"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Other passages",
+                    "are",
+                    "inconclusive"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1093157",
+        "response": "\nPassage 7 states that the military has the same ASVAB score requirements for enlistment at an older age. Passage 9 states that Broun still serves as a doctor in the Navy Reserve at age 66, and in an interview he called the enlistment age cap \"an arbitrary policy.\" Therefore, the maximum age for an officer in the Air Force is 66.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Broun",
+                    "called",
+                    "enlistment age cap an arbitrary policy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "enlistment age cap",
+                    "is",
+                    "arbitrary policy"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1098565",
+        "response": "\nThere is no one answer to this question as it depends on the particular T. rex. Some may have lived longer or shorter than 25-29 years.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "T. rex",
+                    "typical lifespan",
+                    "25-29 years"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097044",
+        "response": "\nThere are no definitive answers to this question as it appears to vary from person to person. However, according to the Residential Real Estate Council's website, the CRS designation can be earned by completing \"92 hours of live course instruction covering many special aspects of real estate such as residential marketing, cost basis, appreciation\" among other topics.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "CRS designation",
+                    "required hours",
+                    "92 hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "92 hours for CRS designation",
+                    "cover topics like",
+                    "residential marketing"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "92 hours for CRS designation",
+                    "cover topics like",
+                    "cost basis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "92 hours for CRS designation",
+                    "cover topics like",
+                    "appreciation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Information about CRS designation hours",
+                    "according to",
+                    "Residential Real Estate Council's website"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "192218",
+        "response": "\nThere is no one definitive answer to this question. It depends on the school and/or employer.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "hours for full time student",
+                    "depends on",
+                    "school"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "hours for full time student",
+                    "depends on",
+                    "employer"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "453218",
+        "response": "\nAccording to Passages 3 and 5, U.S. passport cards are only valid for land and sea travel from border crossings and sea ports-of-entry into the United States from Mexico, Canada Bermuda and the Caribbean. According to Passages 2 and 4, U.S. passports are valid for 10 years from the date of issue.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "U.S. passports",
+                    "valid for",
+                    "10 years from the date of issue"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "271818",
+        "response": "\nPassage 2: \"The normal processing time ranges from six to eight weeks.\"\nPassage 3: \"After your appointment at the passport acceptance facility, passport processing generally takes four to six weeks.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Passport renewal processing",
+                    "takes",
+                    "six to eight weeks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passport renewal processing",
+                    "generally takes",
+                    "four to six weeks"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1002884",
+        "response": "\nLubbock General Hospital was built in 1978.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lubbock General Hospital",
+                    "built in",
+                    "1978"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1096985",
+        "response": "\n1 $200 - $600 \n2 $30,786 \n3 $1038 \n4 Unknown \n5 Unknown",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average hospital room and board",
+                    "price range",
+                    "$200 - $600"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average hospital room and board",
+                    "average cost",
+                    "$30,786"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "average hospital room and board",
+                    "average daily cost",
+                    "$1038"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1006506",
+        "response": "\nNyiragongo's last major eruption was in 1977.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nyiragongo",
+                    "last major eruption",
+                    "1977"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "909506",
+        "response": "\nPassage 5: POWERBALL: Live drawing broadcast at approximately 11:00 p.m. ET, on Wednesdays and Saturdays. LUCKY MONEY: Live drawing broadcast at approximately 11:15 p.m. ET, on Tuesdays and Fridays. FANTASY 5: Live drawing broadcast at approximately 11:15 p.m. ET, on Tuesdays, Wednesdays, Fridays, and Saturdays.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Powerball",
+                    "live drawing broadcast",
+                    "approximately 11:00 p.m. ET"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Powerball",
+                    "broadcast days",
+                    "Wednesdays and Saturdays"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lucky Money",
+                    "live drawing broadcast",
+                    "approximately 11:15 p.m. ET"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lucky Money",
+                    "broadcast days",
+                    "Tuesdays and Fridays"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Fantasy 5",
+                    "live drawing broadcast",
+                    "approximately 11:15 p.m. ET"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Fantasy 5",
+                    "broadcast days",
+                    "Tuesdays, Wednesdays, Fridays, and Saturdays"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "991037",
+        "response": "\nAccording to Passage 4, a Joint Terrorism Task Force (JTTF) is a partnership between various federal, state, and local law enforcement agencies, as well as private organizations, that are charged with taking action against terrorism. Clarice Feldman is a writer for the American Thinker who has taken the position that Dick Armitage is a liar, except when his lies fit her agenda. Then you can believe him over all others. Feldman's agenda is to keep Americans from learning that Plamegate is a cover-up, and that her friends in Washington, DC were not victims.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "643122",
+        "response": "\nMEC can refer to a few different things. In Passages 0, 2, 4, and 5, it refers to a type of life insurance policy. In Passage 1, it refers to a specific kind of life insurance policy that becomes a Modified Endowment Contract (MEC) if the cumulative premium payments exceed certain amounts. In Passage 3, it is a Vocational school.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "MEC",
+                    "refers to",
+                    "a type of life insurance policy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "refers to",
+                    "Modified Endowment Contract (MEC)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Modified Endowment Contract (MEC)",
+                    "a type of",
+                    "life insurance policy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "becomes",
+                    "Modified Endowment Contract (MEC)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Modified Endowment Contract (MEC)",
+                    "triggered when",
+                    "cumulative premium payments exceed certain amounts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "refers to",
+                    "Vocational school"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "450391",
+        "response": "\nThe word 'tuckahoe' is of Native American origin and is most likely derived from the word 'tuck,' which means 'to bury.' The word 'hoe' may refer to the shape of the vegetable or the act of digging it up.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "origin",
+                    "Native American"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "derived from",
+                    "'tuck'"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "'tuck'",
+                    "means",
+                    "'to bury'"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "hoe",
+                    "refers to",
+                    "shape of the vegetable"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "hoe",
+                    "refers to",
+                    "act of digging it up"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "998737",
+        "response": "\nbass is a low musical note or the person or instrument that produces it.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bass",
+                    "is",
+                    "low musical note"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "produced by",
+                    "person"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "produced by",
+                    "instrument"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "785306",
+        "response": "\nPolysys is a leading manufacturer of granulators, dedusting systems and separation systems, film/fiber recovery systems and other general plastic recycling equipment.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Polysys",
+                    "is",
+                    "leading manufacturer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "manufactures",
+                    "granulators"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "manufactures",
+                    "dedusting systems"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "manufactures",
+                    "separation systems"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "manufactures",
+                    "film/fiber recovery systems"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "manufactures",
+                    "other general plastic recycling equipment"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "708853",
+        "response": "\nAggravated driving while intoxicated is driving while intoxicated with aggravating factors, such as a passenger younger than 15 years of age.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "aggravated driving while intoxicated",
+                    "is",
+                    "driving while intoxicated with aggravating factors"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravating factors",
+                    "example",
+                    "a passenger younger than 15 years of age"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "21793",
+        "response": "\nPassage 0, Passages 2 and 3, and Passage 5 all mention that concierge medical fees may be tax deductible. Passage 1 mentions that a person with a health savings account could use money from the account to pay the fees. Passage 4 mentions that for patients who itemize medical expenses on their tax returns, the annual retainer-based medicine fee may be deductible.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "concierge medical fees",
+                    "may be",
+                    "tax deductible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "health savings account",
+                    "can be used to pay",
+                    "concierge medical fees"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "patients who itemize medical expenses",
+                    "can deduct",
+                    "annual retainer-based medicine fee"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "annual retainer-based medicine fee",
+                    "is a type of",
+                    "concierge medical fees"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "810239",
+        "response": "\nThe cause of dogs urinating all the time can be due to various reasons such as a urinary tract infection, diabetes, anxiety, or Cushings Disease.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "potential cause",
+                    "urinary tract infection"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "potential cause",
+                    "diabetes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "potential cause",
+                    "anxiety"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "potential cause",
+                    "Cushings Disease"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "57346",
+        "response": "\nThe definition for a bus port according to the provided passages is an external bus standard that supports data transfer rates of 12 Mbps and is capable of supporting up to 127 peripheral devices.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bus port",
+                    "definition",
+                    "an external bus standard that supports data transfer rates of 12 Mbps and is capable of supporting up to 127 peripheral devices"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1102431",
+        "response": "\nRachel Carson wrote \"The Obligation to Endure\" to argue that humans have a responsibility to protect the environment.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "wrote 'The Obligation to Endure'",
+                    "to argue that humans have a responsibility to protect the environment"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "wrote",
+                    "\"The Obligation to Endure\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "248616",
+        "response": "\nPassage 0 recommends roasting beets for 9 minutes at 450 degrees F. Passage 1 recommends roasting beets for 45 minutes to 1 hour at 425 degrees F. Passage 2 recommends roasting beets for 1 hour to 2 hours at 450 degrees F. Passage 3 recommends wrapping beets in 2 or 3 packets of foil and roasting them for 45 minutes to 1 hour at 425 degrees F. Passage 4 recommends roasting beets for 1 hour to 2 hours at 450 degrees F.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "741305",
+        "response": "\nThe answer is unknown.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "40371",
+        "response": "\nAccording to the Bureau of Labor Statistics, the average salary for a mail sorter is $48,380 per year.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average postal worker salary",
+                    "according to",
+                    "Bureau of Labor Statistics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average salary",
+                    "for",
+                    "mail sorter"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average salary",
+                    "value",
+                    "$48,380 per year"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1095893",
+        "response": "\nPassage 0: The Bottom Line. Administrative costs accounted for 25 percent\u2014or more than $200 billion\u2014of total hospital spending in the United States. In the other nations included in this study, these costs accounted for between 12 percent of spending (Canada and Scotland) and 20 percent of spending (the Netherlands).\n\nPassage 1:\n\nWhat is the typical salesforce.com admin salary after one year of experience? How much does a beginning salesforce admin make per year in Melbourne?\n\nWhich industry pays salesforce.com admins the highest?\n\nPassage 2: This entry was posted in Computer & Internet and tagged Demand for MS System Administrators, High Paying Jobs in Microsoft System Administrator Positions, Highest Paying States for Microsoft System Admins, How Much Do Microsoft System Administrators Make, Starting Salary for Microsoft Sys Admins on April 3, 2013 by statesalary.\n\nPassage 3: Nurse Administrator \u2013 Nursing administrators, responsible for",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "administrative costs",
+                    "accounted for",
+                    "25 percent of total hospital spending"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "administrative costs",
+                    "more than",
+                    "$200 billion"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "administrative costs",
+                    "in United States",
+                    "25 percent of hospital spending"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "administrative costs",
+                    "in Canada",
+                    "12 percent of hospital spending"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "administrative costs",
+                    "in Scotland",
+                    "12 percent of hospital spending"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "administrative costs",
+                    "in Netherlands",
+                    "20 percent of hospital spending"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "309249",
+        "response": "\nBased on the provided passages, it is difficult to estimate the cost of a designer baby. However, it is safe to say that they would be more expensive than a traditional baby shower.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "318922",
+        "response": "\nAccording to UNFI's website, the company pays its employees a median annual salary of $92,987.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "UNFI",
+                    "median annual salary",
+                    "$92,987"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Median annual salary",
+                    "according to",
+                    "UNFI's website"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1090507",
+        "response": "\nThe wholesale price for a sphatik shivling is Rs. 1,500.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sphatik shivling",
+                    "wholesale price",
+                    "Rs. 1,500"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "392483",
+        "response": "\nPassage 3 states that the maximum cache size limit is 0, which allows IIS to manage the cache memory size automatically.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "283271",
+        "response": "\nBased on the provided passages, there have been 5 mass extinctions in Earth's history.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "5 mass extinctions",
+                    "occurred in",
+                    "Earth's history"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098016",
+        "response": "\nPassage 0: For your dog's specific projected growth, this puppy growth chart site will make calculations based on your dog's current weight, age and breed. There is some information about popular breeds below: Bull Terrier Weight for the bull terrier ranges from 35 to 75 pounds. This popular large breed averages 70 pounds. Although some Weimaraners can grow to 100 pounds, the average is 75 to 80 pounds. The tiny Maltese will get just a few inches more than a foot tall and weigh between five and 15 pounds.\nPassage 1: Dog Breed Weight Chart. This guide provides the average weights for female and male dog breeds - just click on the size that you think applies to your dog and check if it's on the list. Please note that this is only a guide, and we recommend that you weigh your dog at least twice a year.\nPassage 2: View all. 1  20 of the Best Free DIY Dog House Plans on the Internet 3 min",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "beagle",
+                    "has average weight",
+                    "15 to 30 pounds"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "bull terrier",
+                    "has weight range",
+                    "35 to 75 pounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bull terrier",
+                    "has average weight",
+                    "70 pounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Weimaraner",
+                    "can grow to weight",
+                    "100 pounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Weimaraner",
+                    "has average weight",
+                    "75 to 80 pounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maltese",
+                    "has adult height",
+                    "few inches more than a foot"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maltese",
+                    "has weight range",
+                    "5 to 15 pounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dog breed weight chart",
+                    "provides",
+                    "average weights for male and female dogs"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1090502",
+        "response": "\nSpirit Airlines' carry-on baggage policy is that passengers are allowed one personal item and one carry-on item, both of which must adhere to certain size and weight restrictions. The personal item must not exceed 16 x 14 x 12 inches (40 x 35 x 30 cm) including handles and wheels, and the carry-on item must not exceed 22 x 18 x10 inches (56 x 46 x 25 cm) including handles and wheels. There is a fee for each additional bag.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Spirit Airlines",
+                    "carry-on baggage policy",
+                    "passengers allowed one personal item and one carry-on item"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "personal item",
+                    "size restriction",
+                    "not exceed 16 x 14 x 12 inches (40 x 35 x 30 cm) including handles and wheels"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "carry-on item",
+                    "size restriction",
+                    "not exceed 22 x 18 x10 inches (56 x 46 x 25 cm) including handles and wheels"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Spirit Airlines",
+                    "charge fee",
+                    "each additional bag"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "278453",
+        "response": "\nBased on the provided passages, a slice of bread has an average of 79 calories.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "a slice of bread",
+                    "has",
+                    "79 calories"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097486",
+        "response": "\nBased on the provided passages, there is no definitive answer to how many calories are in macaroni and cheese. However, it is generally accepted that this dish is generally high in calories, fat, and few nutrients.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "macaroni and cheese",
+                    "calorie amount",
+                    "no definitive answer provided"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "macaroni and cheese",
+                    "generally accepted as",
+                    "high in calories"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "macaroni and cheese",
+                    "generally accepted as",
+                    "high in fat"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "macaroni and cheese",
+                    "generally accepted as",
+                    "low in nutrients"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "284565",
+        "response": "\nThere are approximately 3.5 grams of carbohydrates in a single egg.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "single egg",
+                    "contains approximately",
+                    "3.5 grams of carbohydrates"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "465781",
+        "response": "\nThe average newborn weight is about 3.4 kilograms (kg) / 7 pounds (lb) 8 ounces (oz).",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1099731",
+        "response": "\narpa help desk phone number",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1072119",
+        "response": "\nSodium chlorate is useful because it produces chlorine dioxide, which is an explosive. It is also toxic, and can cause hemolysis, renal failure, and methemoglobinemia.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "produces",
+                    "chlorine dioxide"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "chlorine dioxide",
+                    "is",
+                    "an explosive"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is",
+                    "toxic"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "can cause",
+                    "hemolysis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "can cause",
+                    "renal failure"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "can cause",
+                    "methemoglobinemia"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "166795",
+        "response": "\nNo, there is no evidence to suggest that goat milk produces mucus.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "goat milk",
+                    "causes mucus production",
+                    "No"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "405776",
+        "response": "\nThere is no one definitive answer to this question. Some passages state that celery juice is nutritious, while others mention that it is low in calories and a good source of certain vitamins and minerals. It is also beneficial for preventing certain chronic health conditions.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "celery juice",
+                    "is low in",
+                    "calories"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is a good source of",
+                    "certain vitamins and minerals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "helps prevent",
+                    "certain chronic health conditions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "has definitive answer on nutrition",
+                    "no"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Some passages",
+                    "state",
+                    "celery juice is nutritious"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Other passages",
+                    "mention",
+                    "celery juice is low in calories and good source of certain vitamins and minerals"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "429983",
+        "response": "\nBased on the provided passages, it is less well established whether high levels of triglycerides or uric acid, per se, represent independent cardiovascular risk factors. Rather, both hypertriglyceridemia and hyperuricemia serve as biomarkers for increased coronary heart disease risk.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "hypertriglyceridemia",
+                    "serves as",
+                    "biomarker for increased coronary heart disease risk"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "hyperuricemia",
+                    "serves as",
+                    "biomarker for increased coronary heart disease risk"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "triglyceride levels",
+                    "association with",
+                    "independent cardiovascular risk factors"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "uric acid levels",
+                    "association with",
+                    "independent cardiovascular risk factors"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "association",
+                    "less well established",
+                    "triglyceride levels as independent cardiovascular risk factor"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "association",
+                    "less well established",
+                    "uric acid levels as independent cardiovascular risk factor"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1088312",
+        "response": "The weather in Pencoed, Wales is most likely going to be partly cloudy on Sunday, February 25th.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "weather in Pencoed, Wales",
+                    "is",
+                    "partly cloudy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "weather in Pencoed, Wales",
+                    "on",
+                    "Sunday, February 25th"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1088355",
+        "response": "\nIt appears that the weather in Nelson, New Zealand is mostly warm with some occasional rainfall.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "weather in Nelson, New Zealand",
+                    "is",
+                    "mostly warm with some occasional rainfall"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1008326",
+        "response": "\nThe weather in Steubenville is Cloudy.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The weather in Steubenville",
+                    "is",
+                    "Cloudy"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "544914",
+        "response": "\nAccording to the various passages, the weather in Louisville, Colorado, can be anywhere from sunny and comfortable to severe with storm warnings.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "weather in Louisville, Colorado",
+                    "can be",
+                    "sunny and comfortable"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "weather in Louisville, Colorado",
+                    "can be",
+                    "severe with storm warnings"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "weather in Louisville, Colorado",
+                    "varies between",
+                    "sunny and comfortable, severe with storm warnings"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1033994",
+        "response": "\nThe processor on the computer is the central processing unit.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The processor",
+                    "is",
+                    "the central processing unit"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The computer",
+                    "has",
+                    "the central processing unit as processor"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "995200",
+        "response": "\nThe correct cord for an HP fax machine is a two-conductor line cord.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "correct cord for HP fax machine",
+                    "is",
+                    "two-conductor line cord"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "157359",
+        "response": "\nThere is no one-size-fits-all answer to this question.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "129756",
+        "response": "\nSlate is a type of metamorphic rock that is composed of very fine-grained clay or volcanic ash. It is mined and quarried in large sheets, which are then cut into smaller pieces for use as roofing material, paving stones, or writing tablets. Slate is very durable and can resist weathering and erosion.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "slate",
+                    "is a",
+                    "type of metamorphic rock"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "composed of",
+                    "very fine-grained clay or volcanic ash"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "mined and quarried in",
+                    "large sheets"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "large sheets of slate",
+                    "cut into",
+                    "smaller pieces"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "smaller pieces of slate",
+                    "used for",
+                    "roofing material"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "smaller pieces of slate",
+                    "used for",
+                    "paving stones"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "smaller pieces of slate",
+                    "used for",
+                    "writing tablets"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "is",
+                    "very durable"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can resist",
+                    "weathering and erosion"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "421437",
+        "response": "\nFrom the provided passages, it appears that Potter County is under a burn ban.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Potter County",
+                    "under",
+                    "burn ban"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "100248",
+        "response": "\nThe definition of cosmogenesis is the creation of the universe.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cosmogenesis",
+                    "is",
+                    "the creation of the universe"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1083749",
+        "response": "\nGray and pink can be blended to create a light purple color.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "gray",
+                    "blended with",
+                    "pink"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gray and pink",
+                    "creates",
+                    "light purple color"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "143463",
+        "response": "\nBased on the provided passages, it is unclear if Bobby Jones won the Grand Slam. While one passage mentions that the accomplishment was given several names, including \"The Impregnable Quadrilateral,\" it does not mention if Jones himself won this title. Another passage mentions that in 1930, Jones became the only man to win all four major titles in one season, completing the Grand Slam of golf.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "won",
+                    "The Impregnable Quadrilateral"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Impregnable Quadrilateral",
+                    "also known as",
+                    "Grand Slam"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "in 1930",
+                    "became the only man to win all four major titles in one season"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "completed",
+                    "Grand Slam of golf"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "completed Grand Slam of golf",
+                    "in 1930"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1084984",
+        "response": "\nSt. Patrick drove the snakes out of Ireland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "St. Patrick",
+                    "drove out of Ireland",
+                    "snakes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "851286",
+        "response": "\nPassage 0: Africa Morocco When to go. As far as the climate goes, it is better to visit the south \u2013 or at least the desert routes \u2013 outside midsummer, when for most of the day it\u2019s far too hot for casual exploration, especially if you\u2019re dependent on public transport.\nPassage 1: Morocco resumes Daylight Saving Time on Sunday July 1, 2017 at 2:00 AM local standard time. (This date is preliminary and subject to change.) Morocco ends Daylight Saving Time on Sunday October 29, 2017 at 3:00 AM local daylight time.\nPassage 2: Morocco Standard Time - is abbreviated as WET (Western European Time) Morocco Daylight Saving Time - is abbreviated as WEST (Western European Summer Time) Morocco is GMT/UTC + 0h during Standard Time. Morocco is GMT/UTC + 1h during Daylight Saving Time.\nPassage 3: UTC/GMT +1 hour. DST started on Sun,",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Time in Morocco",
+                    "is in",
+                    "Western European Time (WET)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Time in Morocco",
+                    "is in",
+                    "Western European Summer Time (WEST) during DST"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Morocco",
+                    "is in timezone",
+                    "UTC/GMT +0 during standard time"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Morocco",
+                    "is in timezone",
+                    "UTC/GMT +1 during DST"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "537560",
+        "response": "\nVision World is a trusted name and value for eye care services in the Scarsdale, NY area. They specialize in comprehensive eye exams, contact lens fittings, and other optical needs.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vision World",
+                    "location",
+                    "Scarsdale, NY"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "known for",
+                    "eye care services"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "specializes in",
+                    "comprehensive eye exams"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "specializes in",
+                    "contact lens fittings"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "specializes in",
+                    "other optical needs"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "trusted",
+                    "name and value for eye care services in Scarsdale, NY area"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "540432",
+        "response": "\nThere is no definitive answer to this question as the passages provide contradictory information. However, from the information provided, it seems that Michael Jordan was at some point a cub scout.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Jordan",
+                    "was",
+                    "cub scout"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Information about Michael Jordan being a cub scout",
+                    "is",
+                    "contradictory"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "It seems",
+                    "from information provided",
+                    "Michael Jordan was at some point a cub scout"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "63192",
+        "response": "\nAccording to passages 4, 5, 6, and 7, a school psychologist can diagnose a child with ADHD.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "school psychologist",
+                    "can diagnose",
+                    "child with ADHD"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "school psychologist",
+                    "can diagnose ADHD according to",
+                    "passages 4, 5, 6, and 7"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "708743",
+        "response": "\nAfterbirth is used for a variety of purposes, including reducing wrinkles, stimulating tissue growth, and increasing the chance of finding a horsemen boss.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used for",
+                    "reducing wrinkles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used for",
+                    "stimulating tissue growth"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used for",
+                    "increasing the chance of finding a horsemen boss"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1093959",
+        "response": "\nThere is no one definitive answer to this question. Depending on the passage, testosterone may be controlled by the hypothalamus and pituitary gland, by Congress, or by the Controlled Substances Act.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "testosterone",
+                    "controlled by",
+                    "hypothalamus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "controlled by",
+                    "pituitary gland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "controlled by",
+                    "Congress"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "controlled by",
+                    "Controlled Substances Act"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1040099",
+        "response": "\nThe Eagle Flyer is a unique 2-1/2 hour round trip eco-excursion in the Connecticut River Valley.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "is",
+                    "2-1/2 hour round trip eco-excursion"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "location",
+                    "Connecticut River Valley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "uniqueness",
+                    "unique"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "219496",
+        "response": "\nYou can use food grade diatomaceous earth to kill roaches by mixing it with the pet food. Roaches who come in contact with diatomaceous earth will become desiccated and eventually die.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "diatomaceous earth",
+                    "used for",
+                    "killing roaches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "diatomaceous earth",
+                    "type",
+                    "food grade"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "using diatomaceous earth",
+                    "method",
+                    "mixing with pet food"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roaches",
+                    "come in contact with",
+                    "diatomaceous earth"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roaches",
+                    "effect of contact with diatomaceous earth",
+                    "become desiccated"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roaches",
+                    "effect of contact with diatomaceous earth",
+                    "eventually die"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1100064",
+        "response": "\nThere is insufficient evidence on the health benefits of cat's claw.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "health benefits from cats claw",
+                    "has",
+                    "insufficient evidence"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "147966",
+        "response": "\nThe Miniature American Shepherd is a breed that was developed in California, in the late 1960s. These dogs were bred from small, unregistered dogs that were thought to be Australian Shepherds. The goal of this breeding was to maintain the dogs' small size, as well as their active character and intelligence.\n\nThe Miniature Australian Shepherd is a breed of dog that is related to the Australian Shepherd, and that is also known as the Miniature American Shepherd. This breed was originally known as the Miniature Australian Shepherd Club of the USA, and it was founded in 1990. The Miniature Australian Shepherd is a mid-sized breed, while the Miniature American Shepherd is a smaller breed. The Miniature American Shepherd is the result of breeding an Australian Shepherd with a smaller dog.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "developed in",
+                    "California"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Development of Miniature American Shepherd",
+                    "time period",
+                    "late 1960s"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "bred from",
+                    "small, unregistered dogs"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "small, unregistered dogs",
+                    "thought to be",
+                    "Australian Shepherds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breeding of Miniature American Shepherd",
+                    "goal",
+                    "maintain small size"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breeding of Miniature American Shepherd",
+                    "goal",
+                    "maintain active character"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breeding of Miniature American Shepherd",
+                    "goal",
+                    "maintain intelligence"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature Australian Shepherd",
+                    "also known as",
+                    "Miniature American Shepherd"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature Australian Shepherd",
+                    "originally called",
+                    "Miniature Australian Shepherd Club of the USA"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miniature Australian Shepherd Club of the USA",
+                    "founded in",
+                    "1990"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "result of breeding",
+                    "Australian Shepherd with smaller dog"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "76098",
+        "response": "\nYou can break a dog from chasing cars.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "you",
+                    "can",
+                    "break a dog from chasing cars"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1080229",
+        "response": "\nThere is no one answer to this question as different techniques may work better or worse depending on the situation. In general, however, it seems that deer may be repelled by the smell of human, dog, and coyote urine, as well as moth balls.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "human urine",
+                    "can repel",
+                    "deer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dog urine",
+                    "can repel",
+                    "deer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "coyote urine",
+                    "can repel",
+                    "deer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "moth balls",
+                    "can repel",
+                    "deer"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "effectiveness of using urine to repel deer",
+                    "depends on",
+                    "the situation"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "there is no one answer",
+                    "to the question",
+                    "would human urine keep deer away?"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "155382",
+        "response": "\nThere is no definitive answer to this question as different populations of brook trout may have different dietary preferences. However, most brook trout are known to eat a variety of aquatic and terrestrial insects, as well as other fish. Crustaceans, such as crayfish and shrimp, are also common prey items for brook trout.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "variety of aquatic and terrestrial insects"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "other fish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "crustaceans"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "crustaceans",
+                    "examples include",
+                    "crayfish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "crustaceans",
+                    "examples include",
+                    "shrimp"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "crayfish",
+                    "common prey for",
+                    "brook trout"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "shrimp",
+                    "common prey for",
+                    "brook trout"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "eating crayfish by brook trout",
+                    "conclusion",
+                    "no definitive answer"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "different populations of brook trout",
+                    "may have",
+                    "different dietary preferences"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "213986",
+        "response": "\nLeopardfoot died of unknown causes and is only mentioned by Bluestar to have passed away and joined StarClan.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Leopardfoot",
+                    "died of",
+                    "unknown causes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Leopardfoot",
+                    "is mentioned by",
+                    "Bluestar"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bluestar mentioned",
+                    "Leopardfoot passed away and joined",
+                    "StarClan"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "857956",
+        "response": "\nDonald Trump is hiding potential financial improprieties from the 1990s.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "hiding",
+                    "potential financial improprieties from the 1990s"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1092210",
+        "response": "\nThere is no one definitive answer to this question. Nike produces shoes for many different activities, in many different styles, and for both men and women.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nike",
+                    "produces",
+                    "shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike",
+                    "produces shoes for",
+                    "many different activities"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike",
+                    "produces shoes in",
+                    "many different styles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike",
+                    "produces shoes for",
+                    "both men and women"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1100861",
+        "response": "There is no one answer to this question as the ethnicity of the Egyptians is complex and diverse. In general, the Egyptians share a common culture and language, and most identify as Sunni Muslims. However, the present-day population is a mix of many different ethnic groups, including Arabs, Greeks, Armenians, Turks, and Africans. Consequently, it is difficult to determine a specific ethnicity or race for the average Egyptian.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Egyptians",
+                    "share",
+                    "common culture"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "share",
+                    "common language"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Most Egyptians",
+                    "identify as",
+                    "Sunni Muslims"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Present-day population of Egypt",
+                    "is a mix of",
+                    "many different ethnic groups"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ethnic groups in Egypt",
+                    "include",
+                    "Arabs"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ethnic groups in Egypt",
+                    "include",
+                    "Greeks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ethnic groups in Egypt",
+                    "include",
+                    "Armenians"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ethnic groups in Egypt",
+                    "include",
+                    "Turks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ethnic groups in Egypt",
+                    "include",
+                    "Africans"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Determining a specific ethnicity for Egyptians",
+                    "is",
+                    "difficult"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "145322",
+        "response": "\nThe Eleusinian Mysteries did not survive.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Eleusinian Mysteries",
+                    "did survive",
+                    "False"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "458110",
+        "response": "\nThe Battle of the Bulge was the most important battle of World War II.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Battle of the Bulge",
+                    "was",
+                    "most important battle of World War II"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "425121",
+        "response": "\nThe name Sydney can be used for a boy or a girl.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sydney",
+                    "can be used as",
+                    "male name"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sydney",
+                    "can be used as",
+                    "female name"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "172330",
+        "response": "\nThere is no one definitive answer to this question. Each of the provided passages provides a different perspective on whether or not the Brit system works.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "376687",
+        "response": "\nTo renew your passport on Guam, you can either apply by mail using application DS-82 or go in person to a Post Office location.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renew passport on Guam",
+                    "can apply by",
+                    "mail"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "mail application",
+                    "type",
+                    "DS-82"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "renew passport on Guam",
+                    "can apply in person at",
+                    "Post Office location"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "160460",
+        "response": "\nThere is no universal answer to this question. Fees for notarization vary by state and by the type of notarization required.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Fees for notarization",
+                    "vary by",
+                    "state"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Fees for notarization",
+                    "vary by",
+                    "type of notarization required"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]

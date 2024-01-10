@@ -1,0 +1,2565 @@
+[
+    {
+        "id": "4073418639113603971",
+        "response": "\n\n\n\nprobably The Beatles.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Beatles",
+                    "sang",
+                    "i dig rock and roll music"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-3339006116507262453",
+        "response": "\n\nThis question can be difficult to answer because there are many different interpretations of who sang \"I Ran (All the Way Home).\" Some people may believe that the song was sung by the band A Flock of Seagulls, while others may think that it was sung by someone else. Ultimately, there is no definitive answer to this question.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-1582234629547061501",
+        "response": "\n\nThe song is called \"I'm Gonna Run Away From You\" by The Doobie Brothers.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I'm Gonna Run Away From You",
+                    "performed by",
+                    "The Doobie Brothers"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2223188268381215709",
+        "response": ".\n\nThe President of the Senate is Jo\u00e3o Alberto de Jesus Louren\u00e7o, who was elected on 9 March 2017.\n\nThe Vice-President of the Senate is Carolina Silveira.\n\nThe majority of the members of the Senate are members of the Popular Movement for the Liberation of Angola (MPLA).\n\nThe following table shows the composition of the Senate as of 10 March 2019.\n\nPolitical party Number of members MPLA 46 UNITA 15 CASA-CE 4 FNLA 1 Total 66",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President of the Senate",
+                    "is",
+                    "Jo\u00e3o Alberto de Jesus Louren\u00e7o"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Jo\u00e3o Alberto de Jesus Louren\u00e7o",
+                    "elected on",
+                    "9 March 2017"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Vice-President of the Senate",
+                    "is",
+                    "Carolina Silveira"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Majority of members of the Senate",
+                    "are from",
+                    "Popular Movement for the Liberation of Angola (MPLA)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Composition of the Senate as of 10 March 2019",
+                    "MPLA has",
+                    "46 members"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Composition of the Senate as of 10 March 2019",
+                    "UNITA has",
+                    "15 members"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Composition of the Senate as of 10 March 2019",
+                    "CASA-CE has",
+                    "4 members"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Composition of the Senate as of 10 March 2019",
+                    "FNLA has",
+                    "1 member"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Composition of the Senate as of 10 March 2019",
+                    "total members",
+                    "66"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8883866849303680195",
+        "response": "\n\nThe actress who plays steve's wife on my three sons is wendy richard.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "steve",
+                    "has",
+                    "wife"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "wife",
+                    "appears in",
+                    "my three sons"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "actress",
+                    "plays",
+                    "wife of steve in my three sons"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "actress",
+                    "is",
+                    "wendy richard"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-3476455683698256952",
+        "response": "\n\nThis is a difficult question. The actor who played the judge in \"Good Will Hunting\" is unknown.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "the judge in Good Will Hunting",
+                    "played by",
+                    "unknown actor"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-5646056836091194880",
+        "response": "\n\nkeratin and collagen",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "keratin",
+                    "is a",
+                    "fibre made of proteins"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "collagen",
+                    "is a",
+                    "fibre made of proteins"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5003538501505873412",
+        "response": "\n\nThe role of Jean Valjean in Les Mis\u00e9rables is sung by many different opera singers, including Alfie Boe, Norm Lewis, and Michael Ball.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jean Valjean in Les Mis\u00e9rables",
+                    "role sung by",
+                    "many different opera singers"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "many different opera singers",
+                    "include",
+                    "Alfie Boe"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "many different opera singers",
+                    "include",
+                    "Norm Lewis"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "many different opera singers",
+                    "include",
+                    "Michael Ball"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8680361524959876970",
+        "response": "\n\nThe term Parsons nose comes from the last name of an Englishman named John Parsons. Parsons was a doctor who is credited with developing the procedure for fixing a deviated septum.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "term Parsons nose",
+                    "comes from",
+                    "last name of an Englishman named John Parsons"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "John Parsons",
+                    "was",
+                    "doctor"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John Parsons",
+                    "credited with",
+                    "developing procedure for fixing a deviated septum"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-6500826823871433949",
+        "response": "\n\nThe first electric guitar was created in 1931 by George Beauchamp and Paul Barth.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "first electric guitar",
+                    "created in",
+                    "1931"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "first electric guitar",
+                    "created by",
+                    "George Beauchamp"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "first electric guitar",
+                    "created by",
+                    "Paul Barth"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1851594182842213971",
+        "response": "\n\nGimme Gimme Gimme began airing in the UK on BBC1 on October 5th, 1998.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gimme Gimme Gimme",
+                    "start airing",
+                    "UK on BBC1"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Start airing of Gimme Gimme Gimme",
+                    "date",
+                    "October 5th, 1998"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-2651390481836592629",
+        "response": "\n\nAs of 2017, the show has not been renewed for a ninth season and it is unclear if it will be renewed.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rob Dyrdek's Fantasy Factory",
+                    "ended",
+                    "unclear if it will be renewed"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rob Dyrdek's Fantasy Factory",
+                    "last season",
+                    "season 8"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Season 8 of Rob Dyrdek's Fantasy Factory",
+                    "aired",
+                    "before 2017"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Renewal status of Rob Dyrdek's Fantasy Factory for season 9",
+                    "as of 2017",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "7422852161474049311",
+        "response": "\n\nCharley is a black and white dog who is usually found following George around.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Charley",
+                    "is",
+                    "dog"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charley",
+                    "follows around",
+                    "George"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Charley",
+                    "color",
+                    "black and white"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "George",
+                    "from",
+                    "Curious George"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "238018115866608950",
+        "response": "\n\nIt was released in 1965.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "how deep is your love",
+                    "released in",
+                    "1965"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-6395885127392955720",
+        "response": "\n\nJack Ryan lives in the United States.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jack Ryan",
+                    "lives in",
+                    "United States"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2536150218240275989",
+        "response": "\n\nThe song \"Will I See You In September\" was originally recorded by the band The Happenings.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song Will I See You In September",
+                    "originally recorded by",
+                    "the band The Happenings"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-3170493396531530980",
+        "response": "\n\nThe song \"Always be humble and kind\" was written by Lori McKenna.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song Always be humble and kind",
+                    "written by",
+                    "Lori McKenna"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-204697481439605710",
+        "response": "\n\nThe song was written by songwriters Simon Climie and Dennis Morgan.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "i'm in the mood for dancing",
+                    "written by",
+                    "songwriters Simon Climie and Dennis Morgan"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-4283464153717448291",
+        "response": "\n\nThe actress who played Mrs. Trumbull was Kathryn Crawford.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kathryn Crawford",
+                    "played",
+                    "Mrs. Trumbull"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "character on",
+                    "I Love Lucy"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-853451338783771197",
+        "response": "\n\nWhen a man loves a woman\n\nhe'll do anything\n\nto keep her happy\n\nhe'll buy her anything\n\nhe'll do anything\n\nto please her\n\nhe'll go to any lengths\n\nto keep her with him\n\nhe'll love her and adore her\n\nhe'll do anything to make her happy\n\n\n\nWhen a woman loves a man\n\nshe'll do anything\n\nto keep him happy\n\nshe'll buy him anything\n\nshe'll do anything\n\nto please him\n\nshe'll go to any lengths\n\nto keep him with her\n\nhe'll love him and adore him\n\nshe'll do anything to make him happy",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "When a man loves a woman",
+                    "written by",
+                    "unknown"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1388143263608839064",
+        "response": "\n\nThere is no one definitive answer to this question. Some possible origins of the last name Waters include:\n\n~ derived from the English word \"water\"\n\n~ from a location called Waters or Watters\n\n~ from a patronymic name meaning \"son of Waters\"\n\n~ from an occupational name meaning \"the water-bearer\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "last name waters",
+                    "possible origin",
+                    "derived from the English word \"water\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "last name waters",
+                    "possible origin",
+                    "from a location called Waters or Watters"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "last name waters",
+                    "possible origin",
+                    "from a patronymic name meaning \"son of Waters\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "last name waters",
+                    "possible origin",
+                    "from an occupational name meaning \"the water-bearer\""
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "3413977600585971868",
+        "response": " movie\n\nMichael Biehn",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Biehn",
+                    "played",
+                    "john connor"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "john connor",
+                    "character in",
+                    "the original terminator"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-4834721811831894172",
+        "response": "\n\nThe Strictly Come Dancing results show is recorded on the Sunday evening after the live show.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show",
+                    "is recorded on",
+                    "Sunday evening"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show",
+                    "occurs after",
+                    "live show"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6591614197125818072",
+        "response": "\n\nGeorge Washington led the soldiers in ending the raid on the Harper's Ferry arsenal.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Washington",
+                    "led",
+                    "soldiers"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "soldiers",
+                    "ended",
+                    "raid on Harper's Ferry arsenal"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2339339749699668536",
+        "response": "\n\nTom Petty and the Heartbreakers",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tom Petty and the Heartbreakers",
+                    "performed",
+                    "halftime show"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "halftime show",
+                    "at event",
+                    "Super Bowl 51"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7526277995958905171",
+        "response": "\n\nI keep singing, all the time on my hands\nI keep singing, all the time on my hands\nI keep singing, all the time on my hands\nI keep singing, all the time on my hands\n\nI've got all the time in the world\nTo do what I want to do\nAnd that's what I'm going to do\nI keep singing, all the time on my hands\nI keep singing, all the time on my hands\n\nI've got all the time in the world\nTo do what I want to do\nAnd that's what I'm going to do",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2419576910417046724",
+        "response": "\n\nThe longest pier in the UK is the Royal Pier in Weston-super-Mare, which is 1,540 metres (5,050 ft) long.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "longest pier in the UK",
+                    "is",
+                    "Royal Pier in Weston-super-Mare"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Royal Pier in Weston-super-Mare",
+                    "length",
+                    "1,540 metres"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "1,540 metres",
+                    "converted to",
+                    "5,050 ft"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1773607187248198254",
+        "response": "\n\nThe song is called \"Ain't No Way to Go\" and is sung by Jos\u00e9 Feliciano.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song",
+                    "called",
+                    "Ain't No Way to Go"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ain't No Way to Go",
+                    "sung by",
+                    "Jos\u00e9 Feliciano"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4086158102790148091",
+        "response": "\n\nThe song \"I Wanna Dance With Somebody (Who Loves Me)\" was sung by Whitney Houston.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Wanna Dance With Somebody (Who Loves Me)",
+                    "sung by",
+                    "Whitney Houston"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1732734622903151644",
+        "response": "\n\nThe oldest recording of the song \"House of the Rising Sun\" is from 1913 by the Edison Male Quartet.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "oldest recording of song House of the Rising Sun",
+                    "performed by",
+                    "Edison Male Quartet"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "oldest recording of song House of the Rising Sun",
+                    "year",
+                    "1913"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-7778233237890403173",
+        "response": "\n\nThe show was filmed in Studios de la Plaine Saint-Denis in France.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The show the crossing",
+                    "filmed at",
+                    "Studios de la Plaine Saint-Denis"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Studios de la Plaine Saint-Denis",
+                    "located in",
+                    "France"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "583026970021621830",
+        "response": "\n\nThe home video security system was invented by Steve Russell in 1973.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "first home video security system",
+                    "invented by",
+                    "Steve Russell"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Steve Russell",
+                    "invented first home video security system in",
+                    "1973"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5185978890489959594",
+        "response": "\n\nDale Earnhardt Jr. drives the number 95 car in NASCAR.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dale Earnhardt Jr.",
+                    "drives",
+                    "the number 95 car"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "the number 95 car",
+                    "in",
+                    "NASCAR"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1531676396763282931",
+        "response": "\n\nApollo.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Apollo",
+                    "flew",
+                    "too close to the sun"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5078709962400196312",
+        "response": "\n\nDeion Sanders played for the Atlanta Braves, Cincinnati Reds, San Francisco Giants, and Dallas Cowboys.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Atlanta Braves"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Cincinnati Reds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "San Francisco Giants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Dallas Cowboys"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-7296166998534064378",
+        "response": "\n\nCandace Cameron",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Candace Cameron",
+                    "played",
+                    "the middle sister"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "the middle sister",
+                    "on",
+                    "full house"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "734309880189507498",
+        "response": "\n\nIt was not clear in the show who played Dwight's brother.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dwight's brother",
+                    "played by",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Dwight's brother",
+                    "appears in",
+                    "The Office"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5063128834246440475",
+        "response": "\n\nOnly player to play for Manchester United, Manchester City, Liverpool and Everton is Phil Neville.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Phil Neville",
+                    "only player to play for",
+                    "Manchester United"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Neville",
+                    "only player to play for",
+                    "Manchester City"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Neville",
+                    "only player to play for",
+                    "Liverpool"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Neville",
+                    "only player to play for",
+                    "Everton"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5239772721292332989",
+        "response": " in the plant\n\nThe group bacteroids is typically found in the plant's root nodules.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bacteroids",
+                    "found in",
+                    "plant's root nodules"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6217752837777787594",
+        "response": "\n\nShe is played by actress Sarah Paulson.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Heather",
+                    "character in",
+                    "Beauty and the Beast"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Heather",
+                    "played by",
+                    "actress Sarah Paulson"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6882831655380911332",
+        "response": "\n\nNewcastle-upon-Tyne, located on the north bank of the River Tyne is located 194 miles (312 km) from the sea.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Newcastle-upon-Tyne",
+                    "located on",
+                    "north bank of River Tyne"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Newcastle-upon-Tyne",
+                    "distance from the sea",
+                    "194 miles (312 km)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Newcastle-upon-Tyne",
+                    "is",
+                    "british city"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Newcastle-upon-Tyne",
+                    "farthest from the sea",
+                    "among british cities"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1222948057007052760",
+        "response": "\n\nThere are typically 11 players on the line of scrimmage in American football.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "line of scrimmage in American football",
+                    "has",
+                    "11 players"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-278447034238251050",
+        "response": "\n\nThere are only 8 episodes in season 4.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "my name is earl",
+                    "has",
+                    "season 4"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "season 4 of my name is earl",
+                    "has",
+                    "8 episodes"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-4882553194262710105",
+        "response": "\n\nThe salary of the United States Secretary of State is $177,000.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "United States Secretary of State",
+                    "has salary",
+                    "$177,000"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5901661238535651276",
+        "response": "\n\nNikko is a minor character in The Wizard of Oz. He is one of the farmhands who helps Dorothy Gale find her way back to Kansas.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nikko",
+                    "is",
+                    "minor character in The Wizard of Oz"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Nikko",
+                    "is one of",
+                    "farmhands"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "farmhands",
+                    "help",
+                    "Dorothy Gale"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Dorothy Gale",
+                    "find way back",
+                    "Kansas"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "5217063434217549041",
+        "response": "\n\nThe sun hits the US first in the morning, when it rises in the east.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sun",
+                    "rises in",
+                    "east"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "sun",
+                    "hits the US first in",
+                    "morning"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8544960023313580012",
+        "response": "\n\nSo, if you want to be one of the UK Millionaire Maker winners, now is the time to purchase a ticket! 1 in 4,000,000 chance to win a prize!\n\nThere are two UK Millionaire Maker draws per week \u2013 one on Tuesday and one on Friday. To be in with a chance of winning, you must purchase a ticket for the relevant draw.\n\nIf you do not have a ticket, you cannot win a prize.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4272117895813370426",
+        "response": "\n\nI will try to fix you\n\nIf you let me, I will try\n\nI'll fix you up and make you right\n\nI'll be there for you\n\nI will try to fix you",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4245798066923223457",
+        "response": "\n\nKareem Abdul-Jabbar has won the most All-Star Game MVP Awards (six).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kareem Abdul-Jabbar",
+                    "has won",
+                    "most All-Star Game MVP Awards"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Kareem Abdul-Jabbar",
+                    "number of All-Star Game MVP Awards won",
+                    "six"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "8852834747561852791",
+        "response": ")\n\nPublications:\n\n- Louis Pasteur, 1864. On the Germ Theory of Fermentation.\n- Louis Pasteur, 1867. Memoir on the Propagation of Yeast in Sugary Liquids.\n- Louis Pasteur, 1877. Studies on Fermentation: The Diseases of Beer, Wine, and Vinegar.\n- Louis Pasteur, 1878. The Germ Theory of Disease.\n- Louis Pasteur, 1879. Letter to the editor of the \"British Medical Journal\".\n- Louis Pasteur, 1880. The resolution of a general problem in microbiology.\n- Louis Pasteur, 1881. The anthrax bacillus and its vaccine.\n- Louis Pasteur, 1882. The Pasteur treatment of rabies. \n- Louis Pasteur, 1885. The new silk industry. \n- Louis Pasteur, 1892. The rational treatment of syphilis.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "established",
+                    "the germ theory of disease"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published works supporting",
+                    "the germ theory of disease"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The germ theory of disease",
+                    "states that",
+                    "microorganisms play a role in disease"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "On the Germ Theory of Fermentation (1864)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "Memoir on the Propagation of Yeast in Sugary Liquids (1867)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "Studies on Fermentation: The Diseases of Beer, Wine, and Vinegar (1877)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "The Germ Theory of Disease (1878)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published letter in",
+                    "British Medical Journal (1879)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "The resolution of a general problem in microbiology (1880)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "The anthrax bacillus and its vaccine (1881)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "The Pasteur treatment of rabies (1882)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "The new silk industry (1885)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "published",
+                    "The rational treatment of syphilis (1892)"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5039045537721106027",
+        "response": "\n\nThere are 22 episodes in Season 6 of Nashville.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Season 6 of Nashville",
+                    "has",
+                    "22 episodes"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-6687867009117829006",
+        "response": "\n\nIn the hobbit, King Thranduil turns into a bear.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "King Thranduil",
+                    "turns into",
+                    "a bear"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "King Thranduil",
+                    "appears in",
+                    "the hobbit"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-6933377434468493740",
+        "response": "\n\nDavid Whyte wrote \"I Can Feel at Home in This World Anymore\" in his book The Heart Aroused.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Can Feel at Home in This World Anymore",
+                    "published in book",
+                    "The Heart Aroused"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "David Whyte",
+                    "wrote",
+                    "\"I Can Feel at Home in This World Anymore\""
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "850563670386330666",
+        "response": "\n\nThe Wave Hill Walk-Off, also known as the Gurindji strike, began on 23 August 1966 at Wave Hill Station in the Northern Territory of Australia. The walk-off was led by Vincent Lingiari and his fellow Gurindji men, and continued until they won their land rights in 1975.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Wave Hill Walk-Off",
+                    "also known as",
+                    "Gurindji strike"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wave Hill Walk-Off",
+                    "began on",
+                    "23 August 1966"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wave Hill Walk-Off",
+                    "began at",
+                    "Wave Hill Station"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wave Hill Station",
+                    "located in",
+                    "Northern Territory of Australia"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wave Hill Walk-Off",
+                    "led by",
+                    "Vincent Lingiari"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Vincent Lingiari",
+                    "and",
+                    "his fellow Gurindji men"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wave Hill Walk-Off",
+                    "lasted until",
+                    "1975"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gurindji people",
+                    "won",
+                    "their land rights"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gurindji people won their land rights",
+                    "year",
+                    "1975"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-8490085242981497626",
+        "response": "\n\n\n\nThe song is called \"Gonna Sit Right Down and Write Myself a Letter\" and is sung by Elton John.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song",
+                    "called",
+                    "Gonna Sit Right Down and Write Myself a Letter"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The song",
+                    "sung by",
+                    "Elton John"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "8361850218460994084",
+        "response": "\n\nSir M.S. Swaminathan is known as the father of the Green Revolution in India.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sir M.S. Swaminathan",
+                    "known as",
+                    "father of green revolution in india"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5259818422556035007",
+        "response": "\n\nThe song \"Good Night\" on the Beatles' White Album is sung by John Lennon.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Good Night",
+                    "song on",
+                    "the Beatles' White Album"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Good Night",
+                    "sung by",
+                    "John Lennon"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "465961107727601737",
+        "response": "\n\nThe Illinois Supreme Court is the highest court in the state of Illinois. The court is composed of seven justices, who are appointed by the governor of Illinois and confirmed by the Illinois Senate. The chief justice of the court is the most senior member of the court and serves as its presiding officer.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Illinois Supreme Court",
+                    "is",
+                    "highest court in the state of Illinois"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Illinois Supreme Court",
+                    "composed of",
+                    "seven justices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "justices of Illinois Supreme Court",
+                    "appointed by",
+                    "governor of Illinois"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "justices of Illinois Supreme Court",
+                    "confirmed by",
+                    "Illinois Senate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "chief justice of Illinois Supreme Court",
+                    "is",
+                    "most senior member of the court"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "chief justice of Illinois Supreme Court",
+                    "serves as",
+                    "presiding officer of the court"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5525220120773157166",
+        "response": "\n\nThe song is \"I Wanna Go Outside in the Rain\" by Celine Dion.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song",
+                    "title",
+                    "I Wanna Go Outside in the Rain"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "song",
+                    "performed by",
+                    "Celine Dion"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-2107324154024383180",
+        "response": "\n\nDaryl Stuermer wrote and performed the song \"I Can Only Imagine\" with the band MercyMe.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Daryl Stuermer",
+                    "wrote",
+                    "I Can Only Imagine"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Daryl Stuermer",
+                    "performed",
+                    "I Can Only Imagine"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Daryl Stuermer",
+                    "wrote and performed",
+                    "I Can Only Imagine"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Daryl Stuermer",
+                    "wrote and performed I Can Only Imagine with",
+                    "MercyMe"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-2126374007719970792",
+        "response": "\n\nThe athlete with the most Olympic medals is Russian gymnast Larisa Latynina, who has won 18 medals (9 gold, 5 silver, 4 bronze).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "nationality",
+                    "Russian"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "profession",
+                    "gymnast"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "holds record for",
+                    "most Olympic medals won"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "total Olympic medals won",
+                    "18 medals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "Olympic gold medals won",
+                    "9"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "Olympic silver medals won",
+                    "5"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "Olympic bronze medals won",
+                    "4"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1123449784666821676",
+        "response": "\n\nThe show's original theme song is \"The Man Comes Around\" by Johnny Cash.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Man Comes Around",
+                    "performed by",
+                    "Johnny Cash"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Man Comes Around",
+                    "theme song of",
+                    "The Wire season 5"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4265986416867251482",
+        "response": "\n\nIt was not an American who invented the submarine during the civil war, but a German named Wilhelm Bauer.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "American",
+                    "did not invent submarine during",
+                    "civil war"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wilhelm Bauer",
+                    "invented submarine during",
+                    "civil war"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Wilhelm Bauer",
+                    "nationality",
+                    "German"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "2141218895657905276",
+        "response": "\n\nTom Hughes was played by Brian Steinberg on As the World Turns from 1984 until the show's finale in 2010.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tom Hughes",
+                    "played by",
+                    "Brian Steinberg"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes",
+                    "character on",
+                    "As the World Turns"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brian Steinberg",
+                    "played",
+                    "Tom Hughes"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Brian Steinberg",
+                    "played Tom Hughes on As the World Turns",
+                    "from 1984 until 2010"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6672231732847608194",
+        "response": "\n\nThe theme song for laverne and shirley was sung by Cindy Lauper.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "sung by",
+                    "Cindy Lauper"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "4943207042321394497",
+        "response": "\n\nThe 10 shilling note went out of circulation in 2002.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "10 shilling note",
+                    "went out of circulation",
+                    "2002"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6014950976264156000",
+        "response": "\n\n\n\nThe song \"Never Gonna Let You Go\" was sung by Sergio Mendes and Brasil '66.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Never Gonna Let You Go",
+                    "was sung by",
+                    "Sergio Mendes"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Never Gonna Let You Go",
+                    "was sung by",
+                    "Brasil '66"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-5004457603684974952",
+        "response": "\n\nThe halftime show at the Super Bowl in 2016 is being performed by Lady Gaga.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "halftime show at Super Bowl 2016",
+                    "being performed by",
+                    "Lady Gaga"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1206653570097564556",
+        "response": "\n\nThe movie proof of life takes place in Juarez, Mexico.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "movie proof of life",
+                    "takes place in",
+                    "Juarez, Mexico"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6405015309290964923",
+        "response": "\n\nThe saying \"monkey's uncle\" is derived from the English expression \"Absolute nonsense!\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "saying monkey's uncle",
+                    "derived from",
+                    "English expression Absolute nonsense!"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "3790834797035922554",
+        "response": "\n\nThe Vice President of the United States.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vice President of the United States",
+                    "breaks",
+                    "a tie in the us senate"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6992125597790283273",
+        "response": "\n\nThe Daylight Saving Time schedule in Canada usually begins on the second Sunday of March and ends on the first Sunday of November.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Daylight Saving Time schedule in Canada",
+                    "begins on",
+                    "second Sunday of March"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Daylight Saving Time schedule in Canada",
+                    "ends on",
+                    "first Sunday of November"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-610965397636500508",
+        "response": "\n\nMandy is an English name that means \"manly.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mandy",
+                    "is",
+                    "English name"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mandy",
+                    "means",
+                    "manly"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "4876812477232188511",
+        "response": "\n\nThere is no definitive answer to this question. However, there are several possible explanations. One possibility is that the name Perry is derived from the French word \"perdrix,\" which means \"partridge.\" It is also possible that the name is derived from the Gaelic word \"pairteach,\" which means \"fruitful.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "last name perry",
+                    "origin",
+                    "uncertain"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "possible origin",
+                    "French word 'perdrix'",
+                    "meaning 'partridge'"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "possible origin",
+                    "Gaelic word 'pairteach'",
+                    "meaning 'fruitful'"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-7186555013910059700",
+        "response": "\n\nThe place where the Chandra and the Bhaga rivers meet is called Chandra-Bhaga Sangam.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Chandra and Bhaga rivers",
+                    "meet at",
+                    "Chandra-Bhaga Sangam"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Chandra-Bhaga Sangam",
+                    "is the place where",
+                    "Chandra and Bhaga rivers meet"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-3428106355897335676",
+        "response": " of health in the state in which the individual was born.\n\nIn the United States, the bureau of vital statistics in each state is responsible for issuing birth certificates. The process for acquiring a birth certificate varies from state to state, but most states require that the individual submit a request, along with the required documentation, to the bureau of vital statistics. The bureau of vital statistics will then issue the birth certificate.\n\nSome states allow individuals to obtain a copy of their birth certificate online, while other states require that the request be made in person or by mail. In addition, there may be fees associated with obtaining a birth certificate.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "birth certificates in United States",
+                    "issued by",
+                    "bureau of vital statistics in each state"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bureau of vital statistics in each state",
+                    "responsible for",
+                    "issuing birth certificates"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "process for acquiring birth certificate",
+                    "varies between",
+                    "states"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "individual",
+                    "submit request",
+                    "bureau of vital statistics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "individual",
+                    "submit required documentation",
+                    "bureau of vital statistics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "bureau of vital statistics",
+                    "issue",
+                    "birth certificate"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some states",
+                    "allow",
+                    "obtaining birth certificate online"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "other states",
+                    "require",
+                    "in person or mail request"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "obtaining birth certificate",
+                    "may have",
+                    "fees"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8451264603946634151",
+        "response": " people who are able to walk around on their own.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "ambulatory",
+                    "is a term",
+                    "used in health care"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ambulatory",
+                    "describes",
+                    "people who are able to walk around on their own"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6605227747829720945",
+        "response": "\n\n\n\nThere is no standard width for cricket bats.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "width of cricket bats",
+                    "standardization",
+                    "none"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "8848582210866367992",
+        "response": "\n\nThe nobel peace prize for 2017 was awarded to the International Campaign to Abolish Nuclear Weapons (ICAN).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nobel Peace Prize for 2017",
+                    "awarded to",
+                    "International Campaign to Abolish Nuclear Weapons (ICAN)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7539197459439257235",
+        "response": "\n\nThe song is sung by A.R. Rahman, who has also composed the music for the film.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song",
+                    "sung by",
+                    "A.R. Rahman"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "A.R. Rahman",
+                    "composed music for",
+                    "film"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "A.R. Rahman",
+                    "sings",
+                    "so come and dance with me jai ho"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6403691727808631943",
+        "response": "\n\nWind turbines are used to generate electricity in many parts of the United States. They are most commonly found in the Midwest and Texas, where the wind is strongest.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "wind turbines",
+                    "used for",
+                    "generate electricity"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "wind turbines",
+                    "commonly found in",
+                    "the Midwest"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "wind turbines",
+                    "commonly found in",
+                    "Texas"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "the Midwest",
+                    "has",
+                    "strong wind"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Texas",
+                    "has",
+                    "strong wind"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8900387163847503723",
+        "response": "\n\nDavid Cassidy",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "David Cassidy",
+                    "played role of",
+                    "Mr. Kincaid"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Mr. Kincaid",
+                    "character on TV show",
+                    "The Partridge Family"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "334627437220863517",
+        "response": "\n\nThe First Battle of Ypres ended on November 11, 1914.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "ended on",
+                    "November 11, 1914"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1669394955232263644",
+        "response": "\n\n603 A.D.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "battle of badr",
+                    "took place in",
+                    "603 A.D."
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1259577751352734948",
+        "response": "\n\nBobby Brown",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I want to dance with somebody",
+                    "written by",
+                    "Bobby Brown"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "4674269357266381610",
+        "response": "\n\nThe \"walking boss\" in Cool Hand Luke is the warden, played by Strother Martin.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "walking boss",
+                    "role",
+                    "warden"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "walking boss",
+                    "played by",
+                    "Strother Martin"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-7306805811512692008",
+        "response": "\n\nThe Red River is a major river in the United States. It forms at the confluence of the Canadian and the Arkansas Rivers near the town ofRifle, Colorado. The Red River flows eastward across the Texas Panhandle, forming the border between Texas and Oklahoma. It continues eastward, forming the border between Texas and Louisiana. It flows into the Atchafalaya River, forming the border between Louisiana and Mississippi. The Atchafalaya River flows into the Gulf of Mexico.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Red River",
+                    "forms at",
+                    "the confluence of the Canadian and the Arkansas Rivers"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The confluence of the Canadian and the Arkansas Rivers",
+                    "located near",
+                    "the town of Rifle, Colorado"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "flows eastward across",
+                    "the Texas Panhandle"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "forms the border between",
+                    "Texas and Oklahoma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "forms the border between",
+                    "Texas and Louisiana"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "flows into",
+                    "the Atchafalaya River"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Atchafalaya River",
+                    "forms the border between",
+                    "Louisiana and Mississippi"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Atchafalaya River",
+                    "flows into",
+                    "the Gulf of Mexico"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2532633865902253646",
+        "response": "\n\nThe original song was called \"What I Like About You\" and was written by William Robinson, Jr. and performed by The Romantics.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "What I Like About You",
+                    "originally written by",
+                    "William Robinson, Jr."
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "What I Like About You",
+                    "originally performed by",
+                    "The Romantics"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1389300307230755697",
+        "response": " (the in Crowd)\n\n\n\nThe song is called \"I Knew the Bride (When She Used to Rock 'n' Roll)\" and is sung by The In Crowd.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song",
+                    "called",
+                    "I Knew the Bride (When She Used to Rock 'n' Roll)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "song",
+                    "sung by",
+                    "The In Crowd"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2191432481376971337",
+        "response": "\n\nThe Colts were sold to Bob Irsay in 1984.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Colts",
+                    "owned by",
+                    "Bob Irsay"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Colts",
+                    "sold to",
+                    "Bob Irsay"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sale of Colts to Bob Irsay",
+                    "year",
+                    "1984"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Colts",
+                    "left",
+                    "Baltimore"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5489426796364143729",
+        "response": "\n\nThe first president of the constituent assembly was Dr. Ba Tha.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "first president of the constituent assembly",
+                    "is",
+                    "Dr. Ba Tha"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "3480908309420822259",
+        "response": ".\n\nSome people have suggested that the person who should have sung the song is a cowboy.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "3311962143974666464",
+        "response": "\n\nA king cobra can produce up to 10 liters of venom.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "king cobra",
+                    "venom production",
+                    "up to 10 liters"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2352051038192309240",
+        "response": "\n\nThe brain gets its energy from glucose, which is stored in the liver in a molecule called glycogen.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brain",
+                    "gets energy from",
+                    "glucose"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "stored in",
+                    "liver"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "stored as",
+                    "glycogen"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "glycogen",
+                    "is a",
+                    "molecule"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "7735703748660141931",
+        "response": "\n\n\n\n\nThe theme song for Cops is \"Bad Boys\" by Inner Circle.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Inner Circle",
+                    "performs",
+                    "Bad Boys"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bad Boys",
+                    "theme song for",
+                    "Cops"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cops",
+                    "is a",
+                    "tv show"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3028343500075334931",
+        "response": "\n\nThe moderator with the longest tenure on \"Meet the Press\" is David Gregory, who hosted the show from December 2008 until February 2014.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "David Gregory",
+                    "was moderator of",
+                    "Meet the Press"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Gregory",
+                    "tenure as moderator",
+                    "December 2008 until February 2014"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Gregory",
+                    "had longest tenure as moderator of",
+                    "Meet the Press"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1848006246448298349",
+        "response": "\n\nScotland",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "killing of a sacred deer",
+                    "filmed in",
+                    "Scotland"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-927966355158112429",
+        "response": "\n\nThe Joint Chiefs of Staff",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Joint Chiefs of Staff",
+                    "is called",
+                    "the group"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-5984668857988357373",
+        "response": "\n\nThe pelvic brim is the joint between the coxal bone of the pelvis and the sacrum.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "pelvic brim",
+                    "is",
+                    "joint"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "pelvic brim",
+                    "between",
+                    "coxal bone of pelvis"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "pelvic brim",
+                    "between",
+                    "sacrum"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-704529031648349308",
+        "response": "\n\nNicky Nichols is a main character in the Netflix series Orange is the New Black. She is portrayed by Natasha Lyonne.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nicky Nichols",
+                    "is a character in",
+                    "Netflix series Orange is the New Black"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Nicky Nichols",
+                    "portrayed by",
+                    "Natasha Lyonne"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Natasha Lyonne",
+                    "plays",
+                    "Nicky Nichols"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Orange is the New Black",
+                    "aired on",
+                    "Netflix"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    }
+]

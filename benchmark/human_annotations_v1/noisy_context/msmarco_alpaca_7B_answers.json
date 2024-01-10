@@ -1,0 +1,3984 @@
+[
+    {
+        "id": "167875",
+        "response": "No, Jimmy Jazz does not sell fake shoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jimmy Jazz",
+                    "does not",
+                    "sell fake shoes"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1098142",
+        "response": "It takes approximately 10-14 weeks to process a NEXUS application.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "NEXUS application",
+                    "processing time",
+                    "10-14 weeks"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "60339",
+        "response": "Calories in Beef Stroganoff - Sparkpeople Cookbook - Better for you Beef Stroganoff: 515 calories, 24g fat, 42g carbohydrates, 31g protein, 1g fiber. \nCalories in Ground Beef Stroganoff: 227 calories, 15g fat, 10g carbohydrates, 14g protein, 1g fiber. \nCalories in Beef Stroganoff RECIPE: 483 calories, 16g fat, 53g carbohydrates, 31g protein, 3g fiber. \nCalories in Ground Beef Stroganoff w/ Egg Noodles: 361 calories, 15g fat, 35g",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Calories in Beef Stroganoff - Sparkpeople Cookbook",
+                    "total calories",
+                    "515 calories"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff - Sparkpeople Cookbook",
+                    "total fat",
+                    "24g fat"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff - Sparkpeople Cookbook",
+                    "total carbohydrates",
+                    "42g carbohydrates"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff - Sparkpeople Cookbook",
+                    "total protein",
+                    "31g protein"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff - Sparkpeople Cookbook",
+                    "total fiber",
+                    "1g fiber"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Calories in Ground Beef Stroganoff",
+                    "total calories",
+                    "227 calories"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff",
+                    "total fat",
+                    "15g fat"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff",
+                    "total carbohydrates",
+                    "10g carbohydrates"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff",
+                    "total protein",
+                    "14g protein"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff",
+                    "total fiber",
+                    "1g fiber"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Calories in Beef Stroganoff RECIPE",
+                    "total calories",
+                    "483 calories"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff RECIPE",
+                    "total fat",
+                    "16g fat"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff RECIPE",
+                    "total carbohydrates",
+                    "53g carbohydrates"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff RECIPE",
+                    "total protein",
+                    "31g protein"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beef Stroganoff RECIPE",
+                    "total fiber",
+                    "3g fiber"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Calories in Ground Beef Stroganoff w/ Egg Noodles",
+                    "total calories",
+                    "361 calories"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff w/ Egg Noodles",
+                    "total fat",
+                    "15g fat"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff w/ Egg Noodles",
+                    "total carbohydrates",
+                    "35g carbohydrates"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098131",
+        "response": "It usually takes H&R Block Online 1-2 days to process a tax return, depending on the complexity of the return. After processing, it can take an additional 4-6 weeks for the IRS to process the return and for the tax refund to be deposited into the taxpayer's account.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "H&R Block Online",
+                    "time to process tax return",
+                    "1-2 days"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Time for IRS to process return and deposit refund",
+                    "after H&R Block processes return",
+                    "4-6 weeks"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Time for entire tax refund process through H&R Block Online",
+                    "duration",
+                    "4-6 weeks + 1-2 days"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "423918",
+        "response": "No, Skype is not monitored.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Skype",
+                    "is monitored",
+                    "No"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "164058",
+        "response": "Yes, BullGuard removes malware.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "BullGuard",
+                    "removes",
+                    "malware"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "431481",
+        "response": "No, Willie McGee is not in the Hall of Fame.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Willie McGee",
+                    "not",
+                    "in Hall of Fame"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "164078",
+        "response": "No, burning sage does not get rid of mosquitoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "burning sage",
+                    "get rid of mosquitoes",
+                    "No"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "74518",
+        "response": "No, the President cannot pardon himself.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President",
+                    "cannot",
+                    "pardon himself"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "20924",
+        "response": "No, Phaedra and Apollo are still married.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Phaedra",
+                    "married to",
+                    "Apollo"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "196366",
+        "response": "Grace VanderWaal has a verified Instagram account with over 921,000 followers, a verified Twitter account with over 470,000 followers, and a verified Facebook page with over 470,000 likes. She also has a YouTube channel with over 1.4 million subscribers.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Grace VanderWaal",
+                    "has",
+                    "verified Instagram account"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Instagram account",
+                    "followers count",
+                    "over 921,000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Grace VanderWaal",
+                    "has",
+                    "verified Twitter account"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Twitter account",
+                    "followers count",
+                    "over 470,000"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Grace VanderWaal",
+                    "has",
+                    "verified Facebook page"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Facebook page",
+                    "likes count",
+                    "over 470,000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Grace VanderWaal",
+                    "has",
+                    "YouTube channel"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "YouTube channel",
+                    "subscribers count",
+                    "over 1.4 million"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "830068",
+        "response": "The maximum charitable donation amount that can be deducted from federal income taxes is 60 percent of an individual's adjusted gross income (AGI).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "maximum charitable donation amount",
+                    "can be deducted from",
+                    "federal income taxes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "maximum charitable donation amount",
+                    "is",
+                    "60 percent of an individual's adjusted gross income (AGI)"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "424911",
+        "response": "Sugar is alkaline.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sugar",
+                    "is",
+                    "alkaline"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "853309",
+        "response": "Branson typically does not get much snow during the months listed above. The average snowfall for the year is 11.5 inches, with most of it falling in January and February. During the summer months, temperatures typically range from the mid 70s to the mid 80s.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Branson, Missouri",
+                    "typical snowfall",
+                    "11.5 inches per year"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Most snow in Branson, Missouri",
+                    "falls in",
+                    "January and February"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Summer temperatures in Branson, Missouri",
+                    "range from",
+                    "mid 70s to mid 80s Fahrenheit"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "424287",
+        "response": "Yes, Space Mountain is open.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Space Mountain",
+                    "is open",
+                    "True"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "71168",
+        "response": "Yes, marijuana can cause mental illness.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "marijuana",
+                    "can cause",
+                    "mental illness"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "158999",
+        "response": "No, snakes do not have a smell to them.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "snakes",
+                    "have smell",
+                    "no"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "144833",
+        "response": "No, President Obama never invoked executive privilege.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President Obama",
+                    "never",
+                    "invoked executive privilege"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "71250",
+        "response": "Yes, Melania Trump speaks Russian. She is a native speaker of the language, having grown up in a small town in the former Yugoslavia, which was then part of the Soviet Union. She also speaks English, Italian, French, and German.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "speaks",
+                    "Russian"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "native speaker of",
+                    "Russian"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "grew up in",
+                    "small town in former Yugoslavia"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Former Yugoslavia",
+                    "was part of",
+                    "Soviet Union"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "speaks",
+                    "English"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "speaks",
+                    "Italian"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "speaks",
+                    "French"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "speaks",
+                    "German"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "415165",
+        "response": "Johnny Rivers is not married. He has been married twice. He has been married to a much older woman named Nora for over 30 years now. He was married to Vicki Ellison in 1969 for about 10 months, they have 1 child Michael born 1969. He was married to Christi Zabel for 6 years from 1983 to 1988.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "current marital status",
+                    "not married"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "number of times married",
+                    "twice"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "1st marriage to",
+                    "Vicki Ellison"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Vicki Ellison",
+                    "duration",
+                    "about 10 months"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Vicki Ellison",
+                    "year",
+                    "1969"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers and Vicki Ellison",
+                    "have child",
+                    "Michael"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael",
+                    "born",
+                    "1969"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "2nd marriage to",
+                    "Christi Zabel"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Christi Zabel",
+                    "duration",
+                    "6 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Christi Zabel",
+                    "time period",
+                    "from 1983 to 1988"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "in long term relationship with",
+                    "Nora"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Relationship of Johnny Rivers and Nora",
+                    "duration",
+                    "over 30 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nora",
+                    "much older than",
+                    "Johnny Rivers"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "411030",
+        "response": "No, George Soros is not an atheist. He is a Hungarian-American businessman and investor who supports progressive causes. He is an agnostic and has said that he does not believe in an afterlife.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Soros",
+                    "is",
+                    "Hungarian-American businessman"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Soros",
+                    "is",
+                    "investor"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "George Soros",
+                    "supports",
+                    "progressive causes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Soros",
+                    "is not",
+                    "atheist"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "George Soros",
+                    "is",
+                    "agnostic"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "George Soros",
+                    "stated he does not believe in",
+                    "afterlife"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "168000",
+        "response": "No, the Kia Sorento does not have an interference engine. It is a chain-driven engine, so it is not susceptible to the same types of problems that an interference engine can have.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kia Sorento",
+                    "has",
+                    "interference engine"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Kia Sorento",
+                    "has",
+                    "chain-driven engine"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "chain-driven engine",
+                    "not susceptible to",
+                    "problems of interference engine"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "73420",
+        "response": "Yes, you can enter Indonesia with a passport validity less than 6 months.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "you",
+                    "can enter",
+                    "Indonesia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "you",
+                    "with passport validity",
+                    "less than 6 months"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Indonesia",
+                    "requires passport validity",
+                    "less than 6 months"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1094146",
+        "response": "No, Gdansk is not the main port in Poland. The main port in Poland is the Port of Gdansk.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Port of Gdansk",
+                    "is",
+                    "main port in Poland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gdansk",
+                    "is not",
+                    "main port in Poland"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1093157",
+        "response": "The maximum age for enlistment in the Air Force is 39. The minimum ASVAB score requirements for enlistment at an older age have remained the same.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "maximum age for enlistment in Air Force",
+                    "is",
+                    "39"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "minimum ASVAB score requirements for enlistment at an older age",
+                    "remained",
+                    "the same"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098565",
+        "response": "The average life span of a T-Rex was about 30 years, but some lived to an old age while others died as juveniles.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "T-Rex",
+                    "average life span",
+                    "about 30 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Some T-Rex",
+                    "lived to",
+                    "old age"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Some T-Rex",
+                    "died as",
+                    "juveniles"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097044",
+        "response": "The Residential Real Estate Council is the leading education and networking organization for residential real estate agents. It awards the prestigious CRS Designation. \nThe certification process is built upon 40 years of empirical research on the competencies and job functions that are vital to the counselor\u2019s performance. A passing score on the CRC certification exam ensure that applicants meet nationally-accepted, key competency standards based on current practice in the field. \nCRS Designation recognizes professional accomplishments in both experience and education. Graduate, Realtor Institute National Association of Realtors\u00ae (202)383-1201 www.edesignations.com This designation is earned by completing 92 hours of live course instruction covering many special aspects of real estate such as residential marketing, cost basis, appreciation. \nCRC certification exam ensure that applic",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "CRS Designation",
+                    "requires",
+                    "92 hours of live course instruction"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "192218",
+        "response": "A full time student is one who completes at least 12 semester hours, while maintaining a 2.0 GPA (on a 4.0 average). For summer, 15 semester hours is considered full time.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "full time student",
+                    "completes",
+                    "at least 12 semester hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "full time student",
+                    "maintains",
+                    "2.0 GPA (on a 4.0 average)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "15 semester hours",
+                    "considered",
+                    "full time"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "15 semester hours",
+                    "applies to",
+                    "summer"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "453218",
+        "response": "The validity of a Mexico passport depends on the age of the passport holder when the passport was issued. If the passport is obtained for someone younger than 15, it is only valid for five years. An adult passport is valid for 10 years from the date of issue. Some countries do not allow entry into the country if the passport is due to expire in six months or less. Obtain a new passport before travel.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Validity period",
+                    "depends on",
+                    "age of passport holder when issued"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mexico passport",
+                    "issued to person younger than 15",
+                    "valid for 5 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mexico passport",
+                    "issued to adult",
+                    "valid for 10 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Validity period",
+                    "starts from",
+                    "date of issue"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Some countries",
+                    "do not allow entry",
+                    "if passport expiring in 6 months or less"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Recommendation",
+                    "is",
+                    "obtain new passport before travel"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "271818",
+        "response": "The average processing time for a renewed passport is 4-6 weeks.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renewed passport",
+                    "average processing time",
+                    "4-6 weeks"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1002884",
+        "response": "Lubbock General Hospital was built in 1978.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lubbock General Hospital",
+                    "was built in",
+                    "1978"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1096985",
+        "response": "The average cost of a semi-private hospital room in Dallas, Texas is $2,800 per day. The average cost of tuition and room and board at a University of California, Irvine is $30,786 per year.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average cost of semi-private hospital room in Dallas, Texas",
+                    "is",
+                    "$2,800 per day"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "average cost of tuition and room and board at University of California, Irvine",
+                    "is",
+                    "$30,786 per year"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1006506",
+        "response": "Mount Nyiragongo last erupted in 2002, when it destroyed much of the nearby town of Goma, leaving 200,000 people homeless. The eruption spread lava as far as the northern end of the runway at Goma International Airport - around 12 miles (20km) away.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mount Nyiragongo",
+                    "last erupted in",
+                    "2002"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mount Nyiragongo eruption in 2002",
+                    "destroyed",
+                    "much of the town of Goma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Destruction of Goma by Mount Nyiragongo eruption",
+                    "left",
+                    "200,000 people homeless"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "909506",
+        "response": "The California Lottery shares your personal information only as strictly necessary to provide services or assistance. This may include disclosing your personal information to Lottery affiliates and to other government agencies.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "California Lottery",
+                    "shares",
+                    "your personal information"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "California Lottery",
+                    "shares personal information",
+                    "as strictly necessary"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Purpose of sharing personal information by California Lottery",
+                    "is to",
+                    "provide services or assistance"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "California Lottery",
+                    "may disclose personal information to",
+                    "Lottery affiliates"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "California Lottery",
+                    "may disclose personal information to",
+                    "other government agencies"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "991037",
+        "response": "Clarice Feldman is a writer for the American Thinker who has taken the position that Dick Armitage is a liar, except when his lies fit her agenda. Then you can believe him over all others. Feldman's agenda: Keep Americans from learning that Plamegate is a cover-up, and that her friends in Washington, DC were not victims.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "is a",
+                    "writer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "writes for",
+                    "American Thinker"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "believes",
+                    "Dick Armitage is a liar"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "believes Dick Armitage",
+                    "when his lies fit her agenda"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman's agenda",
+                    "is",
+                    "Keep Americans from learning Plamegate is a cover-up"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman's friends",
+                    "are not",
+                    "victims"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman's friends",
+                    "are in",
+                    "Washington, DC"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "643122",
+        "response": "MEC stands for Modified Endowment Contract.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "MEC",
+                    "stands for",
+                    "Modified Endowment Contract"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "450391",
+        "response": "Tuckahoe is a type of edible root vegetable native to the American South. It is also the name of a type of fungus and a type of cultural group in colonial America.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tuckahoe",
+                    "is a",
+                    "type of edible root vegetable"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tuckahoe",
+                    "native to",
+                    "the American South"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tuckahoe",
+                    "is also",
+                    "name of a type of fungus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tuckahoe",
+                    "is also",
+                    "name of a cultural group"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "998737",
+        "response": "Bass is a musical instrument that produces low-pitched tones. It is typically used in ensembles with other instruments such as guitars, drums, and keyboards. It is usually tuned to the same frequency as the double bass, which is an octave lower than the bottom four strings of a guitar.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bass",
+                    "is a",
+                    "musical instrument"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "produces",
+                    "low-pitched tones"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "typically used in",
+                    "ensembles"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ensembles",
+                    "include",
+                    "guitars"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ensembles",
+                    "include",
+                    "drums"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ensembles",
+                    "include",
+                    "keyboards"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "tuned to same frequency as",
+                    "double bass"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "double bass",
+                    "is",
+                    "octave lower than bottom four strings of a guitar"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "785306",
+        "response": "Polysys is a leading provider of valuation, projection and experience study software to life, health and annuity companies.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Polysys",
+                    "is",
+                    "provider of valuation, projection and experience study software"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "provides software to",
+                    "life, health and annuity companies"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "described as",
+                    "leading"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "708853",
+        "response": "Aggravated driving while intoxicated is a more serious offense than a regular DWI. Aggravated DWI is a Class 4 felony in Illinois and is punishable by up to 3 years in prison and fines up to $25,000. Aggravated DWI is a more serious offense than a regular DWI. Aggravated DWI is a Class 4 felony in Illinois and is punishable by up to 3 years in prison and fines up to $25,000. Aggravated DWI is a more serious offense than a regular DWI. Aggravated DWI is a Class 4 felony in Illinois and is punishable by up to 3 years in prison and fines up to $25,000. Aggravated DWI is a more serious offense than a regular DWI. Agg",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "aggravated driving while intoxicated",
+                    "is",
+                    "more serious offense than regular DWI"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravated driving while intoxicated",
+                    "is",
+                    "Class 4 felony in Illinois"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Class 4 felony in Illinois",
+                    "punishable by",
+                    "up to 3 years in prison"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Class 4 felony in Illinois",
+                    "punishable by",
+                    "fines up to $25,000"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "21793",
+        "response": "Yes, concierge medical fees are tax deductible.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "concierge medical fees",
+                    "tax deductible status",
+                    "yes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "810239",
+        "response": "The most common cause of dogs urinating all the time is a urinary tract infection (UTI). Other causes can include diabetes, kidney problems, liver disease, Cushings Disease, or a hyperactive pituitary gland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "most common cause of dogs urinating all the time",
+                    "is",
+                    "urinary tract infection (UTI)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other causes",
+                    "include",
+                    "diabetes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other causes",
+                    "include",
+                    "kidney problems"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other causes",
+                    "include",
+                    "liver disease"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other causes",
+                    "include",
+                    "Cushings Disease"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other causes",
+                    "include",
+                    "hyperactive pituitary gland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "57346",
+        "response": "A USB 3.0 port, usually colored blue, is backward compatible with USB 2.0 devices and cables. The USB 3.0 Promoter Group announced on 17 November 2008 that the specification of version 3.0 had been completed and had made the transition to the USB Implementers Forum (USB-IF), the managing body of USB specifications. \nA USB cable is a type of cable that connects two devices, typically for the purpose of data transfer. USB cables are available in multiple lengths, from around 3 feet to just over 16 feet in length. The maximum length of a USB cable is 16 feet 5 inches (5 meters) for high speed devices and 9 feet 10 inches (3 meters) for low speed devices. \nUSB 1.x is an external bus standard that supports data transfer rates of 12 Mbps and",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "USB port",
+                    "is",
+                    "type of port"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 3.0 port",
+                    "usually colored",
+                    "blue"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 3.0 port",
+                    "backward compatible with",
+                    "USB 2.0 devices and cables"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 3.0 specification",
+                    "completed",
+                    "November 17, 2008"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 3.0 specification",
+                    "transitioned to",
+                    "USB Implementers Forum (USB-IF)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB Implementers Forum (USB-IF)",
+                    "manages",
+                    "USB specifications"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB cable",
+                    "connects",
+                    "two devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB cable",
+                    "used for",
+                    "data transfer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB cable",
+                    "available in",
+                    "multiple lengths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB cable",
+                    "lengths range from",
+                    "around 3 feet to over 16 feet"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maximum USB cable length for high speed devices",
+                    "is",
+                    "16 feet 5 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maximum USB cable length for low speed devices",
+                    "is",
+                    "9 feet 10 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 1.x",
+                    "is",
+                    "external bus standard"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 1.x",
+                    "supports data transfer rates of",
+                    "12 Mbps"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1102431",
+        "response": "Rachel Carson wrote \"The Obligation to Endure\" to express her concerns about the effects of pesticides and chemicals on the environment. She argued that the use of these chemicals is damaging the environment and harming living things, and that it is the responsibility of humans to find alternative solutions that do not involve the use of chemicals.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "wrote",
+                    "\"The Obligation to Endure\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "goal of writing \"The Obligation to Endure\"",
+                    "express concerns about effects of pesticides and chemicals on environment"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "argued in \"The Obligation to Endure\"",
+                    "use of pesticides and chemicals damaging environment and harming living things"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "stated in \"The Obligation to Endure\"",
+                    "humans have responsibility to find alternative solutions without chemicals"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "248616",
+        "response": "Roast beets for 45 minutes to 2 hours (very large beets may take even longer). Use a pair of tongs to flip the beets every 30 minutes to make sure they roast evenly on all sides.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "roasting beets",
+                    "duration",
+                    "45 minutes to 2 hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "very large beets",
+                    "roasting duration",
+                    "even longer than 2 hours"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "roasting beets",
+                    "process",
+                    "flip every 30 minutes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "flipping beets",
+                    "tool used",
+                    "tongs"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "flipping beets",
+                    "purpose",
+                    "roast evenly on all sides"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "741305",
+        "response": "Drew Carey's net worth is estimated to be $165 million. He has earned his net worth from his film and television appearances as an actor as well as a sports executive and comedian. He has also established himself as a sports executive, and game show host. He is the former U.S. Marine Corps. Drew Carey, who is often found, wearing Buddy Holly style glasses, was born as Drew Allison Carey in Cleveland, Ohio, United States of America to Beulah Carey and Lewis Carey.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Drew Carey's net worth",
+                    "estimated to be",
+                    "$165 million"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "earned net worth from",
+                    "film and television appearances as an actor"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "earned net worth from",
+                    "sports executive and comedian"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "established as",
+                    "sports executive"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "established as",
+                    "game show host"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "former",
+                    "U.S. Marine Corps"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "born in",
+                    "Cleveland, Ohio, United States of America"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "born to",
+                    "Beulah Carey"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "born to",
+                    "Lewis Carey"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "often found wearing",
+                    "Buddy Holly style glasses"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "40371",
+        "response": "The average salary of a postal worker is $52,860 per year, with an average hourly wage of $25.41. Eighty percent of postal workers reportedly earn wages between $23.87 and $26.56 per hour.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average salary of postal worker",
+                    "is",
+                    "$52,860 per year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average salary of postal worker",
+                    "has",
+                    "average hourly wage of $25.41"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "80% of postal workers",
+                    "earn wages between",
+                    "$23.87 and $26.56 per hour"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1095893",
+        "response": "The median salary for a Health and Medical Administrative Services Bachelor's degree is $55,000 per year, with the 25th percentile making a median annual salary of $39,000 and the 75th percentile receiving $77,000 per year.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "median salary for Health and Medical Administrative Services Bachelor's degree",
+                    "is",
+                    "$55,000 per year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "25th percentile of Health and Medical Administrative Services Bachelor's degree holders",
+                    "make median annual salary of",
+                    "$39,000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "75th percentile of Health and Medical Administrative Services Bachelor's degree holders",
+                    "receive median annual salary of",
+                    "$77,000 per year"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "309249",
+        "response": "The cost of designer babies can range from $20,000 to $50,000 depending on the desired traits and the complexity of the procedure.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "designer baby",
+                    "cost range",
+                    "$20,000 to $50,000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cost of designer baby",
+                    "depend on",
+                    "desired traits"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cost of designer baby",
+                    "depend on",
+                    "complexity of procedure"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "318922",
+        "response": "UNFI yearly salaries range from approximately $20,414 per year for Customer Service Representative to $96,487 per year for Senior Brand Manager. Average UNFI hourly pay ranges from approximately $10.70 per hour for Laborer to $24.29 per hour for Stocker.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "UNFI",
+                    "yearly salaries range",
+                    "approximately $20,414 per year to $96,487 per year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "UNFI",
+                    "hourly pay ranges",
+                    "approximately $10.70 per hour to $24.29 per hour"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1090507",
+        "response": "The price of a Sphatik Shivling depends on its size, weight, and quality. Generally, it is available in the market at prices ranging from Rs. 300 to Rs. 10,000.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sphatik Shivling",
+                    "has price range",
+                    "Rs. 300 to Rs. 10,000"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Price of Sphatik Shivling",
+                    "depends on",
+                    "size"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Price of Sphatik Shivling",
+                    "depends on",
+                    "weight"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Price of Sphatik Shivling",
+                    "depends on",
+                    "quality"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sphatik Shivling",
+                    "available at",
+                    "market"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "392483",
+        "response": "The default maximum response size for IIS 7 is 102400 bytes. This can be changed by editing the web.config file and adding the following element to the <configuration> section:\n\n<limits maxAllowedContentLength=\"1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "IIS 7",
+                    "has default maximum response size",
+                    "102400 bytes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maximum response size",
+                    "can be changed by",
+                    "editing web.config file"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "283271",
+        "response": "There have been 5 Mass Extinction events in Earth's history. They are. 1.Cretaceous\u2013Tertiary extinction event (End Cretaceous or K-T extinction): 65.5 Ma at the Cretaceous.Maastrichtian-Paleogene.Dania... transition interval. 2. Triassic\u2013Jurassic extinction event (End Triassic): 201.3 Ma at the Triassic-Jurassic transition. 3. End Ordovician or O-S extinction event: 450\u2013440 Ma at the Ordovician-Silurian transition. 4. End Triassic: 201.3 Ma at the Triassic-Jurassic transition. 5. K-T Extinction event: 1  Dinosaurs, many land plants, ammonites,",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "1st Mass Extinction event",
+                    "name",
+                    "Cretaceous\u2013Tertiary extinction event"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cretaceous\u2013Tertiary extinction event",
+                    "also known as",
+                    "End Cretaceous or K-T extinction"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cretaceous\u2013Tertiary extinction event",
+                    "occurred at",
+                    "Cretaceous-Maastrichtian-Paleogene-Dania transition interval"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cretaceous\u2013Tertiary extinction event",
+                    "time",
+                    "65.5 Ma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "2nd Mass Extinction event ",
+                    "name",
+                    "Triassic\u2013Jurassic extinction event"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Triassic\u2013Jurassic extinction event",
+                    "also known as",
+                    "End Triassic"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Triassic\u2013Jurassic extinction event",
+                    "time",
+                    "201.3 Ma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Triassic\u2013Jurassic extinction event",
+                    "occurred at",
+                    "Triassic-Jurassic transition"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "3rd Mass Extinction event",
+                    "name",
+                    "End Ordovician or O-S extinction event"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "End Ordovician or O-S extinction event",
+                    "time",
+                    "450\u2013440 Ma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "End Ordovician or O-S extinction event",
+                    "occurred at",
+                    "Ordovician-Silurian transition"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "4th Mass Extinction event",
+                    "name",
+                    "End Triassic"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "End Triassic",
+                    "time",
+                    "201.3 Ma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "End Triassic",
+                    "occurred at",
+                    "Triassic-Jurassic transition"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "5th Mass Extinction event",
+                    "name",
+                    "K-T Extinction event"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "K-T Extinction event",
+                    "affected",
+                    "Dinosaurs, many land plants, ammonites"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098016",
+        "response": "The average weight of a Beagle is between 30-60 pounds.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average weight of a Beagle",
+                    "is between",
+                    "30-60 pounds"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1090502",
+        "response": "Spirit Airlines' (NK) standard checked baggage / hold luggage policy details follow: \n2 bags standard, up to 5 bags maximum (restrictions exist on international travel \u2013 check Spirit\u2019s site for details) \nMaximum dimensions: 62 inches or 157 centimeters (length + width + height) \nMaximum weight: 40 pounds or 18 kilograms.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Spirit Airlines' carry on luggage",
+                    "maximum dimensions",
+                    "62 inches or 157 centimeters (length + width + height)"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Spirit Airlines' carry on luggage",
+                    "maximum weight",
+                    "40 pounds or 18 kilograms"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "278453",
+        "response": "A slice of bread typically contains 20-25 grams of carbohydrates.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "slice of bread",
+                    "contains",
+                    "20-25 grams of carbohydrates"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1097486",
+        "response": "How many calories in macaroni and cheese depends on the recipe used. A 1-cup serving of homemade macaroni and cheese can be anywhere from 300-500 calories.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "284565",
+        "response": "1 gram of carbs in eggs.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "eggs",
+                    "contain",
+                    "1 gram of carbs"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "465781",
+        "response": "The average newborn weight is about 3.4 kilograms (kg) / 7 pounds (lb) 8 ounces (oz). Babies weighing more than 4.5kg/ 9lb 15oz at birth are considered much larger than average or macrosomic, which literally means of large body.It's very difficult to determine whether a baby is truly macrosomic while still in the uterus (womb) - only the post-birth weight confirms this.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "normal weight for newborn",
+                    "range",
+                    "about 3.4 kilograms"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "3.4 kilograms",
+                    "equals",
+                    "7 pounds 8 ounces"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "macrosomic newborn",
+                    "defined as",
+                    "weighing more than 4.5 kilograms"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "macrosomic",
+                    "literally means",
+                    "of large body"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "macrosomia",
+                    "confirmed by",
+                    "post-birth weight"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1099731",
+        "response": "The Ariba customer support phone number is +1 866-772-7422.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Ariba customer support phone number",
+                    "is",
+                    "+1 866-772-7422"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1072119",
+        "response": "Sodium chlorate is useful in a variety of applications, including herbicides, explosives, dyes, matches, inks, cosmetics, pharmaceuticals, defoliants, paper, and leather. It is also used as a source of oxygen in emergency oxygen generators.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "herbicides"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "explosives"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "dyes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "matches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "inks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "cosmetics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "pharmaceuticals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "defoliants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "paper"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used in",
+                    "leather"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "is used as",
+                    "source of oxygen"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "used in",
+                    "emergency oxygen generators"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "166795",
+        "response": "No, goat milk does not create mucus.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "goat milk",
+                    "create mucus",
+                    "No"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "405776",
+        "response": "Yes, celery juice is nutritious and is a great way to get your daily dose of vitamins and minerals. It is high in vitamins A, B1, B2, B6, and C, as well as folic acid, essential amino acids, and phosphorous. Additionally, it is low in calories and a good source of dietary fiber.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "nutritious"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "great way to get daily dose of vitamins and minerals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "high in",
+                    "vitamins A, B1, B2, B6, C"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "high in",
+                    "folic acid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "high in",
+                    "essential amino acids"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "high in",
+                    "phosphorous"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "low in",
+                    "calories"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "good source of",
+                    "dietary fiber"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "429983",
+        "response": "Yes, hyperuricemia, an abnormally high level of uric acid in your body, can cause a type of kidney stone and exacerbate gout if excess uric acid forms painful crystals in joints.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "hyperuricemia",
+                    "can cause",
+                    "kidney stone"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "hyperuricemia",
+                    "can exacerbate",
+                    "gout"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "hyperuricemia",
+                    "is",
+                    "abnormally high level of uric acid in body"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "triglyceride",
+                    "affected by",
+                    "gout"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1088312",
+        "response": "The current weather in Pencoed, Wales is partly cloudy with a temperature of 8\u00b0C (46\u00b0F). There is a light breeze with a visibility of 20 km (12 miles) and an atmospheric pressure of 1031 mb.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "current weather in Pencoed, Wales",
+                    "is",
+                    "partly cloudy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "current weather in Pencoed, Wales",
+                    "temperature",
+                    "8\u00b0C (46\u00b0F)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "current weather in Pencoed, Wales",
+                    "has",
+                    "light breeze"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "current weather in Pencoed, Wales",
+                    "visibility",
+                    "20 km (12 miles)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "current weather in Pencoed, Wales",
+                    "atmospheric pressure",
+                    "1031 mb"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1088355",
+        "response": "The weather in Nelson, New Zealand in January is typically mild, with temperatures ranging from 15 to 22\u00b0C (59 to 72\u00b0F). Rainfall is common, with 9 to 15 days of the month having some form of precipitation. Sunshine hours average 8 per day. The sea temperature is 18\u00b0C (64\u00b0F).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "weather in Nelson, New Zealand",
+                    "in January",
+                    "typically mild"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "temperatures in Nelson, New Zealand in January",
+                    "range from",
+                    "15 to 22\u00b0C (59 to 72\u00b0F)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rainfall in Nelson, New Zealand in January",
+                    "is",
+                    "common"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "days of rain in Nelson, New Zealand in January",
+                    "number",
+                    "9 to 15 days"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sunshine hours in Nelson, New Zealand in January",
+                    "average",
+                    "8 per day"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sea temperature in Nelson, New Zealand in January",
+                    "is",
+                    "18\u00b0C (64\u00b0F)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1008326",
+        "response": "The current weather in Steubenville, OH is partly cloudy with a temperature of 44\u00b0F (6\u00b0C).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Steubenville",
+                    "location of",
+                    "OH"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "current weather in Steubenville, OH",
+                    "is",
+                    "partly cloudy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "temperature in Steubenville, OH",
+                    "is",
+                    "44\u00b0F"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "44\u00b0F",
+                    "equals",
+                    "6\u00b0C"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "544914",
+        "response": "The current temperature in Louisville, Colorado is 68\u00b0F (20\u00b0C) with a humidity of 37%. Winds are from the South at 6 miles per hour with a few clouds in the sky.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Louisville, Colorado",
+                    "has current temperature",
+                    "68\u00b0F (20\u00b0C)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louisville, Colorado",
+                    "has current humidity",
+                    "37%"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louisville, Colorado",
+                    "has wind from direction",
+                    "South"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Louisville, Colorado",
+                    "has wind speed",
+                    "6 miles per hour"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sky above Louisville, Colorado",
+                    "has condition",
+                    "a few clouds"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1033994",
+        "response": "The processor on the computer is an Intel Core i7-11700.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The processor on the computer",
+                    "is",
+                    "Intel Core i7-11700"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "995200",
+        "response": "The correct answer is 2-conductor line cord.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "hp fax",
+                    "uses",
+                    "2-conductor line cord"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "157359",
+        "response": "Yes, it is possible to do it yourself grout cleaning. There are a variety of products available to help with the process, such as grout cleaners, sealers, and brushes. It is important to thoroughly clean and seal the grout to keep it looking its best and prevent future staining.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "is possible",
+                    "Yes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "involves using",
+                    "grout cleaners"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "involves using",
+                    "grout sealers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "involves using",
+                    "brushes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "purpose of do it yourself grout cleaning",
+                    "is",
+                    "to thoroughly clean grout"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "purpose of do it yourself grout cleaning",
+                    "is",
+                    "to seal grout"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "purpose of do it yourself grout cleaning",
+                    "is",
+                    "to prevent future staining of grout"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "purpose of do it yourself grout cleaning",
+                    "is",
+                    "to keep grout looking its best"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "129756",
+        "response": "Slate is a fine-grained metamorphic rock that is usually dark in color and can be split into thin layers. It is often used for roofing and paving. In the past, it was also used as a writing surface for children.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "slate",
+                    "is",
+                    "fine-grained metamorphic rock"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "has color",
+                    "usually dark"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can be",
+                    "split into thin layers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "often used for",
+                    "roofing"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "often used for",
+                    "paving"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "used in the past for",
+                    "writing surface for children"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "421437",
+        "response": "No, Potter County is not under a burn ban.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Potter County",
+                    "under a burn ban",
+                    "No"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "100248",
+        "response": "Cosmology is the scientific study of the universe, including theories of its origins, dynamics and evolution, and its future. Cosmogony is the scientific study of the origin of the universe (or of reality itself). Cosmography deals with mapping the universe.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cosmology",
+                    "is",
+                    "scientific study of the universe"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmology",
+                    "includes",
+                    "theories of universe's origins"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmology",
+                    "includes",
+                    "theories of universe's dynamics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmology",
+                    "includes",
+                    "theories of universe's evolution"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmology",
+                    "includes",
+                    "theories of universe's future"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmogony",
+                    "is",
+                    "scientific study of the origin of the universe"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmogony",
+                    "is",
+                    "scientific study of the origin of reality itself"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmography",
+                    "deals with",
+                    "mapping the universe"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1083749",
+        "response": "Gray and Pink make a light gray.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gray",
+                    "combined with",
+                    "Pink"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Combination of Gray and Pink",
+                    "makes",
+                    "light gray"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "143463",
+        "response": "Bobby Jones won the Grand Slam in 1930.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "won",
+                    "the Grand Slam"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bobby Jones won the Grand Slam",
+                    "year",
+                    "1930"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1084984",
+        "response": "St Patrick drove out the snakes from Ireland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "St Patrick",
+                    "drove out",
+                    "the snakes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St Patrick",
+                    "drove out from",
+                    "Ireland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "851286",
+        "response": "Morocco Standard Time - is abbreviated as WET (Western European Time) Morocco Daylight Saving Time - is abbreviated as WEST (Western European Summer Time) Morocco is GMT/UTC + 0h during Standard Time. Morocco is GMT/UTC + 1h during Daylight Saving Time.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Morocco Standard Time",
+                    "abbreviated as",
+                    "WET (Western European Time)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Morocco Daylight Saving Time",
+                    "abbreviated as",
+                    "WEST (Western European Summer Time)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "537560",
+        "response": "Vision World is located at 971 Central Park Ave, Scarsdale, NY 10583. They can be contacted via phone at (914) 723-7392 for pricing, hours and directions. Vision World specializes in Pink Eye, Dry Eyes, Infections. Vision World provides Infants, Eyewear Fittings, Transplants to it's customers.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vision World",
+                    "located at",
+                    "971 Central Park Ave, Scarsdale, NY 10583"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "can be contacted via phone at",
+                    "(914) 723-7392"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Contact phone number",
+                    "for",
+                    "pricing, hours and directions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "specializes in",
+                    "Pink Eye, Dry Eyes, Infections"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "provides",
+                    "Infants, Eyewear Fittings, Transplants"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "540432",
+        "response": "No, Michael Jordan was not a Cub Scout.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Jordan",
+                    "was not",
+                    "Cub Scout"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "63192",
+        "response": "No, a school psychologist cannot diagnose ADHD. A school psychologist can only make a recommendation for further evaluation and diagnosis, but they cannot diagnose ADHD. A medical doctor or mental health professional with special training in the disorder must make the diagnosis.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "school psychologist",
+                    "can only",
+                    "make a recommendation for further evaluation and diagnosis"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "school psychologist",
+                    "cannot",
+                    "diagnose ADHD"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "medical doctor",
+                    "can",
+                    "diagnose ADHD"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "mental health professional with special training in the disorder",
+                    "can",
+                    "diagnose ADHD"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "diagnose ADHD",
+                    "must be done by",
+                    "medical doctor or mental health professional with special training in the disorder"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "708743",
+        "response": "The placenta and fetal membranes expelled from the uterus after childbirth.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "afterbirth",
+                    "is",
+                    "The placenta and fetal membranes expelled from the uterus after childbirth"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The placenta and fetal membranes",
+                    "expelled from",
+                    "the uterus"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1093959",
+        "response": "Testosterone is controlled by the hypothalamus and the pituitary gland, which regulate the amount of testosterone produced by the testes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Testosterone",
+                    "controlled by",
+                    "hypothalamus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Testosterone",
+                    "controlled by",
+                    "pituitary gland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "hypothalamus",
+                    "regulates",
+                    "amount of testosterone produced"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "pituitary gland",
+                    "regulates",
+                    "amount of testosterone produced"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testes",
+                    "produce",
+                    "testosterone"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1040099",
+        "response": "The Eagle Flyer is a unique 2-1/2 hour round trip eco-excursion in the Connecticut River Valley. Trees stripped of their foliage afford clear views of the surrounding forest and the Connecticut River. It is operated by the Wild West Ranch and Western Town and offers a unique opportunity to experience the beauty of the area from a birds-eye view.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "is",
+                    "a unique 2-1/2 hour round trip eco-excursion"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "located in",
+                    "the Connecticut River Valley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "operated by",
+                    "Wild West Ranch and Western Town"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "offers",
+                    "opportunity to experience the beauty of the area from a birds-eye view"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "219496",
+        "response": "Yes, there is a way. Read on ... Firstly, in order to prevent cockroaches, you have to keep your kitchen clean-don't leave crumbs or food out in the open. Cockroaches love flour, so take it out of the bag and seal it in a plastic container. They also love bread crumbs and other wheat-based goods, so store them in plastic-you can put the cardboard boxes in Ziploc bags, for example. If you already have cockroaches, there are several things you can do.ockroaches love flour, so take it out of the bag and seal it in a plastic container. They also love bread crumbs and other wheat-based goods, so store them in plastic-you can put the cardboard boxes in Ziploc bags, for example. If you already have cockroaches, there are several",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "diatomaceous earth",
+                    "can be used to",
+                    "kill roaches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "kitchen",
+                    "should be kept",
+                    "clean"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "crumbs",
+                    "should not be left out",
+                    "in the open"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "food",
+                    "should not be left out",
+                    "in the open"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roaches",
+                    "love",
+                    "flour"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "flour",
+                    "should be",
+                    "sealed in a plastic container"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roaches",
+                    "love",
+                    "bread crumbs"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bread crumbs",
+                    "should be stored",
+                    "in plastic"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cardboard boxes",
+                    "can be put",
+                    "in Ziploc bags"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roaches",
+                    "love",
+                    "wheat-based goods"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "wheat-based goods",
+                    "should be stored",
+                    "in plastic"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1100064",
+        "response": "Health benefits of cat's claw include its ability to improve immune system function, protect against oxidative stress, reduce inflammation, improve digestion, reduce pain, and treat arthritis. It may also help protect against certain viral infections, cancer, and other health conditions. However, more research is needed to confirm these benefits.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cat's claw",
+                    "improves",
+                    "immune system function"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "protects against",
+                    "oxidative stress"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "reduces",
+                    "inflammation"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "improves",
+                    "digestion"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "reduces",
+                    "pain"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "treats",
+                    "arthritis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "may help protect against",
+                    "certain viral infections"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "may help protect against",
+                    "cancer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "may help protect against",
+                    "other health conditions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "More research",
+                    "needed to confirm",
+                    "health benefits of cat's claw"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "147966",
+        "response": "The Miniature American Shepherd is a small Australian Shepherd. The Australian Shepherd stands 18-23 inches tall at the shoulder and the Miniature American Shepherd stands 13-18 inches tall at the shoulder. They have the same look, working style, intelligence, energy level, personality, grooming requirements, etc.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "is",
+                    "small Australian Shepherd"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Australian Shepherd",
+                    "height at shoulder",
+                    "18-23 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "height at shoulder",
+                    "13-18 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "same as Australian Shepherd in",
+                    "look, working style, intelligence, energy level, personality, grooming requirements"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "76098",
+        "response": "No, you cannot break dogs from chasing cars.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1080229",
+        "response": "No, human urine would not keep deer away.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "human urine",
+                    "effectiveness at keeping deer away",
+                    "no"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "155382",
+        "response": "Yes, brook trout do eat crayfish.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "crayfish"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "213986",
+        "response": "Leopardfoot dies of unknown causes in Bluestar's Prophecy.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Leopardfoot",
+                    "dies of",
+                    "unknown causes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Leopardfoot",
+                    "dies in",
+                    "Bluestar's Prophecy"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "857956",
+        "response": "What is Donald Trump truly hiding in his tax returns? We may never know for sure, but the possibilities include a variety of things, such as potential conflicts of interest, evidence of tax fraud or evasion, information about his business dealings with Russian oligarchs, and details about his charitable donations. Additionally, his tax returns may reveal information about his income, assets, and liabilities, as well as information about his business practices and financial transactions that could be relevant to investigations into his business practices and potential conflicts of interest.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "truly hiding in his tax returns",
+                    "potential conflicts of interest"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "truly hiding in his tax returns",
+                    "evidence of tax fraud or evasion"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "truly hiding in his tax returns",
+                    "information about his business dealings with Russian oligarchs"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "truly hiding in his tax returns",
+                    "details about his charitable donations"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Donald Trump's tax returns",
+                    "may reveal",
+                    "information about his income, assets, and liabilities"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Donald Trump's tax returns",
+                    "may reveal",
+                    "information about his business practices and financial transactions"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Information in Donald Trump's tax returns",
+                    "could be relevant to",
+                    "investigations into his business practices and potential conflicts of interest"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1092210",
+        "response": "Nike shoes come in a variety of styles, including running shoes, walking shoes, basketball shoes, training shoes, lifestyle shoes, Nike Air Max, Roshe One, Huarache, Cortez, Air Force 1, sandals, cleats and spikes, and other outdoor activities such as tennis, golf, skateboarding, association football, baseball, American football, cycling, volleyball, wrestling, cheerleading, aquatic activities, auto racing, and other athletic and recreational uses. Additionally, Nike also offers shoes for dancing, orthopedic shoes, and animals.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nike shoes",
+                    "come in",
+                    "variety of styles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "running shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "walking shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "basketball shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "training shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "lifestyle shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "Nike Air Max"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "Roshe One"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "Huarache"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "Cortez"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "Air Force 1"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "sandals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "cleats"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "include",
+                    "spikes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe styles",
+                    "for",
+                    "outdoor activities"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "tennis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "golf"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "skateboarding"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "association football"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "baseball"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "American football"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "cycling"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "volleyball"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "wrestling"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "cheerleading"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "aquatic activities"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Outdoor activities",
+                    "include",
+                    "auto racing"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoes",
+                    "also for",
+                    "dancing"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoes",
+                    "include",
+                    "orthopedic shoes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Nike shoes",
+                    "include",
+                    "shoes for animals"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1100861",
+        "response": "Egyptians are an ethnic group and the citizens native to Egypt sharing a common culture and a variety of Egyptian Arabic. Egyptian identity is closely tied to geography.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Egyptians",
+                    "are",
+                    "an ethnic group"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "are",
+                    "citizens native to Egypt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "share",
+                    "a common culture"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "share",
+                    "a variety of Egyptian Arabic"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptian identity",
+                    "is closely tied to",
+                    "geography"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "145322",
+        "response": "The Eleusinian Mysteries survived until the 4th century CE, when the Roman Emperor Constantine I banned all non-Christian religions in the Roman Empire.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Eleusinian Mysteries",
+                    "survived until",
+                    "4th century CE"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Roman Emperor Constantine I",
+                    "banned",
+                    "Eleusinian Mysteries"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Roman Emperor Constantine I",
+                    "banned",
+                    "all non-Christian religions"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Banning of non-Christian religions",
+                    "took place in",
+                    "Roman Empire"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Banning of non-Christian religions",
+                    "took place in",
+                    "4th century CE"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "458110",
+        "response": "The most important battle of World War II was the Battle of Stalingrad.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Battle of Stalingrad",
+                    "is",
+                    "the most important battle of World War II"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "425121",
+        "response": "No, Sydney is not a male name. It is a unisex name, which means it can be used for either a boy or a girl.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sydney",
+                    "is",
+                    "unisex name"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sydney",
+                    "can be used for",
+                    "boy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sydney",
+                    "can be used for",
+                    "girl"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sydney",
+                    "is not",
+                    "male name"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "172330",
+        "response": "Yes, the Brit System works. It is a reliable and effective binary options trading system that has been proven to generate consistent profits for its users. The Brit Method is a legitimate and trustworthy trading system that is backed by a team of experienced professionals. It is easy to use and requires no prior experience in trading or financial markets. The Brit Method is a great choice for those looking for a reliable and profitable way to invest online.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Brit System",
+                    "works",
+                    "Yes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "reliable"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "effective"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "binary options trading system"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "has been",
+                    "proven to generate consistent profits for its users"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "legitimate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "trustworthy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is backed by",
+                    "team of experienced professionals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "easy to use"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "requires",
+                    "no prior experience in trading or financial markets"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Brit System",
+                    "is",
+                    "great choice for those looking for a reliable and profitable way to invest online"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "376687",
+        "response": "To renew your passport on Guam, you will need to submit the required forms and fees to the nearest passport agency in Honolulu. You will also need to submit a passport photo and a copy of your expired passport. For more information, please refer to the U.S. Department of State's website.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renew your passport on guam",
+                    "requires",
+                    "submit the required forms and fees to the nearest passport agency in Honolulu"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "renew your passport on guam",
+                    "requires",
+                    "submit a passport photo"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "renew your passport on guam",
+                    "requires",
+                    "submit a copy of your expired passport"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "nearest passport agency for guam",
+                    "located in",
+                    "Honolulu"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "more information on renewing passport on guam",
+                    "found at",
+                    "U.S. Department of State's website"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "160460",
+        "response": "No, you do not have to pay to get papers notarized. In most cases, notaries are volunteering their services or working for a non-profit organization. In some cases, the notary may charge a small fee, but this is usually capped by the state.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "you",
+                    "do not have to pay to get",
+                    "papers notarized"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "notaries",
+                    "in most cases",
+                    "volunteering their services or working for a non-profit organization"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "notary",
+                    "may charge",
+                    "a small fee"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "small fee charged by notary",
+                    "usually capped by",
+                    "the state"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]
