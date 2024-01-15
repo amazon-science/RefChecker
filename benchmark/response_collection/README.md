@@ -7,10 +7,11 @@ Please take the following steps to collect responses of your LLM on the RefCheck
 
 2. Modify [main.py](main.py) to add your model there.
 
-3. Run the following command to collect responses:
+3. Run the following command to collect responses from your model:
 
 ```bash
-python response_collection/main.py --model=<your model name>
+cd benchmark
+python response_collection/main.py --model=<model name>
 ```
 
-The file containing responses will be saved to folds of different settings in [benchmark_data](../benchmark_data/).
+The file containing responses will be saved to folds of different settings in [benchmark/data](../../benchmark/data/).

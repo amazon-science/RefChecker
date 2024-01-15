@@ -1,0 +1,3791 @@
+[
+    {
+        "id": "4073418639113603971",
+        "response": ", and the beatles\u2019 she\u2019s leaving home.\nThe song was released in 1964 and reached number one on the billboard hot 100 chart.\nIt was written by jerry lee lewis and recorded by him in 1968.\nIt was released as the b-side of his hit single, what\u2019s made you so sad.\nThe song was written by jerry lee lewis and recorded by him in 1968. It was released as the b-side of his hit single, what\u2019s made you so sad.\nThe song was released in 1964 and reached number one on the billboard hot 100 chart. It was written by jerry lee lewis and recorded by him in 1968.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Dig Rock and Roll Music",
+                    "was written by",
+                    "Jerry Lee Lewis"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "I Dig Rock and Roll Music",
+                    "was recorded by",
+                    "Jerry Lee Lewis"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "I Dig Rock and Roll Music",
+                    "was released in",
+                    "1964"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "I Dig Rock and Roll Music",
+                    "reached #1 on",
+                    "Billboard Hot 100 chart"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I Dig Rock and Roll Music",
+                    "released as B-side of",
+                    "What's Made You So Sad"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "What's Made You So Sad",
+                    "was a hit single by",
+                    "Jerry Lee Lewis"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-3339006116507262453",
+        "response": "\nThe song is \"I Ran (So Far Away)\" by Flock of Seagulls.\nWhat is the name of the song that goes \"I ran all the way home\"?\nThe song is \"I Ran (So Far Away)\" by Flock of Seagulls. The lyrics are \"I ran all the way home, trying to outrun the rain, I ran all the way home, trying to outrun the pain\".\nWhat is the name of the song that goes 'I ran all the way home'?\nThe song is \"I Ran (So Far Away)\" by Flock of Seagulls. The lyrics are \"I ran all the way home, trying to outrun the rain, I ran all the way home, trying to outrun the pain\".\nWhat is the name of the song that goes 'I ran all the way home'?\nWhat is the name of the song that goes 'I",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Ran (So Far Away)",
+                    "performed by",
+                    "Flock of Seagulls"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I Ran (So Far Away)",
+                    "lyrics include",
+                    "I ran all the way home"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I Ran (So Far Away)",
+                    "lyrics include",
+                    "trying to outrun the rain"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I Ran (So Far Away)",
+                    "lyrics include",
+                    "trying to outrun the pain"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1582234629547061501",
+        "response": "\nI'm gonna run away from you\nI'm gonna run away from you, yeah\nI'm gonna run away from you, run away\nI'm gonna run away from you, run away, yeah\nI'm gonna run away from you, run away\nI'm gonna run away from you, run away\nI'm gonna run away from you, run away, run away\nI'm gonna run away from you, run away, run away, yeah\nI'm gonna run away from you, run away, run away, run away\nI'm gonna run away from you, run away, run away, run away, yeah\nI'm gonna run away from you, run away, run away, run away, run away\nI'm gonna run away from you, run away, run away, run away, run away, yeah\nI'm",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I'm gonna run away from you",
+                    "song lyrics",
+                    "12 line stanza"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "2223188268381215709",
+        "response": ".\nThe president is elected by an absolute majority in the National Assembly and the Senate. The president must be a citizen of Pakistan and must not hold any other office or position. The president is responsible for appointing the prime minister and other ministers, summoning the National Assembly and the Senate, and dissolving the assemblies. The president also has the power to grant pardons and reprieves, and to appoint ambassadors and high court judges.\nThe prime minister is the head of government and is responsible for implementing the policies of the government. The prime minister is elected by the National Assembly and is responsible for appointing the other ministers and for implementing the decisions of the cabinet. The prime minister also has the power to summon the National Assembly and the Senate and to dissolve the assemblies.\nThe Supreme Court is the highest judicial body in Pakistan. It consists of a chief justice and several other judges who are appointed by the president.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "president",
+                    "elected by",
+                    "absolute majority in the National Assembly and the Senate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "must be",
+                    "citizen of Pakistan"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "must not hold",
+                    "any other office or position"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "responsible for appointing",
+                    "prime minister and other ministers"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "responsible for",
+                    "summoning the National Assembly and the Senate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "responsible for",
+                    "dissolving the assemblies"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "has power to grant",
+                    "pardons and reprieves"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "president",
+                    "has power to appoint",
+                    "ambassadors and high court judges"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "head of",
+                    "government"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "responsible for implementing",
+                    "policies of the government"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "elected by",
+                    "National Assembly"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "responsible for appointing",
+                    "other ministers"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "responsible for implementing",
+                    "decisions of the cabinet"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "has power to summon",
+                    "National Assembly and the Senate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "prime minister",
+                    "has power to",
+                    "dissolve the assemblies"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Supreme Court",
+                    "highest judicial body in",
+                    "Pakistan"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Supreme Court",
+                    "consists of",
+                    "chief justice and several other judges"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "judges of Supreme Court",
+                    "appointed by",
+                    "president"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8883866849303680195",
+        "response": "\nWhat is the name of the actor who plays steve's wife on my three sons?\nThe actor who plays Steve's wife on My Three Sons is Donna Pescow.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Steve",
+                    "has",
+                    "wife"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Steve",
+                    "character in",
+                    "My Three Sons"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Steve's wife",
+                    "character in",
+                    "My Three Sons"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Steve's wife in My Three Sons",
+                    "played by",
+                    "Donna Pescow"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Donna Pescow",
+                    "is",
+                    "actor"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Donna Pescow",
+                    "plays",
+                    "Steve's wife"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Donna Pescow",
+                    "plays Steve's wife in",
+                    "My Three Sons"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-3476455683698256952",
+        "response": ".\nHe was also in the movie \"The Day After Tomorrow\" as the President of the United States.\nHe was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The Day After Tomorrow\" as the President of the United States. He was also in the movie \"The",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-5646056836091194880",
+        "response": ".\nThe two fibres made of proteins are silk and elastin.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "silk",
+                    "made of",
+                    "proteins"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "elastin",
+                    "made of",
+                    "proteins"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5003538501505873412",
+        "response": "\nLes Mis\u00e9rables is a 2012 British musical drama film directed by Tom Hooper and produced by Working Title Films. It is an adaptation of the 1862 novel of the same name by Victor Hugo, and stars Hugh Jackman, Russell Crowe, Anne Hathaway, Amanda Seyfried, and Eddie Redmayne. Set in 19th-century France, the film follows the story of Jean Valjean, a French peasant who is sentenced to 19 years of hard labor for stealing a loaf of bread. After serving his sentence, Valjean breaks the terms of his parole and starts a new life, eventually becoming a successful business owner and mayor of a town. However, he is pursued by Inspector Javert, who refuses to believe that Valjean has changed his ways. The film was released on December 25, 2012, in",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-8680361524959876970",
+        "response": "?\nWhat is the difference between a parson and a preacher?\nWhat is the difference between a parson and a preacher? A parson is a clergyman who is not paid for his services, while a preacher is a clergyman who is paid for his services.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-6500826823871433949",
+        "response": ".\nHe was a pioneer in the development of the electric guitar and its use in popular music.\nHe was one of the first to use the electric guitar in a jazz setting.\nHe was one of the first to use the electric guitar in a blues setting.\nHe was one of the first to use the electric guitar in a rock and roll setting.\nHe was one of the first to use the electric guitar in a classical setting.\nHe was one of the first to use the electric guitar in a fusion setting.\nHe was one of the first to use the electric guitar in a metal setting.\nHe was one of the first to use the electric guitar in a funk setting.\nHe was one of the first to use the electric guitar in a reggae setting.\nHe was one of the first to use the electric guitar in a folk setting.\nHe was one of the first to use the electric guitar in a world music setting.\nHe",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1851594182842213971",
+        "response": "?\nGimme Gimme Gimme started in 2009.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gimme Gimme Gimme",
+                    "started in",
+                    "2009"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-2651390481836592629",
+        "response": "?\nWhen did Rob Dyrdek's Fantasy Factory end?\nRob Dyrdek's Fantasy Factory ended in 2012 after five seasons.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rob Dyrdek's Fantasy Factory",
+                    "ended in",
+                    "2012"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rob Dyrdek's Fantasy Factory",
+                    "ran for",
+                    "five seasons"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "7422852161474049311",
+        "response": "\nWhat kind of dog is Charkie from Curious George?\nCharkie is a Jack Russell Terrier from the Curious George series. He is a mischievous and adventurous little dog who loves to explore and solve puzzles. He is often seen accompanying George on his adventures and helping him solve problems.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Charkie",
+                    "from",
+                    "Curious George series"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "is a",
+                    "Jack Russell Terrier"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "is",
+                    "mischievous"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "is",
+                    "adventurous"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "loves to",
+                    "explore"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "loves to",
+                    "solve puzzles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "often seen",
+                    "accompanying George on his adventures"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "helps",
+                    "George solve problems"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "238018115866608950",
+        "response": "\nWhen was \"How Deep Is Your Love\" released?\n\"How Deep Is Your Love\" was released in 1992.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "How Deep Is Your Love",
+                    "released in",
+                    "1992"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-6395885127392955720",
+        "response": "\nPatriot Games (Jack Ryan, Book 2) - Wikipedia\nPatriot Games is a novel by Tom Clancy, published in 1992. It is the second novel in the Jack Ryan series, and the first to feature Jack Ryan as the protagonist. The novel follows a CIA agent and his family as they are targeted by an Irish terrorist organization.\nPatriot Games (Jack Ryan, Book 2) by Tom Clancy ...\nPatriot Games (Jack Ryan, Book 2) by Tom Clancy. Read online, or download in secure EPUB format.\nPatriot Games (Jack Ryan, Book 2) by Tom Clancy ...\nPatriot Games (Jack Ryan, Book 2) by Tom Clancy. Read online, or download in secure EPUB format. Download Patriot Games (Jack Ryan, Book 2) by Tom Clancy in EPUB format. Download",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jack Ryan",
+                    "lives in",
+                    "not specified"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2536150218240275989",
+        "response": "?\nWho sang the song \"I'll be there for you\"?\nWho sang the song \"I'll be there for you\"? The song \"I'll be there for you\" was sung by The Rembrandts.\nWho sang the song 'I'll be there for you'?\nThe song 'I'll be there for you' was sung by The Rembrandts.\nWho sang the song 'I'll be there for you'?\nThe song 'I'll be there for you' was sung by The Rembrandts. It was released in 1995 and was featured in the hit TV show 'Friends'.\nWho sang the song 'I'll be there for you'?\nThe song 'I'll be there for you' was sung by The Rembrandts. It was released in 1995 and was featured in the hit TV show 'Friends'. The",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-3170493396531530980",
+        "response": ".\nI'm sure you'll find a way to make it through.\nAnd when you're feeling lost in the dark,\nJust remember to keep your faith in the light.\nAnd when you're feeling like hope is gone,\nJust remember that you're not alone.\nAnd when you're feeling like you're not worth it,\nJust remember that you are special and you're worth it.\nAnd when you're feeling like you're not strong enough,\nJust remember that you are strong and you can fight.\nAnd when you're feeling like you're not brave enough,\nJust remember that you are brave and you can face it.\nAnd when you're feeling like you're not beautiful enough,\nJust remember that you are beautiful and you are enough.\nAnd when you're feeling like you're not good enough,\nJust remember that you are special and you are enough.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-204697481439605710",
+        "response": ".\nI'm in the mood for dancing,\nI'm in the mood for romance,\nI'm in the mood for love,\nI'm in the mood for a good time,\nI'm in the mood for a reason,\nI'm in the mood for a brand new start.\nI'm in the mood for a second chance,\nI'm in the mood for a new romance,\nI'm in the mood for a new love,\nI'm in the mood for a new good time,\nI'm in the mood for a new reason,\nI'm in the mood for a new start.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I'm in the mood for dancing",
+                    "written by",
+                    "unknown"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-4283464153717448291",
+        "response": ".\nwho played mrs. trumbull on i love lucy?\nWho played Mrs. Trumbull on I Love Lucy?\nWho played Mrs. Trumbull on I Love Lucy? She was the mother of Ricky Ricardo's best friend.\nWho played Mrs. Trumbull on I Love Lucy? She was the mother of Ricky Ricardo's best friend.\nWho played Mrs. Trumbull on I Love Lucy? She was the mother of Ricky Ricardo's best friend. She was played by Bea Benaderet.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "character on",
+                    "I Love Lucy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "mother of",
+                    "Ricky Ricardo's best friend"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Ricky Ricardo",
+                    "best friend",
+                    "Mrs. Trumbull's son"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "played by",
+                    "Bea Benaderet"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-853451338783771197",
+        "response": ", and the woman loves the man, and they both love each other, and they all live happily ever after.\nI'm not sure if that's true, but I'm sure of one thing: I'm never gonna stop trying.\nI'm never gonna stop trying to be the best person I can be, and I'm never gonna stop trying to make the most of every moment, and I'm never gonna stop trying to take advantage of every opportunity that comes my way.\nI'm never gonna stop trying to find the good in every situation, and I'm never gonna stop trying to spread a little bit of love and kindness in this world.\nI'm never gonna stop trying to make a difference, no matter how big or how small.\nI'm never gonna stop trying, because that's the only way I know how to live.\nAnd if you'",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-1388143263608839064",
+        "response": "?\nThe last name Waters is of English origin and is derived from the Old English word \"watere\" which means \"water\". It is a common name in the United States, with over 150,000 people having the last name Waters.\nWhat is the origin of the last name Waters?\nThe last name Waters is of English origin and is derived from the Old English word \"watere\" which means \"water\". It is a common name in the United States, with over 150,000 people having the last name Waters.\nWhat is the origin of the last name Waters?\nThe last name Waters is of English origin and is derived from the Old English word \"watere\" which means \"water\". It is a common name in the United States, with over 150,000 people having the last name Waters.\nWhat is the origin of the",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "last name Waters",
+                    "origin",
+                    "English"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "last name Waters",
+                    "derived from",
+                    "Old English word \"watere\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Old English word \"watere\"",
+                    "means",
+                    "\"water\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "last name Waters",
+                    "common in",
+                    "United States"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "over 150,000 people",
+                    "have",
+                    "last name Waters"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "3413977600585971868",
+        "response": "movie.\nHe was also in the second and third movies.\nHe was also in the TV series the Sarah Connor Chronicles.\nHe was also in the movie Titanic.\nHe was also in the movie The Dark Knight.\nHe was also in the movie The Dark Knight Rises.\nHe was also in the movie The Lord of the Rings: The Return of the King.\nHe was also in the movie The Lord of the Rings: The Fellowship of the Ring.\nHe was also in the movie The Lord of the Rings: The Two Towers.\nHe was also in the movie The Lord of the Rings: The Fellowship of the Ring.\nHe was also in the movie The Lord of the Rings: The Return of the King.\nHe was also in the movie The Lord of the Rings: The Two Towers.\nHe was also in the movie The Lord of the Rings: The Fellow",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "John Connor",
+                    "appears in",
+                    "The Terminator movie"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-4834721811831894172",
+        "response": "\nStrictly Come Dancing 2019 results show: When is it on and who won?\nThe Strictly Come Dancing 2019 results show is on tonight and here's when and how to watch it.\nThe Strictly Come Dancing 2019 results show is on tonight and here's when and how to watch it. The results show will be broadcast on BBC One at 7.15pm and will see the two remaining couples - Kelvin Fletcher and Oti Mabuse and Karim Zeroual and Amy Dowden - compete for the glitterball trophy. The winner will be announced at the end of the show.\nThe Strictly Come Dancing 2019 results show is on tonight and here's when and how to watch it. The results show will be broadcast on BBC One at 7.15pm and",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Strictly Come Dancing 2019 results show",
+                    "broadcast on",
+                    "BBC One"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing 2019 results show",
+                    "broadcast at",
+                    "7.15pm"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing 2019 results show",
+                    "has contestants",
+                    "Kelvin Fletcher and Oti Mabuse"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing 2019 results show",
+                    "has contestants",
+                    "Karim Zeroual and Amy Dowden"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Kelvin Fletcher and Oti Mabuse",
+                    "compete for",
+                    "glitterball trophy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Karim Zeroual and Amy Dowden",
+                    "compete for",
+                    "glitterball trophy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Winner",
+                    "announced at",
+                    "end of Strictly Come Dancing 2019 results show"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-6591614197125818072",
+        "response": ". >> the raid was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure. >> it was a failure",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "2339339749699668536",
+        "response": ".\nThe 2017 Super Bowl was an American football game between the American Football Conference (AFC) champion New England Patriots and the National Football Conference (NFC) champion Philadelphia Eagles to decide the champion of the National Football League (NFL) for the 2016 season. The Patriots defeated the Eagles 41\u201333, winning their sixth Super Bowl title. The game was played at U.S. Bank Stadium in Minneapolis, Minnesota on February 4, 2018.\nThe halftime show was headlined by Justin Timberlake and featured performances from Janet Jackson, who appeared with Timberlake at the end of his set, and other artists. It was the most watched television program of the year in the United States, with an average of 108.2 million viewers.\nThe Super Bowl LI was an American football game between the American Football Conference",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "2017 Super Bowl halftime show",
+                    "headlined by",
+                    "Justin Timberlake"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Justin Timberlake",
+                    "performed with",
+                    "Janet Jackson"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Janet Jackson",
+                    "appeared with",
+                    "Justin Timberlake"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Janet Jackson appearance",
+                    "at the end of",
+                    "Justin Timberlake's set"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "2017 Super Bowl halftime show",
+                    "featured performances from",
+                    "other artists"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "2017 Super Bowl",
+                    "was",
+                    "Super Bowl LI"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Super Bowl LI",
+                    "an American football game between",
+                    "American Football Conference (AFC) champion New England Patriots and National Football Conference (NFC) champion Philadelphia Eagles"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Super Bowl LI",
+                    "to decide champion of",
+                    "National Football League (NFL) for 2016 season"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Super Bowl LI",
+                    "played at",
+                    "U.S. Bank Stadium in Minneapolis, Minnesota"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Super Bowl LI",
+                    "date",
+                    "February 4, 2018"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "7526277995958905171",
+        "response": "\nWho sings too much time on my hands lyrics. Who sings too much time on my hands lyrics.\nWho sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time on my hands lyrics. Who sings too much time",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2419576910417046724",
+        "response": "\nWhat is the longest pier in the UK?\nThe longest pier in the UK is the Blackpool Pleasure Beach Pier, which is 1,127 feet long.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Blackpool Pleasure Beach Pier",
+                    "is",
+                    "longest pier in the UK"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Blackpool Pleasure Beach Pier",
+                    "length",
+                    "1,127 feet long"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1773607187248198254",
+        "response": "but up.\nI'm sure you'll find your way.\nI'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find your way. I'm sure you'll find",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4086158102790148091",
+        "response": "\nwho sings i want to dance with you. Who Sings I Want To Dance With You? 2019-02-11\nMonday, February 11, 2019 11:59:59 AM Darrin\nWho Sings I Want To Dance With You?\nThe song was released in 1987 and was a hit in the United States, reaching number one on the Billboard Hot 100 chart. The song was released in 1987 and was a hit in the United States, reaching number one on the Billboard Hot 100 chart. The song was released in 1987 and was a hit in the United States, reaching number one on the Billboard Hot 100 chart. The song was released in 1987 and was a hit in the United States, reaching number one on the Billboard Hot 100",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I want to dance with you",
+                    "released in",
+                    "1987"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "I want to dance with you",
+                    "was a hit in",
+                    "United States"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I want to dance with you",
+                    "reached",
+                    "number one on the Billboard Hot 100 chart"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1732734622903151644",
+        "response": "\nThe oldest recording of the song \u201cHouse of the Rising Sun\u201d dates back to 1928, when it was recorded by The Original Dixieland Jazz Band. The song was written in 1933 by Alan Lomax and Bess Lomax Hawes, and first recorded by The Weavers in 1950. It was later recorded by many other artists, including The Animals in 1964, who had a hit with the song.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "oldest recording of the song House of the Rising Sun",
+                    "performed by",
+                    "The Original Dixieland Jazz Band"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "oldest recording of the song House of the Rising Sun",
+                    "dates back to",
+                    "1928"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "song House of the Rising Sun",
+                    "written in",
+                    "1933"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "song House of the Rising Sun",
+                    "written by",
+                    "Alan Lomax and Bess Lomax Hawes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "song House of the Rising Sun",
+                    "first recorded by",
+                    "The Weavers"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Weavers",
+                    "recorded",
+                    "song House of the Rising Sun"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Weavers",
+                    "recorded",
+                    "1950"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "song House of the Rising Sun",
+                    "recorded by",
+                    "The Animals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Animals",
+                    "recorded",
+                    "song House of the Rising Sun"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Animals",
+                    "recorded",
+                    "1964"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Animals",
+                    "had a hit with",
+                    "song House of the Rising Sun"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-7778233237890403173",
+        "response": "?\nThe show was filmed in various locations in South Africa, including Cape Town, Johannesburg, and Durban.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "583026970021621830",
+        "response": ".\nThe first home video security system was invented by a man named John Stanton in 1966. Stanton was a former police officer who had a vision of creating a system that would allow people to monitor their homes while they were away. He developed the first home video security system, which used a series of cameras connected to a monitor and a microphone, allowing people to see and hear what was going on in their homes while they were away. This revolutionary system was a huge success, and soon many homes and businesses were equipped with these systems, providing peace of mind and security to those who used them.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "John Stanton",
+                    "invented",
+                    "the first home video security system"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "John Stanton",
+                    "former profession",
+                    "police officer"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "invented in",
+                    "1966"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "allowed",
+                    "monitoring homes while away"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "used",
+                    "cameras connected to a monitor and microphone"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "provided",
+                    "peace of mind and security"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "was",
+                    "revolutionary"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "was",
+                    "a huge success"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "5185978890489959594",
+        "response": "'s sprint cup series. he won the race at talladega sunday, his first win of the season and the 24th of his career. he also won the race in 2012. he was joined in victory lane by his family. >> it's a dream come true. it's something that you work so hard for, and when it happens, it's just an unbelievable feeling. >> he also became the first driver to win at talladega in his first start with a new team. >>> the new york giants are on a bye this week, but they're still making news. the giants have signed wide receiver odell beckham jr. to a five-year contract extension. the deal is worth $70 million with $46 million in guarantees. beckham jr. was entering the final year of his rookie contract. he",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Martin Truex Jr.",
+                    "drives",
+                    "number 95 car"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Martin Truex Jr.",
+                    "drives in",
+                    "NASCAR Sprint Cup series"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Martin Truex Jr.",
+                    "won race at",
+                    "Talladega"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Race at Talladega",
+                    "was on",
+                    "Sunday"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Win at Talladega",
+                    "was",
+                    "24th of Martin Truex Jr.'s career"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Martin Truex Jr.",
+                    "also won race at Talladega in",
+                    "2012"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Martin Truex Jr.",
+                    "joined in victory lane by",
+                    "his family"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1531676396763282931",
+        "response": "?\nHermes flew too close to the sun and was punished by being sent to the underworld.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "5078709962400196312",
+        "response": "\nDeion Sanders played for the Atlanta Braves, San Francisco Giants, New York Yankees, and Dallas Cowboys during his career. He was a member of the Braves team that won the 1995 World Series. He also won a Super Bowl ring with the Cowboys in 1996.\nWhat mlb teams did deion sanders play for - Deion Sanders played for the Atlanta Braves, San Francisco Giants, New York Yankees, and Dallas Cowboys during his career. He was a member of the Braves team that won the 1995 World Series. He also won a Super Bowl ring with the Cowboys in 1996.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Atlanta Braves"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "San Francisco Giants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "New York Yankees"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Dallas Cowboys"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "was member of",
+                    "Atlanta Braves team"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Atlanta Braves team",
+                    "won",
+                    "1995 World Series"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "won",
+                    "Super Bowl ring"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Super Bowl ring",
+                    "won with",
+                    "Dallas Cowboys"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Dallas Cowboys",
+                    "in year",
+                    "1996"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-7296166998534064378",
+        "response": ".\nI'm sure she's a great person and all, but I'm not sure why she's so famous.\nShe was in a lot of movies and TV shows as a child, and then she was in the hit show Full House. She's also a singer and has released a few albums.\nShe's a great role model and has done a lot of charity work. She's also a mom and a wife.\nShe's a great person and has achieved a lot of success.\nI'm sure she's a great person, but I'm not sure why she's so famous.\nShe's a great person and has achieved a lot of success. She's also a mom and a wife.\nI'm sure she's a great person and all, but I'm not sure why she's so famous. She was in a lot of movies and TV shows as",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "734309880189507498",
+        "response": ".\nI'm sure he's a great actor, but I'm not sure I'd recognize him if I saw him on the street.\nI'm sure he's a great actor, but I'm not sure I'd recognize him if I saw him on the street. He was in the Office, but I don't think I ever noticed him.\nI'm sure he's a great actor, but I'm not sure I'd recognize him if I saw him on the street. He was in the Office, but I don't think I ever noticed him. He was in the Office, but I don't think I ever noticed him.\nI'm sure he's a great actor, but I'm not sure I'd recognize him if I saw him on the street. He was in the Office, but I don't think I ever noticed him. He was in the Office, but",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "5063128834246440475",
+        "response": "\nOnly Player to Play for Manchester United, Manchester City, Liverpool and Everton\nThe only player to have played for all four of the Manchester clubs - Manchester United, Manchester City, Liverpool and Everton - is the legendary winger, David Johnson. Johnson was born in Salford, England, in 1935 and began his professional career with Manchester United in 1953. He spent five years at Old Trafford, winning two league titles and the 1958 FA Cup. He then moved to Manchester City in 1958, where he spent three seasons before joining Liverpool in 1961. Johnson spent two seasons at Anfield, winning the 1962 FA Cup, before joining Everton in 1963. He spent two seasons at Goodison Park, winning the 1966 FA Cup, before retiring in 1968. Johnson made a total of 4",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "David Johnson",
+                    "only player to have played for",
+                    "Manchester United, Manchester City, Liverpool and Everton"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "legendary winger",
+                    "true"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "born in",
+                    "Salford, England in 1935"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "began professional career with",
+                    "Manchester United in 1953"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Manchester United",
+                    "duration",
+                    "5 years"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Manchester United",
+                    "won",
+                    "2 league titles and 1958 FA Cup"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "moved to",
+                    "Manchester City in 1958"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Manchester City",
+                    "duration",
+                    "3 seasons"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "moved to",
+                    "Liverpool in 1961"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Liverpool",
+                    "duration",
+                    "2 seasons"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Liverpool",
+                    "won",
+                    "1962 FA Cup"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "moved to",
+                    "Everton in 1963"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Everton",
+                    "duration",
+                    "2 seasons"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson at Everton",
+                    "won",
+                    "1966 FA Cup"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Johnson",
+                    "retired in",
+                    "1968"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "5239772721292332989",
+        "response": "?\nIn the large intestine.\nWhat is the function of the large intestine?\nThe large intestine is responsible for absorption of fluids and remaining nutrients from the indigestible material in the feces. It also produces mucus and helps to regulate fluid balance.\nWhat is the function of the small intestine?\nThe small intestine is responsible for absorption of nutrients and fluids from the digested material in the food. It also produces mucus and helps to regulate fluid balance.\nWhat is the function of the cecum?\nThe cecum is the beginning of the large intestine and is responsible for absorption of fluids and remaining nutrients from the indigestible material in the feces. It also produces mucus and helps to regulate fluid balance.\nWhat is the function of the appendix?\nThe appendix",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bacteroids",
+                    "likely found in",
+                    "large intestine"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "large intestine",
+                    "responsible for",
+                    "absorption of fluids and remaining nutrients from indigestible material in feces"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "large intestine",
+                    "produces",
+                    "mucus"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "large intestine",
+                    "helps regulate",
+                    "fluid balance"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "small intestine",
+                    "responsible for",
+                    "absorption of nutrients and fluids from digested material in food"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "small intestine",
+                    "produces",
+                    "mucus"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "small intestine",
+                    "helps regulate",
+                    "fluid balance"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cecum",
+                    "beginning of",
+                    "large intestine"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cecum",
+                    "responsible for",
+                    "absorption of fluids and remaining nutrients from indigestible material in feces"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cecum",
+                    "produces",
+                    "mucus"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "cecum",
+                    "helps regulate",
+                    "fluid balance"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6217752837777787594",
+        "response": "\nWho plays Heather in Beauty and the Beast?\nThe role of Heather in Beauty and the Beast is played by actress and singer Ashley Brown.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Heather",
+                    "role in Beauty and the Beast played by",
+                    "Ashley Brown"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Ashley Brown",
+                    "is",
+                    "actress"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Ashley Brown",
+                    "is",
+                    "singer"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6882831655380911332",
+        "response": "?\nWhich British city is the oldest?\nWhich British city is the largest?\nWhich British city is the capital?\nWhich British city is the most populous?\nWhich British city is the second largest?\nWhich British city is the third largest?\nWhich British city is the fourth largest?\nWhich British city is the fifth largest?\nWhich British city is the sixth largest?\nWhich British city is the seventh largest?\nWhich British city is the eighth largest?\nWhich British city is the ninth largest?\nWhich British city is the tenth largest?\nWhich British city is the eleventh largest?\nWhich British city is the twelfth largest?\nWhich British city is the thirteenth largest?\nWhich British city is the fourteenth largest?\nWhich British city is the fifteenth largest?\nWhich British city is the sixteenth",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-1222948057007052760",
+        "response": "\nhow many players on the line of scrimmage in american football. American Football is a team sport played between two teams of eleven players each. The objective of the game is to score points by advancing an object into the opponents goal. The team with the most points at the end of the game wins. The team with the most points at the end of the game wins. how many players on the line of scrimmage in american football. American Football is a team sport played between two teams of eleven players each. The objective of the game is to score points by advancing an object into the opponents goal. The team with the most points at the end of the game wins. how many players on the line of scrimmage in american football. American Football is a team sport played between two teams of eleven players each. The objective of the game is to score points by advancing an object into the opponents goal. The team with the",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "how many players on the line of scrimmage in american football",
+                    "has",
+                    "11 players"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "American Football",
+                    "is",
+                    "team sport"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "American Football",
+                    "played between",
+                    "two teams"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "two teams",
+                    "have",
+                    "11 players each"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "American Football",
+                    "objective is",
+                    "score points"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "score points",
+                    "by",
+                    "advancing object into opponents goal"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "team",
+                    "with most points",
+                    "wins game"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-278447034238251050",
+        "response": "\nhow many episodes in my name is earl season 4. How many episodes are in My Name Is Earl season 4?\nHow many episodes are in My Name Is Earl season 4?\nThere are 24 episodes in My Name Is Earl season 4.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "My Name Is Earl season 4",
+                    "number of episodes",
+                    "24"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-4882553194262710105",
+        "response": "\nThe salary of the US Secretary of State is $191,300 per year. The Secretary of State is the highest-ranking diplomat in the US and is responsible for managing the US Department of State, which is responsible for implementing foreign policy and negotiating treaties and agreements with foreign governments. The Secretary of State also serves as the President's chief foreign affairs advisor.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "salary of US Secretary of State",
+                    "is",
+                    "$191,300 per year"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "US Secretary of State",
+                    "is",
+                    "highest-ranking diplomat in US"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "US Secretary of State",
+                    "manages",
+                    "US Department of State"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "US Department of State",
+                    "responsible for",
+                    "implementing foreign policy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "US Department of State",
+                    "responsible for",
+                    "negotiating treaties and agreements with foreign governments"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "US Secretary of State",
+                    "serves as",
+                    "President's chief foreign affairs advisor"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "5901661238535651276",
+        "response": "\nThe Wizard of Oz (1939) - IMDb\nDirected by Victor Fleming. With Judy Garland, Ray Bolger, Jack Haley, Bert Lahr. A Kansas farm girl and her dog are whisked away to the magical land of Oz, where they join the Scarecrow, Tin Man and the Cowardly Lion in their quest to find the Wizard who can help them return home.\nWho Plays Nikko in The Wizard of Oz? - answers.com\nWho Plays Nikko in The Wizard of Oz? The character of Nikko was played by actor Larry Fine in the 1939 film The Wizard of Oz. Larry Fine was a member of the comedy trio The Three Stooges.\nWho Plays Nikko in The Wizard of Oz? - answers.com. Who Plays Nikko in The Wizard of",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "5217063434217549041",
+        "response": "?\nWhere does the sun hit the US first?\nThe sun first hits the US in the state of Arizona.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sun",
+                    "first hits",
+                    "US"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "sun",
+                    "first hits US in",
+                    "Arizona"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Arizona",
+                    "is a state in",
+                    "US"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8544960023313580012",
+        "response": "\nThe first Who Wants to Be a Millionaire? winner in the UK was Chris Tarrant, who won \u00a31,000,000 on the show's debut episode in 1998. He was the only contestant to answer all 15 questions correctly.\nWho Wants to Be a Millionaire? is a British game show that was first broadcast on 25 September 1998. It is currently hosted by Chris Tarrant and is produced by Celador Radio. The show features a single contestant who attempts to win a \u00a31 million prize by answering a series of multiple-choice questions.\nWho Wants to Be a Millionaire? is a British game show that was first broadcast on 25 September 1998. It is currently hosted by Chris Tarrant and is produced by Celador Radio. The show features a single contestant who attempts to win a \u00a31",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Chris Tarrant",
+                    "was",
+                    "first Who Wants to Be a Millionaire? winner in the UK"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Chris Tarrant",
+                    "won",
+                    "\u00a31,000,000"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Winning episode for Chris Tarrant",
+                    "was",
+                    "debut episode in 1998"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Chris Tarrant",
+                    "answered",
+                    "all 15 questions correctly"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Who Wants to Be a Millionaire?",
+                    "is",
+                    "British game show"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Who Wants to Be a Millionaire?",
+                    "first broadcast on",
+                    "25 September 1998"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Who Wants to Be a Millionaire?",
+                    "hosted by",
+                    "Chris Tarrant"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Who Wants to Be a Millionaire?",
+                    "produced by",
+                    "Celador Radio"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Who Wants to Be a Millionaire?",
+                    "features",
+                    "single contestant"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Single contestant",
+                    "attempts",
+                    "win \u00a31 million prize"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Single contestant",
+                    "answers",
+                    "multiple-choice questions"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4272117895813370426",
+        "response": "\nColdplay - I Will Try To Fix You (Live at Glastonbury 2016)\nColdplay - I Will Try To Fix You (Live at Glastonbury 2016) Lyrics: I will try to fix you I will try to make you feel better I will try to make you see I will try to make you feel safer I will try to make you feel whole I will try to make you feel like you belong I will try to make you feel like you're home I will try to make you feel like you're not alone I will try to make you feel like you're not alone I will try to make you feel like you're not alone I will try to make you feel like you're not alone I will try to make you feel like you're not alone I will try to make you feel like you're not alone I will try to make you feel like you'",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Coldplay - I Will Try To Fix You",
+                    "is a",
+                    "song"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Coldplay - I Will Try To Fix You",
+                    "performed live at",
+                    "Glastonbury 2016"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Coldplay",
+                    "is the artist of",
+                    "I Will Try To Fix You"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I Will Try To Fix You",
+                    "has lyrics",
+                    "I will try to fix you I will try to make you feel better I will try to make you see I will try to make you feel safer I will try to make you feel whole I will try to make you feel like you belong I will try to make you feel like you're home I will try to make you feel like you're not alone"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4245798066923223457",
+        "response": "in nba history\nThe NBA All-Star Game is an exhibition basketball game hosted annually by the National Basketball Association (NBA). It features the league's best players from the previous season, who are divided into two teams based on their conference affiliation. The game is held in the month of February, usually in the middle of the season. The game is usually held in a different city each year, and the teams are chosen by fan votes and player votes. The game is televised nationally in the United States and Canada, and in more than 200 countries and territories worldwide. The game is one of the most anticipated events of the NBA season, and it is often referred to as the \"Super Bowl of Basketball\".\nThe All-Star Game was first held in 1951, and the first team to win the game was the Eastern Conference. The Western Conference won the game in 1952, and the two teams",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "hosted annually by",
+                    "National Basketball Association (NBA)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "held in",
+                    "February"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "usually held in",
+                    "different city each year"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "televised in",
+                    "United States"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "televised in",
+                    "Canada"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "televised in",
+                    "over 200 countries and territories"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "referred to as",
+                    "\"Super Bowl of Basketball\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game",
+                    "first held in",
+                    "1951"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Eastern Conference",
+                    "won first",
+                    "NBA All-Star Game"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Western Conference",
+                    "won",
+                    "NBA All-Star Game in 1952"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8852834747561852791",
+        "response": ". He was also the first to use the term \u201cgerm theory\u201d to explain the spread of infection.\nHe was born in 1843 in the small town of Holzminden, Germany. He was the son of a pharmacist and was exposed to the world of medicine from a young age. He studied medicine at the University of Berlin and later worked as an assistant to the renowned physician Rudolf Virchow.\nIn 1884, he published his now famous paper, \u201cOn the Germs of Disease.\u201d In this paper, he proposed that microorganisms are the cause of many diseases and that the spread of infection is due to their presence in the environment. This revolutionized the way doctors thought about disease and marked the beginning of modern medicine.\nHe continued to make important contributions to the field of medicine throughout his career. He discovered the bacteria responsible for cholera and typhoid fe",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-5039045537721106027",
+        "response": "?\nThere are 22 episodes in season 6 of Nashville.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "season 6 of Nashville",
+                    "has",
+                    "22 episodes"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-6687867009117829006",
+        "response": "movies.\nI'm not sure if I'm allowed to post links, but here's a picture of him:\nhttp://images.wikia.com/thehobbit/images/thumb/f/f9/Bilbo_Baggins_as_a_bear.jpg/250px-Bilbo_Baggins_as_a_bear.jpg\nI'm not sure if I'm allowed to post links, but here's a picture of him: http://images.wikia.com/thehobbit/images/thumb/f/f9/Bilbo_Baggins_as_a_bear.jpg/250px-Bilbo_Baggins_as_a_bear.jpg\nI'm not sure if I'm allowed to post links, but here's a picture of him:",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-6933377434468493740",
+        "response": ".\nI can feel at home in this world anymore.\nI can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this world anymore. I can feel at home in this",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "850563670386330666",
+        "response": "?\nThe Wave Hill Walk Off ended on 15th November 2018.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-8490085242981497626",
+        "response": ".\nI'm gonna write a little letter,\nAnd then I'm gonna mail it special delivery.\nI'm gonna tell myself all the things I should have done,\nAnd all the things I should have said.\nI'm gonna tell myself to be true,\nAnd never worry about the things I can't do.\nI'm gonna tell myself to take a deep breath,\nAnd remember that I'm worth it, I'm worth it.\nI'm gonna tell myself to take a leap of faith,\nAnd never worry about the future, I can't change it.\nI'm gonna tell myself to take a chance,\nAnd never worry about the past, I can't undo it.\nI'm gonna tell myself to take a stand,\nAnd never worry about the future, I can't change it.\nI'm gonna",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "write a little letter"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "mail it special delivery"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself all the things I should have done"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself all the things I should have said"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself to be true"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "never worry about the things I can't do"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself to take a deep breath"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "remember that I'm worth it"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself to take a leap of faith"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "never worry about the future"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself to take a chance"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "never worry about the past"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "tell myself to take a stand"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "I'm",
+                    "going to",
+                    "never worry about the future"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8361850218460994084",
+        "response": ".\nHe was born on 15th August 1925 in a small village of Punjab.\nHe was a great scientist and a visionary.\nHe was awarded with Bharat Ratna in 2008.\nHe was the founder of the green revolution in India.\nHe was the first to introduce high-yielding varieties of wheat and rice in India.\nHe was the first to introduce the use of chemical fertilizers in India.\nHe was the first to introduce the concept of modern crop management in India.\nHe was the first to introduce the concept of watershed management in India.\nHe was the first to introduce the concept of integrated crop management in India.\nHe was the first to introduce the concept of genetically modified crops in India.\nHe was the first to introduce the concept of climate-smart agriculture in India.\nHe was the first to",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "M. S. Swaminathan",
+                    "known as",
+                    "father of green revolution in India"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5259818422556035007",
+        "response": "?\nThe Beatles song \"Good Night\" is sung by John Lennon. It is the last song on the album The Beatles, also known as the \"White Album\".\nAsked in The Beatles, John Lennon\nWho sings the song Good Night on the Beatles album?\nJohn Lennon sings Good Night on the Beatles album.\nAsked in The Beatles, John Lennon, The White Album\nWho sings Good Night on the Beatles album?\nJohn Lennon sings Good Night on the Beatles album.\nWho sings Good Night on the Beatles album?\nJohn Lennon sings Good Night on the Beatles album. It is the last song on the album.\nWho sings Good Night on the Beatles album?\nJohn Lennon sings Good Night on the Beatles album. It is the last song on the album, also known as",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Good Night",
+                    "song by",
+                    "The Beatles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Good Night",
+                    "sung by",
+                    "John Lennon"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Good Night",
+                    "last song on album",
+                    "The Beatles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Beatles",
+                    "also known as",
+                    "the White Album"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "465961107727601737",
+        "response": "?\nThe Illinois Supreme Court appoints the Chief Justice of the Illinois Supreme Court. The other justices are appointed by the Governor of Illinois.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-5525220120773157166",
+        "response": "and feel the rain on my skin and just be in the moment and feel the peace and the serenity of the moment.\nI'm looking for a song that has the lyrics \"I'm gonna take a stand, I'm gonna be strong, I'm gonna be the one\". It's a slow, mellow song with a powerful message. Any help would be appreciated. Thanks!\nI'm looking for a song with the lyrics \"I'm gonna take a stand, I'm gonna be strong, I'm gonna be the one\". It's a slow, mellow song with a powerful message. Any help would be appreciated. Thanks!\nI'm looking for a song with the lyrics \"I'm gonna take a stand, I'm gonna be strong, I'm gonna be the one\". It's a slow, mellow song with a powerful",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2107324154024383180",
+        "response": ", the most popular christian song of all time.\nThe song has been streamed more than 250 million times on spotify and has been certified platinum in the us and uk.\nThe song is based on the book i can only imagine: a story of hope and redemption, which tells the story of how the song came to be.\nThe book is being adapted into a movie of the same name, which will be released in 2018.\nThe song has been praised for its ability to move people of all faiths and backgrounds.\nIt has been used to help people process their own pain and loss and has been used in churches and worship services around the world.\nThe song has also been credited with helping to revitalize the christian music industry.\nThe song has been praised for its ability to move people of all faiths and backgrounds. It has been used to help people process their",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "written and performed by",
+                    "Bart Millard"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "is",
+                    "the most popular christian song of all time"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "has been streamed over",
+                    "250 million times on Spotify"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "certified platinum in",
+                    "the US and UK"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "based on the book",
+                    "i can only imagine: a story of hope and redemption"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "the book i can only imagine: a story of hope and redemption",
+                    "tells the story of",
+                    "how the song i can only imagine came to be"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "the book i can only imagine: a story of hope and redemption",
+                    "being adapted into",
+                    "a movie of the same name"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "the movie of the same name as the book i can only imagine",
+                    "will be released in",
+                    "2018"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "has been praised for",
+                    "its ability to move people of all faiths and backgrounds"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "used to help people process",
+                    "their own pain and loss"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "used in",
+                    "churches and worship services around the world"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "i can only imagine",
+                    "credited with helping to revitalize",
+                    "the christian music industry"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-2126374007719970792",
+        "response": "\nWhat Olympic Athlete Has Won The Most Medals?\nThe Olympic athlete who has won the most medals is swimmer Michael Phelps, with a total of 28 medals. He won 23 gold medals, 3 silver medals, and 2 bronze medals. He won the most medals at the 2008 Beijing Olympics and the 2012 London Olympics. He is the most decorated athlete in Olympic history.\nWhat Olympic Athlete Has Won The Most Medals?\nWhat Olympic Athlete Has Won The Most Medals? 1. Swimmer Michael Phelps has won the most medals of any Olympic athlete with a total of 28 medals. He has won 23 gold medals, 3 silver medals, and 2 bronze medals. He has won the most medals at the 2008 Beijing",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "is",
+                    "swimmer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "won total",
+                    "28 medals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "won",
+                    "23 gold medals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "won",
+                    "3 silver medals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "won",
+                    "2 bronze medals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "won most medals at",
+                    "2008 Beijing Olympics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "won most medals at",
+                    "2012 London Olympics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "is",
+                    "most decorated athlete in Olympic history"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1123449784666821676",
+        "response": "\nThe Wire (TV series) - Wikipedia\nThe Wire is an American crime drama television series set and produced in Baltimore, Maryland. Created and primarily written by author and former police reporter David Simon, the series was broadcast by the cable network HBO between 2002 and 2008. The series follows the story of drug dealers, police officers, and politicians in Baltimore.\nThe Wire (TV Series 2002\u20132008) - IMDb\nThe Wire (TV Series 2002\u20132008) cast and crew credits, including actors, actresses, directors, writers and more.\nWho sings the theme song for The Wire? - Quora\nThe theme song for The Wire is \"Way Down in the Hole\" by Tom Waits. It is used throughout the series and is a recurring motif. The song is also",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Wire",
+                    "is an",
+                    "American crime drama television series"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Wire",
+                    "set and produced in",
+                    "Baltimore, Maryland"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Wire",
+                    "created by",
+                    "author and former police reporter David Simon"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Wire",
+                    "broadcast by",
+                    "the cable network HBO"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Wire",
+                    "aired between",
+                    "2002 and 2008"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Wire",
+                    "follows the story of",
+                    "drug dealers, police officers, and politicians in Baltimore"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Way Down in the Hole by Tom Waits",
+                    "is",
+                    "recurring motif in The Wire"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The theme song for The Wire",
+                    "is",
+                    "\"Way Down in the Hole\" by Tom Waits"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4265986416867251482",
+        "response": ".\nThe submarine was invented by a man named John P. Holland. He was an Irish-American inventor who lived from 1841 to 1914. He was a civil engineer and a naval architect who was fascinated with the idea of underwater navigation. He designed and built the first successful submarine in 1878, which he called the \"Holland VI\". This submarine was used by the Union Navy during the American Civil War and was very successful in sinking Confederate ships. After the war, John P. Holland went on to design and build more advanced submarines, which were used by many navies around the world.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "invented",
+                    "the submarine"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "nationality",
+                    "Irish-American"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "occupation",
+                    "inventor"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "also",
+                    "civil engineer"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "also",
+                    "naval architect"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "fascinated by",
+                    "idea of underwater navigation"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "designed and built",
+                    "first successful submarine in 1878"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First successful submarine in 1878",
+                    "named",
+                    "Holland VI"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Holland VI submarine",
+                    "used by",
+                    "Union Navy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Use of Holland VI submarine",
+                    "during",
+                    "American Civil War"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Holland VI submarine",
+                    "very successful in",
+                    "sinking Confederate ships"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "lifetime",
+                    "1841 to 1914"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John P. Holland",
+                    "went on to design and build",
+                    "more advanced submarines"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "More advanced submarines by John P. Holland",
+                    "used by",
+                    "many navies around the world"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "2141218895657905276",
+        "response": "\nWho played tom on as the world turns?\nTom Hatcher was played by Michael Park, who has appeared on the soap opera since 1999.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tom Hatcher",
+                    "played by",
+                    "Michael Park"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Michael Park",
+                    "appeared on",
+                    "soap opera As the World Turns"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Michael Park",
+                    "appearance start year",
+                    "1999"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6672231732847608194",
+        "response": ".\nThe song was written by Mike Post and sung by The Happenings.\nThe song was released in 1969 and reached #1 on the Billboard Hot 100 chart.\nThe song was featured in the opening credits of the television series Laverne & Shirley.\nThe song was also featured in the 1999 movie The Boondock Saints.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "written by",
+                    "Mike Post"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "sung by",
+                    "The Happenings"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "released in",
+                    "1969"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "reached #1 on",
+                    "Billboard Hot 100 chart"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "featured in opening credits of",
+                    "television series Laverne & Shirley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theme song for laverne and shirley",
+                    "featured in",
+                    "1999 movie The Boondock Saints"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4943207042321394497",
+        "response": "?\nThe 10 shilling note went out of circulation in 1988.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "10 shilling note",
+                    "went out of circulation",
+                    "1988"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6014950976264156000",
+        "response": ", and the song was so beautiful and so powerful. I was so moved by it that I had to look up the lyrics and the artist. I found out it was a song by the band Lifehouse and the lyrics were so powerful and so true. The song is about never giving up and having faith in yourself and your dreams. The lyrics are so inspiring and the music is so beautiful that it made me cry when I heard it. I think everyone should listen to this song because it will make you believe in yourself and never give up.\nI think this song is amazing and it's a great reminder to never give up. The lyrics are so powerful and the music is so beautiful. I think everyone should listen to this song because it will make you believe in yourself and never give up.\nI think this song is amazing and it's a great reminder to never give up. The lyrics are so powerful and the music is",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "never gonna let you go",
+                    "performed by",
+                    "Lifehouse (band)"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-5004457603684974952",
+        "response": "?\nThe halftime show at Super Bowl 2016 will be performed by Coldplay.\nWho is playing the halftime show at the super bowl 2016?\nThe halftime show at Super Bowl 2016 will be performed by Coldplay.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "halftime show at Super Bowl 2016",
+                    "will be performed by",
+                    "Coldplay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Super Bowl 2016",
+                    "location",
+                    "unspecified"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1206653570097564556",
+        "response": "\nWhere does the movie Proof of Life take place?\nThe movie Proof of Life takes place in South America, primarily in the jungles of Peru.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Proof of Life",
+                    "takes place in",
+                    "South America"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Proof of Life",
+                    "takes place primarily in",
+                    "the jungles of Peru"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "the jungles of Peru",
+                    "located in",
+                    "South America"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6405015309290964923",
+        "response": "?\nWhat is the origin of the phrase \"monkey's uncle\"? It is believed to have originated in the 1600s and was used to describe something that was impossible or unlikely to happen. It is also used to express skepticism or doubt.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "saying monkey's uncle",
+                    "originated",
+                    "1600s"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "monkey's uncle",
+                    "used to describe",
+                    "something impossible or unlikely"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "monkey's uncle",
+                    "expresses",
+                    "skepticism or doubt"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3790834797035922554",
+        "response": "?\nThe Vice President of the United States. If the Senate is tied, the Vice President has the deciding vote.\nWhat is the difference between the US House of Representatives and the US Senate?\nThe US House of Representatives is the lower chamber of Congress, while the US Senate is the upper chamber. The House is composed of 435 members, while the Senate is composed of 100 Senators. The House is responsible for introducing and passing bills, while the Senate is responsible for considering presidential appointments and treaties.\nWhat is the difference between the US House of Representatives and the US Senate?\nThe US House of Representatives is the lower chamber of Congress, while the US Senate is the upper chamber. The House is composed of 435 members, while the Senate is composed of 100 Senators. The House is responsible for introducing and passing bills, while the Senate is responsible for considering presidential appointments and",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vice President of the United States",
+                    "breaks ties in",
+                    "US Senate"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vice President of the United States",
+                    "has deciding vote",
+                    "if US Senate is tied"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6992125597790283273",
+        "response": "2019\nWhen does Canada switch to Daylight Savings Time 2019?\nDaylight Savings Time in Canada 2019\nDaylight Savings Time in Canada 2019. When does Canada switch to Daylight Savings Time 2019?\nDaylight Savings Time in Canada 2019. When does Canada switch to Daylight Savings Time 2019?\nDaylight Savings Time in Canada 2019. When does Canada switch to Daylight Savings Time 2019?\nDaylight Savings Time in Canada 2019. When does Canada switch to Daylight Savings Time 2019?\nDaylight Savings Time in Canada 2019. When does Canada switch to Daylight Savings Time 2019?\nDaylight Savings Time in Canada 2019. When",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-610965397636500508",
+        "response": "?\nMandy is a name of English origin. It is derived from the name Amanda, which is a form of the name Amanda, which is derived from the Latin name Amanda, which means \"loved by the people\". It is often used as a nickname for the name Amanda. It is also used as a nickname for the name Sandra.\nWhat is the meaning of the name Mandi?\nMandi is a name of Indian origin. It is derived from the name Mandakranta, which is a form of the name Mandakranta, which is derived from the Sanskrit name Mandakranta, which means \"attractive\".\nWhat is the meaning of the name Mandy?\nMandy is a name of English origin. It is derived from the name Amanda, which is a form of the name Amanda, which is derived from the Latin name Amanda, which means \"loved by the",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mandy",
+                    "is a name of",
+                    "English origin"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mandy",
+                    "derived from the name",
+                    "Amanda"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Amanda",
+                    "is a form of the name",
+                    "Amanda"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Amanda",
+                    "derived from the Latin name",
+                    "Amanda"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Mandy",
+                    "often used as",
+                    "nickname for Amanda"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mandy",
+                    "also used as nickname for",
+                    "Sandra"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Amanda",
+                    "means",
+                    "\"loved by the people\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4876812477232188511",
+        "response": "?\nThe last name Perry is of English origin and is derived from the given name Percy, which is derived from the Latin name Percius, which is derived from the name of the town of Perugia in Italy. The name was popularized by the 12th century French poet, Percy Bysshe Shelley.\nWhat is the origin of the last name Perry?\nThe last name Perry is of English origin and is derived from the given name Percy, which is derived from the Latin name Percius, which is derived from the name of the town of Perugia in Italy. The name was popularized by the 12th century French poet, Percy Bysshe Shelley.\nWhat is the origin of the last name Perkins?\nThe last name Perkins is of English origin and is derived from the given name Percy, which is derived from the Latin name Percius, which is derived from the name of the",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "last name Perry",
+                    "origin",
+                    "English"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Perry",
+                    "derived from given name",
+                    "Percy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Percy",
+                    "derived from",
+                    "Latin name Percius"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Percius",
+                    "derived from",
+                    "name of town Perugia in Italy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "name Percy",
+                    "popularized by",
+                    "12th century French poet Percy Bysshe Shelley"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-7186555013910059700",
+        "response": "called sangam.\nThe river Ganges is the longest river in India and is considered to be one of the most sacred rivers in the country. It is also known as the Ganga. The river Ganges is a major source of water for irrigation and for drinking. It is also a major source of fish and other aquatic life. The river Ganges is also a major tourist attraction, with many people visiting the river to take part in religious rituals and to enjoy the scenery.\nThe river Ganges is one of the most sacred rivers in India. It is also known as the Ganga. The river Ganges is a major source of water for irrigation and for drinking. It is also a major source of fish and other aquatic life. The river Ganges is also a major tourist attraction, with many people visiting the river to take part in religious rituals and to enjoy the scenery.\nThe river",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-3428106355897335676",
+        "response": "of health in the state where the birth occurred.\nIn some cases, the hospital or doctor\u2019s office may complete the birth certificate.\nThe birth certificate will include the name of the baby, the date and place of birth, the parents\u2019 names, and other information such as the baby\u2019s gender, race, and weight.\nIn some states, the birth certificate will also include the baby\u2019s footprints.\nThe birth certificate is a legal document and will be used for a variety of purposes, such as applying for a passport, obtaining a driver\u2019s license, enrolling in school, and claiming Social Security benefits.\nIt is important to keep the birth certificate in a safe place, as it may be needed at any time.\nIn some cases, the birth certificate may need to be replaced if it is lost or damaged.\nThe process for replacing a birth certificate will vary by state, but typically involves filling out a form and providing proof",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "birth certificates",
+                    "most often completed by",
+                    "department of health"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "department of health",
+                    "located in",
+                    "state where birth occurred"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "hospital",
+                    "may complete",
+                    "birth certificate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "doctor's office",
+                    "may complete",
+                    "birth certificate"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "name of baby"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "date of birth"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "place of birth"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "parents' names"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "baby's gender"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "baby's race"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "includes",
+                    "baby's weight"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "in some states includes",
+                    "baby's footprints"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "is a",
+                    "legal document"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "used for",
+                    "applying for passport"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "used for",
+                    "obtaining driver's license"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "used for",
+                    "enrolling in school"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "used for",
+                    "claiming Social Security benefits"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "should be",
+                    "kept in safe place"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "birth certificate",
+                    "may need to be",
+                    "replaced if lost or damaged"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "replacing birth certificate",
+                    "involves",
+                    "filling out form"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "replacing birth certificate",
+                    "involves",
+                    "providing proof"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "process for replacing birth certificate",
+                    "varies by",
+                    "state"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8451264603946634151",
+        "response": "a patient who is able to move around and perform activities of daily living without assistance.\nambulatory care is health care provided to patients who are able to move around and perform activities of daily living without assistance.\nambulatory care setting is a health care setting where patients who are able to move around and perform activities of daily living without assistance receive care.\nambulatory care unit (ACU) is a health care unit where patients who are able to move around and perform activities of daily living without assistance receive care.\nambulatory care visit (ACV) is a health care visit where patients who are able to move around and perform activities of daily living without assistance receive care.\nambulatory care visit (ACV) is a health care visit where patients who are able to move around and perform activities of daily living without assistance receive care.\nambulatory care visit (ACV) is a health care visit where patients who are able to move around and perform",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "ambulatory",
+                    "term used in health care to describe",
+                    "patient who is able to move around and perform activities of daily living without assistance"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ambulatory care",
+                    "is",
+                    "health care provided to patients who are able to move around and perform activities of daily living without assistance"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ambulatory care setting",
+                    "is",
+                    "health care setting where patients who are able to move around and perform activities of daily living without assistance receive care"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ambulatory care unit (ACU)",
+                    "is",
+                    "health care unit where patients who are able to move around and perform activities of daily living without assistance receive care"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ambulatory care visit (ACV)",
+                    "is",
+                    "health care visit where patients who are able to move around and perform activities of daily living without assistance receive care"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6605227747829720945",
+        "response": "?\nThe width of a cricket bat is between 7.5 and 8.5 inches. The length of the bat should be between 38 and 40 inches. The bat should also be made of a lightweight material such as wood, carbon fiber or aluminum alloy.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cricket bat",
+                    "width",
+                    "between 7.5 and 8.5 inches"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "cricket bat",
+                    "length",
+                    "between 38 and 40 inches"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "cricket bat",
+                    "made of",
+                    "lightweight material"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "lightweight material",
+                    "examples",
+                    "wood"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "lightweight material",
+                    "examples",
+                    "carbon fiber"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "lightweight material",
+                    "examples",
+                    "aluminum alloy"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8848582210866367992",
+        "response": "?\nThe 2017 Nobel Peace Prize was awarded to James Peebles, Michel Mayor and Didier Queloz \"for contributions to our understanding of the evolution of the universe and Earth's place in the cosmos\".\nWho won the Nobel Prize in Physics 2017?\nThe 2017 Nobel Prize in Physics was awarded to James Peebles, Michel Mayor and Didier Queloz \"for contributions to our understanding of the evolution of the universe and Earth's place in the cosmos\".\nWho won the Nobel Prize in Chemistry 2017?\nThe 2017 Nobel Prize in Chemistry was awarded to James Peebles, Michel Mayor and Didier Queloz \"for contributions to our understanding of the evolution of the universe and Earth's place in the cosmos\".\nWho won the Nobel Prize in Economics 2017?\nThe 2017 Nobel",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "James Peebles",
+                    "awarded",
+                    "2017 Nobel Peace Prize"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Michel Mayor",
+                    "awarded",
+                    "2017 Nobel Peace Prize"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Didier Queloz",
+                    "awarded",
+                    "2017 Nobel Peace Prize"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "James Peebles, Michel Mayor and Didier Queloz",
+                    "awarded for",
+                    "contributions to our understanding of the evolution of the universe and Earth's place in the cosmos"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "7539197459439257235",
+        "response": "song download\nWho Sings So Come And Dance With Me Jai Ho Song Download\nSo Come and Dance with Me - Jai Ho Song Download - YouTube\n1/1/2019 \u00b7 So Come and Dance with Me - Jai Ho Song Download. ... Who Sings So Come and Dance with Me - Jai Ho Song Download. ... Who Sings So Come and Dance with Me - Jai Ho Song Download.\nWho sings the song \"So Come and Dance with Me\" from the movie ...\nWho sings the song \"So Come and Dance with Me\" from the movie Jai Ho? ... Who sings the song \"So Come and Dance with Me\" from the movie Jai Ho? ... Who sings the song \"So Come and Dance with Me\" from the movie Jai Ho? ... Who sings the song \"So Come and Dance with Me\" from the movie Jai Ho?\nWho sings the song \"So Come",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "So Come and Dance with Me - Jai Ho",
+                    "is a",
+                    "song"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "So Come and Dance with Me - Jai Ho",
+                    "appears in movie",
+                    "Jai Ho"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "So Come and Dance with Me - Jai Ho",
+                    "can be",
+                    "downloaded"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "So Come and Dance with Me - Jai Ho",
+                    "has",
+                    "music video on YouTube"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Music video",
+                    "hosted on",
+                    "YouTube"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Music video title",
+                    "is",
+                    "So Come and Dance with Me - Jai Ho Song Download"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Music video",
+                    "upload date",
+                    "1/1/2019"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6403691727808631943",
+        "response": "\nWhere Is Wind Power Used Most In The United States. Where Is Wind Power Used Most In The United States. ... Wind power is used in many countries around the world, but the United States is one of the leaders in terms of installed capacity. ...\nWhere Is Wind Power Used Most In The United States\nWhere Is Wind Power Used Most In The United States. Where Is Wind Power Used Most In The United States. ... Wind power is used in many countries around the world, but the United States is one of the leaders in terms of installed capacity. ...\nWhere Is Wind Power Used Most In The United States. Where Is Wind Power Used Most In The United States. ... Wind power is used in many countries around the world, but the United States is one of the leaders in terms of installed capacity. ...\nWhere Is Wind Power Used Most In The United States. Where Is Wind Power Used Most In The United States. ... Wind power is",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Wind power",
+                    "used in",
+                    "many countries around the world"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "United States",
+                    "one of the leaders",
+                    "in terms of installed capacity of wind power"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8900387163847503723",
+        "response": ".\nHe was a great actor and will be missed.\nI'm so sorry to hear of the passing of David Cassidy. He was a great actor and will be missed. RIP David Cassidy.\nI'm so sorry to hear of the passing of David Cassidy. He was a great actor and will be missed. RIP David Cassidy. He was a great actor and will be missed. RIP David Cassidy.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "David Cassidy",
+                    "played role of",
+                    "Mr. Kincaid"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Mr. Kincaid",
+                    "character on TV show",
+                    "The Partridge Family"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "334627437220863517",
+        "response": "\nThe First Battle of Ypres (19 October \u2013 22 November 1914) was a major battle of World War I fought in the Ypres Salient, on the Western Front. It marked the first use of poison gas on a large scale, when the German forces released chlorine gas against the Allied forces. The Allies eventually managed to hold the line, but at a heavy cost. The Second Battle of Ypres (22 April \u2013 25 May 1915) was a major battle of World War I fought in the Ypres Salient, on the Western Front. It marked the first time that the German forces used mustard gas, which was even more deadly than chlorine gas. The Allies eventually managed to hold the line, but at a heavy cost. The Third Battle of Ypres (1 July \u2013 10 November 1917) was a major battle of World War I fought",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "occurred during",
+                    "World War I"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "fought in",
+                    "Ypres Salient"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "fought on",
+                    "Western Front"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "started on",
+                    "19 October 1914"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "ended on",
+                    "22 November 1914"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "marked",
+                    "first use of poison gas on a large scale"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Poison gas",
+                    "released by",
+                    "German forces"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Poison gas",
+                    "released against",
+                    "Allied forces"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Holding the line",
+                    "came at",
+                    "heavy cost"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1669394955232263644",
+        "response": "\nThe Battle of Badr took place in 624 CE, during the early days of Islam. It was the first major battle between the Muslims and the Meccans, and is considered to be one of the most important battles in Islamic history.\nWhen did the Battle of Badr take place?\nThe Battle of Badr took place in 624 CE, during the early days of Islam. It was the first major battle between the Muslims and the Meccans, and is considered to be one of the most important battles in Islamic history.\nWhat was the outcome of the Battle of Badr?\nThe Battle of Badr was a major victory for the Muslims, who emerged triumphant over the Meccans. This battle is considered to be one of the most important battles in Islamic history, as it established Muslim dominance in the region and set the stage for the subsequent spread of Islam.\nWhat was",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Battle of Badr",
+                    "took place in",
+                    "624 CE"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Battle of Badr",
+                    "took place during",
+                    "early days of Islam"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Battle of Badr",
+                    "was",
+                    "first major battle between Muslims and Meccans"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Battle of Badr",
+                    "considered",
+                    "one of most important battles in Islamic history"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1259577751352734948",
+        "response": "\nwho wrote the song i want to dance with somebody by whitney houston\nwho wrote the song i want to dance with somebody by whitney houston?\nThe song \"I Want to Dance with Somebody (Who Loves Me)\" was written by George Merrill and Shannon Rubicam and originally performed by Whitney Houston.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody (Who Loves Me)",
+                    "written by",
+                    "George Merrill"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody (Who Loves Me)",
+                    "written by",
+                    "Shannon Rubicam"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody (Who Loves Me)",
+                    "originally performed by",
+                    "Whitney Houston"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4674269357266381610",
+        "response": ".\nI'm sure there are plenty of other actors who have played the same role in different movies.\nI'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of other actors who have played the same role in different movies. I'm sure there are plenty of",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-7306805811512692008",
+        "response": "\nThe Red River is a river in the United States that flows through the states of Minnesota, North Dakota, and Louisiana. It is a tributary of the Mississippi River, and is approximately 1,200 miles (1,900 km) long. The river starts in Minnesota and flows southeastward through North Dakota and Louisiana, before joining the Mississippi River near New Orleans.\nWhere does the Red River start and end?\nThe Red River starts in the Minnesota River Valley in southwestern Minnesota and flows southeastward through North Dakota and Louisiana, before joining the Mississippi River near New Orleans.\nWhere does the Red River start and end?\nThe Red River starts in the Minnesota River Valley in southwestern Minnesota and flows southeastward through North Dakota and Louisiana, before joining the Mississippi River near New Orleans.\nWhere does the Red River start and end?\nThe Red River starts in the Minnesota River Valley in southwestern Minnesota and flows sout",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Red River",
+                    "flows through US states",
+                    "Minnesota, North Dakota, Louisiana"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "tributary of",
+                    "Mississippi River"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "length",
+                    "approximately 1,200 miles (1,900 km)"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "starts in",
+                    "Minnesota River Valley in southwestern Minnesota"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "flows southeastward",
+                    "through North Dakota and Louisiana"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "joins",
+                    "Mississippi River near New Orleans"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2532633865902253646",
+        "response": "by the monkees.\nI'm not sure if I'm allowed to post links here, but here's a great version of the song by the band The Posies: https://www.youtube.com/watch?v=z-_z-_X7XQ-Q\nI'm not sure if I'm allowed to post links here, but here's a great version of the song by the band The Posies: https://www.youtube.com/watch?v=z-_z-_X7XQ-Q [/quote]",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "What I Like About You",
+                    "originally sung by",
+                    "The Monkees"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1389300307230755697",
+        "response": ".\nI'm sure I'm not the only one who remembers this song.\nI'm sure I'm not the only one who remembers this song. It was a hit in the 60s.\nI'm sure I'm not the only one who remembers this song. It was a hit in the 60s. It was sung by a group called The Shadows.\nI'm sure I'm not the only one who remembers this song. It was a hit in the 60s. It was sung by a group called The Shadows. The lyrics go like this: I knew the bride when she used to rock and roll, I knew the bride when she was a young girl, I knew the bride when she was a young girl, I knew the bride when she used to rock and roll.\nI'm sure I'm not the only one who",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Shadows",
+                    "sang",
+                    "i knew the bride when she used to rock and roll"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2191432481376971337",
+        "response": ".\nI'm sure the Colts will be just fine. They have a great owner and a great GM. They have a great coach and a great QB. They have a great fan base and a great stadium. They have a great history and a great tradition. They have a great future.\nI'm sure the Colts will be just fine. They have a great owner and a great GM. They have a great coach and a great QB. They have a great fan base and a great stadium. They have a great history and a great tradition. They have a great future.I'm sure the Colts will be just fine. They have a great owner and a great GM. They have a great coach and a great QB. They have a great fan base and a great stadium. They have a great history and a great tradition. They have a great future.\nI'm sure the Colts will be just",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-5489426796364143729",
+        "response": "of India.\nWho was the first president of the constituent assembly of India?\nThe first President of the Constituent Assembly of India was Dr. Rajendra Prasad. He was elected on December 11, 1946.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "first president of the constituent assembly of India",
+                    "is",
+                    "Dr. Rajendra Prasad"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dr. Rajendra Prasad",
+                    "elected on",
+                    "December 11, 1946"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "3480908309420822259",
+        "response": ".\nI'm sure that the song was written by a cowboy.\nI'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I'm sure that the song was written by a cowboy. I",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "3311962143974666464",
+        "response": "?\nThe king cobra can produce up to 2.5 million venomous neurotoxins in its saliva. This venom is released when the snake bites and can cause paralysis, respiratory failure, and death.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "king cobra",
+                    "can produce",
+                    "up to 2.5 million venomous neurotoxins"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Venom",
+                    "produced in",
+                    "saliva of king cobra"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Venom",
+                    "released when",
+                    "king cobra bites"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Venom of king cobra",
+                    "can cause",
+                    "paralysis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Venom of king cobra",
+                    "can cause",
+                    "respiratory failure"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Venom of king cobra",
+                    "can cause",
+                    "death"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2352051038192309240",
+        "response": "?\nThe brain gets its energy from the bloodstream, which is why it is important to keep your blood sugar levels balanced. The brain uses glucose as its main energy source, and when glucose levels drop, the brain begins to use stored energy from glycogen and fatty acids.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brain",
+                    "gets energy from",
+                    "bloodstream"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "brain",
+                    "main energy source",
+                    "glucose"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "from",
+                    "bloodstream"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "glucose levels drop",
+                    "brain uses",
+                    "stored energy from glycogen and fatty acids"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "glycogen",
+                    "is",
+                    "stored energy"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "fatty acids",
+                    "are",
+                    "stored energy"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "7735703748660141931",
+        "response": ".\nWhat is the name of the theme song for the tv show cops?\nThe theme song for the TV show Cops is called \"Bad Boys\" by The Cars.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for tv show Cops",
+                    "called",
+                    "Bad Boys"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Cars",
+                    "sing",
+                    "Bad Boys"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "3028343500075334931",
+        "response": ". >> i'm going to take a few moments to talk about the legacy of tim russert. he was a giant in the world of journalism. he was a giant in the world of politics. he was a giant in the world of broadcasting. he was a giant in the world of moderating debates. he was a giant in the world of interviews. he was a giant in the world of covering washington. he was a giant in the world of covering the world. he was a giant in the world of making people think. he was a giant in the world of making people understand. he was a giant in the world of making people care. he was a giant in the world of making people laugh. he was a giant in the world of making people cry. he was a giant in the world of making people think twice. he was a giant in the world of making people understand. he was a giant in the world of making people care. he",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tim Russert",
+                    "had tenure as moderator on",
+                    "Meet the Press"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tim Russert's tenure",
+                    "was",
+                    "longest"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1848006246448298349",
+        "response": "?\nThe killing of a sacred deer was filmed in the village of Kokkino, near the city of Heraklion in Crete, Greece.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The killing of a sacred deer",
+                    "filmed in",
+                    "village of Kokkino"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "village of Kokkino",
+                    "near",
+                    "city of Heraklion"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "city of Heraklion",
+                    "located in",
+                    "Crete, Greece"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-927966355158112429",
+        "response": "the electoral college. the electoral college consists of electors who are chosen by the voters in each state. the winner of the majority of votes in the state is awarded all of that state\u2019s electoral votes. the candidate who wins the majority of electoral votes nationally is the winner of the election.\nthe electoral college is a system that is used to elect the president of the united states. it is a system that is based on the principle of majority rule. the candidate who wins the majority of votes in the state is awarded all of that state\u2019s electoral votes. the candidate who wins the majority of electoral votes nationally is the winner of the election.\nthe electoral college is a system that is used to elect the president of the united states. it is a system that is based on the principle of majority rule. the candidate who wins the majority of votes in the state is awarded all of that state\u2019s electoral votes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "electoral college",
+                    "officially elects",
+                    "president of the united states"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "electoral college",
+                    "consists of",
+                    "electors"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "electors",
+                    "chosen by",
+                    "voters in each state"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "winner of majority of votes in state",
+                    "awarded",
+                    "all of that state's electoral votes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "electoral college",
+                    "is",
+                    "system used to elect president of united states"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "electoral college",
+                    "based on",
+                    "principle of majority rule"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "candidate",
+                    "wins majority of votes in state",
+                    "awarded all of that state's electoral votes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "candidate",
+                    "wins majority of electoral votes nationally",
+                    "winner of election"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5984668857988357373",
+        "response": ".\nThe sacrum is a triangular bone located at the base of the spine. It is formed by five fused sacral vertebrae and is connected to the iliac bones of the pelvis. The sacrum is the most common site of osteomyelitis in children.\nThe iliac bones are two large, flat bones located on either side of the spine, just above the pelvis. They are formed by five vertebrae and are connected to the sacrum.\nOsteomyelitis of the sacrum and iliac bones is usually caused by bacterial infection, most commonly Staphylococcus aureus, Escherichia coli, and Klebsiella pneumoniae. It is most common in children, particularly those with weakened immune systems.\nThe most common symptom of osteomyelitis of the sacrum and iliac bones is pain in",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sacrum",
+                    "is",
+                    "triangular bone"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "sacrum",
+                    "located at",
+                    "base of the spine"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "sacrum",
+                    "formed by",
+                    "five fused sacral vertebrae"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "sacrum",
+                    "connected to",
+                    "iliac bones of the pelvis"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "iliac bones",
+                    "are",
+                    "two large, flat bones"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "iliac bones",
+                    "located on",
+                    "either side of the spine"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "iliac bones",
+                    "above",
+                    "pelvis"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "iliac bones",
+                    "formed by",
+                    "five vertebrae"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "iliac bones",
+                    "connected to",
+                    "sacrum"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-704529031648349308",
+        "response": "season 5 episode 12\nWho plays Red on Orange Is the New Black Season 5?\nWho plays Red on Orange Is the New Black Season 5? - Find out who plays Red on Orange Is the New Black Season 5. Orange Is the New Black is an American comedy-drama series created by Jenji Kohan and produced by Netflix. The series follows the story of Piper Chapman, a woman who is sentenced to 15 months in prison for a crime she committed 10 years prior. The fifth season of Orange Is the New Black premiered on July 27, 2018, and consists of 13 episodes. In the season, Piper and her fellow inmates must adjust to life after the riot, while the prison is under new management. The role of Red is played by Kate Mulgrew. Mulgrew is an American actress and singer, best known for her role as",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Red",
+                    "character in",
+                    "Orange Is the New Black"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Orange Is the New Black",
+                    "created by",
+                    "Jenji Kohan"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Orange Is the New Black",
+                    "produced by",
+                    "Netflix"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Orange Is the New Black",
+                    "follows",
+                    "Piper Chapman"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Fifth season of Orange Is the New Black",
+                    "premiered on",
+                    "July 27, 2018"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Fifth season of Orange Is the New Black",
+                    "consists of",
+                    "13 episodes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Red",
+                    "played by",
+                    "Kate Mulgrew"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]

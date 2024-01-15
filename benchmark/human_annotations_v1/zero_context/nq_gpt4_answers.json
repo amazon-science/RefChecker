@@ -1,0 +1,3002 @@
+[
+    {
+        "id": "4073418639113603971",
+        "response": "Peter, Paul and Mary sang \"I Dig Rock and Roll Music\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Peter, Paul and Mary",
+                    "sang",
+                    "\"I Dig Rock and Roll Music\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-3339006116507262453",
+        "response": "The song \"I Ran All the Way Home\" was sung by The Impalas.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song \"I Ran All the Way Home\"",
+                    "was sung by",
+                    "The Impalas"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1582234629547061501",
+        "response": "Tami Lynn sang \"I'm Gonna Run Away From You.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "\"Tami Lynn\"",
+                    "\"sang\"",
+                    "'\"I'm Gonna Run Away From You\"'"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2223188268381215709",
+        "response": "The Speaker of the Lok Sabha presides over the joint sessions of Parliament in India.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Speaker of the Lok Sabha",
+                    "presides over",
+                    "the joint sessions of Parliament"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The joint sessions of Parliament",
+                    "located in",
+                    "India"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-8883866849303680195",
+        "response": "Beverly Garland played the role of Barbara Harper Douglas, Steve's wife, on \"My Three Sons\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Beverly Garland",
+                    "played",
+                    "Barbara Harper Douglas"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Barbara Harper Douglas",
+                    "role in My Three Sons",
+                    "Steve's wife"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-3476455683698256952",
+        "response": "George Plimpton played the judge in Good Will Hunting.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Plimpton",
+                    "played",
+                    "the judge"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "George Plimpton",
+                    "played in",
+                    "Good Will Hunting"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5646056836091194880",
+        "response": "1. Silk\n2. Wool",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Silk",
+                    "is a type of",
+                    "protein fibre"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Wool",
+                    "is a type of",
+                    "protein fibre"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5003538501505873412",
+        "response": "In the 2012 film adaptation of \"Les Mis\u00e9rables,\" the song \"I Dreamed a Dream\" was sung by Anne Hathaway, who played the character Fantine. In the original Broadway production, the song was performed by Patti LuPone.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Dreamed a Dream",
+                    "song in",
+                    "Les Mis\u00e9rables"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Dreamed a Dream",
+                    "sung by",
+                    "Anne Hathaway"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Anne Hathaway",
+                    "played",
+                    "Fantine"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Fantine",
+                    "character in",
+                    "Les Mis\u00e9rables (2012 film)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Dreamed a Dream",
+                    "originally performed by",
+                    "Patti LuPone"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Patti LuPone",
+                    "performed in",
+                    "original Broadway production of Les Mis\u00e9rables"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8680361524959876970",
+        "response": "The term \"Parson's nose\" comes from British English and is used to refer to the fatty end of a cooked poultry, usually a chicken or turkey. The term is believed to have originated from a joke about a parson (a type of clergyman) who always chose the fattest part of the chicken for himself, which was the tail end. The term is also thought to be a euphemism, as the shape of the poultry's rear end is said to resemble a parson's nose.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "\"The term \"Parson's nose\"\"",
+                    "\"originated from\"",
+                    "\"British English\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "\"The term \"Parson's nose\"\"",
+                    "\"also thought to be\"",
+                    "\"a euphemism\""
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The shape of the poultry's rear end",
+                    "said to resemble",
+                    "a parson's nose"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6500826823871433949",
+        "response": "The first musician to record with an electric guitar was George Barnes in 1938.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Barnes",
+                    "first musician to record with",
+                    "electric guitar"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Barnes",
+                    "recorded with electric guitar in",
+                    "1938"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1851594182842213971",
+        "response": "\"Gimme Gimme Gimme\" is a British television sitcom that started on 8 January 1999.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gimme Gimme Gimme",
+                    "start date",
+                    "January 8, 1999"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gimme Gimme Gimme",
+                    "is a",
+                    "British television sitcom"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-2651390481836592629",
+        "response": "Rob Dyrdek's Fantasy Factory ended on March 13, 2015.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rob Dyrdek's Fantasy Factory",
+                    "ended on",
+                    "March 13, 2015"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "7422852161474049311",
+        "response": "Charkie from Curious George is a black mixed breed dog. The specific breeds are not mentioned in the series.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Charkie",
+                    "from",
+                    "Curious George"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "is a",
+                    "black mixed breed dog"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The specific breeds",
+                    "not mentioned",
+                    "in the series"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "238018115866608950",
+        "response": "\"How Deep Is Your Love\" by Bee Gees was released in September 1977. If you're referring to the song by Calvin Harris and Disciples, it was released on 17 July 2015.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "\"How Deep Is Your Love\" by Bee Gees\"",
+                    "\"released in\"",
+                    "\"September 1977\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "\"How Deep Is Your Love\" by Calvin Harris and Disciples\"",
+                    "\"released on\"",
+                    "\"17 July 2015\""
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-6395885127392955720",
+        "response": "In the novel \"Patriot Games\" by Tom Clancy, Jack Ryan lives in Annapolis, Maryland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jack Ryan",
+                    "lives in",
+                    "Annapolis, Maryland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jack Ryan",
+                    "character in",
+                    "Patriot Games"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Patriot Games",
+                    "novel by",
+                    "Tom Clancy"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "2536150218240275989",
+        "response": "The Happenings sang \"See You in September\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Happenings",
+                    "sang",
+                    "\"See You in September\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-3170493396531530980",
+        "response": "The song \"Always Be Humble and Kind\" was written by Lori McKenna. It was popularized by country singer Tim McGraw.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Always Be Humble and Kind",
+                    "written by",
+                    "Lori McKenna"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Always Be Humble and Kind",
+                    "popularized by",
+                    "Tim McGraw"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Always Be Humble and Kind",
+                    "is a",
+                    "song"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-204697481439605710",
+        "response": "\"I'm in the Mood for Dancing\" was written by Ben Findon, Michael Myers, and Robert Puzey. It was performed by the Irish pop group, The Nolans.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I'm in the Mood for Dancing",
+                    "written by",
+                    "Ben Findon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I'm in the Mood for Dancing",
+                    "written by",
+                    "Michael Myers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I'm in the Mood for Dancing",
+                    "written by",
+                    "Robert Puzey"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I'm in the Mood for Dancing",
+                    "performed by",
+                    "The Nolans"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Nolans",
+                    "is",
+                    "Irish pop group"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-4283464153717448291",
+        "response": "Elizabeth Patterson played Mrs. Trumbull on \"I Love Lucy\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Elizabeth Patterson",
+                    "played role of",
+                    "Mrs. Trumbull"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "character on TV show",
+                    "I Love Lucy"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-853451338783771197",
+        "response": "\"When a Man Loves a Woman\" was written by Calvin Lewis and Andrew Wright. The song was made famous by singer Percy Sledge in 1966.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "When a Man Loves a Woman",
+                    "written by",
+                    "Calvin Lewis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "When a Man Loves a Woman",
+                    "written by",
+                    "Andrew Wright"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "When a Man Loves a Woman",
+                    "made famous by",
+                    "Percy Sledge"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "When a Man Loves a Woman",
+                    "made famous by Percy Sledge in",
+                    "1966"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1388143263608839064",
+        "response": "The last name Waters is of English and Irish origin. It is a patronymic surname derived from the given name \"Walter,\" which means \"ruler of the army.\" In the Middle Ages, it was common to add an \"s\" to a name to denote \"son of,\" hence \"Waters\" would mean \"son of Walter.\" It could also be a topographic name for someone who lived by a body of water.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The last name Waters",
+                    "is of",
+                    "English and Irish origin"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Waters",
+                    "is a",
+                    "patronymic surname"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Waters",
+                    "derived from",
+                    "the given name \"Walter\""
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Walter",
+                    "means",
+                    "\"ruler of the army\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "In the Middle Ages",
+                    "common practice",
+                    "add an \"s\" to a name to denote \"son of\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Waters",
+                    "would mean",
+                    "\"son of Walter\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Waters",
+                    "could also be a",
+                    "topographic name"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Waters as topographic name",
+                    "refers to someone who",
+                    "lived by a body of water"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "3413977600585971868",
+        "response": "In the original \"Terminator\" (1984), the character John Connor is only mentioned and does not appear. However, in the sequel \"Terminator 2: Judgment Day\" (1991), John Connor is played by Edward Furlong.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "John Connor",
+                    "mentioned but does not appear in",
+                    "Terminator (1984)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Connor",
+                    "played by",
+                    "Edward Furlong"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Edward Furlong",
+                    "played role in",
+                    "Terminator 2: Judgment Day (1991)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Terminator 2: Judgment Day (1991)",
+                    "sequel to",
+                    "Terminator (1984)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-4834721811831894172",
+        "response": "The Strictly Come Dancing results show is typically recorded on Saturday night, right after the main show. However, it is then broadcast on Sunday night.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show",
+                    "typically recorded on",
+                    "Saturday night"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show recording",
+                    "occurs",
+                    "right after the main show"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show",
+                    "broadcast on",
+                    "Sunday night"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-6591614197125818072",
+        "response": "Colonel Robert E. Lee led the soldiers in ending the raid on the Harper's Ferry arsenal.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Colonel Robert E. Lee",
+                    "led",
+                    "the soldiers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Colonel Robert E. Lee",
+                    "ended",
+                    "the raid on the Harper's Ferry arsenal"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "the raid",
+                    "located at",
+                    "the Harper's Ferry arsenal"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2339339749699668536",
+        "response": "Lady Gaga performed the halftime show at Super Bowl 51.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lady Gaga",
+                    "performed",
+                    "the halftime show"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "the halftime show",
+                    "at event",
+                    "Super Bowl 51"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7526277995958905171",
+        "response": "The band Styx sings \"Too Much Time on My Hands\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The band Styx",
+                    "sings",
+                    "\"Too Much Time on My Hands\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-2419576910417046724",
+        "response": "The longest pier in the UK is Southend Pier in Southend-on-Sea, Essex. It is approximately 1.34 miles (2.16 km) long.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "located in",
+                    "Southend-on-Sea, Essex"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "longest pier in",
+                    "the UK"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "length",
+                    "approximately 1.34 miles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "length",
+                    "2.16 km"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1773607187248198254",
+        "response": "The song \"That Ain't No Way to Go\" is sung by Brooks & Dunn.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "That Ain't No Way to Go",
+                    "sung by",
+                    "Brooks & Dunn"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4086158102790148091",
+        "response": "George Strait sings \"I Just Want to Dance with You.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Strait",
+                    "sings",
+                    "\"I Just Want to Dance with You\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1732734622903151644",
+        "response": "The oldest known recording of \"House of the Rising Sun\" is by Appalachian artists Clarence \"Tom\" Ashley and Gwen Foster, who recorded it for Vocalion Records in 1934.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "oldest known recording of House of the Rising Sun",
+                    "is by",
+                    "Appalachian artists Clarence Tom Ashley and Gwen Foster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Appalachian artists Clarence Tom Ashley and Gwen Foster",
+                    "recorded",
+                    "House of the Rising Sun"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Appalachian artists Clarence Tom Ashley and Gwen Foster",
+                    "recorded for",
+                    "Vocalion Records"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Appalachian artists Clarence Tom Ashley and Gwen Foster",
+                    "recorded",
+                    "1934"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-7778233237890403173",
+        "response": "The show \"The Crossing\" was filmed in British Columbia, Canada, specifically in the towns of Port Coquitlam and Squamish.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Crossing",
+                    "filmed in",
+                    "British Columbia, Canada"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Crossing",
+                    "specifically filmed in",
+                    "Port Coquitlam"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Crossing",
+                    "specifically filmed in",
+                    "Squamish"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Port Coquitlam",
+                    "located in",
+                    "British Columbia, Canada"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Squamish",
+                    "located in",
+                    "British Columbia, Canada"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "583026970021621830",
+        "response": "Marie Van Brittan Brown, a nurse from Queens, New York, invented the first home video security system in 1966. She and her husband Albert Brown patented the system in 1969.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Marie Van Brittan Brown",
+                    "invented",
+                    "the first home video security system"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marie Van Brittan Brown",
+                    "profession",
+                    "nurse"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Marie Van Brittan Brown",
+                    "from",
+                    "Queens, New York"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marie Van Brittan Brown",
+                    "invented first home video security system in",
+                    "1966"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marie Van Brittan Brown and her husband Albert Brown",
+                    "patented first home video security system in",
+                    "1969"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "invented by",
+                    "Marie Van Brittan Brown"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "patented by",
+                    "Marie Van Brittan Brown and her husband Albert Brown"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "invented in",
+                    "1966"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "First home video security system",
+                    "patented in",
+                    "1969"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5185978890489959594",
+        "response": "As of the 2021 season, Christopher Bell drives the number 95 car in NASCAR.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Christopher Bell",
+                    "drives",
+                    "the number 95 car"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "the number 95 car",
+                    "in",
+                    "NASCAR"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Christopher Bell",
+                    "drives the number 95 car",
+                    "as of the 2021 season"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1531676396763282931",
+        "response": "That was Icarus, but he was not a god. He was the son of the master craftsman Daedalus in Greek mythology.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Icarus",
+                    "was",
+                    "son of Daedalus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Icarus",
+                    "was not",
+                    "greek god"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Daedalus",
+                    "was",
+                    "master craftsman"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Icarus",
+                    "flew too close to",
+                    "the sun"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Icarus",
+                    "is from",
+                    "Greek mythology"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5078709962400196312",
+        "response": "Deion Sanders played for the New York Yankees, Atlanta Braves, Cincinnati Reds, and San Francisco Giants in the MLB.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "New York Yankees"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Atlanta Braves"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Cincinnati Reds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "San Francisco Giants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "New York Yankees",
+                    "in league",
+                    "MLB"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Atlanta Braves",
+                    "in league",
+                    "MLB"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cincinnati Reds",
+                    "in league",
+                    "MLB"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "San Francisco Giants",
+                    "in league",
+                    "MLB"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-7296166998534064378",
+        "response": "Jodie Sweetin played the middle sister, Stephanie Tanner, on Full House.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jodie Sweetin",
+                    "played",
+                    "Stephanie Tanner"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Stephanie Tanner",
+                    "role on",
+                    "Full House"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Stephanie Tanner",
+                    "characterization",
+                    "middle sister"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "734309880189507498",
+        "response": "Thomas Middleditch played Dwight's brother, Jeb Schrute, on \"The Office\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Thomas Middleditch",
+                    "played",
+                    "Jeb Schrute"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Jeb Schrute",
+                    "is",
+                    "Dwight's brother"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Jeb Schrute",
+                    "appeared on",
+                    "The Office"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "5063128834246440475",
+        "response": "There is no player who has played for Manchester United, Manchester City, Liverpool, and Everton.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "There is no player",
+                    "who has",
+                    "played for Manchester United, Manchester City, Liverpool, and Everton"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5239772721292332989",
+        "response": "Bacteroids are typically found in the human gastrointestinal tract, specifically in the colon. They are also found in the root nodules of leguminous plants where they assist in nitrogen fixation.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bacteroids",
+                    "typically found in",
+                    "the human gastrointestinal tract"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Bacteroids",
+                    "specifically found in",
+                    "the colon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bacteroids",
+                    "also found in",
+                    "the root nodules of leguminous plants"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Bacteroids in the root nodules of leguminous plants",
+                    "assist in",
+                    "nitrogen fixation"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6217752837777787594",
+        "response": "In the 2012 TV series \"Beauty and the Beast\", Heather is played by Nicole Gale Anderson.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Heather",
+                    "character in",
+                    "Beauty and the Beast (TV series)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Heather",
+                    "played by",
+                    "Nicole Gale Anderson"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nicole Gale Anderson",
+                    "plays",
+                    "Heather"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beauty and the Beast (TV series)",
+                    "release year",
+                    "2012"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6882831655380911332",
+        "response": "The British city farthest from the sea is Coventry, located in the West Midlands region of England.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Coventry",
+                    "located in",
+                    "West Midlands region of England"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Coventry",
+                    "is",
+                    "British city farthest from the sea"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1222948057007052760",
+        "response": "There must be at least seven players on the line of scrimmage in American football.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "line of scrimmage in American football",
+                    "minimum number of players",
+                    "seven"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-278447034238251050",
+        "response": "There are 27 episodes in season 4 of \"My Name is Earl\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "My Name is Earl season 4",
+                    "has",
+                    "27 episodes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-4882553194262710105",
+        "response": "As of 2020, the annual salary of the U.S. Secretary of State is $210,700.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "annual salary of the U.S. Secretary of State",
+                    "is",
+                    "$210,700"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5901661238535651276",
+        "response": "Pat Walshe played the role of Nikko, the head of the Winged Monkeys, in The Wizard of Oz.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Pat Walshe",
+                    "played the role of",
+                    "Nikko"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nikko",
+                    "is",
+                    "the head of the Winged Monkeys"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nikko",
+                    "appeared in",
+                    "The Wizard of Oz"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5217063434217549041",
+        "response": "The sun hits the U.S. first at its easternmost point, which is Point Udall in the U.S. Virgin Islands.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "the sun",
+                    "hits the U.S. first at",
+                    "Point Udall in the U.S. Virgin Islands"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Point Udall in the U.S. Virgin Islands",
+                    "is",
+                    "easternmost point of the U.S."
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-8544960023313580012",
+        "response": "The first \"Who Wants to Be a Millionaire\" winner in the UK was Judith Keppel, who won the prize on November 20, 2000.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "First 'Who Wants to Be a Millionaire' winner in the UK",
+                    "is",
+                    "Judith Keppel"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Judith Keppel",
+                    "won prize on",
+                    "November 20, 2000"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Judith Keppel",
+                    "won",
+                    "'Who Wants to Be a Millionaire'"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Judith Keppel",
+                    "won prize in",
+                    "UK"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4272117895813370426",
+        "response": "The song you're referring to is simply called \"Fix You\" by Coldplay. It's from their third studio album, \"X&Y\" released in 2005. The lyrics include the line \"Lights will guide you home, and ignite your bones, and I will try to fix you.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song 'Fix You'",
+                    "performed by",
+                    "Coldplay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The album 'X&Y'",
+                    "released in",
+                    "2005"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The album 'X&Y'",
+                    "third studio album by",
+                    "Coldplay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The song",
+                    "referred to as",
+                    "\"Fix You\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The song 'Fix You'",
+                    "from album",
+                    "\"X&Y\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The lyrics of 'Fix You'",
+                    "include line",
+                    "\"Lights will guide you home, and ignite your bones, and I will try to fix you.\""
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4245798066923223457",
+        "response": "Bob Pettit and Kobe Bryant hold the record for the most NBA All-Star Game MVP awards, each winning four times.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bob Pettit",
+                    "has",
+                    "4 NBA All-Star Game MVP awards"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kobe Bryant",
+                    "has",
+                    "4 NBA All-Star Game MVP awards"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bob Pettit",
+                    "shares record with",
+                    "Kobe Bryant"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bob Pettit and Kobe Bryant",
+                    "hold record for",
+                    "most NBA All-Star Game MVP awards"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "NBA All-Star Game MVP award",
+                    "given by",
+                    "NBA"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "8852834747561852791",
+        "response": "Louis Pasteur and Robert Koch established the idea that microorganisms play a role in disease. This is known as the Germ Theory of Disease.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "established",
+                    "Germ Theory of Disease"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Robert Koch",
+                    "established",
+                    "Germ Theory of Disease"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Germ Theory of Disease",
+                    "states",
+                    "microorganisms play a role in disease"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5039045537721106027",
+        "response": "There are 16 episodes in season six of Nashville.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "season six of Nashville",
+                    "has",
+                    "16 episodes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6687867009117829006",
+        "response": "Beorn turns into a bear in The Hobbit. He is a skin-changer, a man who could assume the form of a great black bear.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Beorn",
+                    "turns into",
+                    "a bear"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beorn",
+                    "appears in",
+                    "The Hobbit"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beorn",
+                    "is",
+                    "a skin-changer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beorn",
+                    "can assume the form of",
+                    "a great black bear"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beorn",
+                    "is",
+                    "a man"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6933377434468493740",
+        "response": "The song \"I Can Feel at Home in This World Anymore\" was written by Albert E. Brumley.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "\"The song \"I Can Feel at Home in This World Anymore\"\"",
+                    "\"written by\"",
+                    "\"Albert E. Brumley\""
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "850563670386330666",
+        "response": "The Wave Hill Walk Off ended in 1975.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Wave Hill walk off",
+                    "ended in",
+                    "1975"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-8490085242981497626",
+        "response": "The song \"Gonna Sit Right Down and Write Myself a Letter\" was originally performed by Fats Waller in 1935. It has been covered by many artists since then, including Frank Sinatra and Paul McCartney.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song \"Gonna Sit Right Down and Write Myself a Letter\"",
+                    "originally performed by",
+                    "Fats Waller"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The song \"Gonna Sit Right Down and Write Myself a Letter\"",
+                    "originally performed in",
+                    "1935"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The song \"Gonna Sit Right Down and Write Myself a Letter\"",
+                    "has been covered by",
+                    "many artists"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Artists covering the song",
+                    "include",
+                    "Frank Sinatra"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Artists covering the song",
+                    "include",
+                    "Paul McCartney"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8361850218460994084",
+        "response": "M. S. Swaminathan is known as the Father of Green Revolution in India.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "M. S. Swaminathan",
+                    "known as",
+                    "Father of Green Revolution in India"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5259818422556035007",
+        "response": "Ringo Starr sings \"Good Night\" on The Beatles' White Album.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Ringo Starr",
+                    "sings",
+                    "Good Night"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Good Night",
+                    "on album",
+                    "The Beatles' White Album"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Beatles' White Album",
+                    "by band",
+                    "The Beatles"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "465961107727601737",
+        "response": "The Chief Justice of the Illinois Supreme Court is elected by the seven justices of the court.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Chief Justice of the Illinois Supreme Court",
+                    "elected by",
+                    "seven justices of the court"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5525220120773157166",
+        "response": "The song \"I Want to Go Outside in the Rain\" is sung by The Dramatics.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song \"I Want to Go Outside in the Rain\"",
+                    "is sung by",
+                    "The Dramatics"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-2107324154024383180",
+        "response": "\"I Can Only Imagine\" was written and performed by the band MercyMe. The song was written by the band's lead vocalist, Bart Millard.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Can Only Imagine",
+                    "written by",
+                    "Bart Millard"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Can Only Imagine",
+                    "performed by",
+                    "MercyMe"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bart Millard",
+                    "lead vocalist of",
+                    "MercyMe"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-2126374007719970792",
+        "response": "The Olympic athlete who has won the most medals is American swimmer Michael Phelps, with a total of 28 medals.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "is",
+                    "American swimmer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "has won",
+                    "28 medals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "28 medals",
+                    "total number of medals won by",
+                    "Michael Phelps"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Michael Phelps",
+                    "has won the most medals of any",
+                    "Olympic athlete"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1123449784666821676",
+        "response": "Steve Earle sings the theme song for The Wire Season 5. The song is called \"Way Down in the Hole.\"",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Steve Earle",
+                    "sings",
+                    "theme song for The Wire Season 5"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theme song for The Wire Season 5",
+                    "called",
+                    "\"Way Down in the Hole\""
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Steve Earle",
+                    "sings",
+                    "\"Way Down in the Hole\""
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4265986416867251482",
+        "response": "The first successful submarine used in warfare was the H.L. Hunley, which was built by Horace Lawson Hunley during the American Civil War.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "H.L. Hunley",
+                    "was",
+                    "first successful submarine used in warfare"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "H.L. Hunley",
+                    "built by",
+                    "Horace Lawson Hunley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Horace Lawson Hunley",
+                    "built",
+                    "H.L. Hunley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "H.L. Hunley",
+                    "used during",
+                    "American Civil War"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2141218895657905276",
+        "response": "Several actors have played the character Tom Hughes on \"As the World Turns\", including Hal Studer, Peter Galman, Tom Tammi, Justin Deas, Gregg Marx, Scott Holmes, and Jason Biggs. However, Scott Holmes is the most recognized as he played the role for the longest period, from 1987 to 2010.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Hal Studer"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Peter Galman"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Tom Tammi"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Justin Deas"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Gregg Marx"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Scott Holmes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tom Hughes (character on As the World Turns)",
+                    "played by",
+                    "Jason Biggs"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Scott Holmes",
+                    "played",
+                    "Tom Hughes (character on As the World Turns)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Scott Holmes",
+                    "played for longest period",
+                    "1987 to 2010"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Scott Holmes",
+                    "most recognized actor as",
+                    "Tom Hughes (character on As the World Turns)"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6672231732847608194",
+        "response": "Cindy Grecco sang the theme song for Laverne and Shirley. The song is titled \"Making Our Dreams Come True\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Cindy Grecco",
+                    "sang",
+                    "theme song for Laverne and Shirley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theme song for Laverne and Shirley",
+                    "titled",
+                    "\"Making Our Dreams Come True\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cindy Grecco",
+                    "sang",
+                    "\"Making Our Dreams Come True\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4943207042321394497",
+        "response": "The 10 shilling note went out of circulation in the UK on November 20, 1970.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "10 shilling note",
+                    "went out of circulation",
+                    "in the UK"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "10 shilling note went out of circulation",
+                    "date",
+                    "November 20, 1970"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6014950976264156000",
+        "response": "There are several artists who have songs titled \"Never Gonna Let You Go.\" Here are a few:\n\n1. Sergio Mendes (1983)\n2. Faith Evans (2001)\n3. Tina Moore (1997)\n4. Joe Pizzulo & Leza Miller (1983, featured in Sergio Mendes' version)\n5. Boney James (featuring Debi Nova) (2013)",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sergio Mendes",
+                    "sang",
+                    "\"Never Gonna Let You Go\" (1983)"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Faith Evans",
+                    "sang",
+                    "\"Never Gonna Let You Go\" (2001)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Tina Moore",
+                    "sang",
+                    "\"Never Gonna Let You Go\" (1997)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Joe Pizzulo & Leza Miller",
+                    "sang",
+                    "\"Never Gonna Let You Go\" (1983)"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Boney James (featuring Debi Nova)",
+                    "sang",
+                    "\"Never Gonna Let You Go\" (2013)"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5004457603684974952",
+        "response": "The halftime show at Super Bowl 2016 was performed by Coldplay, with special guest appearances by Beyonc\u00e9 and Bruno Mars.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "halftime show at Super Bowl 2016",
+                    "performed by",
+                    "Coldplay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Coldplay",
+                    "had special guest appearances by",
+                    "Beyonc\u00e9"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Coldplay",
+                    "had special guest appearances by",
+                    "Bruno Mars"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1206653570097564556",
+        "response": "The movie \"Proof of Life\" takes place in the fictional South American country of Tecala. However, it was actually filmed in Ecuador.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The movie \"Proof of Life\"",
+                    "takes place in",
+                    "the fictional South American country of Tecala"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The movie \"Proof of Life\"",
+                    "was filmed in",
+                    "Ecuador"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6405015309290964923",
+        "response": "The phrase \"monkey's uncle\" is believed to have originated in the late 19th and early 20th centuries, during the debates over evolution. Charles Darwin's theory of evolution proposed that humans and monkeys shared a common ancestor, which was a controversial and often ridiculed idea at the time. So, the phrase \"I'll be a monkey's uncle\" was used as a statement of disbelief or sarcasm. It was popularized in the 1920s and 1930s in America, often used in a humorous or sarcastic context.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "phrase",
+                    "originated in",
+                    "late 19th and early 20th centuries"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "phrase",
+                    "during",
+                    "debates over evolution"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Charles Darwin's theory of evolution",
+                    "proposed",
+                    "humans and monkeys shared a common ancestor"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "idea that humans and monkeys shared a common ancestor",
+                    "was",
+                    "controversial"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "idea that humans and monkeys shared a common ancestor",
+                    "was",
+                    "often ridiculed"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "phrase",
+                    "used as",
+                    "statement of disbelief or sarcasm"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "phrase",
+                    "popularized in",
+                    "1920s and 1930s in America"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "phrase",
+                    "often used in",
+                    "humorous or sarcastic context"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3790834797035922554",
+        "response": "The Vice President of the United States breaks a tie in the US Senate.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vice President of the United States",
+                    "breaks",
+                    "tie in the US Senate"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6992125597790283273",
+        "response": "Canada switches to Daylight Saving Time on the second Sunday in March.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Canada",
+                    "switches to",
+                    "Daylight Saving Time"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Switch to Daylight Saving Time",
+                    "occurs on",
+                    "second Sunday in March"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-610965397636500508",
+        "response": "The name Mandy is of Latin origin and is a diminutive form of Amanda, which means \"worthy of love\" or \"lovable\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The name Mandy",
+                    "origin",
+                    "Latin"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The name Mandy",
+                    "is",
+                    "diminutive form of Amanda"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Amanda",
+                    "means",
+                    "worthy of love"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Amanda",
+                    "means",
+                    "lovable"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4876812477232188511",
+        "response": "The last name Perry is of English origin. It is derived from the Old English word \"pirige\", meaning \"pear tree\", and was originally given as a topographic name for someone who lived near a pear tree. It could also be an occupational name for someone who worked in a pear orchard.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "last name Perry",
+                    "origin",
+                    "English"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "last name Perry",
+                    "derived from",
+                    "Old English word \"pirige\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Old English word \"pirige\"",
+                    "meaning",
+                    "pear tree"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "last name Perry",
+                    "originally",
+                    "topographic name"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "topographic name Perry",
+                    "for someone who lived near",
+                    "pear tree"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "last name Perry",
+                    "could also be",
+                    "occupational name"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "occupational name Perry",
+                    "for someone who worked in",
+                    "pear orchard"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-7186555013910059700",
+        "response": "Tandi, in the Lahaul district of Himachal Pradesh, India.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "chandra river",
+                    "meets",
+                    "bhaga river"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "chandra river and bhaga river",
+                    "meet at",
+                    "Tandi"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tandi",
+                    "located in",
+                    "Lahaul district"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lahaul district",
+                    "located in",
+                    "Himachal Pradesh"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Himachal Pradesh",
+                    "located in",
+                    "India"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-3428106355897335676",
+        "response": "of Health or Vital Records in the respective state or country where the birth occurred.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "birth certificates",
+                    "most often completed by",
+                    "department of Health or Vital Records"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "department of Health or Vital Records",
+                    "in",
+                    "respective state or country where the birth occurred"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8451264603946634151",
+        "response": "patients who are able to walk on their own. It can also refer to medical care or procedures that do not require an overnight hospital stay, also known as outpatient care.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "ambulatory",
+                    "is a term used to describe",
+                    "patients who are able to walk on their own"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "ambulatory",
+                    "can also refer to",
+                    "medical care or procedures that do not require an overnight hospital stay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "medical care or procedures that do not require an overnight hospital stay",
+                    "also known as",
+                    "outpatient care"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "6605227747829720945",
+        "response": "The maximum width of a cricket bat is 4.25 inches (10.8 cm) as per the laws of cricket.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cricket bat",
+                    "has maximum width",
+                    "4.25 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cricket bat",
+                    "has maximum width",
+                    "10.8 cm"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "4.25 inches",
+                    "equals",
+                    "10.8 cm"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "maximum width of cricket bat",
+                    "specified by",
+                    "laws of cricket"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "8848582210866367992",
+        "response": "The International Campaign to Abolish Nuclear Weapons (ICAN) won the Nobel Peace Prize for 2017.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The International Campaign to Abolish Nuclear Weapons (ICAN)",
+                    "won",
+                    "Nobel Peace Prize"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nobel Peace Prize",
+                    "for year",
+                    "2017"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7539197459439257235",
+        "response": "The song \"Jai Ho\" is sung by A.R. Rahman and The Pussycat Dolls.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jai Ho",
+                    "sung by",
+                    "A.R. Rahman"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Jai Ho",
+                    "sung by",
+                    "The Pussycat Dolls"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6403691727808631943",
+        "response": "Wind power is used most in the state of Texas in the United States. Texas leads the nation in wind-powered generation capacity with more than 29,000 megawatts of installed wind power. Other states with significant wind power usage include Iowa, Oklahoma, Kansas, and California.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Wind power",
+                    "used most in",
+                    "Texas"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Texas",
+                    "has",
+                    "more than 29,000 megawatts of installed wind power"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Other states with significant wind power usage",
+                    "include",
+                    "Iowa"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Other states with significant wind power usage",
+                    "include",
+                    "Oklahoma"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Other states with significant wind power usage",
+                    "include",
+                    "Kansas"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Other states with significant wind power usage",
+                    "include",
+                    "California"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "8900387163847503723",
+        "response": "The character Reuben Kincaid on \"The Partridge Family\" was played by actor Dave Madden.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Reuben Kincaid",
+                    "played by",
+                    "Dave Madden"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Reuben Kincaid",
+                    "character on",
+                    "\"The Partridge Family\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "334627437220863517",
+        "response": "The first Battle of Ypres ended on November 22, 1914.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "first Battle of Ypres",
+                    "ended on",
+                    "November 22, 1914"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1669394955232263644",
+        "response": "The Battle of Badr took place on 13 March 624 CE.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Battle of Badr",
+                    "took place on",
+                    "13 March 624 CE"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1259577751352734948",
+        "response": "\"I Want to Dance with Somebody\" by Whitney Houston was written by George Merrill and Shannon Rubicam.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody",
+                    "written by",
+                    "George Merrill"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody",
+                    "written by",
+                    "Shannon Rubicam"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody",
+                    "performed by",
+                    "Whitney Houston"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4674269357266381610",
+        "response": "Morgan Woodward plays the role of the \"Walking Boss\" (also known as \"The Man with No Eyes\") in \"Cool Hand Luke\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Morgan Woodward",
+                    "plays role of",
+                    "the \"Walking Boss\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "the \"Walking Boss\"",
+                    "also known as",
+                    "the \"Man with No Eyes\""
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "the \"Walking Boss\"",
+                    "appears in movie",
+                    "\"Cool Hand Luke\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-7306805811512692008",
+        "response": "The Red River starts in New Mexico and Texas, and it enters Louisiana near the city of Texarkana. It flows through the state, passing through cities like Shreveport and Alexandria, and ends by merging with the Atchafalaya and Mississippi Rivers in Simmesport, Louisiana.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Red River",
+                    "starts in",
+                    "New Mexico"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "starts in",
+                    "Texas"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "enters",
+                    "Louisiana"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Red River enters Louisiana",
+                    "near",
+                    "city of Texarkana"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "flows through",
+                    "Louisiana"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "passes through",
+                    "Shreveport"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "passes through",
+                    "Alexandria"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Red River",
+                    "ends by merging with",
+                    "the Atchafalaya and Mississippi Rivers"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Red River ends",
+                    "location",
+                    "Simmesport, Louisiana"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "2532633865902253646",
+        "response": "The Romantics sang \"What I Like About You\" originally.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Romantics",
+                    "originally sang",
+                    "\"What I Like About You\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1389300307230755697",
+        "response": "Nick Lowe",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nick Lowe",
+                    "sang",
+                    "i knew the bride when she used to rock and roll"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2191432481376971337",
+        "response": "The Colts were owned by Robert Irsay when they left Baltimore.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Colts",
+                    "owned by",
+                    "Robert Irsay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Colts",
+                    "left",
+                    "Baltimore"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5489426796364143729",
+        "response": "Dr. Rajendra Prasad was the first president of the Constituent Assembly of India.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dr. Rajendra Prasad",
+                    "was",
+                    "first president of the Constituent Assembly of India"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "3480908309420822259",
+        "response": "The song \"Should Have Been a Cowboy\" was sung by Toby Keith.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "\"The song \"Should Have Been a Cowboy\"\"",
+                    "\"was sung by\"",
+                    "\"Toby Keith\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3311962143974666464",
+        "response": "A king cobra can produce about 7 milliliters of venom in a single bite.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "king cobra",
+                    "can produce",
+                    "about 7 milliliters of venom"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2352051038192309240",
+        "response": "The brain gets its energy from glucose, a type of sugar, which it converts into energy. This glucose comes from the food we eat and is carried to the brain through the bloodstream. The brain also requires a continuous supply of oxygen to generate energy.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brain",
+                    "gets energy from",
+                    "glucose"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "is a",
+                    "type of sugar"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brain",
+                    "converts glucose into",
+                    "energy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "comes from",
+                    "food we eat"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "carried to brain through",
+                    "bloodstream"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brain",
+                    "requires",
+                    "continuous supply of oxygen"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "oxygen",
+                    "used to",
+                    "generate energy"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7735703748660141931",
+        "response": "The theme song for the TV show \"Cops\" is \"Bad Boys\" sung by the reggae group Inner Circle.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for the tv show cops",
+                    "is",
+                    "Bad Boys"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bad Boys",
+                    "sung by",
+                    "Inner Circle"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Inner Circle",
+                    "is a",
+                    "reggae group"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3028343500075334931",
+        "response": "Tim Russert had the longest tenure as moderator on Meet the Press. He served from 1991 until his death in 2008.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tim Russert",
+                    "had longest tenure as moderator on",
+                    "Meet the Press"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tim Russert",
+                    "served as moderator from",
+                    "1991"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tim Russert",
+                    "served as moderator until",
+                    "his death in 2008"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1848006246448298349",
+        "response": "The Killing of a Sacred Deer was filmed in Cincinnati, Ohio, USA.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Killing of a Sacred Deer",
+                    "was filmed in",
+                    "Cincinnati, Ohio, USA"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-927966355158112429",
+        "response": "the Electoral College",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "the group that officially elects the president of the united states",
+                    "is called",
+                    "the Electoral College"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5984668857988357373",
+        "response": "This joint is known as the Sacroiliac Joint.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "the joint between a coxal bone of the pelvis and the sacrum",
+                    "is known as",
+                    "the Sacroiliac Joint"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-704529031648349308",
+        "response": "Kate Mulgrew plays the character Red on Orange is the New Black.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kate Mulgrew",
+                    "plays",
+                    "character Red"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "character Red",
+                    "on",
+                    "Orange is the New Black"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]

@@ -1,0 +1,5442 @@
+[
+    {
+        "id": "12646",
+        "response": "The names of the songs from The Story of June that don't have Chinese names are \"Hey June\" and \"Y3\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "\"Hey June\"",
+                    "song from",
+                    "The Story of June"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "\"Y3\"",
+                    "song from",
+                    "The Story of June"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097",
+        "response": "Gilda (1946) came out after 1948.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gilda",
+                    "came out after",
+                    "1948"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Gilda",
+                    "year",
+                    "1946"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2394",
+        "response": "Breads: Banana bread, Cornbread, Cuban bread, Frybread, Texas toast \nCheese: Gouda, Swiss, American cheese, Cheddar cheese, Colby, Colby-Jack, Cream cheese, Monterey Jack, Pepper jack cheese, Velveeta \nDesserts: Banana pudding, Chocolate brownie, Chocolate chip cookies, Fudge, Jell-O, Key lime pie, Peanut butter cookie, Pecan pie, Pumpkin pie, Red velvet cake, S'more, Sundae, Ice cream \nRice dishes: Calas, Charleston red rice, Chicken bog, Dirty rice, Glorified rice, Gumbo, Hawaiian haystack, Hoppin' John, Jambalaya, Rice and gravy, Red beans and rice, Shrimp creole, Spanish rice \nSandwiches: BLT, Cheesesteak, Club sandwich, Fluffernutter, Italian beef, Pastrami on rye, Peanut butter and jelly sandwich, Reuben sandwich, Sloppy joe \nSausages: Hot dogs, Bologna sausage, Breakfast sausage, Chaudin, Goetta, Half-smoke, Hot link (sausage), Italian hot dog, Lebanon bologna, Maxwell Street Polish, Polish Boy, Chorizo \nMiscellaneous: Buffalo Wings, Roasted turkey, Fried Chicken",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Breads",
+                    "include",
+                    "Banana bread"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breads",
+                    "include",
+                    "Cornbread"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breads",
+                    "include",
+                    "Cuban bread"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breads",
+                    "include",
+                    "Frybread"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Breads",
+                    "include",
+                    "Texas toast"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Gouda"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Swiss"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "American cheese"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Cheddar cheese"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Colby"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Colby-Jack"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Cream cheese"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Monterey Jack"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Pepper jack cheese"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cheese",
+                    "include",
+                    "Velveeta"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Banana pudding"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Chocolate brownie"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Chocolate chip cookies"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Fudge"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Jell-O"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Key lime pie"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Peanut butter cookie"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Pecan pie"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Pumpkin pie"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Red velvet cake"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "S'more"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Sundae"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Desserts",
+                    "include",
+                    "Ice cream"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Calas"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Charleston red rice"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Chicken bog"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Dirty rice"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Glorified rice"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Gumbo"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Hawaiian haystack"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Hoppin' John"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Jambalaya"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Rice and gravy"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Red beans and rice"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Shrimp creole"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Rice dishes",
+                    "include",
+                    "Spanish rice"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "BLT"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Cheesesteak"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Club sandwich"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Fluffernutter"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Italian beef"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Pastrami on rye"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Peanut butter and jelly sandwich"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Reuben sandwich"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sandwiches",
+                    "include",
+                    "Sloppy joe"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Hot dogs"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Bologna sausage"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Breakfast sausage"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Chaudin"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Goetta"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Half-smoke"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Hot link (sausage)"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Italian hot dog"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Lebanon bologna"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Maxwell Street Polish"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Polish Boy"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Sausages",
+                    "include",
+                    "Chorizo"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miscellaneous",
+                    "include",
+                    "Buffalo Wings"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miscellaneous",
+                    "include",
+                    "Roasted turkey"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miscellaneous",
+                    "include",
+                    "Fried Chicken"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "13774",
+        "response": "The operation was named \"Operation Aurora\" by Dmitri Alperovitch, Vice President of Threat Research at cybersecurity company McAfee. Research by McAfee Labs discovered that \"Aurora\" was part of the file path on the attacker's machine that was included in two of the malware binaries McAfee said were associated with the attack. \"We believe the name was the internal name the attacker(s) gave to this operation,\" said McAfee Chief Technology Officer George Kurtz in a blog post.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Operation",
+                    "named",
+                    "Operation Aurora"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dmitri Alperovitch",
+                    "give name",
+                    "Operation Aurora"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dmitri Alperovitch",
+                    "position at McAfee",
+                    "Vice President of Threat Research"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "McAfee",
+                    "discovered",
+                    "Aurora was part of file path on attacker's machine"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Aurora",
+                    "included in",
+                    "two malware binaries"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "two malware binaries",
+                    "associated with",
+                    "the attack"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "McAfee",
+                    "believed",
+                    "Aurora was internal name attackers gave to operation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Kurtz",
+                    "position at McAfee",
+                    "Chief Technology Officer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Kurtz",
+                    "made statement about name",
+                    "in blog post"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2000",
+        "response": "There are multiple accounts of who invented the Reuben sandwich. One story attributes it to Reuben Kulakofsky, a Jewish grocer from Omaha, Nebraska who asked for a corned beef and sauerkraut sandwich at his weekly poker game in the early 20th century. Another account credits Arnold Reuben, the owner of Reuben's Delicatessen in New York City, with creating the sandwich around 1914. There is also a claim that the sandwich was created by Alfred Scheuing, a chef at Reuben's Delicatessen, for Arnold Reuben's son in the 1930s.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Reuben Kulakofsky",
+                    "inventor of",
+                    "Reuben sandwich"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Reuben Kulakofsky",
+                    "from",
+                    "Omaha, Nebraska"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Reuben sandwich",
+                    "invented at",
+                    "Reuben Kulakofsky's weekly poker game"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Arnold Reuben",
+                    "credited with inventing",
+                    "Reuben sandwich"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Arnold Reuben",
+                    "owner of",
+                    "Reuben's Delicatessen in New York City"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Alfred Scheuing",
+                    "chef at",
+                    "Reuben's Delicatessen"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Alfred Scheuing",
+                    "inventor of Reuben sandwich for",
+                    "Arnold Reuben's son"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5780",
+        "response": "The passage does not provide information about the length of the gun barrel produced by Philip Webley & Son of Birmingham discussed.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Passage",
+                    "does not provide information about",
+                    "length of the gun barrel produced by Philip Webley & Son of Birmingham"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "12318",
+        "response": "There are many types of biryani, and their names are often based on their region of origin. Some popular types include Hyderabadi biryani, Sindhi biryani, Ambur/Vaniyambadi biryani, Beef/Kalyani biryani, Bhatkali/Navayathi biryani, Bohri biryani, Chettinad biryani, Dhakaiya biryani, Dindigul biryani, Donne biryani, Memoni/Kutchi biryani, Kolkata biryani, Rawther biryani, Sri Lankan biryani, and Thalassery biryani, among others. The biryanis often carry the defining features and flavors of the region and community they originate from.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Hyderabadi biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sindhi biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ambur/Vaniyambadi biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Beef/Kalyani biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bhatkali/Navayathi biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bohri biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Chettinad biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dhakaiya biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dindigul biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Donne biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Memoni/Kutchi biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kolkata biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rawther biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sri Lankan biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Thalassery biryani",
+                    "is a type of",
+                    "biryani"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "biryanis",
+                    "often carry",
+                    "defining features and flavors of the region and community they originate from"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10432",
+        "response": "The subtypes of Hepatovirus A are IA, IB, IIA, IIB, IIIA, and IIIB.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Hepatovirus A",
+                    "has subtypes",
+                    "IA, IB, IIA, IIB, IIIA, IIIB"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1478",
+        "response": "The church that existed in 1809 was \"little more than a shack\" and was the first church in the newly formed parish, which was settled by Canary Islanders and Acadians from 1779 on.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "church",
+                    "existed in",
+                    "1809"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "church in 1809",
+                    "was",
+                    "little more than a shack"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "church in 1809",
+                    "was",
+                    "first church"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "first church",
+                    "in",
+                    "newly formed parish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "parish",
+                    "settled by",
+                    "Canary Islanders and Acadians"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "settlement of parish",
+                    "from",
+                    "1779 on"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "11587",
+        "response": "No, Anthology 3 is not the White Album. It is a compilation album that includes rarities and alternative tracks from the final three years of the Beatles' career, ranging from the initial sessions for the White Album to the last sessions for Let It Be and Abbey Road.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Anthology 3",
+                    "is",
+                    "compilation album"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Anthology 3",
+                    "includes",
+                    "rarities and alternative tracks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "rarities and alternative tracks",
+                    "from",
+                    "final three years of the Beatles' career"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "rarities and alternative tracks",
+                    "ranging from",
+                    "initial sessions for the White Album"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "rarities and alternative tracks",
+                    "to",
+                    "last sessions for Let It Be and Abbey Road"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Anthology 3",
+                    "is not",
+                    "the White Album"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "14649",
+        "response": "Of the estimated 250-300 inhabitants of Lone Pine, 27 are known to have perished as a result of the earthquake. Therefore, approximately 223-273 inhabitants of Lone Pine survived the earthquake.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "inhabitants of Lone Pine",
+                    "estimated number",
+                    "250-300"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "inhabitants of Lone Pine",
+                    "known perished in earthquake",
+                    "27"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "inhabitants of Lone Pine",
+                    "estimated survived earthquake",
+                    "223-273"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13169",
+        "response": "The event that brought international attention to the new sport of triathlon, the Hawaii Ironman, was founded by Judy and John Collins four years after the race described in the paragraph. The paragraph does not provide information on who founded the Ironman event.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Hawaii Ironman",
+                    "founded by",
+                    "Judy and John Collins"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Hawaii Ironman",
+                    "brought international attention to",
+                    "the new sport of triathlon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Founding of Hawaii Ironman",
+                    "occurred",
+                    "four years after the race described in the paragraph"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The race described in the paragraph",
+                    "does not provide information on",
+                    "who founded the Ironman event"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6922",
+        "response": "The schools located in Dunkirk, Nottingham, England are a nursery, primary school, and the Nottingham University Academy of Science and Technology.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "schools",
+                    "located in",
+                    "Dunkirk, Nottingham, England"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "schools in Dunkirk, Nottingham, England",
+                    "include",
+                    "a nursery"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "schools in Dunkirk, Nottingham, England",
+                    "include",
+                    "a primary school"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "schools in Dunkirk, Nottingham, England",
+                    "include",
+                    "Nottingham University Academy of Science and Technology"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2178",
+        "response": "Georges thought that Helene redirected her affections towards Walter Rogers because of a missing letter and confusion in communication. He arrived at the mistaken conclusion that Helene was interested in Walter, who he believed was not worthy of her and was excessively preoccupied with his stylish personal appearance and elegant clothing.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Georges",
+                    "thought",
+                    "Helene redirected her affections towards Walter Rogers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Reason for Georges' thought",
+                    "was",
+                    "a missing letter and confusion in communication"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Georges",
+                    "arrived at",
+                    "the mistaken conclusion that Helene was interested in Walter"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Walter Rogers",
+                    "believed by Georges as",
+                    "not worthy of Helene"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Walter Rogers",
+                    "believed by Georges as",
+                    "excessively preoccupied with his stylish personal appearance and elegant clothing"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4763",
+        "response": "According to the passage, Gorbachev walked 19 km (12 mi) each weekend for his round trip commute to school. It does not mention how many miles he walked each week.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gorbachev",
+                    "walked",
+                    "19 km each weekend"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "19 km",
+                    "equals",
+                    "12 miles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gorbachev's walk",
+                    "was",
+                    "round trip commute to school"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage",
+                    "does not mention",
+                    "how many miles Gorbachev walked each week"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "9188",
+        "response": "Jakov Milatovi\u0107 won the Montenegro presidential elections in the second round runoff, defeating incumbent president Milo \u0110ukanovi\u0107 with roughly 60% of the popular vote. In the first round, \u0110ukanovi\u0107 received 35% of the vote, while Milatovi\u0107 gained 29%. Andrija Mandi\u0107 finished third in the first round with 19% of the votes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jakov Milatovi\u0107",
+                    "won",
+                    "Montenegro presidential elections"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Montenegro presidential elections",
+                    "took place in",
+                    "two rounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Andrija Mandi\u0107",
+                    "finished third in",
+                    "first round"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jakov Milatovi\u0107",
+                    "defeated",
+                    "incumbent president Milo \u0110ukanovi\u0107"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jakov Milatovi\u0107",
+                    "received",
+                    "roughly 60% of the popular vote"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Milo \u0110ukanovi\u0107",
+                    "was",
+                    "incumbent president"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2673",
+        "response": "Patrick James Mara was most renowned for being the political adviser to former Taoiseach Charles Haughey. He also served as Press Secretary to Fianna F\u00e1il from 1983 to 1987 and Government Press Secretary from 1987 to 1992. Additionally, he was appointed the Fianna F\u00e1il Director of Elections for multiple general elections and was a member of the board of Digicel. However, he was regularly lampooned on the satirical radio sketch show Scrap Saturday.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Patrick James Mara",
+                    "most renowned for being",
+                    "political adviser to former Taoiseach Charles Haughey"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Patrick James Mara",
+                    "also served as",
+                    "Press Secretary to Fianna F\u00e1il from 1983 to 1987"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Patrick James Mara",
+                    "also served as",
+                    "Government Press Secretary from 1987 to 1992"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Patrick James Mara",
+                    "appointed",
+                    "Fianna F\u00e1il Director of Elections for multiple general elections"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Patrick James Mara",
+                    "was",
+                    "member of the board of Digicel"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Patrick James Mara",
+                    "regularly lampooned on",
+                    "satirical radio sketch show Scrap Saturday"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12470",
+        "response": "The franchise films of Indiana Jones starred Harrison Ford as Indiana Jones.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "franchise films of Indiana Jones",
+                    "starred",
+                    "Harrison Ford"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Harrison Ford",
+                    "played role of",
+                    "Indiana Jones"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13708",
+        "response": "The Lord of the Rings trilogy consists of three volumes titled The Fellowship of the Ring, The Two Towers, and The Return of the King, and is divided internally into six books, two per volume.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lord of the Rings trilogy",
+                    "consists of",
+                    "The Fellowship of the Ring"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lord of the Rings trilogy",
+                    "consists of",
+                    "The Two Towers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lord of the Rings trilogy",
+                    "consists of",
+                    "The Return of the King"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Fellowship of the Ring",
+                    "is",
+                    "volume in Lord of the Rings trilogy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Two Towers",
+                    "is",
+                    "volume in Lord of the Rings trilogy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Return of the King",
+                    "is",
+                    "volume in Lord of the Rings trilogy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lord of the Rings trilogy",
+                    "divided internally into",
+                    "six books"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "six books",
+                    "two per volume",
+                    "Lord of the Rings trilogy"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10945",
+        "response": "The song \"It's a Great Day to Be Alive\" was originally recorded by Jon Randall, but it has also been recorded by other artists such as Darrell Scott, The Sky Kings, Pat Green, Cory Morrow, and Niko Moon. The version by Travis Tritt, released in 2000, became the most famous and charted at number 2 on the US Billboard Hot Country Singles & Tracks chart.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "originally recorded by",
+                    "Jon Randall"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "also recorded by",
+                    "Darrell Scott"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "also recorded by",
+                    "The Sky Kings"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "also recorded by",
+                    "Pat Green"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "also recorded by",
+                    "Cory Morrow"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "also recorded by",
+                    "Niko Moon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "It's a Great Day to Be Alive",
+                    "famous version by",
+                    "Travis Tritt"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Travis Tritt version",
+                    "released in",
+                    "2000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Travis Tritt version",
+                    "charted at #2 on",
+                    "US Billboard Hot Country Singles & Tracks chart"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "14049",
+        "response": "The sword Dyrnwyn lost its power when Arawn, the antagonist of the story, was killed. The sword played a pivotal role in the battle against Arawn's forces and was wielded by Taran, the protagonist, to defeat him. After Arawn's demise, the sword began to fade and lose its magic.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dyrnwyn",
+                    "was",
+                    "sword"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dyrnwyn",
+                    "lost power",
+                    "when Arawn was killed"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Arawn",
+                    "was",
+                    "antagonist in The High King"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Taran",
+                    "was",
+                    "protagonist in The High King"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Taran",
+                    "wielded",
+                    "Dyrnwyn"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Taran",
+                    "used Dyrnwyn",
+                    "to defeat Arawn"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dyrnwyn",
+                    "played pivotal role",
+                    "in battle against Arawn's forces"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "After Arawn's demise",
+                    "Dyrnwyn began",
+                    "to fade and lose magic"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2065",
+        "response": "Finland started formal relations with NATO in 1994 when it joined the Partnership for Peace program.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Finland",
+                    "started formal relations with",
+                    "NATO"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Year Finland started formal relations with NATO",
+                    "was",
+                    "1994"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Finland",
+                    "joined",
+                    "Partnership for Peace program"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Partnership for Peace program",
+                    "associated with",
+                    "NATO"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Finland",
+                    "joined Partnership for Peace program",
+                    "1994"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13836",
+        "response": "Finland became a member of NATO on 4 April 2023, as stated in the reference text provided.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Finland",
+                    "became a member of",
+                    "NATO"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Membership of Finland in NATO",
+                    "started on",
+                    "4 April 2023"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13455",
+        "response": "Yes, Rajasthan does have winters which commence early in October and end around the end of February, with temperatures sometimes reaching nearly 2-degree Celsius. The cold weather is experienced in the state due to its desert geography and summers being the longest season.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rajasthan",
+                    "is",
+                    "desert state of India"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rajasthan",
+                    "has",
+                    "winters"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Winters in Rajasthan",
+                    "commence",
+                    "early October"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Winters in Rajasthan",
+                    "end around",
+                    "end of February"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Temperatures in winters in Rajasthan",
+                    "reach as low as",
+                    "nearly 2-degree Celsius"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cold weather in Rajasthan",
+                    "due to",
+                    "its desert geography"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Summers in Rajasthan",
+                    "are",
+                    "longest season"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12437",
+        "response": "The origin of the film Dog Day Afternoon is based on a 1972 robbery and hostage situation at a Chase Manhattan branch in Brooklyn, chronicled in the Life magazine article \"The Boys in the Bank\" by P. F. Kluge and Thomas Moore. The film, directed by Sidney Lumet and starring Al Pacino, was produced by Martin Bregman and Martin Elfand with a screenplay written by Frank Pierson.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dog Day Afternoon",
+                    "origin",
+                    "based on 1972 robbery and hostage situation at Chase Manhattan branch in Brooklyn"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "1972 robbery and hostage situation at Chase Manhattan branch in Brooklyn",
+                    "chronicled in",
+                    "Life magazine article 'The Boys in the Bank' by P. F. Kluge and Thomas Moore"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dog Day Afternoon",
+                    "directed by",
+                    "Sidney Lumet"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dog Day Afternoon",
+                    "stars",
+                    "Al Pacino"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dog Day Afternoon",
+                    "produced by",
+                    "Martin Bregman and Martin Elfand"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dog Day Afternoon",
+                    "screenplay written by",
+                    "Frank Pierson"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5893",
+        "response": "Jerry Garcia was born in San Francisco, California. He lost a part of a finger when he was four years old while chopping wood. He attended the California School of Fine Arts (now the San Francisco Art Institute) in 1957.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jerry Garcia",
+                    "born in",
+                    "San Francisco, California"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jerry Garcia",
+                    "lost part of finger",
+                    "when he was four years old"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jerry Garcia",
+                    "lost part of finger while",
+                    "chopping wood"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jerry Garcia",
+                    "attended",
+                    "California School of Fine Arts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "California School of Fine Arts",
+                    "now called",
+                    "San Francisco Art Institute"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jerry Garcia",
+                    "attended California School of Fine Arts",
+                    "in 1957"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2951",
+        "response": "Yes, Davos has a good hockey team. They are a professional Swiss ice hockey club that plays in the National League and are usually a strong force in the league. They often have Swiss national team players and players who once played for National Hockey League teams on their roster. They have won 18 Swiss championships and six Spengler Cups from 1933 to 1950 and have recent league championships in 2002, 2005, 2007, 2009, 2011, and 2015. However, their attendance rate was the lowest in the league for the 2016-2017 season.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Davos",
+                    "has",
+                    "good hockey team"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "is",
+                    "professional Swiss ice hockey club"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "plays in",
+                    "National League"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "usually",
+                    "strong force in National League"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "often has",
+                    "Swiss national team players"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "often has",
+                    "players once played for National Hockey League teams"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "won",
+                    "18 Swiss championships"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "won",
+                    "6 Spengler Cups"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Spengler Cups wins by Davos",
+                    "from",
+                    "1933 to 1950"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "has recent league championships in",
+                    "2002, 2005, 2007, 2009, 2011, 2015"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Davos hockey team",
+                    "had",
+                    "lowest attendance rate in league"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lowest attendance rate",
+                    "during",
+                    "2016-2017 season"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "6876",
+        "response": "The country that had wars with Egypt is Israel. The country that formed an ally to Egypt is not explicitly stated in the context.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Israel",
+                    "had wars with",
+                    "Egypt"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12377",
+        "response": "Kevin Durant was traded to the Phoenix Suns for Mikal Bridges, Cameron Johnson, Jae Crowder, four unprotected first-round picks, and a 2028 first-round pick swap.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kevin Durant",
+                    "was traded to",
+                    "the Phoenix Suns"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kevin Durant",
+                    "was traded for",
+                    "Mikal Bridges, Cameron Johnson, Jae Crowder, four unprotected first-round picks, and a 2028 first-round pick swap"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Trade",
+                    "destination team",
+                    "the Phoenix Suns"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Trade",
+                    "player received",
+                    "Kevin Durant"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Trade",
+                    "players given up",
+                    "Mikal Bridges, Cameron Johnson, Jae Crowder"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Trade",
+                    "draft picks given up",
+                    "four unprotected first-round picks, and a 2028 first-round pick swap"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1258",
+        "response": "It is unclear whether depression ran in Wittgenstein's family, but three of his four older brothers died by separate acts of suicide.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "it",
+                    "unclear",
+                    "whether depression ran in Wittgenstein's family"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Wittgenstein",
+                    "have",
+                    "four older brothers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "three of Wittgenstein's four older brothers",
+                    "died by",
+                    "separate acts of suicide"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10998",
+        "response": "\"The Undertaker\" and Don Stefano.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Stefano Magaddino",
+                    "nicknames",
+                    "\"The Undertaker\", Don Stefano"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4070",
+        "response": "Elizabeth Taylor moved to Los Angeles in 1939.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Elizabeth Taylor",
+                    "moved to Los Angeles",
+                    "1939"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4859",
+        "response": "St John's Church of England Church and St Joseph's Roman Catholic Church, both on Lodge Causeway, and Abingdon Road Gospel Hall, an Evangelical Church of the Noncomformist Christian Brethren near the park, serve Mayfield Park of East Bristol.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "St John's Church of England Church",
+                    "serves",
+                    "Mayfield Park of East Bristol"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St Joseph's Roman Catholic Church",
+                    "serves",
+                    "Mayfield Park of East Bristol"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St John's Church of England Church",
+                    "located at",
+                    "Lodge Causeway"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St Joseph's Roman Catholic Church",
+                    "located at",
+                    "Lodge Causeway"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Abingdon Road Gospel Hall",
+                    "serves",
+                    "Mayfield Park of East Bristol"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Abingdon Road Gospel Hall",
+                    "near",
+                    "Mayfield Park of East Bristol"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Abingdon Road Gospel Hall",
+                    "is",
+                    "Evangelical Church"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Abingdon Road Gospel Hall",
+                    "is",
+                    "Noncomformist Christian Brethren"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12263",
+        "response": "The primary feature of a gravity hill is an optical illusion created by the layout of the surrounding land, making a slight downhill slope appear to be an uphill slope. This illusion causes a car left out of gear to appear to be rolling uphill against gravity. There are hundreds of gravity hills recognized worldwide.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "gravity hill",
+                    "is",
+                    "optical illusion"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "optical illusion of gravity hill",
+                    "created by",
+                    "layout of surrounding land"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "surrounding land",
+                    "makes",
+                    "slight downhill slope appear to be uphill slope"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "optical illusion of gravity hill",
+                    "causes",
+                    "car left out of gear appears to roll uphill against gravity"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "gravity hills",
+                    "exist",
+                    "worldwide"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "number of recognized gravity hills",
+                    "is",
+                    "hundreds"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12686",
+        "response": "Egypt - 13.0 million\nMorocco - 12.9 million\nSouth Africa - 10.2 million\nTunisia - 9.4 million\nAlgeria - 2.4 million",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Egypt",
+                    "International tourist arrivals (2019)",
+                    "13.0 million"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Morocco",
+                    "International tourist arrivals (2019)",
+                    "12.9 million"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "South Africa",
+                    "International tourist arrivals (2019)",
+                    "10.2 million"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tunisia",
+                    "International tourist arrivals (2019)",
+                    "9.4 million"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Algeria",
+                    "International tourist arrivals (2019)",
+                    "2.4 million"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12427",
+        "response": "The states which are part of the Western Ghats are Gujarat, Maharashtra, Goa, Karnataka, Tamil Nadu, and Kerala.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Western Ghats",
+                    "comprised of states",
+                    "Gujarat"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Western Ghats",
+                    "comprised of states",
+                    "Maharashtra"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Western Ghats",
+                    "comprised of states",
+                    "Goa"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Western Ghats",
+                    "comprised of states",
+                    "Karnataka"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Western Ghats",
+                    "comprised of states",
+                    "Tamil Nadu"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Western Ghats",
+                    "comprised of states",
+                    "Kerala"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "11049",
+        "response": "The ingredients required to prepare guacamole are peeled, ripe avocados, salt, lime juice, cilantro, onions, and jalape\u00f1os. Some non-traditional recipes may include sour cream, tomatoes, basil, or peas.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "ingredients required to prepare guacamole",
+                    "are",
+                    "peeled, ripe avocados"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ingredients required to prepare guacamole",
+                    "are",
+                    "salt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ingredients required to prepare guacamole",
+                    "are",
+                    "lime juice"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ingredients required to prepare guacamole",
+                    "are",
+                    "cilantro"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ingredients required to prepare guacamole",
+                    "are",
+                    "onions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ingredients required to prepare guacamole",
+                    "are",
+                    "jalape\u00f1os"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "non-traditional guacamole recipes",
+                    "may include",
+                    "sour cream"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "non-traditional guacamole recipes",
+                    "may include",
+                    "tomatoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "non-traditional guacamole recipes",
+                    "may include",
+                    "basil"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "non-traditional guacamole recipes",
+                    "may include",
+                    "peas"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3576",
+        "response": "It is not specified in the given context whether Michael Flavin himself was wealthy at the time he wrote Benjamin Disraeli. However, the context does suggest that Disraeli, the subject of Flavin's book, was not wealthy and was instead in debt at the time he wrote Venetia.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Flavin",
+                    "wealth status at time of writing Benjamin Disraeli",
+                    "unspecified"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Benjamin Disraeli",
+                    "wealth status at time of writing Venetia",
+                    "in debt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Venetia",
+                    "written by",
+                    "Benjamin Disraeli"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "8480",
+        "response": "S\u00e3o Miguel, Santa Maria and Formigas Islets.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "S\u00e3o Miguel",
+                    "island located on",
+                    "Eastern Group of the Azores plateau"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Santa Maria",
+                    "island located on",
+                    "Eastern Group of the Azores plateau"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Formigas Islets",
+                    "island located on",
+                    "Eastern Group of the Azores plateau"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "11647",
+        "response": "The dates that the Borneo visited Bencoolen, in the format Month Day Year, are: \n\n- December 26, 1714\n- February 9, 1715\n- March 29, 1715\n- August 24, 1715\n- May 30, 1716.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Borneo",
+                    "visited Bencoolen on",
+                    "December 26, 1714"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Borneo",
+                    "visited Bencoolen on",
+                    "February 9, 1715"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Borneo",
+                    "visited Bencoolen on",
+                    "March 29, 1715"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Borneo",
+                    "visited Bencoolen on",
+                    "August 24, 1715"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Borneo",
+                    "visited Bencoolen on",
+                    "May 30, 1716"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10240",
+        "response": "Pablo Honey - 1993; The Bends - 1995; OK Computer - 1997; Kid A - 2000; Amnesiac - 2001; Hail to the Thief - 2003; In Rainbows - 2007; The King of Limbs - 2011; A Moon Shaped Pool - 2016.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Pablo Honey",
+                    "released by Radiohead in",
+                    "1993"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Bends",
+                    "released by Radiohead in",
+                    "1995"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OK Computer",
+                    "released by Radiohead in",
+                    "1997"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kid A",
+                    "released by Radiohead in",
+                    "2000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Amnesiac",
+                    "released by Radiohead in",
+                    "2001"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Hail to the Thief",
+                    "released by Radiohead in",
+                    "2003"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "In Rainbows",
+                    "released by Radiohead in",
+                    "2007"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The King of Limbs",
+                    "released by Radiohead in",
+                    "2011"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "A Moon Shaped Pool",
+                    "released by Radiohead in",
+                    "2016"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10894",
+        "response": "Based on the given context, the risk factors for developing cardiovascular diseases for which numbers about their contribution are given are high blood pressure, tobacco smoking, diabetes mellitus, lack of exercise, and obesity. These risk factors for CVD are ranked by their relative importance, with high blood pressure being the most significant contributing factor, accounting for approximately 13% of CVD deaths, followed by tobacco smoking at 9%, diabetes mellitus at 6%, lack of exercise at 6%, and obesity at 5%. Additionally, poor diet, excessive alcohol consumption, and poor sleep are also potential risk factors for developing CVD.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "high blood pressure",
+                    "risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "high blood pressure",
+                    "accounts for approximately",
+                    "13% of cardiovascular disease deaths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tobacco smoking",
+                    "risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tobacco smoking",
+                    "accounts for approximately",
+                    "9% of cardiovascular disease deaths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "diabetes mellitus",
+                    "risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "diabetes mellitus",
+                    "accounts for approximately",
+                    "6% of cardiovascular disease deaths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "lack of exercise",
+                    "risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "lack of exercise",
+                    "accounts for approximately",
+                    "6% of cardiovascular disease deaths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "obesity",
+                    "risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "obesity",
+                    "accounts for approximately",
+                    "5% of cardiovascular disease deaths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "poor diet",
+                    "potential risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "excessive alcohol consumption",
+                    "potential risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "poor sleep",
+                    "potential risk factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "high blood pressure",
+                    "most significant contributing factor for",
+                    "cardiovascular diseases"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "11129",
+        "response": "The epic poem that discussed the Trojan Horse is the Aeneid, written by Virgil.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Trojan Horse",
+                    "discussed in",
+                    "Aeneid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Aeneid",
+                    "is",
+                    "epic poem"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Aeneid",
+                    "written by",
+                    "Virgil"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "14669",
+        "response": "Cronus and Rhea are the parents of Hades. Cronus, Rhea.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Hades",
+                    "parents",
+                    "Cronus and Rhea"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cronus",
+                    "is parent of",
+                    "Hades"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rhea",
+                    "is parent of",
+                    "Hades"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7522",
+        "response": "NATO currently has 31 member states, including 29 European countries and two North American countries. The organization has added new members nine times, most recently with Finland's acceptance in April 2023. Sweden is also expected to become the 32nd member following the acceptance of its application in June 2022. Bosnia and Herzegovina, Georgia, and Ukraine are considered aspiring members of NATO.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "NATO",
+                    "currently has",
+                    "31 member states"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NATO member states",
+                    "include",
+                    "29 European countries"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "NATO member states",
+                    "include",
+                    "two North American countries"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Finland",
+                    "accepted as NATO member",
+                    "April 2023"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sweden",
+                    "NATO membership application accepted",
+                    "June 2022"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sweden",
+                    "expected to become",
+                    "32nd NATO member"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Bosnia and Herzegovina",
+                    "considered",
+                    "aspiring NATO member"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Georgia",
+                    "considered",
+                    "aspiring NATO member"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ukraine",
+                    "considered",
+                    "aspiring NATO member"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5716",
+        "response": "Yes, Trump lost the 2020 presidential election to Joe Biden.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Trump",
+                    "lost",
+                    "2020 presidential election"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "2020 presidential election",
+                    "won by",
+                    "Joe Biden"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4540",
+        "response": "Famous musicians who have played a Fender Stratocaster include:\n\n- Billie Joe Armstrong (Green Day)\n- Randy Bachman (The Guess Who, Bachman\u2013Turner Overdrive)\n- Jeff Beck\n- Adrian Belew (King Crimson)\n- Ritchie Blackmore (Deep Purple, Rainbow)\n- Tommy Bolin\n- Joe Bonamassa\n- Bill Carson\n- Eric Clapton\n- Kurt Cobain (Nirvana)\n- Ry Cooder\n- Robert Cray\n- Dick Dale\n- The Edge (U2)\n- John Frusciante (Red Hot Chili Peppers)\n- Rory Gallagher\n- Lowell George (Little Feat)\n- David Gilmour (Pink Floyd)\n- Buddy Guy\n- Albert Hammond Jr. (The Strokes)\n- George Harrison (The Beatles)\n- Jimi Hendrix\n- Buddy Holly\n\nPlease note that this is not an exhaustive list, but it includes some of the most notable musicians who have played the Fender Stratocaster.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Billie Joe Armstrong",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Billie Joe Armstrong",
+                    "member of",
+                    "Green Day"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Randy Bachman",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Randy Bachman",
+                    "member of",
+                    "The Guess Who"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Randy Bachman",
+                    "member of",
+                    "Bachman\u2013Turner Overdrive"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Jeff Beck",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Adrian Belew",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Adrian Belew",
+                    "member of",
+                    "King Crimson"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Ritchie Blackmore",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ritchie Blackmore",
+                    "member of",
+                    "Deep Purple"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Ritchie Blackmore",
+                    "member of",
+                    "Rainbow"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Tommy Bolin",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Joe Bonamassa",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bill Carson",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Eric Clapton",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kurt Cobain",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kurt Cobain",
+                    "member of",
+                    "Nirvana"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Ry Cooder",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Robert Cray",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dick Dale",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Edge",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Edge",
+                    "member of",
+                    "U2"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "John Frusciante",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Frusciante",
+                    "member of",
+                    "Red Hot Chili Peppers"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Rory Gallagher",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lowell George",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Lowell George",
+                    "member of",
+                    "Little Feat"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "David Gilmour",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "David Gilmour",
+                    "member of",
+                    "Pink Floyd"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Buddy Guy",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Albert Hammond Jr.",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Albert Hammond Jr.",
+                    "member of",
+                    "The Strokes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "George Harrison",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Harrison",
+                    "member of",
+                    "The Beatles"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Jimi Hendrix",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Buddy Holly",
+                    "played",
+                    "Fender Stratocaster"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4060",
+        "response": "Xiaolongbao originated from Changzhou, Jiangsu province in the years of Daoguang Emperor, and evolved from soup-filled dumplings/buns from Kaifeng, Henan. There are various styles of xiaolongbao in Jiangsu cuisine, including the Shanghai-style xiaolongbao, which originated in Nanxiang, Suzhou and Wuxi styles, and the Nanjing style. The Shanghai-style is the most well-known style of xiaolongbao and is smaller than the Suzhou and Wuxi styles, while the Nanjing style is the smallest and has an almost translucent skin.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "xiaolongbao",
+                    "originated from",
+                    "Changzhou, Jiangsu province"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "xiaolongbao",
+                    "evolved from",
+                    "soup-filled dumplings/buns from Kaifeng, Henan"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "There are",
+                    "various styles of",
+                    "xiaolongbao in Jiangsu cuisine"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "styles of xiaolongbao",
+                    "include",
+                    "Shanghai-style"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Shanghai-style xiaolongbao",
+                    "originated in",
+                    "Nanxiang, Suzhou and Wuxi"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Shanghai-style",
+                    "most well-known style of",
+                    "xiaolongbao"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Shanghai-style xiaolongbao",
+                    "smaller than",
+                    "Suzhou and Wuxi styles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nanjing style xiaolongbao",
+                    "smallest style",
+                    "xiaolongbao"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nanjing style xiaolongbao",
+                    "has",
+                    "almost translucent skin"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "11403",
+        "response": "The Salvation Army is an international charitable organization and Protestant Christian church based in London, England, with over 1.7 million worldwide members. Founded in 1865, its mission is to meet the physical and spiritual needs of the poor, destitute, and hungry. The organization is present in 133 countries and provides social aid, disaster relief, and humanitarian aid to developing countries. The Salvation Army is one of the world's largest providers of social aid, with operating costs of $2.6 billion in 2004 and helping more than 32 million people in the U.S. alone. The organization has received high ratings for financial efficiency and organizational transparency. The page draws a significant amount of traffic from regions around the world, but specific traffic information is not provided.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "is",
+                    "international charitable organization"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "is",
+                    "Protestant Christian church"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "based in",
+                    "London, England"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "has",
+                    "over 1.7 million worldwide members"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "founded in",
+                    "1865"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "present in",
+                    "133 countries"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "provides",
+                    "social aid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "provides",
+                    "disaster relief"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "provides",
+                    "humanitarian aid to developing countries"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "one of",
+                    "world's largest providers of social aid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "had operating costs of",
+                    "$2.6 billion in 2004"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "helped",
+                    "more than 32 million people in the U.S. alone"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "received",
+                    "high ratings for financial efficiency"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Salvation Army",
+                    "received",
+                    "high ratings for organizational transparency"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The page",
+                    "draws",
+                    "significant amount of traffic from regions around the world"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9953",
+        "response": "Andr\u00e9 Weiss was a professor at the University of Dijon for one year, in 1881.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Andr\u00e9 Weiss",
+                    "was a professor at",
+                    "University of Dijon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Andr\u00e9 Weiss",
+                    "professor at University of Dijon for",
+                    "one year"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Andr\u00e9 Weiss",
+                    "professor at University of Dijon in",
+                    "1881"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "8470",
+        "response": "Mushulatubbee signed the Treaty of Dancing Rabbit Creek on September 26, 1830.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mushulatubbee",
+                    "signed",
+                    "Treaty of Dancing Rabbit Creek"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Treaty of Dancing Rabbit Creek",
+                    "signed on",
+                    "September 26, 1830"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "272",
+        "response": "Jen Shah became famous from her appearance on The Real Housewives of Salt Lake City, which premiered in November 2020. She was criminally charged in March 2021 with conspiracy to commit money laundering and wire fraud, and she pleaded not guilty to both charges. However, in July 2022, she pleaded guilty to conspiracy to commit wire fraud. In January 2023, she was sentenced to six-and-a-half years in prison, and she began serving her sentence in February of that same year. The documentary film Housewife and the Shah Shocker chronicled her legal case and premiered on Hulu in November 2021.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "became famous from",
+                    "her appearance on The Real Housewives of Salt Lake City"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Real Housewives of Salt Lake City",
+                    "premiered in",
+                    "November 2020"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "criminally charged in",
+                    "March 2021"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "charged with",
+                    "conspiracy to commit money laundering and wire fraud"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "pleaded guilty in",
+                    "July 2022"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "sentenced to",
+                    "six-and-a-half years in prison"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "sentenced in",
+                    "January 2023"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jen Shah",
+                    "began serving her sentence in",
+                    "February 2023"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The documentary film Housewife and the Shah Shocker",
+                    "chronicled",
+                    "her legal case"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The documentary film Housewife and the Shah Shocker",
+                    "premiered on",
+                    "Hulu"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The documentary film Housewife and the Shah Shocker",
+                    "premiered in",
+                    "November 2021"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1831",
+        "response": "The alias of the Tesla Bot is \"Optimus\".",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tesla bot",
+                    "has alias",
+                    "Optimus"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5521",
+        "response": "Cabernet Sauvignon is a red wine grape variety that is widely recognized and grown in nearly every major wine producing country. It is often blended with Merlot and Cabernet Franc and became internationally recognized through its prominence in Bordeaux wines. It was the world's most widely planted premium red wine grape for most of the 20th century and is once again the most widely planted wine grape as of 2015.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Cabernet Sauvignon",
+                    "is",
+                    "red wine grape variety"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cabernet Sauvignon",
+                    "grown in",
+                    "nearly every major wine producing country"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cabernet Sauvignon",
+                    "often blended with",
+                    "Merlot and Cabernet Franc"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cabernet Sauvignon",
+                    "became internationally recognized through",
+                    "prominence in Bordeaux wines"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cabernet Sauvignon",
+                    "was",
+                    "world's most widely planted premium red wine grape for most of the 20th century"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cabernet Sauvignon",
+                    "is",
+                    "most widely planted wine grape as of 2015"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12253",
+        "response": "OPEC was founded on September 14, 1960, in Baghdad by the first five members, and it has been headquartered in Vienna since 1965. Economists describe OPEC as a textbook example of a cartel that cooperates to reduce market competition, and they explain that OPEC has a major influence on global oil prices through setting production targets for its member nations. OPEC decisions have come to play a prominent role in the global oil market and international relations, but since the 1980s, OPEC has had a limited impact on world oil supply and price stability due to frequent cheating by members on their commitments to one another.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "OPEC",
+                    "founded on",
+                    "September 14, 1960"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC",
+                    "founded in",
+                    "Baghdad"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC",
+                    "founded by",
+                    "the first five members"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC headquartered in Vienna",
+                    "since",
+                    "1965"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Economists",
+                    "describe",
+                    "OPEC as a textbook example of a cartel that cooperates to reduce market competition"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC",
+                    "has influence on",
+                    "global oil prices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC influence on oil prices",
+                    "through",
+                    "setting production targets for its member nations"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC decisions",
+                    "play a prominent role in",
+                    "the global oil market and international relations"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC limited impact",
+                    "since",
+                    "the 1980s"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "OPEC limited impact",
+                    "due to",
+                    "frequent cheating by members on their commitments to one another"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "286",
+        "response": "There are three public high schools in Arlington, Virginia.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "There",
+                    "are",
+                    "three public high schools"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "public high schools",
+                    "located in",
+                    "Arlington, Virginia"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "6205",
+        "response": "The Flex Computer System was created to provide a safe and efficient implementation of strongly typed procedures using a tagged storage scheme to implement a capability architecture.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Flex Computer System",
+                    "created for",
+                    "providing safe and efficient implementation of strongly typed procedures"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Flex Computer System",
+                    "uses",
+                    "tagged storage scheme"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5100",
+        "response": "The Black Sea is a marginal mediterranean sea that lies between Europe and Asia, east of the Balkans, south of the East European Plain, west of the Caucasus, and north of Anatolia. It is bounded by Bulgaria, Georgia, Romania, Russia, Turkey, and Ukraine.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Black See",
+                    "location",
+                    "between Europe and Asia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Black See",
+                    "east of",
+                    "the Balkans"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Black See",
+                    "south of",
+                    "East European Plain"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Black See",
+                    "west of",
+                    "the Caucasus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Black See",
+                    "north of",
+                    "Anatolia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Black See",
+                    "bounded by",
+                    "Bulgaria, Georgia, Romania, Russia, Turkey, and Ukraine"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13821",
+        "response": "The women's individual competition at the 2018 Asian Games in Jakarta, Indonesia was held for a period of 4 days, from August 23 to August 26 (inclusive) at the Pondok Indah Golf & Country Club.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "women's individual competition",
+                    "held at",
+                    "2018 Asian Games in Jakarta, Indonesia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "women's individual competition",
+                    "location",
+                    "Pondok Indah Golf & Country Club"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "women's individual competition",
+                    "duration",
+                    "4 days"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "women's individual competition",
+                    "start date",
+                    "August 23"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "women's individual competition",
+                    "end date",
+                    "August 26"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4682",
+        "response": "Pampaneira is a village located in the province of Granada, Spain. According to the 2005 census, the village has a population of 355 inhabitants and is located at about 1060 metres above sea level. It is one of three mountain villages of the Barranco de Poqueira in the Alpujarras region, with Bubi\u00f3n and Capileira located higher in the Poqueira gorge. The Poqueira gorge starts below the mountain peak of Mulhac\u00e9n, where the river Poqueira rises. Bus connections run every day from the town of Granada.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Pampaneira",
+                    "is a village located in",
+                    "province of Granada, Spain"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Pampaneira",
+                    "located at elevation of",
+                    "about 1060 metres above sea level"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Pampaneira",
+                    "is one of",
+                    "three mountain villages of Barranco de Poqueira in Alpujarras region"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Other villages in Barranco de Poqueira",
+                    "are",
+                    "Bubi\u00f3n and Capileira"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Barranco de Poqueira",
+                    "located in",
+                    "Poqueira gorge"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Poqueira gorge",
+                    "starts below",
+                    "mountain peak of Mulhac\u00e9n"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "River Poqueira",
+                    "rises from",
+                    "Mulhac\u00e9n"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Daily bus connections",
+                    "run from",
+                    "town of Granada to Pampaneira"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10001",
+        "response": "The exact contents of what is hidden at Oak Island remains unknown, but it has been a sought-after location for treasure hunters since the late 1700s. Theories about what is hidden there include Captain Kidd's treasure, religious artifacts, manuscripts, and Marie Antoinette's jewels. However, some have dismissed search areas as natural phenomena and there is little evidence to support what went on during the early excavations.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "contents hidden at Oak Island",
+                    "remains",
+                    "unknown"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theories on contents hidden at Oak Island",
+                    "include",
+                    "Captain Kidd's treasure"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theories on contents hidden at Oak Island",
+                    "include",
+                    "religious artifacts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theories on contents hidden at Oak Island",
+                    "include",
+                    "manuscripts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "theories on contents hidden at Oak Island",
+                    "include",
+                    "Marie Antoinette's jewels"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10662",
+        "response": "Jimmy Carter attended Georgia Southwestern College in Americus, Georgia, for his undergraduate coursework in engineering before transferring to the Georgia Institute of Technology in Atlanta. He later went on to attend the United States Naval Academy, where he graduated with a Bachelor of Science degree and commissioned as an ensign.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jimmy Carter",
+                    "attended for undergraduate coursework",
+                    "Georgia Southwestern College in Americus, Georgia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jimmy Carter",
+                    "undergraduate coursework in",
+                    "engineering"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jimmy Carter",
+                    "transferred to",
+                    "Georgia Institute of Technology in Atlanta"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jimmy Carter",
+                    "later attended",
+                    "United States Naval Academy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jimmy Carter",
+                    "graduated from United States Naval Academy",
+                    "Bachelor of Science degree"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jimmy Carter",
+                    "commissioned as",
+                    "ensign"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "11722",
+        "response": "The film \"Our War\" was directed by Bruno Chiaravalloti, Claudio Jampaglia, and Benedetta Argentieri.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Our War",
+                    "directed by",
+                    "Bruno Chiaravalloti"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Our War",
+                    "directed by",
+                    "Claudio Jampaglia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Our War",
+                    "directed by",
+                    "Benedetta Argentieri"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2623",
+        "response": "GitHub Copilot offers assistive features for programmers, including the conversion of code comments to runnable code, autocomplete for chunks of code, repetitive sections of code, and entire methods and/or functions. It also allows programmers to describe input code in English and to translate code between programming languages. Additionally, its autocomplete feature works accurately about half of the time, reducing the amount of time users spend reading documentation while navigating unfamiliar coding frameworks and languages.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "offers",
+                    "assistive features for programmers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "includes",
+                    "conversion of code comments to runnable code"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "includes",
+                    "autocomplete for chunks of code"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "includes",
+                    "autocomplete for repetitive sections of code"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "includes",
+                    "autocomplete for entire methods and/or functions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "allows",
+                    "programmers to describe input code in English"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot",
+                    "allows",
+                    "translation of code between programming languages"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot autocomplete feature",
+                    "works accurately",
+                    "about half of the time"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Github Copilot autocomplete",
+                    "reduces",
+                    "amount of time users spend reading documentation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Github Copilot autocomplete",
+                    "reduces time navigating",
+                    "unfamiliar coding frameworks and languages"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5356",
+        "response": "Grand-Lahou Department became part of Lagunes District in 2011.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Grand-Lahou Department",
+                    "became part of",
+                    "Lagunes District"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Grand-Lahou Department became part of Lagunes District",
+                    "year",
+                    "2011"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2600",
+        "response": "Maurice Garin won the first Tour de France.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Maurice Garin",
+                    "won",
+                    "the first Tour de France"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9397",
+        "response": "The Stade Louis-II is located in the Fontvieille district of Monaco.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Stade Louis-II",
+                    "located in",
+                    "Fontvieille district"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Stade Louis-II",
+                    "located in",
+                    "Monaco"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7704",
+        "response": "The Ryder Cup is named after the English businessman Samuel Ryder who donated the trophy.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Ryder Cup",
+                    "named after",
+                    "Samuel Ryder"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Samuel Ryder",
+                    "is",
+                    "English businessman"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Samuel Ryder",
+                    "donated",
+                    "the Ryder Cup trophy"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3133",
+        "response": "To generate the wave needed for wakesurfing, a boat is required to create a wake in the water.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "boat",
+                    "required to create",
+                    "wake in the water"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "wake in the water",
+                    "needed for",
+                    "wakesurfing"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7924",
+        "response": "David Allan Farrish played 430 games in the National Hockey League (NHL).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "David Allan Farrish",
+                    "played",
+                    "430 games"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "430 games",
+                    "in",
+                    "the National Hockey League (NHL)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3999",
+        "response": "Mikel Artetxe Guezuraga turned professional in 1999 with Euskaltel\u2013Euskadi and stayed with the team for seven seasons. His biggest wins were a stage win in the Vuelta a Asturias and the sprints classification in the Trof\u00e9u Joaquim Agostinho, both achieved in 2006 while riding for the 3 Molinos Resort team.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mikel Artetxe Guezuraga",
+                    "turned professional",
+                    "1999"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mikel Artetxe Guezuraga",
+                    "turned professional with",
+                    "Euskaltel\u2013Euskadi"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mikel Artetxe Guezuraga",
+                    "stayed with Euskaltel-Euskadi",
+                    "seven seasons"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mikel Artetxe Guezuraga",
+                    "achieved",
+                    "stage win in the Vuelta a Asturias"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Stage win in the Vuelta a Asturias",
+                    "achieved in",
+                    "2006"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mikel Artetxe Guezuraga",
+                    "achieved",
+                    "sprints classification in the Trof\u00e9u Joaquim Agostinho"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sprints classification in the Trof\u00e9u Joaquim Agostinho",
+                    "achieved in",
+                    "2006"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sprints classification in the Trof\u00e9u Joaquim Agostinho",
+                    "achieved while riding for",
+                    "3 Molinos Resort team"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "14230",
+        "response": "Three races took place after July.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Three races",
+                    "took place after",
+                    "July"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "221",
+        "response": "John Johnstone won the Jockey Cup on a pony named Ben-y-Gloe in 1903, and in 1904 he won the Professional Cup on a pony named Runaway Girl. He was a successful rider who won 14 Grand Nationals in China and had a record of 334 wins in 1,178 races. In 1928, he won The Foxhunters Cup at Cheltenham riding Rathpatrick.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "won",
+                    "Jockey Cup"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jockey Cup",
+                    "won in",
+                    "1903"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "rode",
+                    "pony named Ben-y-Gloe"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "won",
+                    "Professional Cup"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Professional Cup",
+                    "won in",
+                    "1904"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "rode",
+                    "pony named Runaway Girl"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "won",
+                    "14 Grand Nationals in China"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "had record",
+                    "334 wins in 1,178 races"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "won",
+                    "The Foxhunters Cup at Cheltenham"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Foxhunters Cup at Cheltenham",
+                    "won in",
+                    "1928"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "John Johnstone",
+                    "rode",
+                    "Rathpatrick"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "11836",
+        "response": "Bobby Moore was born on April 12, 1941 and he died on February 24, 1993.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bobby Moore",
+                    "was born on",
+                    "April 12, 1941"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bobby Moore",
+                    "died on",
+                    "February 24, 1993"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4603",
+        "response": "Jon Rahm won the Farmers Insurance Open by sinking a 60-foot eagle putt on the final hole, which allowed him to notch his maiden PGA Tour title. This victory helped him climb from the 137th spot to the 46th place in the Official World Golf Ranking. As a result of this win, he also gained entry into several major golf tournaments such as the Masters Tournament, The Players Championship, the PGA Championship, and World Golf Championships events. In addition, Rahm participated in his first World Golf Championships event at the WGC-Mexico Championship in March of 2017, where he finished T3 by shooting rounds of 67-70-67-68 (\u221212), just two strokes behind winner Dustin Johnson.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jon Rahm",
+                    "won",
+                    "Farmers Insurance Open"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jon Rahm",
+                    "sank",
+                    "60-foot eagle putt on the final hole"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "60-foot eagle putt on the final hole",
+                    "allowed",
+                    "Jon Rahm to notch his maiden PGA Tour title"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "This victory",
+                    "helped",
+                    "Jon Rahm climb from the 137th spot to the 46th place in the Official World Golf Ranking"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "This win",
+                    "gained",
+                    "Jon Rahm entry into several major golf tournaments"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Major golf tournaments gained entry",
+                    "included",
+                    "the Masters Tournament, The Players Championship, the PGA Championship, and World Golf Championships events"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Jon Rahm",
+                    "participated in",
+                    "his first World Golf Championships event at the WGC-Mexico Championship in March of 2017"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2954",
+        "response": "\"The Invincibles\" is a nickname used to refer to both the Preston North End team of the 1888-89 season and Arsenal team of the 2003-04 season in English football. Preston North End earned the nickname after completing an entire season undefeated in league and cup competition (27 games), while Arsenal were undefeated in the league (38 games) in a run that stretched to a record 49 games. The actual nickname of the Preston team was the \"Old Invincibles\" but both versions have been in use.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Preston North End team of the 1888-89 season",
+                    "known as",
+                    "The Invincibles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Preston North End",
+                    "completed undefeated season in",
+                    "1888-89"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Preston North End undefeated season",
+                    "included",
+                    "27 games"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Preston North End undefeated",
+                    "included",
+                    "league and cup competition"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Arsenal team of the 2003-04 season",
+                    "known as",
+                    "The Invincibles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Arsenal",
+                    "undefeated in",
+                    "2003-04 Premier League"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Arsenal undefeated run",
+                    "included",
+                    "38 league games"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Arsenal undefeated run",
+                    "stretched to",
+                    "49 games"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Preston North End",
+                    "actual nickname",
+                    "Old Invincibles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Invincibles",
+                    "used to refer to",
+                    "Preston North End team of 1888-89"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Invincibles",
+                    "used to refer to",
+                    "Arsenal team of 2003-04"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4065",
+        "response": "Ibrahima Tamba is a Senegalese sprinter who participated in the 1988 and 1992 Summer Olympics, competing in the 200 meters.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Ibrahima Tamba",
+                    "is",
+                    "Senegalese sprinter"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ibrahima Tamba",
+                    "participated in",
+                    "1988 Summer Olympics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ibrahima Tamba",
+                    "participated in",
+                    "1992 Summer Olympics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ibrahima Tamba",
+                    "competed in",
+                    "200 meters"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2382",
+        "response": "Joseph Charlton played for the South Carolina Gamecocks college football team.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Joseph Charlton",
+                    "played for",
+                    "South Carolina Gamecocks college football team"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2052",
+        "response": "The 149th Boat Race took place on 6 April 2003.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "149th Boat Race",
+                    "took place on",
+                    "6 April 2003"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13618",
+        "response": "Paraskevi competed in three Paralympics.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Paraskevi",
+                    "competed in",
+                    "three Paralympics"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9779",
+        "response": "According to the given context, it is not explicitly mentioned where the Bakersfield Majestics played their games. However, it is stated that the team is based in Bakersfield, California, and is a member of The Basketball League (TBL).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bakersfield Majestics",
+                    "based in",
+                    "Bakersfield, California"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bakersfield Majestics",
+                    "member of",
+                    "The Basketball League (TBL)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12359",
+        "response": "Randy Couture was one of two fighters over the age of 40 to have won a UFC championship, having done so four times.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Randy Couture",
+                    "was one of",
+                    "two fighters over the age of 40"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "two fighters over the age of 40",
+                    "to have won",
+                    "a UFC championship"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Randy Couture",
+                    "won",
+                    "a UFC championship"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Randy Couture",
+                    "won a UFC championship",
+                    "four times"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9079",
+        "response": "CMWCs stands for Cycle Messenger World Championships.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "CMWCs",
+                    "stands for",
+                    "Cycle Messenger World Championships"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13894",
+        "response": "The males of the blackbuck can grow up to 74 to 84 cm (29 to 33 in) in height at the shoulder. They weigh between 20\u201357 kg (44\u2013126 lb), with an average weight of 38 kg (84 lb).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "males of the blackbuck",
+                    "can grow up to",
+                    "74 to 84 cm (29 to 33 in) in height at the shoulder"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "males of the blackbuck",
+                    "weigh between",
+                    "20\u201357 kg (44\u2013126 lb)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "males of the blackbuck",
+                    "have average weight of",
+                    "38 kg (84 lb)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9326",
+        "response": "Lake Michigan ranks as the second-largest of the Great Lakes by volume.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lake Michigan",
+                    "ranks",
+                    "second-largest of the Great Lakes by volume"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1812",
+        "response": "The phenomenon of mushrooms expanding rapidly in size is the source of the common English language expressions \"to mushroom\" or \"mushrooming,\" which relates to the growth of mushrooms.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "phenomenon of mushrooms expanding rapidly in size",
+                    "is source of",
+                    "common English language expressions 'to mushroom' or 'mushrooming'"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "common English language expressions 'to mushroom' or 'mushrooming'",
+                    "relates to",
+                    "growth of mushrooms"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5175",
+        "response": "The smallest bird is the bee hummingbird, with a length of 5 cm (2.0 in) and weighing less than 2.0 g (0.07 oz).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bee hummingbird",
+                    "is",
+                    "the smallest bird"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bee hummingbird",
+                    "has length of",
+                    "5 cm"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bee hummingbird",
+                    "has weight of",
+                    "less than 2.0 g"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bee hummingbird",
+                    "has length",
+                    "2.0 in"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bee hummingbird",
+                    "has weight",
+                    "0.07 oz"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9608",
+        "response": "Laskowice is a village in the administrative district of Gmina Je\u017cewo, within \u015awiecie County, Kuyavian-Pomeranian Voivodeship, in north-central Poland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Laskowice",
+                    "is",
+                    "village"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Laskowice",
+                    "located in",
+                    "administrative district of Gmina Je\u017cewo"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Laskowice",
+                    "located in",
+                    "\u015awiecie County"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Laskowice",
+                    "located in",
+                    "Kuyavian-Pomeranian Voivodeship"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Laskowice",
+                    "located in",
+                    "north-central Poland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "10547",
+        "response": "Drangaj\u00f6kull is located southwest of the peninsula Hornstrandir in the Westfjords region, which is the northernmost glacier of Iceland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Drangaj\u00f6kull",
+                    "located",
+                    "southwest of the peninsula Hornstrandir in the Westfjords region, Iceland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Drangaj\u00f6kull",
+                    "is",
+                    "the northernmost glacier of Iceland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4980",
+        "response": "Merlot is a type of dark blue-colored wine grape variety that can be used both as a blending grape and for varietal wines. It is named after the French word for blackbird, merle, likely due to its grape color. Merlot is known for its softer texture and earlier ripening, making it a popular blending partner for the later ripening and tannic Cabernet Sauvignon.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Merlot",
+                    "is a",
+                    "type of dark blue-colored wine grape variety"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "can be used as",
+                    "blending grape"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "can be used for",
+                    "varietal wines"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "named after",
+                    "French word for blackbird, merle"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "named after merle",
+                    "likely due to its grape color"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "known for",
+                    "softer texture"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "known for",
+                    "earlier ripening"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "popular blending partner for",
+                    "later ripening Cabernet Sauvignon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Merlot",
+                    "popular blending partner for",
+                    "tannic Cabernet Sauvignon"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3601",
+        "response": "The hermit hummingbird hawkmoth was first described in the 19th century. Specifically, it was described by Arthur Gardiner Butler in 1875.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "hermit hummingbird hawkmoth",
+                    "first described in",
+                    "19th century"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "hermit hummingbird hawkmoth",
+                    "described by",
+                    "Arthur Gardiner Butler"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Description of hermit hummingbird hawkmoth",
+                    "year",
+                    "1875"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "12004",
+        "response": "Architecturally, Maskavas For\u0161tate reflects its history as an area of Russian, Belarusian, and Jewish migration, with characteristic wooden homes. The neighborhood also has preserved segments of its medieval street network. Most of the prewar buildings, including those from the ghetto era, still stand today.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "architecture in Maskavas Forstate",
+                    "reflects",
+                    "history as an area of Russian, Belarusian, and Jewish migration"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "architecture in Maskavas Forstate",
+                    "has",
+                    "characteristic wooden homes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maskavas Forstate",
+                    "preserved segments of",
+                    "medieval street network"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "prewar buildings in Maskavas Forstate",
+                    "include",
+                    "those from the ghetto era"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "12310",
+        "response": "Bull sharks can live in both salt and fresh water because they are euryhaline and have the ability to thrive in both environments. They are known to travel far up rivers and have been observed in freshwater habitats, although they are not true freshwater sharks like the river sharks of the genus Glyphis.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bull sharks",
+                    "can live in",
+                    "both salt and fresh water"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bull sharks",
+                    "are",
+                    "euryhaline"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bull sharks",
+                    "have",
+                    "the ability to thrive in both salt and fresh water environments"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bull sharks",
+                    "are known to",
+                    "travel far up rivers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bull sharks",
+                    "have been observed in",
+                    "freshwater habitats"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Bull sharks",
+                    "are not",
+                    "true freshwater sharks like the river sharks of the genus Glyphis"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7390",
+        "response": "Iolaus crawshayi is a butterfly in the family Lycaenidae.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Iolaus crawshayi",
+                    "is a",
+                    "butterfly"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Iolaus crawshayi",
+                    "in the family",
+                    "Lycaenidae"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "9525",
+        "response": "Salmon typically have an anadromous lifecycle, meaning they hatch in fresh water streams, migrate to the ocean to live like sea fish, and then return to fresh water to reproduce. Some species, however, remain in fresh water their entire lives. Salmon have a homing behavior where they return to the exact spot they hatched to spawn, with only a portion of the run straying to different freshwater systems. The percent of straying varies depending on the species of salmon, and homing behavior is dependent on olfactory memory.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "salmon",
+                    "typically have",
+                    "anadromous lifecycle"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "anadromous lifecycle",
+                    "means",
+                    "salmon hatch in fresh water streams"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "anadromous lifecycle",
+                    "means",
+                    "salmon migrate to the ocean"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "anadromous lifecycle",
+                    "means",
+                    "salmon live like sea fish in the ocean"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "anadromous lifecycle",
+                    "means",
+                    "salmon return to fresh water to reproduce"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some salmon species",
+                    "remain in",
+                    "fresh water their entire lives"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "salmon",
+                    "have",
+                    "homing behavior"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "homing behavior",
+                    "is",
+                    "salmon return to the exact spot they hatched to spawn"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some salmon",
+                    "stray to",
+                    "different freshwater systems to spawn"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "percent of salmon that stray",
+                    "varies depending on",
+                    "species of salmon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "salmon homing behavior",
+                    "dependent on",
+                    "olfactory memory"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "65",
+        "response": "The British Virgin Islands (BVI) are located in the Caribbean, to the east of Puerto Rico and the US Virgin Islands and north-west of Anguilla. The BVI consists of the main islands of Tortola, Virgin Gorda, Anegada, and Jost Van Dyke, along with more than 50 other smaller islands and cays. The capital, Road Town, is on Tortola, which is the largest island and is approximately 20 km long and 5 km wide.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "located in",
+                    "Caribbean"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "east of",
+                    "Puerto Rico"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "east of",
+                    "US Virgin Islands"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "north-west of",
+                    "Anguilla"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "consists of",
+                    "Tortola"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "consists of",
+                    "Virgin Gorda"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "consists of",
+                    "Anegada"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "consists of",
+                    "Jost Van Dyke"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "British Virgin Islands (BVI)",
+                    "consists of",
+                    "more than 50 other smaller islands and cays"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tortola",
+                    "is",
+                    "largest island"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Road Town",
+                    "is capital of",
+                    "British Virgin Islands (BVI)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Road Town",
+                    "located on",
+                    "Tortola"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2971",
+        "response": "Squat lobster fisheries exist primarily in Latin America, with commercial exploitation currently restricted to Chile. Other countries, such as Argentina, Mexico, and New Zealand, have had experimental fisheries but few functioning ones. In Central America, El Salvador has a commercial catch of squat lobster, primarily Pleuroncodes monodon. Nicaragua also heavily exploits squat lobsters, while in Costa Rica, aggregations of squat lobsters are avoided. Panama had a production of 492 t in 2008.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "squat lobster fisheries",
+                    "exist primarily in",
+                    "Latin America"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "squat lobster fisheries",
+                    "commercially exploited in",
+                    "Chile"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "squat lobster fisheries",
+                    "had experimental fisheries in",
+                    "Argentina"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "squat lobster fisheries",
+                    "had experimental fisheries in",
+                    "Mexico"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "squat lobster fisheries",
+                    "had experimental fisheries in",
+                    "New Zealand"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "El Salvador",
+                    "has commercial catch of",
+                    "squat lobster"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "squat lobster in El Salvador",
+                    "primarily",
+                    "Pleuroncodes monodon"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Nicaragua",
+                    "heavily exploits",
+                    "squat lobsters"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Costa Rica",
+                    "avoids aggregations of",
+                    "squat lobsters"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Panama",
+                    "had production of",
+                    "492 t"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Panama",
+                    "had production in year",
+                    "2008"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "6734",
+        "response": "As stated in the given paragraph, Belize's population is 408,487 as of 2019. Notably, Belize has the lowest population and population density in Central America.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Belize's population",
+                    "is",
+                    "408,487"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Belize's population",
+                    "as of",
+                    "2019"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Belize",
+                    "has",
+                    "lowest population in Central America"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Belize",
+                    "has",
+                    "lowest population density in Central America"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "13918",
+        "response": "Rrabosht\u00eb is a village located in northwestern Albania. It is known for its patriotic residents who have preserved the customs and traditions of their respective regions. The village is divided into four main neighborhoods and is situated near the river Drin. Rrabosht\u00eb is also known for its grape production and cultivation.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rrabosht\u00eb",
+                    "is a village located in",
+                    "northwestern Albania"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rrabosht\u00eb",
+                    "is known for",
+                    "its patriotic residents who have preserved the customs and traditions of their respective regions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rrabosht\u00eb",
+                    "is divided into",
+                    "four main neighborhoods"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rrabosht\u00eb",
+                    "is situated near",
+                    "the river Drin"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rrabosht\u00eb",
+                    "is also known for",
+                    "its grape production and cultivation"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4750",
+        "response": "The best time to go to Wallis and Futuna is during the cool, dry season from May to October, caused by the southeast trade winds that predominate during those months. This season is more comfortable than the hot, rainy season from November to April, when tropical cyclones passing over them cause storms.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The best time to go to Wallis and Futuna",
+                    "is during",
+                    "the cool, dry season from May to October"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The cool, dry season from May to October",
+                    "caused by",
+                    "the southeast trade winds that predominate during those months"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The cool, dry season from May to October",
+                    "more comfortable than",
+                    "the hot, rainy season from November to April"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The hot, rainy season from November to April",
+                    "when",
+                    "tropical cyclones passing over them cause storms"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]
