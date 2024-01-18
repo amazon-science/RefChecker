@@ -175,12 +175,11 @@ def _get_anthropic_claude_completion(prompt, temperature=0, max_new_tokens=300):
 
 
 def _get_response_from_local_llm(
-    llm: LLM, prompt=None, prompt_token_ids=None, temperature=0, max_new_tokens=300
+    llm: LLM, prompt=None, temperature=0, max_new_tokens=300
 ):
     """Receive prompt or prompt token ids as input and give the output of llm."""
     outputs = llm.generate(
         prompt,
-        prompt_token_ids=prompt_token_ids,
         sampling_params=SamplingParams(
             temperature=temperature, max_tokens=max_new_tokens
         ),
@@ -188,30 +187,6 @@ def _get_response_from_local_llm(
     )
     llm_output = outputs[0].outputs[0].text
     return llm_output
-
-
-def _mistral_encode_conversation(tokenizer, prompt: str):
-    """Encode prompts for Mistral/Mixtral.
-    Assume all strings are .strip()-ed and does not include anything like [INST][/INST]
-    """
-    final_prompted_tensors = []
-    one_digit_tensor = torch.ones((1, 1), dtype=torch.long)
-
-    # prompt
-    for_tokenize_prompt = f"[INST] {prompt} [/INST]"
-    tokenized_id = tokenizer.encode(
-        for_tokenize_prompt, add_special_tokens=False, return_tensors="pt"
-    )
-    final_prompted_tensors.append(tokenized_id)
-
-    # BOS
-    final_prompted_tensors[0] = torch.cat(
-        (one_digit_tensor * tokenizer.bos_token_id, final_prompted_tensors[0]),
-        dim=-1,
-    )
-
-    final_prompted_tensor = torch.cat(final_prompted_tensors, dim=-1)
-    return final_prompted_tensor
 
 
 def _clear_llm_dict():
@@ -255,12 +230,12 @@ def get_response_from_mistral(
         tokenizer.pad_token_id = tokenizer.eos_token_id
         llm.set_tokenizer(tokenizer)
         vllm_global_dict[model_name] = llm
-
+    prompt = f"<s>[INST] {prompt} [/INST]"
     llm: LLM = vllm_global_dict[model_name]
-    mistral_encoded_tensor = _mistral_encode_conversation(llm.get_tokenizer(), prompt)
+
     return _get_response_from_local_llm(
         llm,
-        prompt_token_ids=mistral_encoded_tensor.tolist(),
+        prompt=prompt,
         temperature=temperature,
         max_new_tokens=max_new_tokens,
     )
