@@ -1,0 +1,3822 @@
+[
+    {
+        "id": "167875",
+        "response": "Based on the provided passages, there is no definitive evidence to determine whether Jimmy Jazz sells fake shoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jimmy Jazz",
+                    "sells fake shoes",
+                    "not determined"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1098142",
+        "response": "Based on the provided passages, the answer to the question \"how long does it take to renew your nexus card?\" is not explicitly stated.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "60339",
+        "response": "Based on the provided passages, it is not possible to determine the exact number of calories in ground beef stroganoff.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1098131",
+        "response": "Based on the provided passages, there is no specific information given about how long it usually takes to get taxes back from H&R Block online.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "423918",
+        "response": "Based on the provided passages, it can be inferred that Skype can be monitored by unauthorized parties and is routinely monitored by Microsoft and government agencies.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Skype",
+                    "monitored by",
+                    "unauthorized parties"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Skype",
+                    "routinely monitored by",
+                    "Microsoft"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Skype",
+                    "routinely monitored by",
+                    "government agencies"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "164058",
+        "response": "Based on the provided passages, there is no direct information to confirm whether BullGuard removes malware. Passage 2 states that BullGuard excels in virus/malware detection and removal, but it does not explicitly state that BullGuard removes malware. Therefore, it is unclear whether BullGuard actively removes malware.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "BullGuard",
+                    "excels in",
+                    "virus/malware detection"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "BullGuard",
+                    "excels in",
+                    "virus/malware removal"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 2",
+                    "states",
+                    "BullGuard excels in virus/malware detection and removal"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 2",
+                    "does not explicitly state",
+                    "BullGuard removes malware"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Whether BullGuard removes malware",
+                    "is",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "431481",
+        "response": "Based on the provided passages, it can be concluded that Willie McGee is not in the Baseball Hall of Fame.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Willie McGee",
+                    "not in",
+                    "Baseball Hall of Fame"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "164078",
+        "response": "Based on the provided passages, burning sage is mentioned as a natural insect repellent, but it is not specifically mentioned as a method to get rid of mosquitoes. Therefore, it is unclear whether burning sage alone would effectively get rid of mosquitoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "burning sage",
+                    "mentioned as",
+                    "natural insect repellent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "burning sage",
+                    "specifically get rid of mosquitoes",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "burning sage alone",
+                    "effectively get rid of mosquitoes",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "74518",
+        "response": "Based on the provided passages, the answer to the question \"Can the POTUS pardon himself?\" is that it is a topic of debate and interpretation. Passages 1, 2, 3, 4, 5, 6, and 9 suggest that the president does have the power to pardon themselves for federal crimes, but there may be limitations on pardoning offenses related to impeachment. However, passage 0 presents the view that President Clinton promised not to pardon himself, and passage 8 suggests that the decision to pardon oneself may not hold much weight in international courts. Ultimately, it is a complex and debated issue without a definitive answer.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "POTUS",
+                    "has power to",
+                    "pardon himself for federal crimes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "POTUS self pardon",
+                    "limitations",
+                    "pardoning offenses related to impeachment"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "President Clinton",
+                    "promised not to",
+                    "pardon himself"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "POTUS self pardon",
+                    "may not hold weight in",
+                    "international courts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Can POTUS pardon himself?",
+                    "is",
+                    "complex and debated issue without definitive answer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Can POTUS pardon himself?",
+                    "is",
+                    "topic of debate and interpretation"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "20924",
+        "response": "Based on the provided passages, it is unclear whether Apollo and Phaedra are still married. Some passages suggest that they are still married and have not filed for divorce, while others suggest that they are headed for divorce.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "196366",
+        "response": "Based on the provided passages, Grace VanderWaal has a verified Instagram account with over 921,000 followers. Her Instagram account is owned by her mom.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Grace VanderWaal",
+                    "has",
+                    "verified Instagram account"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Grace VanderWaal's Instagram account",
+                    "number of followers",
+                    "over 921,000"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Grace VanderWaal's Instagram account",
+                    "owned by",
+                    "her mom"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "830068",
+        "response": "The maximum charitable donation is 50 percent of your Adjusted Gross Income (AGI) for contributions to public charities, colleges, and religious groups.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "maximum charitable donation",
+                    "is",
+                    "50 percent of your Adjusted Gross Income (AGI)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "maximum charitable donation",
+                    "for contributions to",
+                    "public charities, colleges, and religious groups"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "424911",
+        "response": "Based on the provided passages, sugar is considered acidic.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sugar",
+                    "is",
+                    "acidic"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "853309",
+        "response": "Based on the passages provided, we do not have specific information about the current weather for Branson, Missouri.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Branson, Missouri",
+                    "weather information",
+                    "not provided"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "424287",
+        "response": "It is unclear if Space Mountain is currently open based on the provided passages.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Space Mountain",
+                    "open status",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "71168",
+        "response": "Based on the provided passages, the answer is yes, marijuana can be associated with mental illness. Passage 0 states that heavy cannabis use among youth is associated with cognitive problems and increased risk of mental illness. Passage 5 also mentions that regular use of marijuana has been linked to a doubled risk of developing a psychotic episode or long-term schizophrenia. Passage 8 emphasizes the need for medical supervision when using medical marijuana due to the potential exacerbation of psychotic mental illness.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "marijuana",
+                    "associated with",
+                    "mental illness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "heavy cannabis use among youth",
+                    "associated with",
+                    "increased risk of mental illness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "regular use of marijuana",
+                    "linked to",
+                    "doubled risk of developing a psychotic episode"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "regular use of marijuana",
+                    "linked to",
+                    "long-term schizophrenia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "use of medical marijuana",
+                    "potentially exacerbates",
+                    "psychotic mental illness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "use of medical marijuana",
+                    "requires",
+                    "medical supervision"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "158999",
+        "response": "Based on the provided passages, the general consensus is that clean snakes have very little to no odor. Passage 0 and Passage 2 both state that snakes do not produce smelly detritus like mammals and birds, and Passage 4 mentions that the snakes do not smell unless their poop is not cleaned or left in for too long. Additionally, Passage 9 mentions that under normal circumstances, snakes have no odor. Therefore, the answer to the question \"do snakes have a smell to them?\" is no, snakes do not have a strong or noticeable smell.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "snakes",
+                    "have odor",
+                    "very little to no"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes",
+                    "produce smelly detritus",
+                    "no"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes",
+                    "have smell",
+                    "unless poop not cleaned"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes under normal circumstances",
+                    "have odor",
+                    "no"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes",
+                    "have a strong or noticeable smell",
+                    "no"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "144833",
+        "response": "Based on Passage 3, Passage 4, Passage 6, and Passage 9, it can be inferred that President Obama did invoke executive privilege, specifically in response to requests made by Rep. Darrell Issa regarding the Fast and Furious program.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President Obama",
+                    "invoked",
+                    "executive privilege"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "President Obama",
+                    "invoked executive privilege in response to",
+                    "requests made by Rep. Darrell Issa"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Requests made by Rep. Darrell Issa",
+                    "regarding",
+                    "Fast and Furious program"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "71250",
+        "response": "Based on the provided passages, it is mentioned in Passage 7 that Melania Trump speaks five languages, including English, French, German, and Serbian, but Russian is not mentioned.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Melania Trump",
+                    "languages spoken",
+                    "English, French, German, Serbian"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Russian language",
+                    "spoken by Melania Trump",
+                    "no"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "415165",
+        "response": "Based on the given passages, Johnny Rivers was married to Vicki Ellison in the late 1960s to late 1970s and was also married to Christi Marie Zabel from the early 1980s to late 1980s.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "married to",
+                    "Vicki Ellison"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Vicki Ellison",
+                    "time period",
+                    "late 1960s to late 1970s"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "married to",
+                    "Christi Marie Zabel"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Christi Marie Zabel",
+                    "time period",
+                    "early 1980s to late 1980s"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "411030",
+        "response": "Based on the provided passages, George Soros is portrayed as an atheist.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Soros",
+                    "portrayed as",
+                    "atheist"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "George Soros",
+                    "religious belief",
+                    "atheism"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "168000",
+        "response": "Based on the passages provided, it can be inferred that the Kia Sorento is an interference engine. Passage 4 specifically states that the 2006 Kia Sorento with a 3.5L V-6 engine has a timing belt and is an interference engine, which means that piston to valve damage can occur if the timing belt fails. Passage 0 also mentions that the timing belt recently broke, indicating that the Kia Sorento has a timing belt.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kia Sorento",
+                    "has",
+                    "interference engine"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Kia Sorento",
+                    "has",
+                    "timing belt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Timing belt",
+                    "can cause",
+                    "piston to valve damage if fails"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "2006 Kia Sorento",
+                    "has",
+                    "3.5L V-6 engine"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "2006 Kia Sorento",
+                    "is",
+                    "interference engine"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Interference engine",
+                    "means",
+                    "piston to valve damage can occur if timing belt fails"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "73420",
+        "response": "Based on the passages, it can be inferred that Singapore requires a passport to have at least six months of validity in order to enter the country.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1094146",
+        "response": "Yes, Gdansk is the main port in Poland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gdansk",
+                    "is",
+                    "main port"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gdansk",
+                    "located in",
+                    "Poland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Poland",
+                    "has",
+                    "Gdansk as main port"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1093157",
+        "response": "Based on the passages provided, the maximum age for an officer in the Air Force is not explicitly stated. Passage 2 mentions that officers in certain categories must enter active duty before reaching age 35, but it does not give a maximum age for officer positions in general. Passage 5 mentions that the maximum age for enlistment in the Air Force has been raised to 39, but it does not specify if this age limit applies to officer positions as well. Therefore, it is not possible to determine the maximum age for an officer in the Air Force based on the given passages.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1098565",
+        "response": "Based on the provided passages, it can be inferred that a T-Rex lived for an average of 25-30 years.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "T-Rex",
+                    "average lifespan",
+                    "25-30 years"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097044",
+        "response": "The passages do not provide a clear answer to the question of how many hours are required for the CRS designation.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "hours for crs designation",
+                    "number",
+                    "not answered"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "192218",
+        "response": "Based on the provided passages, the number of hours required to be considered a full-time student can vary depending on the context. However, some common requirements mentioned are:\n\n- Passage 0: Full-time status is usually considered as a schedule of 12 or more semester or quarter hours, but there is no data on how many credits full-time students are actually taking.\n\n- Passage 1: For undergraduate students in the summer, 12 hours is considered full-time.\n\n- Passage 2: For fall and spring semesters, a full-time college student completes at least 12 semester hours. Some schools may require 15 semester hours. In the summer, completing 6 semester hours is considered full-time.\n\n- Passage 3: For graduate students, a normal full-time load is nine graduate-level semester hours. But for those holding graduate assistantships, full-time status is six semester hours.\n\n- Passage 4: According to the University Bulletin, graduate students taking 9 or more credit hours per semester (6 credits in the summer) are considered full-time.\n\n- Passage 5: The normal load for full-time students is 3 courses (9 credits).\n\n- Passage 8: For graduate students, 9 hours is considered full-time.\n\nBased on the information provided, the answer to the question \"full time student how many hours?\" is not explicitly stated or consistent across all passages. It can range from 12 hours for undergraduate students in the summer to 9 or more credit hours for graduate students. Some schools may require 15 semester hours for full-time status.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "full-time undergraduate student in summer",
+                    "semester hours requirement",
+                    "12 hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "full-time undergraduate student in fall/spring semester",
+                    "semester hours requirement",
+                    "12 semester hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "full-time undergraduate student in fall/spring semester",
+                    "semester hours requirement",
+                    "15 semester hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "full-time graduate student",
+                    "semester hours requirement",
+                    "9 graduate-level semester hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "graduate student with assistantship",
+                    "semester hours requirement",
+                    "6 semester hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "full-time graduate student per University Bulletin",
+                    "credit hours per semester requirement",
+                    "9 or more credit hours"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "full-time graduate student in summer per University Bulletin",
+                    "credit hours requirement",
+                    "6 credits"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "full-time graduate student normal load",
+                    "courses requirement",
+                    "3 courses"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "full-time graduate student normal load",
+                    "credits requirement",
+                    "9 credits"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "full-time graduate student",
+                    "hours requirement",
+                    "9 hours"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "453218",
+        "response": "Based on the provided passages, the Mexico passport is valid for 10 years if the passport holder is 16 years or older when the passport was issued, and it is valid for 5 years if the passport holder is 15 years or younger when the passport was issued.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Condition for 10 year validity",
+                    "passport holder age when issued",
+                    "16 years or older"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Condition for 5 year validity",
+                    "passport holder age when issued",
+                    "15 years or younger"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "271818",
+        "response": "Based on the passages provided, the time it takes to receive a renewed passport can vary depending on the service selected and the circumstances. Passage 0 states that with expedited service, it took exactly 1 week for the passport to be returned. Passage 2 mentions that during peak travel periods, the normal processing time ranges from six to eight weeks. Passage 4 states that after the appointment at the passport acceptance facility, passport processing generally takes four to six weeks. Passage 9 mentions that passport renewals by mail typically take four to six weeks to process. Therefore, the time it takes to receive a renewed passport can range from 1 week with expedited service to up to eight weeks during peak travel periods.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renewed passport",
+                    "processing time",
+                    "vary depending on service and circumstances"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "expedited service",
+                    "processing time for renewed passport",
+                    "1 week"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "normal processing time during peak periods",
+                    "for renewed passport",
+                    "six to eight weeks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "processing after appointment at passport facility",
+                    "time for renewed passport",
+                    "four to six weeks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "passport renewal by mail",
+                    "processing time",
+                    "four to six weeks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "time to receive renewed passport",
+                    "range",
+                    "one week with expedited service to eight weeks during peak periods"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1002884",
+        "response": "Lubbock General Hospital was built in 1941.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lubbock General Hospital",
+                    "was built in",
+                    "1941"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1096985",
+        "response": "The average cost of hospital room and board is not explicitly stated in any of the provided passages.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average hospital room and board",
+                    "cost information",
+                    "not explicitly stated in provided passages"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1006506",
+        "response": "Based on the provided passages, Mount Nyiragongo last erupted on January 17, 2002.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mount Nyiragongo",
+                    "last erupted on",
+                    "January 17, 2002"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "909506",
+        "response": "Based on the provided passages, it is not clear which TV channel airs the lottery.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "passages",
+                    "do not specify",
+                    "which TV channel airs the lottery"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "991037",
+        "response": "Based on the provided passages, Clarice Feldman is a writer for the American Thinker and has a conservative viewpoint.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "is a",
+                    "writer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "writes for",
+                    "American Thinker"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "American Thinker",
+                    "has",
+                    "conservative viewpoint"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "has",
+                    "conservative viewpoint"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "643122",
+        "response": "Based on the provided passages, the meaning of \"MEC\" can refer to multiple things. It can stand for \"Modified Endowment Contract\" in the context of life insurance policies. It can also stand for \"Mutual Execution of Contract\" in the real estate industry.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "MEC",
+                    "can refer to",
+                    "Modified Endowment Contract"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "can refer to",
+                    "Mutual Execution of Contract"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Modified Endowment Contract",
+                    "context",
+                    "life insurance policies"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mutual Execution of Contract",
+                    "context",
+                    "real estate industry"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "450391",
+        "response": "Based on the passages provided, the meaning of \"tuckahoe\" is a curious vegetable production of the Southern Atlantic United States that grows underground like a truffle and often attains immense size. It is also referred to as Indian bread or Indian loaf.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "also known as",
+                    "Indian bread"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "also known as",
+                    "Indian loaf"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "is",
+                    "curious vegetable production"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "grows",
+                    "underground"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "grows like",
+                    "truffle"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "often attains",
+                    "immense size"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuck-a-hoe",
+                    "grows in",
+                    "Southern Atlantic United States"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "998737",
+        "response": "Based on the provided passages, the definition for bass is:\n\n- A very low range of musical notes or a person or instrument that produces those notes.\n- The lowest adult male singing voice.\n- The member of a family of instruments that is the lowest in pitch.\n- The lowest part in polyphonic music.\n- An adult male singer with the lowest voice.\n- The low-frequency output of a radio or audio system, corresponding to the bass in music.\n- The lean flesh of a saltwater fish.\n- The bottom four strings of a guitar tuned an octave lower.\n- Any of numerous edible marine or freshwater bony fishes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "A very low range of musical notes or a person or instrument that produces those notes."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "The lowest adult male singing voice."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "The member of a family of instruments that is the lowest in pitch."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "The lowest part in polyphonic music."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "An adult male singer with the lowest voice."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "The low-frequency output of a radio or audio system, corresponding to the bass in music."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "The lean flesh of a saltwater fish."
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "The bottom four strings of a guitar tuned an octave lower."
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "definition",
+                    "Any of numerous edible marine or freshwater bony fishes."
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "785306",
+        "response": "Based on the provided passages, there is not enough information to determine what polysys refers to.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "polysys",
+                    "explanation",
+                    "Based on the provided passages, there is not enough information to determine what polysys refers to."
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "708853",
+        "response": "Aggravated driving while intoxicated refers to driving a motor vehicle in a public place while intoxicated, with certain aggravating factors present. The specific aggravating factors may vary by state, but they can include things like having previous DUI convictions, driving with a blood alcohol content above a certain limit, driving without a valid license or insurance, driving a school bus carrying minors while intoxicated, or causing bodily harm or death while DUI. Aggravated driving while intoxicated is typically classified as a more severe offense than regular driving while intoxicated, and it usually carries harsher penalties.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "aggravated driving while intoxicated",
+                    "refers to",
+                    "driving a motor vehicle in a public place while intoxicated, with certain aggravating factors present"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravating factors for aggravated driving while intoxicated",
+                    "include",
+                    "having previous DUI convictions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravating factors for aggravated driving while intoxicated",
+                    "include",
+                    "driving with a blood alcohol content above a certain limit"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravating factors for aggravated driving while intoxicated",
+                    "include",
+                    "driving without a valid license or insurance"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravating factors for aggravated driving while intoxicated",
+                    "include",
+                    "driving a school bus carrying minors while intoxicated"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravating factors for aggravated driving while intoxicated",
+                    "include",
+                    "causing bodily harm or death while DUI"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravated driving while intoxicated",
+                    "is",
+                    "more severe offense than regular driving while intoxicated"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "aggravated driving while intoxicated",
+                    "usually carries",
+                    "harsher penalties"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "21793",
+        "response": "Based on the passages provided, concierge medical fees may be tax deductible if a person has health care expenses that exceed a certain percentage of their adjusted gross income, typically 7.5 percent. However, this threshold is mentioned to be increasing to 10 percent in one of the passages. It is also mentioned that for patients who itemize their medical expenses on their tax returns, the annual retainer-based medicine fee may be deductible.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "concierge medical fees",
+                    "may be",
+                    "tax deductible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "deductibility of concierge medical fees",
+                    "requires",
+                    "health care expenses exceeding percentage of adjusted gross income"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "percentage of adjusted gross income",
+                    "is",
+                    "7.5 percent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "percentage of adjusted gross income",
+                    "increasing to",
+                    "10 percent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "deductibility of concierge medical fees",
+                    "applies to",
+                    "patients who itemize medical expenses on tax returns"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "annual retainer-based medicine fee",
+                    "may be",
+                    "deductible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "deductibility",
+                    "applies to",
+                    "concierge medical fees"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "810239",
+        "response": "The cause of dogs urinating all the time is likely Cushings Disease.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "likely cause",
+                    "Cushings Disease"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "57346",
+        "response": "Bus ports are ports that are used for connecting peripheral devices to a computer using the Universal Serial Bus (USB) standard. USB ports support data transfer rates, with USB 1.x supporting 12 Mbps and USB 3.0 supporting higher speeds. A single USB port can support up to 127 peripheral devices. USB ports also support Plug-and-Play installation and hot plugging, making it easy to connect and disconnect devices without requiring a restart. USB cables are available in different lengths, with a maximum length of 16 feet for high-speed devices and 9 feet 10 inches for low-speed devices. USB ports are commonly found on computers and can be used to connect devices such as mice, keyboards, external drives, cameras, and MP3 players, among others.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bus ports",
+                    "used for",
+                    "connecting peripheral devices to a computer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bus ports",
+                    "use",
+                    "Universal Serial Bus (USB) standard"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bus ports",
+                    "support",
+                    "data transfer rates"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 1.x",
+                    "supports",
+                    "12 Mbps"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB 3.0",
+                    "supports",
+                    "higher speeds"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Single USB port",
+                    "can support",
+                    "up to 127 peripheral devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "support",
+                    "Plug-and-Play installation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "support",
+                    "hot plugging"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Hot plugging",
+                    "allows",
+                    "easy connect and disconnect devices without requiring a restart"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "USB cables",
+                    "available in",
+                    "different lengths"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maximum length for high-speed devices",
+                    "is",
+                    "16 feet"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Maximum length for low-speed devices",
+                    "is",
+                    "9 feet 10 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "commonly found on",
+                    "computers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "can be used to connect",
+                    "mice, keyboards, external drives, cameras, MP3 players"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1102431",
+        "response": "Based on the provided passages, it is not explicitly stated why Rachel Carson wrote \"An Obligation to Endure.\"",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "248616",
+        "response": "The answer to the question \"how long do you roast a beet?\" cannot be determined based on the provided passages. Different passages provide different suggested roasting times, ranging from 45 minutes to 2 hours, depending on various factors such as the size of the beets.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "varies between",
+                    "45 minutes to 2 hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "depends on",
+                    "size of beets"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "depends on",
+                    "various factors"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "741305",
+        "response": "Drew Carey's net worth is $165 million.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "net worth",
+                    "$165 million"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "40371",
+        "response": "Based on the passages provided, there is no specific information about the average postal worker salary.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1095893",
+        "response": "Based on the provided passages, it is not possible to determine the specific salary or cost of an administrator. The passages provide information about salaries for various types of administrators, such as hospital administrators, salesforce administrators, system administrators, health care administrators, and office administrators. The salary ranges mentioned in the passages vary significantly, depending on the specific role and industry.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "309249",
+        "response": "Based on the provided passages, it is not explicitly stated how much a designer baby costs.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "318922",
+        "response": "Based on the passages provided, it is not possible to determine the specific yearly salary of UNFI. The passages mention various salaries for different positions within the company, but there is no clear information about the overall yearly salary for UNFI as a whole.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1090507",
+        "response": "The price of sphatik shivling is Rs 3,000 per piece, as stated in Passage 2.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sphatik shivling",
+                    "price",
+                    "Rs 3,000 per piece"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "price of sphatik shivling",
+                    "stated in",
+                    "Passage 2"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "392483",
+        "response": "Based on the provided passages, it is not possible to determine the maximum response size for IIS.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "283271",
+        "response": "Based on the information provided, it is stated in Passage 0 that roughly 20 mass extinctions are recognized. However, it does not specify the total number of extinctions that have occurred. Therefore, the answer to the question \"how many extinctions have occurred?\" cannot be determined from the given passages.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "the given passages",
+                    "do not specify",
+                    "the total number of extinctions that have occurred"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "the answer to the question \"how many extinctions have occurred?\"",
+                    "cannot be determined from",
+                    "the given passages"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1098016",
+        "response": "Based on the passages, there is no specific weight chart provided for an average beagle.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "passages",
+                    "provide",
+                    "no specific weight chart"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "no specific weight chart",
+                    "for",
+                    "average beagle"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1090502",
+        "response": "For carry-on baggage on Spirit Airlines, the dimensions should not exceed 22 x 18 x 10 inches or 56 x 46 x 25 centimeters including handles and wheels.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Spirit Airlines carry-on baggage",
+                    "dimensions",
+                    "22 x 18 x 10 inches or 56 x 46 x 25 centimeters including handles and wheels"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "278453",
+        "response": "Based on the provided passages, it is not possible to determine the exact number of carbs in a slice of bread. However, Passage 0 states that a regular slice of 100% whole wheat bread contains about 13 grams of carbohydrate, while Passage 5 states that there is an average of 12.7 grams of carbohydrate in 1 slice of white bread.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "slice of 100% whole wheat bread",
+                    "contains about",
+                    "13 grams of carbohydrate"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "1 slice of white bread",
+                    "has an average of",
+                    "12.7 grams of carbohydrate"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097486",
+        "response": "Based on the provided passages, the number of calories in macaroni and cheese can vary depending on the serving size, preparation method, and ingredients used. Passage 1 mentions that it usually ranges between 340-380 calories for every 60-67 grams. Passage 2 states that a cup of macaroni and cheese made from a boxed mix contains about 376 calories, while a homemade version can have 348 calories per cup, according to a recipe from Epicurious. Passage 5 advises making macaroni and cheese at home with reduced butter content, skim milk, and reduced-fat cheeses to lighten the calorie load. Passage 8 mentions that a 1-cup serving of homemade macaroni and cheese can be anywhere from 300-500 calories depending on the recipe used. Therefore, the exact number of calories in macaroni and cheese cannot be determined without specific information about the preparation method and ingredients used.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "macaroni and cheese",
+                    "calorie range",
+                    "340-380 calories per 60-67 grams"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "macaroni and cheese from boxed mix",
+                    "calories per cup",
+                    "376"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "homemade macaroni and cheese",
+                    "calories per cup",
+                    "348"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "homemade macaroni and cheese",
+                    "calories per cup",
+                    "300-500"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "calories in macaroni and cheese",
+                    "depends on",
+                    "serving size"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "calories in macaroni and cheese",
+                    "depends on",
+                    "preparation method"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "calories in macaroni and cheese",
+                    "depends on",
+                    "ingredients used"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "exact calories in macaroni and cheese",
+                    "cannot be determined without",
+                    "specific information about preparation method and ingredients"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "284565",
+        "response": "Based on the passages, it is stated in Passage 2 that a large egg has approximately 0.4 grams of carbohydrates.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "large egg",
+                    "has",
+                    "approximately 0.4 grams of carbohydrates"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "465781",
+        "response": "The average weight for a newborn is about 3.4 kilograms (kg) or 7 pounds 8 ounces (oz).",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1099731",
+        "response": "Based on the provided passages, the correct answer to the question \"ariba help desk phone number?\" is Passage 5: Ariba Customer Support Service Phone Number - 1-866-772-7422.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "ariba help desk phone number",
+                    "is",
+                    "1-866-772-7422"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1072119",
+        "response": "Sodium chlorate is useful because it can be used for making herbicides, explosives, dyes, matches, inks, cosmetics, pharmaceuticals, defoliants, paper, and leather. It is also used as a reagent in organic synthesis and as a source of oxygen in emergency oxygen generators.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making herbicides"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making explosives"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making dyes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making matches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making inks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making cosmetics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making pharmaceuticals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making defoliants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making paper"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "uses",
+                    "making leather"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "used as",
+                    "reagent in organic synthesis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sodium chlorate",
+                    "used as",
+                    "source of oxygen in emergency oxygen generators"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "166795",
+        "response": "Based on the provided passages, it can be inferred that goat milk does not create mucus. This is supported by Passage 8, which states that goat's milk does not produce mucus and does not stimulate a defense response from the human immune system.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "goat milk",
+                    "does not create",
+                    "mucus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "goat's milk",
+                    "does not produce",
+                    "mucus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "goat's milk",
+                    "does not stimulate",
+                    "a defense response"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "a defense response",
+                    "from",
+                    "the human immune system"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 8",
+                    "states",
+                    "goat's milk does not produce mucus"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "405776",
+        "response": "Yes, celery juice is nutritious. It is low in calories and fat and contains vitamins and minerals such as vitamin C, vitamin A, vitamin B1, vitamin B2, vitamin B6, calcium, potassium, folic acid, essential amino acids, and phosphorous. Additionally, celery is a good source of dietary fiber, which is beneficial for digestion and preventing constipation. Celery juice can be used in various recipes and is a convenient way to meet the recommended daily servings of vegetables.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "nutritious"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "low in",
+                    "calories"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "low in",
+                    "fat"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "vitamin C"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "vitamin A"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "vitamin B1"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "vitamin B2"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "vitamin B6"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "calcium"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "potassium"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "folic acid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "essential amino acids"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "phosphorous"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "good source of dietary fiber"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dietary fiber",
+                    "beneficial for",
+                    "digestion"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dietary fiber",
+                    "beneficial for",
+                    "preventing constipation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "used in",
+                    "various recipes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "convenient way to meet",
+                    "recommended daily servings of vegetables"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "429983",
+        "response": "Based on the provided passages, it is not explicitly stated whether triglyceride is affected by gout. The passages primarily discuss the association between high levels of uric acid and gout. The relationship between triglyceride and gout is not directly addressed in the given passages.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "passages",
+                    "do not explicitly state",
+                    "triglyceride is affected by gout"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "passages",
+                    "primarily discuss",
+                    "association between high levels of uric acid and gout"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "relationship between triglyceride and gout",
+                    "not directly addressed in",
+                    "given passages"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1088312",
+        "response": "Based on the provided passages, there is not enough information to determine the current weather in Pencoed, Wales.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Candidate Answer",
+                    "provides",
+                    "no information about weather in Pencoed, Wales"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1088355",
+        "response": "Based on the provided passages, it is not possible to determine the current weather in Nelson, New Zealand.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1008326",
+        "response": "Based on the provided passages, it is not possible to determine the weather in Steubenville.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "544914",
+        "response": "Based on the provided passages, there is not enough specific information to determine the current weather in Louisville, Colorado.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1033994",
+        "response": "The answer cannot be determined based on the provided passages.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "995200",
+        "response": "Based on the passages provided, the answer to the question \"which cord do I use on HP fax?\" is a 2-conductor line cord.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "2-conductor line cord",
+                    "used on",
+                    "HP fax"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "157359",
+        "response": "Based on the provided passages, the answer to the question \"do it yourself grout cleaning?\" is yes. Passage 0 mentions providing solutions for do it yourself grout cleaning, while Passage 3 mentions that there are DIY homemade grout cleaners available. Passage 6 also mentions the option to do it yourself and save money by sealing tile and grout.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "possible?",
+                    "yes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 0",
+                    "mentions",
+                    "providing solutions for do it yourself grout cleaning"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 3",
+                    "mentions",
+                    "DIY homemade grout cleaners available"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 6",
+                    "mentions",
+                    "option to do it yourself and save money by sealing tile and grout"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "129756",
+        "response": "Slate is defined as a dark grey rock that can be easily divided into thin pieces, or a small, thin piece of this rock used to cover a roof. Additionally, it can refer to a small, thin, rectangular piece of rock, usually in a wooden frame, used for writing on, especially by children. It can also be a record of money owed or past performance or activity.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "slate",
+                    "is defined as",
+                    "a dark grey rock that can be easily divided into thin pieces"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "is defined as",
+                    "a small, thin piece of this rock used to cover a roof"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can refer to",
+                    "a small, thin, rectangular piece of rock, usually in a wooden frame, used for writing on, especially by children"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can also be",
+                    "a record of money owed or past performance or activity"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "421437",
+        "response": "Yes, Potter County is under a burn ban as stated in Passage 3.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Potter County",
+                    "under",
+                    "burn ban"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "burn ban",
+                    "stated in",
+                    "Passage 3"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "100248",
+        "response": "Based on the provided passages, the definition of cosmogeny is the branch of astrophysics that studies the origin and evolution of the universe.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cosmogeny",
+                    "definition",
+                    "the branch of astrophysics that studies the origin and evolution of the universe"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1083749",
+        "response": "Gray and pink make a color scheme that goes well together.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "gray and pink",
+                    "make",
+                    "a color scheme"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "color scheme",
+                    "goes well with",
+                    "each other"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "143463",
+        "response": "Yes, according to passages 0, 3, 4, 6, 8, and 9, Bobby Jones did win the Grand Slam of Golf in 1930.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "win",
+                    "the Grand Slam of Golf"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "win the Grand Slam of Golf",
+                    "in 1930"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Grand Slam of Golf",
+                    "won by",
+                    "Bobby Jones"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "win the Grand Slam",
+                    "true"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passages 0, 3, 4, 6, 8, and 9",
+                    "state",
+                    "Bobby Jones did win the Grand Slam of Golf in 1930"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1084984",
+        "response": "St Patrick drove out snakes from Ireland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "St Patrick",
+                    "drove out",
+                    "snakes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St Patrick",
+                    "drove out from",
+                    "Ireland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "851286",
+        "response": "Based on the passages provided, the time in Morocco is as follows:\n\nDuring Standard Time: Morocco is GMT/UTC + 0h.\nDuring Daylight Saving Time: Morocco is GMT/UTC + 1h.\n\nPlease note that Daylight Saving Time starts on Sunday, March 26, 2017, at 2:00 AM local standard time and ends on Sunday, October 29, 2017, at 3:00 AM local daylight time.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "time in Morocco",
+                    "during Standard Time",
+                    "GMT/UTC + 0h"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "time in Morocco",
+                    "during Daylight Saving Time",
+                    "GMT/UTC + 1h"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Daylight Saving Time in Morocco",
+                    "starts on",
+                    "Sunday, March 26, 2017, at 2:00 AM local standard time"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Daylight Saving Time in Morocco",
+                    "ends on",
+                    "Sunday, October 29, 2017, at 3:00 AM local daylight time"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "537560",
+        "response": "Vision World is an eye care practice that has been serving the communities of Greenville and Scarsdale for many years. They are conveniently located in the Midway Shopping Center in Scarsdale, and they have a dedicated and experienced staff. They offer comprehensive eye exams, contact lens fittings, and a range of optical services. Vision World is committed to providing quality eye care and personalized service to their patients.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vision World",
+                    "is",
+                    "eye care practice"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "serves",
+                    "communities of Greenville and Scarsdale"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "located in",
+                    "Midway Shopping Center in Scarsdale"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "has",
+                    "dedicated and experienced staff"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "offers",
+                    "comprehensive eye exams"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "offers",
+                    "contact lens fittings"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "offers",
+                    "range of optical services"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "committed to",
+                    "providing quality eye care"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "committed to",
+                    "providing personalized service"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "540432",
+        "response": "Based on the provided passages, it is mentioned in Passage 4 that Michael Jordan was a Cub Scout.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Jordan",
+                    "was",
+                    "Cub Scout"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "63192",
+        "response": "Based on the provided passages, a school psychologist can diagnose ADHD.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "school psychologist",
+                    "can diagnose",
+                    "ADHD"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "708743",
+        "response": "The afterbirth is used for various purposes, including cosmetic products, tear modifiers in a video game, and potential health benefits such as stimulating tissue growth and reducing wrinkles. Additionally, it can be used in belly wraps for postpartum comfort after childbirth.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used for",
+                    "cosmetic products"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used for",
+                    "tear modifiers in a video game"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "potential health benefits",
+                    "stimulating tissue growth"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "potential health benefits",
+                    "reducing wrinkles"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used in",
+                    "belly wraps"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "belly wraps",
+                    "purpose",
+                    "postpartum comfort after childbirth"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1093959",
+        "response": "Based on the provided passages, it can be inferred that testosterone is controlled. Passage 0 states that testosterone replacement therapy is only approved for use in men with certain medical conditions, indicating that its use is regulated. Passage 2 mentions going to a general practitioner to be put on a testosterone medication, suggesting that it requires a doctor's prescription. Passage 5 mentions that testosterone is classified as a controlled substance according to the Anabolic Steroid Act of 1990. Passage 7 states that the amount of testosterone produced in the body is controlled by the brain's hypothalamus and pituitary gland. Overall, these passages suggest that testosterone is controlled both in terms of its medical use and its classification as a controlled substance.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "testosterone",
+                    "is",
+                    "controlled"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone replacement therapy",
+                    "only approved for",
+                    "men with certain medical conditions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone medication",
+                    "requires",
+                    "doctor's prescription"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "classified as",
+                    "controlled substance"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "controlled substance classification",
+                    "according to",
+                    "Anabolic Steroid Act of 1990"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "amount of testosterone produced in body",
+                    "controlled by",
+                    "hypothalamus and pituitary gland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1040099",
+        "response": "The passages do not provide a clear answer as to what the Eagle Flyer is.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "219496",
+        "response": "To use diatomaceous earth to kill roaches, you can lightly coat areas where roaches are found and may hide, such as cracks and crevices, beneath appliances, and around sewer pipes and drains. You can also apply the dust directly onto nests or in any cracks or crevices in outdoor walls and buildings. For maximum effect, it is recommended to use diatomaceous earth during dry weather and to reapply the dust to all treated areas if it rains. It is important to only use food-grade diatomaceous earth, as other forms may not be safe or effective.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "diatomaceous earth",
+                    "used to",
+                    "kill roaches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "areas to apply diatomaceous earth",
+                    "include",
+                    "cracks and crevices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "areas to apply diatomaceous earth",
+                    "include",
+                    "beneath appliances"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "areas to apply diatomaceous earth",
+                    "include",
+                    "around sewer pipes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "areas to apply diatomaceous earth",
+                    "include",
+                    "around drains"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other areas to apply diatomaceous earth",
+                    "include",
+                    "roach nests"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other areas to apply diatomaceous earth",
+                    "include",
+                    "outdoor walls"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other areas to apply diatomaceous earth",
+                    "include",
+                    "outdoor buildings"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "applying diatomaceous earth",
+                    "recommended during",
+                    "dry weather"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "type of diatomaceous earth to use",
+                    "is",
+                    "food-grade"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1100064",
+        "response": "The passages provide information on the various health benefits of cat's claw, including its use as a dietary supplement for viral infections, Alzheimer's disease, cancer, arthritis, diverticulitis, peptic ulcers, colitis, gastritis, hemorrhoids, parasites, and leaky bowel syndrome. It is also mentioned that cat's claw can enhance the immune system, protect joint cartilage, relieve joint pain, and protect cellular DNA. However, there is insufficient evidence on the effectiveness of cat's claw for anxiety, acne, allergies, high blood pressure, candida, fibroids, gout, gastritis, ovarian cysts, sexually transmitted diseases (STDs), tendonitis, tinnitus, and ulcerative colitis. Additionally, cat's claw may have minor side effects such as dizziness, nausea, and diarrhea, and should not be used during pregnancy as it may cause miscarriage.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used as",
+                    "dietary supplement"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "viral infections"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "Alzheimer's disease"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "cancer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "arthritis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "diverticulitis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "peptic ulcers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "colitis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "gastritis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "hemorrhoids"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "parasites"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "used for",
+                    "leaky bowel syndrome"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "enhances",
+                    "immune system"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "protects",
+                    "joint cartilage"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "relieves",
+                    "joint pain"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "protects",
+                    "cellular DNA"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "anxiety"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "acne"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "allergies"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "high blood pressure"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "candida"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "fibroids"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "gout"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "gastritis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "ovarian cysts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "sexually transmitted diseases (STDs)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "tendonitis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "tinnitus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "ineffective for",
+                    "ulcerative colitis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "has side effect",
+                    "dizziness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "has side effect",
+                    "nausea"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "has side effect",
+                    "diarrhea"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "not to be used during",
+                    "pregnancy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cat's claw",
+                    "may cause",
+                    "miscarriage"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "147966",
+        "response": "The Miniature American Shepherd was developed in California during the late 1960's as a breed separate from the Australian Shepherd. Although they bear a resemblance to Australian Shepherds, they are not considered to be mini Aussies. The Miniature American Shepherd is a breed that could possibly be registered by the AKC in the future and has its own breed club, MASCUSA. The Australian Shepherd and the Miniature American Shepherd are genetically similar, but the Miniature American Shepherd is smaller in size, standing 13-18 inches tall at the shoulder compared to the Australian Shepherd's height of 18-23 inches. Miniature Australian Shepherds achieved AKC recognition and were renamed to Miniature American Shepherds. Toy Australian Shepherds are even smaller than the miniatures, reaching heights between 10 and 14 inches.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "developed in",
+                    "California"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Time of development of Miniature American Shepherd",
+                    "during",
+                    "late 1960's"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "considered",
+                    "breed separate from Australian Shepherd"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "not considered",
+                    "mini Aussies"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "could be registered by",
+                    "AKC in the future"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "has its own breed club",
+                    "MASCUSA"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Australian Shepherd",
+                    "genetically similar to",
+                    "Miniature American Shepherd"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "smaller in size than",
+                    "Australian Shepherd"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Height of Miniature American Shepherd",
+                    "is",
+                    "13-18 inches tall at shoulder"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Height of Australian Shepherd",
+                    "is",
+                    "18-23 inches"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature Australian Shepherds",
+                    "achieved",
+                    "AKC recognition"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Miniature Australian Shepherds",
+                    "renamed to",
+                    "Miniature American Shepherds"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Toy Australian Shepherds",
+                    "even smaller than",
+                    "Miniature Australian Shepherds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Height of Toy Australian Shepherds",
+                    "is between",
+                    "10-14 inches"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "76098",
+        "response": "Based on the provided passages, it is possible to break dogs from chasing cars. It is recommended to consult with a Certified Applied Animal Behaviorist (CAAB), a board-certified veterinary behaviorist, or a Certified Professional Dog Trainer (CPDT) if your dog already has a problem chasing cars. Prevention techniques, such as redirecting the dog's attention to something else enjoyable, can be effective in stopping the behavior from starting. Training dogs to stop chasing on command, providing extra attention and exercise, and using fences or shock collars with proper training are also mentioned as strategies to prevent or correct car chasing behavior.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "breaking dogs from chasing cars",
+                    "is",
+                    "possible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "recommended consultant for breaking dogs chasing cars",
+                    "is",
+                    "Certified Applied Animal Behaviorist (CAAB)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "recommended consultant for breaking dogs chasing cars",
+                    "is",
+                    "board-certified veterinary behaviorist"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "recommended consultant for breaking dogs chasing cars",
+                    "is",
+                    "Certified Professional Dog Trainer (CPDT)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "prevention technique for chasing cars",
+                    "is",
+                    "redirecting the dog's attention"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "training strategy",
+                    "is",
+                    "training dogs to stop chasing on command"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "prevention strategy",
+                    "is",
+                    "providing extra attention and exercise"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "prevention strategy",
+                    "is",
+                    "using fences"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "prevention strategy",
+                    "is",
+                    "using shock collars with proper training"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1080229",
+        "response": "Based on the provided passages, there is some evidence to suggest that human urine, along with dog urine and coyote urine, may act as a deterrent for deer. Passage 2 mentions that some gardeners believe urine can keep deer away, but notes that close neighbors may not appreciate the smell. Passage 5 recommends reapplying urine granules regularly to keep out deer. However, Passage 1 states that deer are unlikely to associate human urine with humans unless there is also a corresponding human scent. Passage 8 mentions that predator urine is sometimes effective but not guaranteed to work. Overall, the passages suggest that while human urine may have some potential to keep deer away, it is not a foolproof solution.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "human urine",
+                    "potential to act as",
+                    "deer deterrent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "human urine",
+                    "recommended by",
+                    "some gardeners"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "human urine",
+                    "may not work well without",
+                    "corresponding human scent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "human urine",
+                    "effectiveness not guaranteed for",
+                    "repelling deer"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "urine granules",
+                    "require",
+                    "regular reapplication"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "urine granules",
+                    "used for",
+                    "keeping out deer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "neighbors",
+                    "may not appreciate",
+                    "smell of urine"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "155382",
+        "response": "Based on the passages, brook trout do eat crayfish. Passage 7 states that brook trout are aggressive feeders and eat insects, crayfish, salamanders, and other fish.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "crayfish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brook trout",
+                    "are",
+                    "aggressive feeders"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "insects"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "salamanders"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "other fish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 7",
+                    "states",
+                    "brook trout eat crayfish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 7",
+                    "states",
+                    "brook trout are aggressive feeders"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 7",
+                    "states",
+                    "brook trout eat insects"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 7",
+                    "states",
+                    "brook trout eat salamanders"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 7",
+                    "states",
+                    "brook trout eat other fish"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "213986",
+        "response": "Based on the provided passages, it is not clear how Leopardfoot died.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "857956",
+        "response": "Based on the provided passages, it is suggested that Donald Trump may be hiding his tax returns (Passage 5 and Passage 6).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "may be hiding",
+                    "his tax returns"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 5",
+                    "suggests",
+                    "Donald Trump is hiding his tax returns"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passage 6",
+                    "suggests",
+                    "Donald Trump is hiding his tax returns"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1092210",
+        "response": "Nike shoe types include running shoes, walking shoes, trainers, basketball shoes, tennis shoes, soccer shoes, customizable shoes, lifestyle shoes, Nike Air Max, Roshe One, Huarache, Cortez, Air Force 1, sandals, cleats & spikes, golf shoes, skateboarding shoes, association football shoes, baseball shoes, American football shoes, cycling shoes, volleyball shoes, wrestling shoes, cheerleading shoes, aquatic shoes, auto racing shoes, dancing shoes, orthopedic shoes, and outdoor activity shoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "running shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "walking shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "trainers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "basketball shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "tennis shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "soccer shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "customizable shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "lifestyle shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "Nike Air Max"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "Roshe One"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "Huarache"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "Cortez"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "Air Force 1"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "sandals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "cleats & spikes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "golf shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "skateboarding shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "association football shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "baseball shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "American football shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "cycling shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "volleyball shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "wrestling shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "cheerleading shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "aquatic shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "auto racing shoes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "dancing shoes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "orthopedic shoes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Nike shoe types",
+                    "include",
+                    "outdoor activity shoes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1100861",
+        "response": "Based on the provided passages, Egyptians are an ethnic group native to Egypt, sharing a common culture and language, and are described as an ethnic blend of various cultures including Greek, Arab, Armenian, Turkish, African, Syrian, Palestinian, and European. They are also identified as being part of the Middle East/North Africa region. Therefore, Egyptians can be considered to have a diverse ethnic background that includes both African and Middle Eastern influences.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Egyptians",
+                    "are",
+                    "an ethnic group native to Egypt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "share",
+                    "a common culture and language"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "described as",
+                    "an ethnic blend of various cultures"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "Greek"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "Arab"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "Armenian"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "Turkish"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "African"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "Syrian"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "Palestinian"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Cultures in Egyptian ethnic blend",
+                    "include",
+                    "European"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "identified as part of",
+                    "Middle East/North Africa region"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "have",
+                    "diverse ethnic background"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptian ethnic background",
+                    "includes",
+                    "African influences"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptian ethnic background",
+                    "includes",
+                    "Middle Eastern influences"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "145322",
+        "response": "Based on the passages provided, it can be inferred that the Eleusinian Mysteries did survive. Passage 0 states that Eleusis was famous for its annual festival of the Mysteries, indicating that the tradition was still ongoing. Passage 1 mentions that Emperor Augustus was an initiate of the Eleusinian Mysteries, suggesting that they were still being practiced during his reign. Passage 5 also suggests that the mysteries of Demeter had continued to be practiced in the first century. Additionally, Passage 6 mentions that the Eleusinian Mysteries were practiced for nearly 2000 years.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Eleusinian Mysteries",
+                    "did survive",
+                    "True"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Eleusinian Mysteries",
+                    "was",
+                    "annual festival of Eleusis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Emperor Augustus",
+                    "was initiate of",
+                    "Eleusinian Mysteries"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Practice of Eleusinian Mysteries",
+                    "occurred during",
+                    "reign of Emperor Augustus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mysteries of Demeter",
+                    "continued practice in",
+                    "first century"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Eleusinian Mysteries",
+                    "practiced for",
+                    "nearly 2000 years"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "458110",
+        "response": "The most important battle of World War II is not explicitly stated in the provided passages.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "425121",
+        "response": "Based on the provided passages, Sydney is predominantly a girls' name, but it is also used for boys approximately 4.31 percent of the time.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Usage of Sydney for boys",
+                    "percentage",
+                    "4.31 percent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sydney",
+                    "predominantly",
+                    "girls' name"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "172330",
+        "response": "Based on the provided passages, it can be inferred that the Brit Method, a trading system, does work. Passage 0 states that it does not rely on far-fetched claims and promises, and Passage 1 mentions that even inexperienced users can expect a return on their investment. Passage 6 also highlights that the Brit Method has the necessary characteristics to be successful and offers high-quality service.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Brit Method",
+                    "is a",
+                    "trading system"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit Method",
+                    "does work",
+                    "True"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit Method",
+                    "does not rely on",
+                    "far-fetched claims and promises"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit Method",
+                    "can be used by",
+                    "inexperienced users"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "inexperienced users using Brit Method",
+                    "can expect",
+                    "a return on their investment"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit Method",
+                    "has necessary characteristics",
+                    "to be successful"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Brit Method",
+                    "offers",
+                    "high-quality service"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "376687",
+        "response": "Based on the provided passages, to renew your passport on Guam, you need to submit a completed application form, along with the expired passport (for renewal applications), and a fee of $50 for processing and standard shipping, to the Consulate Office. It is not mentioned that you can renew your passport by mail or at a Post Office location on Guam.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "To renew passport on Guam",
+                    "requires",
+                    "submitting completed application form"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "To renew passport on Guam",
+                    "requires",
+                    "submitting expired passport (for renewal applications)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "To renew passport on Guam",
+                    "requires",
+                    "paying fee of $50"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Fee of $50 for passport renewal on Guam",
+                    "covers",
+                    "processing"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Fee of $50 for passport renewal on Guam",
+                    "covers",
+                    "standard shipping"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Submit passport renewal application on Guam",
+                    "to",
+                    "Consulate Office"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "160460",
+        "response": "Yes, you may have to pay to get papers notarized. The fees charged by notaries can vary depending on the state and location, with charges between $2 and $20 per signature being common. However, there are also instances where notarization can be done for free, such as at some banks, real estate offices, and law offices.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "notarization",
+                    "involves fee",
+                    "true"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "notary fees",
+                    "vary by",
+                    "state and location"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "common notary fees",
+                    "range from",
+                    "$2 to $20 per signature"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some places provide free notarization",
+                    "such as",
+                    "banks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some places provide free notarization",
+                    "such as",
+                    "real estate offices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some places provide free notarization",
+                    "such as",
+                    "law offices"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    }
+]

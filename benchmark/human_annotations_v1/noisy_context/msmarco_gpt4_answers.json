@@ -1,0 +1,3389 @@
+[
+    {
+        "id": "167875",
+        "response": "The passages suggest that there have been instances where customers have suspected that Jimmy Jazz sold them fake shoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "customers",
+                    "suspected",
+                    "Jimmy Jazz sold them fake shoes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098142",
+        "response": "Once your application has been submitted online, it can take anywhere from a couple of weeks to about 3 months for approval, depending on the time of year you submit the application, and other factors.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renewal of nexus card",
+                    "takes",
+                    "anywhere from a couple of weeks to about 3 months"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "time for approval of nexus card renewal",
+                    "depends on",
+                    "time of year application is submitted"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "time for approval of nexus card renewal",
+                    "depends on",
+                    "other factors"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "60339",
+        "response": "Ground Beef Stroganoff contains 227 calories.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Ground Beef Stroganoff",
+                    "contains",
+                    "227 calories"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098131",
+        "response": "The process to deposit your tax refund into your bank account is usually completed within 2-3 business days but could take additional time, depending on your bank's direct deposit process.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "tax refund deposit into bank account",
+                    "process completion time",
+                    "2-3 business days"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "additional time for tax refund deposit",
+                    "depends on",
+                    "direct deposit process of bank"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "423918",
+        "response": "Yes, Skype can be monitored. While Skype does encrypt users' sessions, other traffic, including call initiation, can be monitored by unauthorized parties. Additionally, calls made over the network are routinely monitored by Microsoft and by government agencies. There are also software like SurveilStar that can secretly record all Skype incoming and outgoing text chats.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Skype",
+                    "can be",
+                    "monitored"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Skype",
+                    "encrypts",
+                    "users' sessions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other traffic",
+                    "includes",
+                    "call initiation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other traffic",
+                    "can be monitored by",
+                    "unauthorized parties"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "calls made over Skype",
+                    "routinely monitored by",
+                    "Microsoft"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "calls made over Skype",
+                    "routinely monitored by",
+                    "government agencies"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "software like SurveilStar",
+                    "can",
+                    "secretly record all Skype incoming and outgoing text chats"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "164058",
+        "response": "Yes, BullGuard does remove malware.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "BullGuard",
+                    "removes",
+                    "malware"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "431481",
+        "response": "The passages do not provide information on whether Willie McGee is in the Baseball Hall of Fame.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "164078",
+        "response": "Yes, burning sage can help get rid of mosquitoes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "burning sage",
+                    "helps get rid of",
+                    "mosquitoes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "74518",
+        "response": "Yes, the President can pardon himself according to the interpretation by the Supreme Court, except in cases of impeachment.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President",
+                    "can pardon",
+                    "himself"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "President",
+                    "can pardon himself",
+                    "according to interpretation by Supreme Court"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "President",
+                    "cannot pardon himself",
+                    "in cases of impeachment"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "20924",
+        "response": "Yes, Apollo and Phaedra are still married.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Apollo and Phaedra",
+                    "marital status",
+                    "still married"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "196366",
+        "response": "Grace VanderWaal has a verified Instagram account, which is owned by her mom and has over 921,000 followers.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Grace VanderWaal",
+                    "has",
+                    "verified Instagram account"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Instagram account",
+                    "owned by",
+                    "her mom"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Instagram account",
+                    "has over",
+                    "921,000 followers"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "830068",
+        "response": "The maximum charitable donation that can be deducted is 50 percent of your Adjusted Gross Income (AGI).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "maximum charitable donation",
+                    "can be deducted up to",
+                    "50 percent of your Adjusted Gross Income (AGI)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "424911",
+        "response": "Refined sugar causes your body to produce acid, so it is acidic.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sugar",
+                    "causes",
+                    "body to produce acid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "sugar",
+                    "is",
+                    "acidic"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "853309",
+        "response": "The passages do not provide specific current weather information for Branson, Missouri.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "424287",
+        "response": "The passages do not provide current information on whether Space Mountain is open.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "71168",
+        "response": "Heavy use of marijuana is associated with an increased risk of mental illness, including depression and psychosis. Regular use of the drug has appeared to double the risk of developing a psychotic episode or long-term schizophrenia. However, it is also noted that correlation does not imply causation, and some studies suggest that CBD marijuana can help mental health conditions. Therefore, while marijuana use is linked with mental illness, it does not necessarily cause it, and in some cases, it may even be used as a treatment.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Heavy use of marijuana",
+                    "associated with increased risk of",
+                    "mental illness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "mental illness",
+                    "includes",
+                    "depression"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "mental illness",
+                    "includes",
+                    "psychosis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Regular use of marijuana",
+                    "appeared to double risk of developing",
+                    "psychotic episode"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Regular use of marijuana",
+                    "appeared to double risk of developing",
+                    "long-term schizophrenia"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "correlation",
+                    "does not imply",
+                    "causation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "some studies",
+                    "suggest",
+                    "CBD marijuana can help mental health conditions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "marijuana use",
+                    "linked with",
+                    "mental illness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "marijuana",
+                    "does not necessarily cause",
+                    "mental illness"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "marijuana",
+                    "may be used as",
+                    "treatment"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "158999",
+        "response": "Clean snakes have very little -- if any -- odor. However, if they are not kept clean or their waste is not cleaned up, they can start to smell. Some people describe the smell as being similar to vinegar or cucumbers, but it is not a strong smell.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "snakes",
+                    "have odor",
+                    "very little -- if any"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes",
+                    "odor when not kept clean",
+                    "present"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snake odor when not kept clean",
+                    "described as similar to",
+                    "vinegar"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snake odor when not kept clean",
+                    "described as similar to",
+                    "cucumbers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snake odor when not kept clean",
+                    "strength",
+                    "not strong"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "144833",
+        "response": "Yes, President Obama did invoke executive privilege.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "President Obama",
+                    "did invoke",
+                    "executive privilege"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "71250",
+        "response": "The passages do not provide information on whether Melania Trump can speak Russian.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "415165",
+        "response": "Yes, Johnny Rivers is married. He has been married to a woman named Nora for over 30 years.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "married to",
+                    "Nora"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Marriage of Johnny Rivers and Nora",
+                    "duration",
+                    "over 30 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Johnny Rivers",
+                    "marital status",
+                    "married"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "411030",
+        "response": "Yes, George Soros is an atheist.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "George Soros",
+                    "is",
+                    "an atheist"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "168000",
+        "response": "Yes, the Kia Sorento has an interference engine.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kia Sorento",
+                    "has",
+                    "interference engine"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "73420",
+        "response": "No, Singapore cannot enter Indonesia with less than 6 months on passport. Indonesia requires six months' validity from the date of entry.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Indonesia",
+                    "requires",
+                    "six months' validity from date of entry"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1094146",
+        "response": "Yes, Gdansk is one of the main ports in Poland.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Gdansk",
+                    "is",
+                    "one of the main ports in Poland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Gdansk",
+                    "location",
+                    "Poland"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1093157",
+        "response": "The maximum age for an officer in the Air Force is before the officer's 62nd birthday.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "maximum age for officer in air force",
+                    "is",
+                    "before the officer's 62nd birthday"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "1098565",
+        "response": "A T-Rex usually lived for around 25-30 years.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "T-Rex",
+                    "lived for around",
+                    "25-30 years"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097044",
+        "response": "The CRS Designation is earned by completing 92 hours of live course instruction.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "CRS Designation",
+                    "earned by completing",
+                    "92 hours of live course instruction"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "192218",
+        "response": "A full-time undergraduate student usually completes 12 or more semester or quarter hours. Some schools may require 15 semester hours. For graduate students, 9 hours is considered full time. In the summer, full-time undergraduate students complete 12 hours and graduate students complete 6 hours.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "full-time undergraduate student",
+                    "usually completes",
+                    "12 or more semester or quarter hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Some schools",
+                    "may require",
+                    "15 semester hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "full-time undergraduate students in summer",
+                    "complete",
+                    "12 hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "For graduate students",
+                    "considered full time",
+                    "9 hours"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "graduate students in summer",
+                    "complete",
+                    "6 hours"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "453218",
+        "response": "If the passport holder was 16 years or older when the passport was issued, then the passport is valid for 10 years. If the passport holder was 15 years or younger when the passport was issued, then the passport is valid for five years.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mexico passport",
+                    "valid for",
+                    "10 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Condition:",
+                    "passport holder was",
+                    "16 years or older when passport issued"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mexico passport",
+                    "valid for",
+                    "5 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Condition:",
+                    "passport holder was",
+                    "15 years or younger when passport issued"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "271818",
+        "response": "Passport renewals typically take four to six weeks to process. However, using expedited services can reduce this time to anywhere from 24 hours to two weeks.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Passport renewals",
+                    "typical processing time",
+                    "four to six weeks"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Passport renewals",
+                    "can be expedited",
+                    "true"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Expedited passport renewal",
+                    "processing time",
+                    "24 hours to two weeks"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1002884",
+        "response": "Lubbock General Hospital opened on February 1, 1978.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lubbock General Hospital",
+                    "opened on",
+                    "February 1, 1978"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1096985",
+        "response": "The average daily room and board cost for a hospital stay comes approximately around $3,180 to $7,648.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average daily room and board cost for a hospital stay",
+                    "comes approximately around",
+                    "$3,180 to $7,648"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1006506",
+        "response": "Mount Nyiragongo last erupted on January 17, 2002.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mount Nyiragongo",
+                    "last erupted on",
+                    "January 17, 2002"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "909506",
+        "response": "The passages mention several TV channels that broadcast lottery drawings. These include Cox Channel 4 in Baton Rouge, unspecified US TV channels for the Powerball Draw, and Telemundo WRMD TAMPA TV Channel and local WKMG TV Channel for the Florida Lottery.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Cox Channel 4 in Baton Rouge",
+                    "broadcasts",
+                    "lottery drawings"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "unspecified US TV channels",
+                    "broadcast",
+                    "Powerball Draw"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Telemundo WRMD TAMPA TV Channel",
+                    "broadcasts",
+                    "Florida Lottery"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "local WKMG TV Channel",
+                    "broadcasts",
+                    "Florida Lottery"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "991037",
+        "response": "Clarice Feldman is a writer for the American Thinker. She was born on December 2, 1941, making her 76 years old. She currently resides in Washington, DC. She attended Washington High School and the University of Wisconsin-Madison.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "is",
+                    "writer for the American Thinker"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "was born on",
+                    "December 2, 1941"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "age",
+                    "76 years old"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "resides in",
+                    "Washington, DC"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "attended",
+                    "Washington High School"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Clarice Feldman",
+                    "attended",
+                    "University of Wisconsin-Madison"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "643122",
+        "response": "The term \"MEC\" can have different meanings depending on the context. It can refer to a 'Modified Endowment Contract', a type of life insurance policy that is subject to different tax rules if the cumulative premium payments exceed certain amounts. It can also stand for 'Mutual Execution of Contract' in real estate. Additionally, it can refer to programs for kids with anger problems and learning disabilities.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "MEC",
+                    "stands for",
+                    "Modified Endowment Contract"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "refers to",
+                    "type of life insurance policy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "subject to different tax rules if",
+                    "cumulative premium payments exceed certain amounts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "stands for",
+                    "Mutual Execution of Contract"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mutual Execution of Contract",
+                    "used in context of",
+                    "real estate"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "MEC",
+                    "refers to",
+                    "programs for kids with anger problems and learning disabilities"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "450391",
+        "response": "Tuckahoe refers to a curious vegetable production of the Southern Atlantic United States, growing underground like a truffle and often attaining immense size. In Eastern Algonkian languages, the word tuckahoe was used for several edible plants, as well as an edible subterranean fungus. It is also known as Indian bread.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "refers to",
+                    "a curious vegetable production"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "grows",
+                    "underground"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "grows",
+                    "like a truffle"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "often attains",
+                    "immense size"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "production of",
+                    "the Southern Atlantic United States"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "in Eastern Algonkian languages",
+                    "word for several edible plants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "in Eastern Algonkian languages",
+                    "word for an edible subterranean fungus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "tuckahoe",
+                    "also known as",
+                    "Indian bread"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "998737",
+        "response": "Bass is defined as a very low range of musical notes or a person or instrument that produces those notes. It is the lowest part of the musical range and is associated with the lowest adult male singing voice. In terms of instruments, it denotes the member of a family of instruments that is the lowest in pitch. Bass can also refer to the low-frequency output of a radio or audio system, corresponding to the bass in music. Additionally, bass can refer to certain types of edible marine or freshwater bony fishes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bass",
+                    "defined as",
+                    "very low range of musical notes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "defined as",
+                    "person or instrument that produces very low range of musical notes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "is",
+                    "lowest part of the musical range"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "associated with",
+                    "lowest adult male singing voice"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "denotes",
+                    "member of a family of instruments that is the lowest in pitch"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "refers to",
+                    "low-frequency output of a radio or audio system, corresponding to the bass in music"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bass",
+                    "refers to",
+                    "certain types of edible marine or freshwater bony fishes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "785306",
+        "response": "Polysys is a company located in Durango, Colorado that specializes in Trusts, Probate, Wills & Estates, Divorce. They provide Notary, Legal separation, Legal Representation to its customers. Polysys also uses SAP modules for various management and operational purposes. They invest in new technologies to make their applications available to its customers.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Polysys",
+                    "is",
+                    "company"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "located in",
+                    "Durango, Colorado"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "specializes in",
+                    "Trusts"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "specializes in",
+                    "Probate"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "specializes in",
+                    "Wills & Estates"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "specializes in",
+                    "Divorce"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "provides",
+                    "Notary"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "provides",
+                    "Legal separation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "provides",
+                    "Legal Representation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "provides services to",
+                    "its customers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys",
+                    "uses",
+                    "SAP modules"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys uses SAP modules",
+                    "for",
+                    "various management and operational purposes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Polysys invests in new technologies",
+                    "to make",
+                    "its applications available to its customers"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "708853",
+        "response": "The passages do not provide a specific definition for aggravated driving while intoxicated.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "21793",
+        "response": "Yes, concierge medical fees may be tax deductible if you have health care expenses that exceed 7.5 percent of your adjusted gross income. However, the threshold will be increasing to 10 percent.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "concierge medical fees",
+                    "may be",
+                    "tax deductible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "condition for concierge medical fees being tax deductible",
+                    "having health care expenses exceeding",
+                    "7.5 percent of adjusted gross income"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "threshold for concierge medical fees being tax deductible",
+                    "increasing from",
+                    "7.5 percent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "new threshold for concierge medical fees being tax deductible",
+                    "increasing to",
+                    "10 percent"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "810239",
+        "response": "The cause of dogs urinating all the time can be due to several medical problems such as diabetes, kidney problems, liver disease, and Cushings Disease. Other causes can include urinary tract infections, bladder problems such as UTI or cystitis, interstitial cystitis, bladder dysfunction, and damage to nerves that supply the bladder. Behavioral causes can also lead to frequent urination, such as changes in the environment, stress, and anxiety.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "diabetes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "kidney problems"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "liver disease"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "Cushings Disease"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "urinary tract infections"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "bladder problems"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bladder problems",
+                    "examples",
+                    "UTI"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bladder problems",
+                    "examples",
+                    "cystitis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "interstitial cystitis"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "bladder dysfunction"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "damage to nerves that supply the bladder"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "changes in the environment"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "stress"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "dogs urinating all the time",
+                    "caused by",
+                    "anxiety"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "57346",
+        "response": "A bus port, in the context of these passages, refers to a USB (Universal Serial Bus) port. It is an external bus standard that supports data transfer rates and can connect to multiple peripheral devices. It is used for connection, communication, and power supply between computers and electronic devices. USB ports are backward compatible and can support devices and cables of previous versions. They are also used to implement connections to storage devices using a set of standards.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "bus port",
+                    "refers to",
+                    "USB (Universal Serial Bus) port"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bus port",
+                    "is",
+                    "external bus standard"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bus port",
+                    "supports",
+                    "data transfer rates"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bus port",
+                    "connects to",
+                    "multiple peripheral devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bus port",
+                    "used for",
+                    "connection between computers and electronic devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bus port",
+                    "used for",
+                    "communication between computers and electronic devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bus port",
+                    "used for",
+                    "power supply between computers and electronic devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "are",
+                    "backward compatible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "can support",
+                    "devices of previous versions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "can support",
+                    "cables of previous versions"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "used to implement",
+                    "connections to storage devices"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "USB ports",
+                    "used to implement",
+                    "set of standards"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1102431",
+        "response": "Rachel Carson wrote \"The Obligation to Endure\" to present a convincing argument about the harmful effects of chemicals, pesticides, herbicides, and fertilizers on the environment. She was passionate about the environment and concerned about the well-being of its inhabitants. She believed that man's attempts to eliminate unwanted insects and weeds were causing more problems by polluting the environment and harming living things.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Obligation to Endure",
+                    "purpose",
+                    "to present a convincing argument about the harmful effects of chemicals, pesticides, herbicides, and fertilizers on the environment"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "was passionate about",
+                    "the environment"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "was concerned about",
+                    "the well-being of the environment's inhabitants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "believed",
+                    "man's attempts to eliminate unwanted insects and weeds were causing more problems by polluting the environment and harming living things"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Rachel Carson",
+                    "wrote",
+                    "\"The Obligation to Endure\""
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "248616",
+        "response": "The roasting time for beets can vary depending on their size and the specific recipe. It can range from 20 minutes to 2 hours.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "can vary depending on",
+                    "their size"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "can vary depending on",
+                    "the specific recipe"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "range from",
+                    "20 minutes"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "roasting time for beets",
+                    "to",
+                    "2 hours"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "741305",
+        "response": "Drew Carey's net worth is $165 million.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Drew Carey",
+                    "net worth",
+                    "$165 million"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "40371",
+        "response": "The average postal worker salary varies depending on the position. For example, as of May 2011, the average annual salary of a mail sorter was approximately $48,380. U.S. Postal Service clerks reported an average salary of $52,860 per year. The salaries of 415 postal employees ranged from $103,480 to $276,840, with an average of about $152,500.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average postal worker salary",
+                    "varies depending on",
+                    "position"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "mail sorter average annual salary",
+                    "was approximately",
+                    "$48,380"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "U.S. Postal Service clerks average annual salary",
+                    "was",
+                    "$52,860"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "salaries of 415 postal employees",
+                    "ranged from",
+                    "$103,480 to $276,840"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average salary of 415 postal employees",
+                    "was about",
+                    "$152,500"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1095893",
+        "response": "The term \"admin\" in the passages refers to various administrative roles and their costs or salaries, which vary widely. For example, administrative costs account for 25 percent of total hospital spending in the United States, which is over $200 billion. The national average salary for an Office Administrator in the United States is $35,646. Other administrative roles mentioned, such as a health and medical administrator or a nursing administrator, can earn well over $100,000 a year. Therefore, the cost or salary of \"admin\" depends on the specific role and context.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "administrative costs",
+                    "account for",
+                    "25 percent of total hospital spending"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "total hospital spending in the United States",
+                    "is over",
+                    "$200 billion"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "national average salary for an Office Administrator in the United States",
+                    "is",
+                    "$35,646"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "health and medical administrator",
+                    "can earn",
+                    "well over $100,000 a year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "nursing administrator",
+                    "can earn",
+                    "well over $100,000 a year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cost or salary of admin",
+                    "depends on",
+                    "specific role and context"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "309249",
+        "response": "A designer baby costs between $20,000 to $50,000.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "designer baby",
+                    "costs between",
+                    "$20,000 to $50,000"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "318922",
+        "response": "The average UNFI salary ranges from approximately $20,414 per year for Customer Service Representative to $96,487 per year for Senior Brand Manager.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average UNFI salary",
+                    "ranges from",
+                    "$20,414 per year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average UNFI salary",
+                    "ranges to",
+                    "$96,487 per year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Customer Service Representative at UNFI",
+                    "average salary",
+                    "$20,414 per year"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Senior Brand Manager at UNFI",
+                    "average salary",
+                    "$96,487 per year"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1090507",
+        "response": "The price of a Sphatik Shivling is Rs 1,500 according to Passage 3.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sphatik Shivling",
+                    "price",
+                    "Rs 1,500"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "392483",
+        "response": "The passages do not provide a specific maximum response size for IIS. However, they mention that the bufferingLimit attribute sets the maximum size of the ASP buffer, and that the maximum size of the output cache can be set in IIS. The default size for JSON response is 102400.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "IIS",
+                    "does not have",
+                    "specific maximum response size"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "IIS",
+                    "has",
+                    "bufferingLimit attribute"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "bufferingLimit attribute",
+                    "sets",
+                    "maximum size of ASP buffer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "IIS",
+                    "has",
+                    "output cache"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "output cache",
+                    "has",
+                    "maximum size"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "maximum size of output cache",
+                    "can be set in",
+                    "IIS"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "JSON response",
+                    "default size",
+                    "102400"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "283271",
+        "response": "The passages mention that there have been roughly 20 recognized mass extinctions, of which 5 are major.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "extinctions",
+                    "number",
+                    "roughly 20"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "mass extinctions",
+                    "number",
+                    "5"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1098016",
+        "response": "The weight of a Beagle female at 3 months should be between 3.9 and 4.3 kg. At 6 months, the Beagle female weighs on average between 7 kg for the smallest individuals and 7.8 kg for the largest individuals. At 1 year, a Beagle female should weigh between 9 and 10 kg. The weight of a Beagle male at 3 months should be between 4.3 and 4.7 kg. At 6 months, the Beagle male weighs on average between 7.8 kg for the smallest individuals and 8.5 kg for the largest individuals. At 1 year, a Beagle male should weigh between 10 and 10.9 kg.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average beagle weight at 3 months",
+                    "between",
+                    "3.9 and 4.3 kg"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "average beagle female weight at 3 months",
+                    "between",
+                    "3.9 and 4.3 kg"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average beagle female weight at 6 months",
+                    "between",
+                    "7 kg and 7.8 kg"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average beagle female weight at 1 year",
+                    "between",
+                    "9 kg and 10 kg"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average beagle male weight at 3 months",
+                    "between",
+                    "4.3 and 4.7 kg"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average beagle male weight at 6 months",
+                    "between",
+                    "7.8 kg and 8.5 kg"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "average beagle male weight at 1 year",
+                    "between",
+                    "10 kg and 10.9 kg"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1090502",
+        "response": "Carry-on luggage for Spirit Airlines should not exceed 50 linear inches (22 x 18 x 10 in) or 127 centimeters (56 x 46 x 25 cm) including handles and wheels.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "carry-on luggage for Spirit Airlines",
+                    "size limit",
+                    "50 linear inches (22 x 18 x 10 in) or 127 centimeters (56 x 46 x 25 cm) including handles and wheels"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Spirit Airlines",
+                    "has carry-on luggage size limit of",
+                    "50 linear inches (22 x 18 x 10 in) or 127 centimeters (56 x 46 x 25 cm) including handles and wheels"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "278453",
+        "response": "A regular slice of 100% Whole Wheat Bread has about 13 grams of carbohydrate and a slice of white bread has on average 12.7 grams of carbohydrate.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "regular slice of 100% Whole Wheat Bread",
+                    "has",
+                    "about 13 grams of carbohydrate"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slice of white bread",
+                    "has on average",
+                    "12.7 grams of carbohydrate"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1097486",
+        "response": "Macaroni and cheese typically contains between 300-500 calories per 1-cup serving when homemade, and about 376 calories per cup when made from a boxed mix. The calorie count can vary between 340-380 calories for every 60-67 grams when prepared with added milk and butter.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "macaroni and cheese",
+                    "calories per 1-cup serving when homemade",
+                    "between 300-500"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "macaroni and cheese from boxed mix",
+                    "calories per cup",
+                    "about 376"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "macaroni and cheese with added milk and butter",
+                    "calories per 60-67 grams",
+                    "between 340-380"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "284565",
+        "response": "A large egg has just around 0.4 grams of carbohydrates.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "A large egg",
+                    "has",
+                    "0.4 grams of carbohydrates"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "465781",
+        "response": "The average newborn weight is about 3.4 kilograms (kg).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "average newborn weight",
+                    "is about",
+                    "3.4 kilograms (kg)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1099731",
+        "response": "The Ariba help desk phone number is 1-866-772-7422.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Ariba help desk phone number",
+                    "is",
+                    "1-866-772-7422"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1072119",
+        "response": "Sodium chlorate is useful for several reasons. It is used for making herbicides, explosives, dyes, matches, inks, cosmetics, pharmaceuticals, defoliants, paper, and leather. In organic synthesis, it is frequently used as a reagent in the Pinnick oxidation for the oxidation of aldehydes to carboxylic acids. It is also used as a source of oxygen in emergency oxygen generators, which are found on airplanes, submarines, and the space station.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making herbicides"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making explosives"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making dyes"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making matches"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making inks"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making cosmetics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making pharmaceuticals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making defoliants"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making paper"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used for",
+                    "making leather"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "frequently used as",
+                    "reagent in Pinnick oxidation"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Pinnick oxidation",
+                    "used for",
+                    "oxidation of aldehydes to carboxylic acids"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sodium chlorate",
+                    "used as",
+                    "source of oxygen in emergency oxygen generators"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Emergency oxygen generators",
+                    "found on",
+                    "airplanes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Emergency oxygen generators",
+                    "found on",
+                    "submarines"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Emergency oxygen generators",
+                    "found on",
+                    "space station"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "166795",
+        "response": "No, goat's milk does not create mucus.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "goat's milk",
+                    "create mucus",
+                    "No"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "405776",
+        "response": "Yes, celery juice is nutritious. It is a source of dietary fiber, vitamins, and minerals. It contains vitamin C, which plays a critical role in bolstering immune function and improving the body's ability to heal wounds. Celery leaves are high in Vitamin A and the root is high in Vitamins B1,B2,B6 and Vitamin C. It is also an excellent source of calcium, potassium, folic acid, essential amino acids, and phosphorous.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "nutritious"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is a source of",
+                    "dietary fiber"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is a source of",
+                    "vitamins"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is a source of",
+                    "minerals"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "contains",
+                    "vitamin C"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "vitamin C",
+                    "plays a critical role in",
+                    "bolstering immune function"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "vitamin C",
+                    "improves",
+                    "the body's ability to heal wounds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Celery leaves",
+                    "high in",
+                    "Vitamin A"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Celery root",
+                    "high in",
+                    "Vitamins B1"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Celery root",
+                    "high in",
+                    "Vitamins B2"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Celery root",
+                    "high in",
+                    "Vitamins B6"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Celery root",
+                    "high in",
+                    "Vitamin C"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "an excellent source of calcium"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "an excellent source of potassium"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "an excellent source of folic acid"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "an excellent source of essential amino acids"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "celery juice",
+                    "is",
+                    "an excellent source of phosphorous"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "429983",
+        "response": "The passages suggest that both gout and high levels of triglycerides are associated with high levels of uric acid in the body. However, they do not establish a direct relationship between gout and triglyceride levels. Therefore, it cannot be definitively stated that triglyceride is affected by gout based on the provided passages.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "gout",
+                    "associated with",
+                    "high levels of uric acid in the body"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "high levels of triglycerides",
+                    "associated with",
+                    "high levels of uric acid in the body"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "triglyceride",
+                    "affected by",
+                    "gout"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1088312",
+        "response": "The passages do not provide specific current weather conditions in Pencoed, Wales.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1088355",
+        "response": "The passages do not provide current weather information for Nelson, New Zealand.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1008326",
+        "response": "The weather in Steubenville is considerably cloudy with flurries in the evening and isolated snow showers after midnight. The lows are around 14 degrees with west winds of 5 to 10 mph. The chance of snow is 20 percent. The following day is expected to be mostly cloudy with isolated snow showers and highs in the mid 20s.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The weather in Steubenville",
+                    "is",
+                    "considerably cloudy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The weather in Steubenville",
+                    "has",
+                    "flurries in the evening"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The weather in Steubenville",
+                    "has",
+                    "isolated snow showers after midnight"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The lows in Steubenville",
+                    "are around",
+                    "14 degrees"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Steubenville",
+                    "has",
+                    "west winds of 5 to 10 mph"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The chance of snow in Steubenville",
+                    "is",
+                    "20 percent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The following day in Steubenville",
+                    "is expected to be",
+                    "mostly cloudy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The following day in Steubenville",
+                    "has",
+                    "isolated snow showers"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The highs in Steubenville the following day",
+                    "are in",
+                    "the mid 20s"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "544914",
+        "response": "The passages do not provide current weather information for Louisville, Colorado.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1033994",
+        "response": "The processor, also known as the central processing unit (CPU), is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output operations specified by the instructions. It is often referred to as the brain of the computer. The term processor is also used interchangeably with CPU. The processor's elements are contained on a single integrated circuitry (IC) chip. The two main competitors in the processor market are Intel and AMD.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "processor",
+                    "also known as",
+                    "central processing unit (CPU)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "processor",
+                    "is",
+                    "electronic circuitry within a computer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "processor",
+                    "carries out",
+                    "instructions of a computer program"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "processor",
+                    "performs",
+                    "basic arithmetic, logical, control and input/output operations"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "instructions",
+                    "specified by",
+                    "computer program"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "processor",
+                    "often referred to as",
+                    "brain of the computer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "term processor",
+                    "used interchangeably with",
+                    "CPU"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "processor's elements",
+                    "contained on",
+                    "single integrated circuitry (IC) chip"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "two main competitors in processor market",
+                    "are",
+                    "Intel and AMD"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "995200",
+        "response": "You should use a 2-conductor line cord for an HP fax machine.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "You",
+                    "should use",
+                    "2-conductor line cord"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "2-conductor line cord",
+                    "for",
+                    "HP fax machine"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "157359",
+        "response": "Do it yourself grout cleaning can be done using solutions such as vinegar, baking soda, lemon, bleach and salt. Another method is to scrub the grout with an electric floor washer or polisher-scrubber. If further treatment is needed, a solution of water and chlorine bleach can be applied. It is also recommended to seal the grout every 4 to 6 months with a grout sealer to keep it from getting dirty. The grout should be very clean before the sealer is applied.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "can be done using",
+                    "vinegar"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "can be done using",
+                    "baking soda"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "can be done using",
+                    "lemon"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "can be done using",
+                    "bleach"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "can be done using",
+                    "salt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "method is",
+                    "scrub the grout with an electric floor washer or polisher-scrubber"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "do it yourself grout cleaning",
+                    "further treatment is",
+                    "apply solution of water and chlorine bleach"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "grout",
+                    "recommended",
+                    "seal every 4 to 6 months with a grout sealer"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "purpose of sealing grout",
+                    "is to",
+                    "keep it from getting dirty"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "grout",
+                    "should be",
+                    "very clean before the sealer is applied"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "129756",
+        "response": "Slate is a type of dark grey rock that can be easily divided into thin pieces. It is a fine-grained metamorphic rock formed by the effects of heat and pressure on shale. It can be split into thin layers along natural cleavage planes and is used as a roofing and paving material. In the past, a small, thin, rectangular piece of slate was used for writing on, especially by children. It can also refer to a record of money owed or past performance.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "slate",
+                    "is",
+                    "type of dark grey rock"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can be easily divided into",
+                    "thin pieces"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "is",
+                    "fine-grained metamorphic rock"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "formed by",
+                    "effects of heat and pressure on shale"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can be split into",
+                    "thin layers along natural cleavage planes"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "used as",
+                    "roofing and paving material"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "used in the past as",
+                    "small, thin, rectangular piece for writing on"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "especially used for writing by",
+                    "children"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can refer to",
+                    "record of money owed"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "slate",
+                    "can refer to",
+                    "record of past performance"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "421437",
+        "response": "Yes, Potter County is under a burn ban.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Potter County",
+                    "under",
+                    "burn ban"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "100248",
+        "response": "Cosmogeny refers to the branch of astrophysics that studies the origin, evolution, and structure of the universe. It can also refer to any specific theory, model, myth, or other account of the origin of the universe.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "cosmogeny",
+                    "refers to",
+                    "branch of astrophysics that studies origin, evolution, and structure of universe"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "cosmogeny",
+                    "can also refer to",
+                    "any specific theory, model, myth or account of origin of universe"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1083749",
+        "response": "The passages suggest that gray and pink go well together, but do not provide a specific result of what color is made when gray and pink are mixed.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "gray and pink",
+                    "make",
+                    "no specific color"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The passages",
+                    "suggest",
+                    "gray and pink go well together"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The passages",
+                    "do not provide",
+                    "specific result of what color is made when gray and pink are mixed"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "143463",
+        "response": "Yes, Bobby Jones won the Grand Slam.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Bobby Jones",
+                    "won",
+                    "the Grand Slam"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1084984",
+        "response": "St. Patrick is often credited with driving snakes out of Ireland, but this is a legend. Some believe the \"snakes\" were a symbol of paganism, and that St. Patrick is credited with ridding Ireland of paganism and bringing Christianity to the country.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "St. Patrick",
+                    "often credited with",
+                    "driving snakes out of Ireland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes driven out by St. Patrick",
+                    "is",
+                    "a legend"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "snakes",
+                    "were a symbol of",
+                    "paganism"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St. Patrick",
+                    "credited with",
+                    "ridding Ireland of paganism"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St. Patrick",
+                    "credited with",
+                    "bringing Christianity to Ireland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ireland",
+                    "had",
+                    "paganism"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "St. Patrick",
+                    "brought",
+                    "Christianity"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Christianity",
+                    "brought to",
+                    "Ireland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Ireland",
+                    "had",
+                    "legend of St. Patrick driving out snakes"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "851286",
+        "response": "The passages do not provide the current time in Morocco.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "537560",
+        "response": "Vision World is located at the address 971 Central Park Ave in Scarsdale, New York 10583. They can be contacted via phone at (914) 723-7392.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vision World",
+                    "located at",
+                    "971 Central Park Ave in Scarsdale, New York 10583"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "contact phone number",
+                    "(914) 723-7392"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Vision World",
+                    "located in",
+                    "Scarsdale, New York"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Scarsdale, New York",
+                    "zip code",
+                    "10583"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "540432",
+        "response": "Yes, Michael Jordan was a Cub Scout.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Michael Jordan",
+                    "was",
+                    "Cub Scout"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "63192",
+        "response": "Yes, a school psychologist can diagnose ADHD.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "school psychologist",
+                    "can diagnose",
+                    "ADHD"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "708743",
+        "response": "The afterbirth, or placenta, has been used in some beauty care products. Various manufacturers claim it helps stimulate tissue growth, reduces wrinkles and is good for your hair. However, none of these claims have been proven.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "afterbirth",
+                    "also known as",
+                    "placenta"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "afterbirth",
+                    "used in",
+                    "some beauty care products"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Various manufacturers",
+                    "claim",
+                    "afterbirth helps stimulate tissue growth"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Various manufacturers",
+                    "claim",
+                    "afterbirth reduces wrinkles"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Various manufacturers",
+                    "claim",
+                    "afterbirth is good for your hair"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1093959",
+        "response": "Yes, testosterone is controlled. The production of testosterone in the body is regulated by the brain's hypothalamus and the pituitary gland. Additionally, testosterone and other anabolic steroids have been classified as controlled substances under the Anabolic Steroid Act of 1990.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "testosterone",
+                    "controlled by",
+                    "hypothalamus"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "controlled by",
+                    "pituitary gland"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "classified as",
+                    "controlled substance"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "testosterone",
+                    "classified as controlled substance under",
+                    "Anabolic Steroid Act of 1990"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1040099",
+        "response": "The Eagle Flyer is a unique 2-1/2 hour round trip eco-excursion in the Connecticut River Valley. It also refers to a high-speed zip line in the Lake George area.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "refers to",
+                    "a unique 2-1/2 hour round trip eco-excursion in the Connecticut River Valley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Eagle Flyer",
+                    "also refers to",
+                    "a high-speed zip line in the Lake George area"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "219496",
+        "response": "To use diatomaceous earth to kill roaches, you should only use food-grade diatomaceous earth, which is safe for humans and pets. You can mix it with pet food to protect the food from roaches. You can also apply the dust directly onto nests, in any cracks or crevices in outdoor walls and buildings, and around the exterior of your home. For maximum effect, use diatomaceous earth during dry weather and reapply it if it rains. Indoors, you can lightly coat a thin layer of the product in areas where pests are found and may hide, such as behind and beneath refrigerators, cabinets, stoves, garbage cans, and in and around sewer pipes and drains, window frames, and in attics and basements. You can also sprinkle a light coating of diatomaceous earth on the surface of the soil in affected areas, and use a bulb puffer to blow the dust onto the surface of your plants and into crevices where roaches may be hiding. Dust lightly under the refrigerator, stove, and along the baseboards in the kitchen. Avoid applying the dust to any area that is consistently damp or wet.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1100064",
+        "response": "Cat's claw has been used as a dietary supplement for a variety of health conditions including viral infections (such as herpes and HIV), Alzheimer\u2019s disease, cancer, arthritis, diverticulitis, peptic ulcers, colitis, gastritis, hemorrhoids, parasites, and leaky bowel syndrome. It has also been found to inhibit the growth of and increase programmed cell death in leukemia cells, boost the immune system by increasing the levels of key immune cells, and improve markers of immune system health. Cat's claw also helps protect joint cartilage and has displayed efficacy in relieving joint pain, indicating it may be helpful for people suffering from arthritis. It also protects cellular DNA against damage and supports the repair of damaged DNA.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "147966",
+        "response": "The Miniature American Shepherd and the Miniature Australian Shepherd are genetically inseparable, with the only difference being where the dog is registered. When Miniature Australian Shepherds achieved AKC recognition, they were renamed as Miniature American Shepherds. They have the same look, working style, intelligence, energy level, personality, and grooming requirements. The Australian Shepherd stands 18-23 inches tall at the shoulder and the Miniature American Shepherd stands 13-18 inches tall at the shoulder.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "genetically inseparable from",
+                    "Miniature Australian Shepherd"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "only difference between Miniature American Shepherd and Miniature Australian Shepherd",
+                    "is",
+                    "where the dog is registered"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "has same as Miniature Australian Shepherd",
+                    "look, working style, intelligence, energy level, personality, grooming requirements"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Australian Shepherd",
+                    "stands",
+                    "18-23 inches tall at the shoulder"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Miniature American Shepherd",
+                    "stands",
+                    "13-18 inches tall at the shoulder"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "76098",
+        "response": "Yes, it is possible to break dogs from chasing cars. This can be done through various methods such as prevention, training, and consulting with a Certified Applied Animal Behaviorist (CAAB), a board-certified veterinary behaviorist or a Certified Professional Dog Trainer (CPDT). Other methods include using an invisible fence, giving the dog extra attention and exercise, and obedience training. In some cases, a shock collar may be used.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "breaking dogs from chasing cars",
+                    "is",
+                    "possible"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "methods to break dogs from chasing cars",
+                    "include",
+                    "prevention"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "methods to break dogs from chasing cars",
+                    "include",
+                    "training"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "methods to break dogs from chasing cars",
+                    "include",
+                    "consulting with a Certified Applied Animal Behaviorist (CAAB)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "methods to break dogs from chasing cars",
+                    "include",
+                    "consulting with a Certified Professional Dog Trainer (CPDT)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other methods to break dogs from chasing cars",
+                    "include",
+                    "using an invisible fence"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other methods to break dogs from chasing cars",
+                    "include",
+                    "giving the dog extra attention"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other methods to break dogs from chasing cars",
+                    "include",
+                    "giving the dog extra exercise"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other methods to break dogs from chasing cars",
+                    "include",
+                    "obedience training"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "other methods to break dogs from chasing cars",
+                    "include",
+                    "using a shock collar"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1080229",
+        "response": "Some Arkansas gardeners suggest that human urine can act as a deer deterrent. However, it is not guaranteed to work and experts recommend rotating between a variety of repellents.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "human urine",
+                    "act as",
+                    "deer deterrent"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "human urine",
+                    "not guaranteed to",
+                    "work"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "experts",
+                    "recommend",
+                    "rotating between a variety of repellents"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "155382",
+        "response": "Yes, brook trout eat crayfish.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brook trout",
+                    "eat",
+                    "crayfish"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "213986",
+        "response": "Leopardfoot died of unknown causes.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Leopardfoot",
+                    "died of",
+                    "unknown causes"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "857956",
+        "response": "The passages suggest that Donald Trump may be hiding information in his tax returns.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Donald Trump",
+                    "may be hiding",
+                    "information"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1092210",
+        "response": "Nike offers a wide variety of shoe types including running shoes, walking shoes, trainers, basketball shoes, tennis shoes, soccer shoes, lifestyle shoes, sandals, cleats & spikes, golf shoes, skateboarding shoes, shoes for American football, cycling, volleyball, wrestling, cheerleading, aquatic activities, auto racing, and other athletic and recreational uses. They also offer customizable footwear and shoes with special features like proper arch support and traction.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "1100861",
+        "response": "Egyptians are an ethnic group native to Egypt with a common culture and a variety of Egyptian Arabic. They are a blend of many cultures that include Greek, Arab, Armenian, Turkish, African, Syrian, Palestinian, European, and Turkish heritage.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Egyptians",
+                    "are",
+                    "ethnic group"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "native to",
+                    "Egypt"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "have",
+                    "common culture"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "speak",
+                    "Egyptian Arabic"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Egyptians",
+                    "are blend of cultures",
+                    "Greek, Arab, Armenian, Turkish, African, Syrian, Palestinian, European, Turkish"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "145322",
+        "response": "The passages do not provide information on whether the Eleusinian Mysteries survived.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "458110",
+        "response": "The Battle of Stalingrad can be considered as the most important battle of WWII.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Battle of Stalingrad",
+                    "can be considered as",
+                    "the most important battle of WWII"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "425121",
+        "response": "Yes, Sydney can be a male name, but it is used for boys 4.31 percent of the time.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Sydney",
+                    "can be",
+                    "male name"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Sydney",
+                    "used for boys",
+                    "4.31 percent of the time"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "172330",
+        "response": "Yes, the Brit system works.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Brit system",
+                    "works",
+                    "True"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "376687",
+        "response": "To renew your passport in Guam, you can apply by mail with application DS-82 if you meet the criteria listed on the U.S. Department of State web site. Alternatively, you can bring your prepared renewal application to a Post Office location. If your expired passport is not submitted with the application, a fee of $75 will apply. If you are a FSM Citizen residing in Guam, you can also renew your passport at the FSM Overseas Consulate Office in Guam. The completed application form, accompanied by the expired passport and a fee of $50 for processing and standard shipping of the passport, all need to be submitted to the Consulate Office.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "renew passport in Guam",
+                    "can apply by",
+                    "mail with application DS-82"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "renew passport in Guam",
+                    "can apply in person at",
+                    "Post Office location"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "renewing passport in Guam",
+                    "requires submitting",
+                    "expired passport"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "renewing passport in Guam without submitting expired passport",
+                    "has fee of",
+                    "$75"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "FSM Citizen residing in Guam",
+                    "can renew passport at",
+                    "FSM Overseas Consulate Office in Guam"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "renewing FSM passport at FSM Consulate Office in Guam",
+                    "requires submitting",
+                    "completed application form"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "renewing FSM passport at FSM Consulate Office in Guam",
+                    "requires submitting",
+                    "expired passport"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "renewing FSM passport at FSM Consulate Office in Guam",
+                    "has fee of",
+                    "$50"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "160460",
+        "response": "Whether you have to pay to get papers notarized depends on where you get the documents notarized. Some banks and real estate offices offer this service for free, especially if you have an account with them or they hope to get your business in the future. However, some notaries do charge a fee, which can range from $2 to $20 per signature, depending on the state.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "getting papers notarized",
+                    "has cost",
+                    "depends on where you get the documents notarized"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Some banks",
+                    "offer notarization service",
+                    "for free"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Some real estate offices",
+                    "offer notarization service",
+                    "for free"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Banks offer free notarization",
+                    "condition",
+                    "especially if you have an account with them"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Some notaries",
+                    "charge fee for notarization",
+                    "true"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Fee for notarization by notaries",
+                    "range",
+                    "$2 to $20 per signature"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Range of notarization fee",
+                    "depends on",
+                    "the state"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]

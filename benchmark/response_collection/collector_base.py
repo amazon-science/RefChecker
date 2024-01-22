@@ -38,9 +38,9 @@ class ResponseCollectorBase:
         for setting, ds in zip(
             ['zero_context', 'noisy_context', 'accurate_context'],
             ["nq", "msmarco", "dolly"]
-        ):      
-            examples = json.load(open(f'benchmark_data/{setting}/{ds}.json'))
-            response_file = f'benchmark_data/{setting}/{ds}_{self.mname}_answers.json'
+        ):
+            examples = json.load(open(f'data/{setting}/{ds}.json'))
+            response_file = f'data/{setting}/{setting}_{self.mname}_answers.json'
             if os.path.exists(response_file):
                 response_data = json.load(open(response_file))
             else:
@@ -57,7 +57,6 @@ class ResponseCollectorBase:
                 if res and len(res):
                     r['input'] = input_prompt
                     r['response'] = res
-                    # print(res)
                     json.dump(response_data, open(response_file, 'w'), indent=4)
                     finish_cnt += 1
             print(f'{setting}: {finish_cnt} responses collected.')
@@ -67,16 +66,19 @@ class ResponseCollectorBase:
             return example['question']
         elif split == 'msmarco':
             tail = '\nAnswer: \n'
-            tail_length = len(self.tokenizer_encode(tail))
             
             prompt = f'Please answer the following question based on the provided passages.\n\nQuestion: {example["question"]}?\n\nPassages:\n'
             for i, p in enumerate(example['context']):
                 prompt += f'Passage {i}: {p}\n'
             prompt_encoded = self.tokenizer_encode(prompt)
-            prompt_encoded = prompt_encoded[:self.max_contex_length - self.max_new_tokens - tail_length]
-            prompt_truncated = self.tokenizer_decode(prompt_encoded)
-            prompt_truncated += tail
-            return prompt_truncated
+            if prompt_encoded:
+                tail_length = len(self.tokenizer_encode(tail))
+                
+                prompt_encoded = prompt_encoded[:self.max_contex_length - self.max_new_tokens - tail_length]
+                prompt_truncated = self.tokenizer_decode(prompt_encoded)
+                prompt_truncated += tail
+                return prompt_truncated
+            return prompt + tail
         elif split == 'dolly':
             if example['category'] == 'closed_qa':
                 prompt = closed_qa_prompt.format(**{'question': example['question'], 'context': example['context'][0]})
@@ -85,10 +87,11 @@ class ResponseCollectorBase:
             elif example['category'] == 'summarization':
                 prompt = sum_prompt.format(**{'question': example['question'], 'context': example['context'][0]})
             prompt_encoded = self.tokenizer_encode(prompt)
-            prompt_encoded = prompt_encoded[:self.max_contex_length - self.max_new_tokens]
-            prompt_truncated = self.tokenizer_decode(prompt_encoded)
-            return prompt_truncated
-            
+            if prompt_encoded:
+                prompt_encoded = prompt_encoded[:self.max_contex_length - self.max_new_tokens]
+                prompt_truncated = self.tokenizer_decode(prompt_encoded)
+                return prompt_truncated
+            return prompt
     def tokenizer_encode(self, prompt):
         raise NotImplementedError
 

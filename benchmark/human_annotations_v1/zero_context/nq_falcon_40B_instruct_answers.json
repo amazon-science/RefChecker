@@ -1,0 +1,1879 @@
+[
+    {
+        "id": "4073418639113603971",
+        "response": "The song 'I Dig Rock and Roll Music' was originally recorded by The Dixie Cups in 1964.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The song 'I Dig Rock and Roll Music'",
+                    "originally recorded by",
+                    "The Dixie Cups"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The song 'I Dig Rock and Roll Music'",
+                    "year recorded",
+                    "1964"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-3339006116507262453",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-1582234629547061501",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context such as the title of the song or the artist's name.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "2223188268381215709",
+        "response": "The Speaker of the House of Commons presides over the joint sessions of parliament.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Speaker of the House of Commons",
+                    "presides over",
+                    "joint sessions of parliament"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-8883866849303680195",
+        "response": "I'm sorry, I cannot provide an answer to that question as it is not related to my programming.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-3476455683698256952",
+        "response": "The judge in Good Will Hunting was played by actor Robin Williams.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "judge in Good Will Hunting",
+                    "played by",
+                    "actor Robin Williams"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-5646056836091194880",
+        "response": "The two fibres that are made of proteins are collagen and elastin.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "collagen",
+                    "is",
+                    "protein fiber"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "elastin",
+                    "is",
+                    "protein fiber"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5003538501505873412",
+        "response": "The song 'I Dreamed a Dream' was originally sung by Susan Boyle in the 2009 film adaptation of Les Miserables.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Dreamed a Dream",
+                    "originally sung by",
+                    "Susan Boyle"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "I Dreamed a Dream",
+                    "song in",
+                    "Les Miserables"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Dreamed a Dream",
+                    "appeared in",
+                    "2009 film adaptation of Les Miserables"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8680361524959876970",
+        "response": "I'm sorry, but I cannot provide an accurate answer to your question as it is not a common term or phrase. Could you please provide more context or information?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-6500826823871433949",
+        "response": "The first person to record with the electric guitar was Les Paul in 1936.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Les Paul",
+                    "first person to record with",
+                    "electric guitar"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Les Paul",
+                    "recorded with electric guitar",
+                    "in 1936"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "1851594182842213971",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information about what you are referring to?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2651390481836592629",
+        "response": "Rob Dyrdek's Fantasy Factory ended on August 12, 2013.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Rob Dyrdek's Fantasy Factory",
+                    "ended on",
+                    "August 12, 2013"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "7422852161474049311",
+        "response": "Charkie is a fictional character from the children's book series Curious George. He is a yellow Labrador Retriever.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Charkie",
+                    "is a",
+                    "fictional character"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "from",
+                    "children's book series Curious George"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Charkie",
+                    "is a",
+                    "yellow Labrador Retriever"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "238018115866608950",
+        "response": "How Deep Is Your Love was released on February 16, 1977.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "How Deep Is Your Love",
+                    "released on",
+                    "February 16, 1977"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-6395885127392955720",
+        "response": "Jack Ryan lives in London in the novel 'Patriot Games'.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Jack Ryan",
+                    "lives in",
+                    "London"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Jack Ryan",
+                    "character in",
+                    "novel 'Patriot Games'"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2536150218240275989",
+        "response": "I'm sorry, I cannot provide an accurate answer to this question as it requires knowledge of a specific song and its lyrics.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-3170493396531530980",
+        "response": "The song 'Always Be Humble and Kind' was written by Tim McGraw, Lori McKenna, and Keith Urban.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Always Be Humble and Kind",
+                    "written by",
+                    "Tim McGraw"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Always Be Humble and Kind",
+                    "written by",
+                    "Lori McKenna"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Always Be Humble and Kind",
+                    "written by",
+                    "Keith Urban"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-204697481439605710",
+        "response": "I'm sorry, I cannot provide an accurate answer as there is no specific song or artist mentioned in the prompt.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-4283464153717448291",
+        "response": "Mrs. Trumbull was played by actress Mary Treen.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "character in",
+                    "I Love Lucy"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mrs. Trumbull",
+                    "played by",
+                    "actress Mary Treen"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-853451338783771197",
+        "response": "The song 'When a Man Loves a Woman' was written by Michael Bolton and Brenda Russell.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song 'When a Man Loves a Woman'",
+                    "written by",
+                    "Michael Bolton"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "song 'When a Man Loves a Woman'",
+                    "written by",
+                    "Brenda Russell"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1388143263608839064",
+        "response": "I'm sorry, I cannot provide a specific answer without additional context. Could you please provide more information about the person or family you are referring to?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "3413977600585971868",
+        "response": "The character of John Connor was played by Michael Biehn in the original Terminator movie.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "John Connor",
+                    "played by",
+                    "Michael Biehn"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "John Connor",
+                    "character in",
+                    "original Terminator movie"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-4834721811831894172",
+        "response": "The Strictly Come Dancing results show is usually recorded on Sunday evenings after the live show.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show",
+                    "is recorded",
+                    "on Sunday evenings"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Strictly Come Dancing results show",
+                    "is recorded after",
+                    "the live show"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6591614197125818072",
+        "response": "The soldiers in ending the raid on the harper's ferry arsenal were led by Colonel Robert E. Lee.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "soldiers",
+                    "ended",
+                    "raid on the harper's ferry arsenal"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "raid on the harper's ferry arsenal",
+                    "location",
+                    "harper's ferry"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Colonel Robert E. Lee",
+                    "led",
+                    "soldiers"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "soldiers",
+                    "ended",
+                    "raid on the harper's ferry arsenal"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "2339339749699668536",
+        "response": "Lady Gaga performed the halftime show at Super Bowl 51.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Lady Gaga",
+                    "performed",
+                    "halftime show"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "halftime show",
+                    "at event",
+                    "Super Bowl 51"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7526277995958905171",
+        "response": "I'm sorry, I cannot provide an accurate answer as the prompt does not provide enough context. Could you please provide more information?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2419576910417046724",
+        "response": "The longest pier in the UK is the Southend Pier in Essex, which is 1.34 miles (2.16 km) long.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "location",
+                    "Essex"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "length",
+                    "1.34 miles (2.16 km)"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Southend Pier",
+                    "longest pier in UK",
+                    "true"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-1773607187248198254",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context such as the title of the song or the artist's name.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4086158102790148091",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-1732734622903151644",
+        "response": "The oldest known recording of 'House of the Rising Sun' is by Clarence Ashley in 1933.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "oldest known recording of 'House of the Rising Sun'",
+                    "is by",
+                    "Clarence Ashley"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "oldest known recording of 'House of the Rising Sun'",
+                    "from year",
+                    "1933"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-7778233237890403173",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information about the show 'The Crossing'?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "583026970021621830",
+        "response": "The first home video security system was invented by Robert L. Turner in 1966.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "first home video security system",
+                    "invented by",
+                    "Robert L. Turner"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Robert L. Turner",
+                    "invented",
+                    "first home video security system"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "invention of first home video security system",
+                    "took place in",
+                    "1966"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5185978890489959594",
+        "response": "I'm sorry, I cannot provide an accurate answer as the number 95 car in NASCAR is not currently driven by a specific driver.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "number 95 car in NASCAR",
+                    "currently driven by",
+                    "no specific driver"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1531676396763282931",
+        "response": "Icarus",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Icarus",
+                    "is",
+                    "greek god"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Icarus",
+                    "flew too close to",
+                    "the sun"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "5078709962400196312",
+        "response": "Deion Sanders played for the Atlanta Braves, Cincinnati Reds, New York Yankees, San Francisco Giants, and Atlanta Falcons.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Atlanta Braves"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Cincinnati Reds"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "New York Yankees"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "San Francisco Giants"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Deion Sanders",
+                    "played for",
+                    "Atlanta Falcons"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-7296166998534064378",
+        "response": "The middle sister on Full House was played by Candace Cameron Bure.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "middle sister on Full House",
+                    "played by",
+                    "Candace Cameron Bure"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "734309880189507498",
+        "response": "Dwight's brother on The Office was played by actor Paul Lieberstein.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dwight's brother",
+                    "character in",
+                    "The Office"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Dwight's brother in The Office",
+                    "portrayed by",
+                    "Paul Lieberstein"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Paul Lieberstein",
+                    "profession",
+                    "actor"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "5063128834246440475",
+        "response": "The only player to play for Manchester United, Manchester City, Liverpool, and Everton is Phil Chisnall.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Phil Chisnall",
+                    "played for",
+                    "Manchester United"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Chisnall",
+                    "played for",
+                    "Manchester City"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Chisnall",
+                    "played for",
+                    "Liverpool"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Chisnall",
+                    "played for",
+                    "Everton"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Phil Chisnall",
+                    "only player",
+                    "played for Manchester United, Manchester City, Liverpool, and Everton"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5239772721292332989",
+        "response": "I'm sorry, but I cannot provide an accurate answer without additional context. Could you please provide more information about the group bacteroids?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "6217752837777787594",
+        "response": "The character of Heather in Beauty and the Beast is played by actress Emma Thompson.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Heather",
+                    "character in",
+                    "Beauty and the Beast"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Heather",
+                    "played by",
+                    "actress Emma Thompson"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6882831655380911332",
+        "response": "The city farthest from the sea in Britain is Inverness, located in the Scottish Highlands.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Inverness",
+                    "located in",
+                    "Scottish Highlands"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Inverness",
+                    "farthest from the sea",
+                    "in Britain"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1222948057007052760",
+        "response": "There are 11 players on the line of scrimmage in American football.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "players on the line of scrimmage in American football",
+                    "number",
+                    "11"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-278447034238251050",
+        "response": "There are 22 episodes in season 4 of My Name Is Earl.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "My Name Is Earl season 4",
+                    "number of episodes",
+                    "22"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-4882553194262710105",
+        "response": "The salary of the US Secretary of State is $208,100 per year.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "US Secretary of State",
+                    "has salary",
+                    "$208,100 per year"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5901661238535651276",
+        "response": "Nikko was played by actor Billy Gray in the 1939 film 'The Wizard of Oz'.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Nikko",
+                    "character in",
+                    "The Wizard of Oz"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Nikko",
+                    "played by",
+                    "Billy Gray"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Billy Gray",
+                    "actor in",
+                    "1939 film The Wizard of Oz"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5217063434217549041",
+        "response": "The sun first hits the United States in the easternmost parts of the country, such as Maine and Florida.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sun",
+                    "hits",
+                    "easternmost parts of United States first"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "easternmost parts of United States",
+                    "include",
+                    "Maine"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "easternmost parts of United States",
+                    "include",
+                    "Florida"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-8544960023313580012",
+        "response": "The first winner of Who Wants to Be a Millionaire? was Chris Tarrant.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4272117895813370426",
+        "response": "I'm sorry, I cannot provide a response to this prompt as it is incomplete and lacks context. Please provide more information or rephrase your question.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4245798066923223457",
+        "response": "Kareem Abdul-Jabbar has the most All-Star MVP awards with six.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kareem Abdul-Jabbar",
+                    "has",
+                    "most All-Star MVP awards"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Kareem Abdul-Jabbar",
+                    "number of All-Star MVP awards",
+                    "six"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "8852834747561852791",
+        "response": "The idea that microorganisms play a role in disease was first established by Louis Pasteur in the 19th century.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "idea that microorganisms play a role in disease",
+                    "first established by",
+                    "Louis Pasteur"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Louis Pasteur",
+                    "established idea",
+                    "in the 19th century"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-5039045537721106027",
+        "response": "There are 22 episodes in season six of Nashville.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Season six of Nashville",
+                    "has",
+                    "22 episodes"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-6687867009117829006",
+        "response": "I'm sorry, I cannot provide an accurate answer to this question as it is not a factual statement. The Hobbit does not feature a character who turns into a bear.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-6933377434468493740",
+        "response": "I'm sorry, I cannot provide an answer to that question as it is incomplete and lacks context. Could you please provide more information?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "850563670386330666",
+        "response": "I'm sorry, I cannot provide an accurate answer to your question as it requires specific knowledge of the Wave Hill Walk Off, which was a series of strikes and protests by Aboriginal stockmen and their families in the Northern Territory of Australia in 1966. The events surrounding the Walk Off are complex and multifaceted, and the end of the strike is not a simple or straightforward answer.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-8490085242981497626",
+        "response": "The song 'Gonna Sit Right Down and Write Myself a Letter' was written by Thomas 'Fats' Waller and Harry Brooks in 1935.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song 'Gonna Sit Right Down and Write Myself a Letter'",
+                    "written by",
+                    "Thomas 'Fats' Waller and Harry Brooks"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "song 'Gonna Sit Right Down and Write Myself a Letter'",
+                    "written in",
+                    "1935"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "8361850218460994084",
+        "response": "The father of the Green Revolution in India is considered to be Dr. Norman Borlaug.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Norman Borlaug",
+                    "known as",
+                    "father of green revolution in India"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "5259818422556035007",
+        "response": "The Beatles",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "good night",
+                    "sung by",
+                    "The Beatles"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "465961107727601737",
+        "response": "The Chief Justice of the Illinois Supreme Court is elected by the Illinois General Assembly.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Chief Justice of the Illinois Supreme Court",
+                    "elected by",
+                    "Illinois General Assembly"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-5525220120773157166",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information about the song and the artist?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2107324154024383180",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-2126374007719970792",
+        "response": "The Olympic athlete with the most medals is Soviet gymnast Larisa Latynina, who won a total of 18 medals (nine gold, five silver, and four bronze) in three Olympic Games (1956, 1960, and 1964).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "is",
+                    "Soviet gymnast"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "won",
+                    "18 medals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "18 medals won by Larisa Latynina",
+                    "comprise",
+                    "9 gold medals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "18 medals won by Larisa Latynina",
+                    "comprise",
+                    "5 silver medals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "18 medals won by Larisa Latynina",
+                    "comprise",
+                    "4 bronze medals"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "18 medals",
+                    "won in",
+                    "3 Olympic Games"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "3 Olympic Games",
+                    "are",
+                    "1956 Olympics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "3 Olympic Games",
+                    "are",
+                    "1960 Olympics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "3 Olympic Games",
+                    "are",
+                    "1964 Olympics"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Larisa Latynina",
+                    "holds record for",
+                    "most Olympic medals won by an individual"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-1123449784666821676",
+        "response": "The theme song for season 5 of The Wire is called 'Way Down in the Hole' and it is performed by Tom Waits.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for season 5 of The Wire",
+                    "called",
+                    "'Way Down in the Hole'"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "theme song for season 5 of The Wire",
+                    "performed by",
+                    "Tom Waits"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "4265986416867251482",
+        "response": "The submarine was not invented during the American Civil War. The first submarine was invented by a Dutchman named Cornelis Drebbel in the 17th century.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The submarine",
+                    "was not invented during",
+                    "the American Civil War"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The first submarine",
+                    "was invented by",
+                    "Cornelis Drebbel"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Cornelis Drebbel",
+                    "nationality",
+                    "Dutchman"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "Cornelis Drebbel",
+                    "lived in",
+                    "the 17th century"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "2141218895657905276",
+        "response": "I'm sorry, I cannot provide an answer to that question as it is not related to my training data.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "6672231732847608194",
+        "response": "The theme song for Laverne and Shirley was sung by Cyndi Grecco.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for Laverne and Shirley",
+                    "sung by",
+                    "Cyndi Grecco"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4943207042321394497",
+        "response": "The 10 shilling note was discontinued in 1990.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "10 shilling note",
+                    "went out of circulation",
+                    "1990"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6014950976264156000",
+        "response": "I'm sorry, I cannot provide an accurate answer without additional context such as the year or genre of the song.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-5004457603684974952",
+        "response": "</a> \nWhat is the theme of the halftime show at Super Bowl 2016?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-1206653570097564556",
+        "response": "The movie Proof of Life takes place in South America, specifically in the fictional country of Tecala.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The movie Proof of Life",
+                    "takes place in",
+                    "South America"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "South America",
+                    "contains",
+                    "fictional country of Tecala"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The movie Proof of Life",
+                    "takes place in",
+                    "fictional country of Tecala"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "6405015309290964923",
+        "response": "The saying'monkey's uncle' is believed to have originated in the 19th century and is used to express disbelief or surprise. It is unclear where the phrase originated from, but it is believed to have originated in the United States.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "saying 'monkey's uncle'",
+                    "originated",
+                    "19th century"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "saying 'monkey's uncle'",
+                    "used to express",
+                    "disbelief or surprise"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "saying 'monkey's uncle'",
+                    "origin",
+                    "unclear"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "saying 'monkey's uncle'",
+                    "believed originated in",
+                    "United States"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3790834797035922554",
+        "response": "&lt;/a&gt;\nThe Vice President of the United States breaks a tie in the Senate.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Vice President of the United States",
+                    "breaks",
+                    "tie in the Senate"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-6992125597790283273",
+        "response": "2018\nCanada does not observe daylight saving time.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Canada",
+                    "does not observe",
+                    "daylight saving time"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-610965397636500508",
+        "response": "</s> \nI'm sorry, I cannot provide an accurate answer without additional context. Could you please provide more information about the person or character named Mandy?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "4876812477232188511",
+        "response": "I'm sorry, I cannot provide an accurate answer to that question as it requires knowledge of the specific individual or family in question.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-7186555013910059700",
+        "response": "called \"sangam\" in allahabad.\nI'm sorry, I cannot provide a response to this prompt as it is incomplete and lacks context. Could you please provide more information or rephrase the prompt?",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "-3428106355897335676",
+        "response": "of vital records in the state where the birth occurred\nI'm sorry, I cannot provide a response to this prompt as it is incomplete and lacks context. Please provide more information or rephrase the prompt.",
+        "claude2_response_kg": []
+    },
+    {
+        "id": "8451264603946634151",
+        "response": "a patient who is able to move around on their own, without assistance.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "ambulatory",
+                    "is a term",
+                    "used in health care"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "ambulatory",
+                    "describes",
+                    "a patient who is able to move around on their own, without assistance"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "6605227747829720945",
+        "response": "The width of a cricket bat varies depending on the size and type of bat. Generally, the width of a cricket bat ranges from 4.25 inches to 4.75 inches.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "width of a cricket bat",
+                    "varies depending on",
+                    "size and type of bat"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "width of a cricket bat",
+                    "ranges from",
+                    "4.25 inches to 4.75 inches"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "8848582210866367992",
+        "response": "The Nobel Peace Prize for 2017 was awarded to the International Campaign to Abolish Nuclear Weapons (ICAN).",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Nobel Peace Prize for 2017",
+                    "was awarded to",
+                    "the International Campaign to Abolish Nuclear Weapons (ICAN)"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "7539197459439257235",
+        "response": "The song 'So Come and Dance with Me' is not from the movie 'Jai Ho'. It is a song by the band 'The Real Thing' and was released in 1978.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "song 'So Come and Dance with Me'",
+                    "performed by",
+                    "The Real Thing"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "The Real Thing",
+                    "released song",
+                    "1978"
+                ],
+                "human_label": "Neutral"
+            },
+            {
+                "triplet": [
+                    "song 'So Come and Dance with Me'",
+                    "not from movie",
+                    "Jai Ho"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "6403691727808631943",
+        "response": "Wind power is used most in the United States in the states of Texas, Iowa, Oklahoma, Kansas, and South Dakota.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "wind power",
+                    "used most in",
+                    "Texas"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "wind power",
+                    "used most in",
+                    "Iowa"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "wind power",
+                    "used most in",
+                    "Oklahoma"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "wind power",
+                    "used most in",
+                    "Kansas"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "wind power",
+                    "used most in",
+                    "South Dakota"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "8900387163847503723",
+        "response": "The actor who played Mr. Kincaid on The Partridge Family was Dave Madden.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Dave Madden",
+                    "played role of",
+                    "Mr. Kincaid"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Mr. Kincaid",
+                    "character on TV show",
+                    "The Partridge Family"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "334627437220863517",
+        "response": "The First Battle of Ypres ended on November 22, 1914.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "First Battle of Ypres",
+                    "ended on",
+                    "November 22, 1914"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1669394955232263644",
+        "response": "The Battle of Badr took place on March 17, 624 AD.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Battle of Badr",
+                    "took place on",
+                    "March 17, 624 AD"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-1259577751352734948",
+        "response": "The song 'I Want to Dance with Somebody' was written by George Merrill and Shannon Rubicam.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody",
+                    "written by",
+                    "George Merrill"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "I Want to Dance with Somebody",
+                    "written by",
+                    "Shannon Rubicam"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "4674269357266381610",
+        "response": "The character of the walking boss is played by actor Strother Martin in the movie Cool Hand Luke.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "the walking boss",
+                    "played by",
+                    "actor Strother Martin"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "Cool Hand Luke",
+                    "is a",
+                    "movie"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-7306805811512692008",
+        "response": "The Red River starts in the Texas Panhandle and flows through Oklahoma, Arkansas, and Louisiana before emptying into the Mississippi River.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Red River",
+                    "starts in",
+                    "Texas Panhandle"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "flows through",
+                    "Oklahoma"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "flows through",
+                    "Arkansas"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "flows through",
+                    "Louisiana"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Red River",
+                    "empties into",
+                    "Mississippi River"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2532633865902253646",
+        "response": "The song 'What I Like About You' was originally performed by The Romantics in 1979.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "What I Like About You",
+                    "originally performed by",
+                    "The Romantics"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "What I Like About You",
+                    "originally performed in",
+                    "1979"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1389300307230755697",
+        "response": "The song 'I Knew the Bride When She Used to Rock and Roll' was written by Tom Petty and performed by his band Tom Petty and the Heartbreakers.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "I Knew the Bride When She Used to Rock and Roll",
+                    "written by",
+                    "Tom Petty"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "I Knew the Bride When She Used to Rock and Roll",
+                    "performed by",
+                    "Tom Petty and the Heartbreakers"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2191432481376971337",
+        "response": "The Colts were owned by Robert Irsay when they left Baltimore in 1984.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Colts",
+                    "owned by",
+                    "Robert Irsay"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Colts",
+                    "left",
+                    "Baltimore"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "The Colts",
+                    "left",
+                    "Baltimore in 1984"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5489426796364143729",
+        "response": "The first president of the Constituent Assembly was Dr. Rajendra Prasad.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The first president of the Constituent Assembly",
+                    "was",
+                    "Dr. Rajendra Prasad"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3480908309420822259",
+        "response": "The song 'Should Have Been a Cowboy' was written and performed by Toby Keith.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Should Have Been a Cowboy",
+                    "written by",
+                    "Toby Keith"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Should Have Been a Cowboy",
+                    "performed by",
+                    "Toby Keith"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "3311962143974666464",
+        "response": "A king cobra can produce up to 7.5 ml of venom in a single bite.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "king cobra",
+                    "venom production per bite",
+                    "up to 7.5 ml"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "2352051038192309240",
+        "response": "The brain gets its energy from glucose, which is obtained from the food we eat.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "brain",
+                    "gets energy from",
+                    "glucose"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "glucose",
+                    "obtained from",
+                    "food we eat"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "7735703748660141931",
+        "response": "The theme song for the TV show Cops is performed by the band The Crystal Method.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "theme song for the TV show Cops",
+                    "performed by",
+                    "The Crystal Method"
+                ],
+                "human_label": "Contradiction"
+            },
+            {
+                "triplet": [
+                    "The Crystal Method",
+                    "is a",
+                    "band"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "3028343500075334931",
+        "response": "The longest tenure as moderator on Meet the Press was held by Tim Russert, who hosted the show for 17 years from 1991 until his death in 2008.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Tim Russert",
+                    "longest tenure as moderator of",
+                    "Meet the Press"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tim Russert",
+                    "hosted",
+                    "Meet the Press"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Duration of Tim Russert hosting Meet the Press",
+                    "was",
+                    "17 years"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tim Russert hosted Meet the Press",
+                    "from",
+                    "1991"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Tim Russert hosted Meet the Press",
+                    "until",
+                    "2008"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "End of Tim Russert's tenure",
+                    "due to",
+                    "his death"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "His death",
+                    "year",
+                    "2008"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "1848006246448298349",
+        "response": "The Killing of a Sacred Deer was filmed in Athens, Greece.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "The Killing of a Sacred Deer",
+                    "filmed in",
+                    "Athens, Greece"
+                ],
+                "human_label": "Contradiction"
+            }
+        ]
+    },
+    {
+        "id": "-927966355158112429",
+        "response": "The group that officially elects the president of the United States is called the Electoral College.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Electoral College",
+                    "elects",
+                    "president of the United States"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    },
+    {
+        "id": "-5984668857988357373",
+        "response": "the joint between the sacrum and the coccyx\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and the ilium of the hip bone\nthe joint between the sacrum and",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "sacroiliac joint",
+                    "is",
+                    "joint between sacrum and ilium of hip bone"
+                ],
+                "human_label": "Neutral"
+            }
+        ]
+    },
+    {
+        "id": "-704529031648349308",
+        "response": "The character who plays Red on Orange is the New Black is Kate Mulgrew.",
+        "claude2_response_kg": [
+            {
+                "triplet": [
+                    "Kate Mulgrew",
+                    "plays",
+                    "Red"
+                ],
+                "human_label": "Entailment"
+            },
+            {
+                "triplet": [
+                    "Red",
+                    "character on",
+                    "Orange is the New Black"
+                ],
+                "human_label": "Entailment"
+            }
+        ]
+    }
+]
