@@ -25,6 +25,7 @@ openai = "^1.3.5"
 anthropic = "^0.7.4"
 datasets = "^2.15.0"
 plotly = "^5.18.0"
+vllm = "^0.2.6"
 
 [tool.poetry.scripts]
 refchecker-cli = "refchecker.cli:main"

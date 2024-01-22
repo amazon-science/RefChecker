@@ -1,6 +1,6 @@
 ## Claim-Triplet Extractor
 
-In this work, we adopt LLMs as knowledge extraction models, leveraging their strong language understanding capabilities across diverse textual contexts. We provide [Claude2Extractor](claude2_extractor.py) and [GPT4Extractor](gpt4_extractor.py) as extractor interfaces equipped with different LLMs.
+In this work, we adopt LLMs as knowledge extraction models, leveraging their strong language understanding capabilities across diverse textual contexts. We provide [MixtralExtractor](mixtral_extractor.py), [Claude2Extractor](claude2_extractor.py) and [GPT4Extractor](gpt4_extractor.py) as extractor interfaces equipped with different LLMs.
 
 
 ```python

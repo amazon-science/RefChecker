@@ -3,8 +3,8 @@ import json
 from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
-from .extractor import Claude2Extractor, GPT4Extractor
-from .checker import Claude2Checker, GPT4Checker, NLIChecker
+from .extractor import Claude2Extractor, GPT4Extractor, MixtralExtractor
+from .checker import Claude2Checker, GPT4Checker, NLIChecker, AlignScoreChecker
 from .retriever import GoogleRetriever
 from .aggregator import strict_agg, soft_agg, major_agg
 
@@ -31,7 +31,7 @@ def get_args():
     )
     parser.add_argument(
         '--extractor_name', type=str, default="claude2",
-        choices=["gpt4", "claude2"],
+        choices=["gpt4", "claude2", "mixtral"],
         help="Model used for extracting triplets. Default: claude2."
     )
     parser.add_argument(
@@ -40,7 +40,7 @@ def get_args():
     )
     parser.add_argument(
         "--checker_name", type=str, default="claude2",
-        choices=["gpt4", "claude2", "nli"],
+        choices=["gpt4", "claude2", "nli", "alignscore"],
         help="Model used for checking whether the triplets are factual. "
         "Default: claude2."
     )
@@ -124,6 +124,8 @@ def extract(args):
         extractor = Claude2Extractor()
     elif args.extractor_name == "gpt4":
         extractor = GPT4Extractor()
+    elif args.extractor_name == "mixtral":
+        extractor = MixtralExtractor()
     else:
         raise NotImplementedError
 
@@ -153,6 +155,8 @@ def check(args):
         checker = GPT4Checker()
     elif args.checker_name == "nli":
         checker = NLIChecker()
+    elif args.checker_name == "alignscore":
+        checker = AlignScoreChecker()
     else:
         raise NotImplementedError
     
