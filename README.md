@@ -75,9 +75,9 @@ We provide a command-line interface to run RefChecker in a console:
 ```
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
-                     [--extractor_name {gpt4,claude2}]
+                     [--extractor_name {gpt4,claude2,mixtral}]
                      [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
-                     [--checker_name {gpt4,claude2,nli}]
+                     [--checker_name {gpt4,claude2,nli,alignscore}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
                      [--openai_key OPENAI_KEY]
@@ -101,11 +101,11 @@ options:
               Output path to the result json file.
   --cache_dir CACHE_DIR
               Path to the cache directory. Default: ./.cache.
-  --extractor_name {gpt4,claude2}
+  --extractor_name {gpt4,claude2,mixtral}
               Model used for extracting triplets. Default: claude2.
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
-  --checker_name {gpt4,claude2,nli}
+  --checker_name {gpt4,claude2,nli,alignscore}
               Model used for checking whether the triplets are factual. Default: claude2.
   --retriever_name {google}
               Model used for retrieving reference (currently only google is supported).
@@ -139,7 +139,7 @@ To extract claim triplets from LLM-generated responses, do:
 refchecker-cli extract \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2}
+  --extractor_name {gpt4,claude2,mixtral}
 ```
 
 The input json file contains a list of
@@ -158,7 +158,7 @@ To check hallucinations at triplet level, do:
 refchecker-cli check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --checker_name {gpt4,claude2,nli} \
+  --checker_name {gpt4,claude2,nli,alignscore} \
   --aggregator_name {strict,soft,major}
 ```
 
@@ -202,8 +202,8 @@ Finally, you can use the whole extraction and checking pipeline by:
 refchecker-cli extract-check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2} \
-  --checker_name {gpt4,claude2,nli} \
+  --extractor_name {gpt4,claude2,mixtral} \
+  --checker_name {gpt4,claude2,nli,alignscore} \
   --aggregator_name {strict,soft,major} \
   <other optional flags>
 ```
