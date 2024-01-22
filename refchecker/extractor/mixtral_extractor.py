@@ -6,10 +6,10 @@ from typing import List, Tuple
 
 one_digit_tensor = torch.ones((1, 1), dtype=torch.long)
 
-MIXTRAL_KG_EXTRACTION_PROMPT_Q = """Given a question and a candidate answer to the question, please extract a KG from the candidate answer condition on the question and represent the KG with triples formatted with ("head", "relation", "tail"), each triplet in a line.
+MIXTRAL_KG_EXTRACTION_PROMPT_Q = """Given a question and a candidate answer to the question, please extract a KG from the candidate answer condition on the question and represent the KG with triples formatted with ("subject", "predicate", "object"), each triplet in a line.
 Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
 
-Here are some in-context examples of extraction:
+Here are some in-context examples:
 
 ### Question:
 Given these paragraphs about the Tesla bot, what is its alias?
@@ -22,9 +22,10 @@ Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It
 ("Optimus", "under development by", "Tesla, Inc.")
 ("Optimus", "also known as", "Tesla Bot")
 ("Tesla, Inc.", "announced", "Optimus")
-("Announcement of Optimus", "occured at", "Artificial Intelligence (AI) Day event")
+("Announcement of Optimus", "occurred at", "Artificial Intelligence (AI) Day event")
 ("Artificial Intelligence (AI) Day event", "held on", "August 19, 2021")
 ("Artificial Intelligence (AI) Day event", "organized by", "Tesla, Inc.")
+
 
 ### Question:
 here is some text about Andre Weiss, how many years was Andre at University of Dijon in Paris?
@@ -34,6 +35,7 @@ here is some text about Andre Weiss, how many years was Andre at University of D
 
 ### KG:
 ("Andre Weiss at University of Dijon in Paris", "duration", "11 years")
+
 
 Now generate the KG for the following candidate answer based on the provided question:
 
@@ -46,9 +48,9 @@ Now generate the KG for the following candidate answer based on the provided que
 ### KG:
 """
 
-MIXTRAL_KG_EXTRACTION_PROMPT = """Given an input text, please extract a KG from the text and represent the KG with triples formatted with ("head", "relation", "tail"), each triplet in a line. Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
+MIXTRAL_KG_EXTRACTION_PROMPT = """Given an input text, please extract a KG from the text and represent the KG with triples formatted with ("subject", "predicate", "object"), each triplet in a line. Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
 
-Here are some in-context examples of extraction:
+Here are some in-context examples:
 
 ### Input:
 Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial Intelligence (AI) Day event on August 19, 2021.
@@ -58,7 +60,7 @@ Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It
 ("Optimus", "under development by", "Tesla, Inc.")
 ("Optimus", "also known as", "Tesla Bot")
 ("Tesla, Inc.", "announced", "Optimus")
-("Announcement of Optimus", "occured at", "Artificial Intelligence (AI) Day event")
+("Announcement of Optimus", "occurred at", "Artificial Intelligence (AI) Day event")
 ("Artificial Intelligence (AI) Day event", "held on", "August 19, 2021")
 ("Artificial Intelligence (AI) Day event", "organized by", "Tesla, Inc.")
 
