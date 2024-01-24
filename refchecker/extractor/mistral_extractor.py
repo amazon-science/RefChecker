@@ -5,7 +5,7 @@ from ..utils import get_response_from_mistral
 from typing import Optional, Literal
 
 MISTRAL_KG_EXTRACTION_PROMPT_Q = """Given a question and a candidate answer to the question, please extract a KG from the candidate answer condition on the question and represent the KG with triples formatted with ("head", "relation", "tail"), each triplet in a line.
-Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
+Please note that this is an extraction task, so do not care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
 
 Here are some in-context examples of extraction:
 
@@ -44,7 +44,7 @@ Now generate the KG for the following candidate answer based on the provided que
 ### KG:
 """
 
-MISTRAL_KG_EXTRACTION_PROMPT = """Given an input text, please extract a KG from the text and represent the KG with triples formatted with ("head", "relation", "tail"), each triplet in a line. Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
+MISTRAL_KG_EXTRACTION_PROMPT = """Given an input text, please extract a KG from the text and represent the KG with triples formatted with ("head", "relation", "tail"), each triplet in a line. Please note that this is an extraction task, so do not care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
 
 Here are some in-context examples of extraction:
 

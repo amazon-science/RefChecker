@@ -218,7 +218,7 @@ def get_response_from_mistral(
             model_path = (
                 model_path if model_path else "mistralai/Mistral-7B-Instruct-v0.2"
             )
-            tp_size = use_gpu_num if use_gpu_num else 2
+            tp_size = use_gpu_num if use_gpu_num else 1
 
         # model setup
         llm = LLM(
