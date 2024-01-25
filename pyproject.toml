@@ -26,6 +26,10 @@ anthropic = "^0.7.4"
 datasets = "^2.15.0"
 plotly = "^5.18.0"
 vllm = "^0.2.6"
+nltk = "^3.8.1"
+pytorch_lightning = "^1.8"  # for alignscore
+scikit-learn = "^1.3.2"
+scikit-learn-intelex = "^2024.1.0"
 
 [tool.poetry.scripts]
 refchecker-cli = "refchecker.cli:main"

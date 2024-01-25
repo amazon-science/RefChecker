@@ -28,11 +28,10 @@ class AlignScoreChecker(CheckerBase):
         if not os.path.exists(ckpt_path):
             url = "https://huggingface.co/yzha/AlignScore/resolve/main/AlignScore-large.ckpt"
             command=["wget", "-O", ckpt_path, url]
-        try:
-            download_state=subprocess.call(command)
-        except Exception as e:
-            print(e)
-        return download_state
+            try:
+                subprocess.call(command)
+            except Exception as e:
+                print(e)
 
     @torch.no_grad()
     def _check(
