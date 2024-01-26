@@ -23,7 +23,6 @@ Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It
 ("Artificial Intelligence (AI) Day event", "held on", "August 19, 2021")
 ("Artificial Intelligence (AI) Day event", "organized by", "Tesla, Inc.")
 
-
 ### Question:
 here is some text about Andre Weiss, how many years was Andre at University of Dijon in Paris?
 

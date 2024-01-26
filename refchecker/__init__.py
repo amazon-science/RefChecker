@@ -1,5 +1,15 @@
-from .checker import Claude2Checker, GPT4Checker, NLIChecker
-from .extractor import Claude2Extractor, GPT4Extractor
+from .checker import (
+    Claude2Checker, 
+    GPT4Checker, 
+    NLIChecker, 
+    AlignScoreChecker,
+    RepCChecker
+)
+from .extractor import (
+    Claude2Extractor, 
+    GPT4Extractor, 
+    MixtralExtractor
+)
 
 
 class RefChecker:

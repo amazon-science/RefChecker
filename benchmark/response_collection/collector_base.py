@@ -92,6 +92,7 @@ class ResponseCollectorBase:
                 prompt_truncated = self.tokenizer_decode(prompt_encoded)
                 return prompt_truncated
             return prompt
+    
     def tokenizer_encode(self, prompt):
         raise NotImplementedError
 
