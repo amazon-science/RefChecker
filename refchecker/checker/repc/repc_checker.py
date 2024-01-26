@@ -85,7 +85,7 @@ class RepCChecker(CheckerBase):
             input_ids = inputs["input_ids"].to(self.device)
             res = self.model(input_ids, output_hidden_states=True, use_cache=False)
             hidden_states = res["hidden_states"][1:][self.selected_layer].cpu()
-            hidden_states = hidden_states[self.selected_token, :]
+            hidden_states = hidden_states[:, self.selected_token, :]
             pred = self.classifier.predict(hidden_states)[0]
             preds.append(pred)
         ret = [LABELS[p] for p in preds]
