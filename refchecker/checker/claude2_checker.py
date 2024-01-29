@@ -1,6 +1,5 @@
 from typing import List
 
-
 from .checker_base import CheckerBase
 from ..utils import get_claude2_response
 

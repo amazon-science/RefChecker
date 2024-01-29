@@ -9,8 +9,8 @@ GPT4_CHECKING_PROMPT_Q = \
 The reference is a list of passages, and the claim is represented as a triplet formatted with ("subject", "predicate", "object").
 
 If the claim is supported by ANY passage in the reference, answer 'Entailment'. 
-If the claim is contradicted with the reference, answer 'Contradiction'.
-If the reference is not relevant to the claim or DOES NOT contain information to verify the claim, answer 'Neutral'. 
+If NO passage in the reference entail the claim, and the claim is contradicted with some passage in the reference, answer 'Contradiction'.
+If NO passage entail or contradict with claim, or DOES NOT contain information to verify the claim, answer 'Neutral'. 
 
 Please DO NOT use your own knowledge for the judgement, just compare the reference and the claim to get the answer.
 
@@ -23,7 +23,7 @@ Please DO NOT use your own knowledge for the judgement, just compare the referen
 ### Claim:
 {claim}
 
-Your answer should be only a single word in ['Entailment', 'Neutral', 'Contradiction']
+Your answer should always be only a single word in ['Entailment', 'Neutral', 'Contradiction']. DO NOT add explanations or you own reasoning to the output.
 """
 
 GPT4_CHECKING_PROMPT = \
@@ -31,8 +31,8 @@ GPT4_CHECKING_PROMPT = \
 The reference is a list of passages, and the claim is represented as a triplet formatted with ("subject", "predicate", "object").
 
 If the claim is supported by ANY passage in the reference, answer 'Entailment'. 
-If the claim is contradicted with the reference, answer 'Contradiction'.
-If the reference is not relevant to the claim or DOES NOT contain information to verify the claim, answer 'Neutral'. 
+If NO passage in the reference entail the claim, and the claim is contradicted with some passage in the reference, answer 'Contradiction'.
+If NO passage entail or contradict with claim, or DOES NOT contain information to verify the claim, answer 'Neutral'. 
 
 Please DO NOT use your own knowledge for the judgement, just compare the reference and the claim to get the answer.
 
@@ -42,7 +42,7 @@ Please DO NOT use your own knowledge for the judgement, just compare the referen
 ### Claim:
 {claim}
 
-Your answer should be only a single word in ['Entailment', 'Neutral', 'Contradiction']
+Your answer should always be only a single word in ['Entailment', 'Neutral', 'Contradiction']. DO NOT add explanations or you own reasoning to the output.
 """
 
 
