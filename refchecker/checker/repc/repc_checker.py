@@ -28,9 +28,9 @@ class RepCChecker(CheckerBase):
         self,
         model='teknium/OpenHermes-2.5-Mistral-7B',
         classifier='svm',
-        classifier_path='svm_n300_l32.pkl',
+        classifier_path='svm_anli_n1000_l15',
         prompt_style='chatml',
-        selected_layer=-1,
+        selected_layer=15,
         selected_token=-1,
         device=0
     ):
@@ -53,7 +53,7 @@ class RepCChecker(CheckerBase):
 
     def _download_classifier(self, classifier_path):
         if not os.path.exists(classifier_path):
-            url = "https://huggingface.co/zthang/repe/resolve/main/svm_n300_l32.pkl"
+            url = "https://huggingface.co/zthang/repe/resolve/main/svm_anli_n1000_l15"
             command=["wget", "-O", classifier_path, url]
             try:
                 download_state=subprocess.call(command)
