@@ -8,7 +8,8 @@ from .checker import (
 from .extractor import (
     Claude2Extractor, 
     GPT4Extractor, 
-    MixtralExtractor
+    MixtralExtractor,
+    MistralExtractor
 )
 
 

@@ -5,7 +5,7 @@ from tqdm import tqdm
 from refchecker import (
     GPT4Extractor, 
     Claude2Extractor, 
-    MixtralExtractor,
+    MistralExtractor,
     GPT4Checker, 
     Claude2Checker, 
     NLIChecker,
@@ -35,8 +35,8 @@ def _get_extractor(extractor_model):
         claim_extractor = GPT4Extractor()
     elif extractor_model == 'claude2':
         claim_extractor = Claude2Extractor()
-    elif extractor_model == 'mixtral':
-        claim_extractor = MixtralExtractor()
+    elif extractor_model == 'mistral-sft':
+        claim_extractor = MistralExtractor()
     return claim_extractor
 
 
@@ -51,12 +51,10 @@ def autocheck(extractor_model, checker_model):
         ["nq", "msmarco", "dolly"]
     ):
         print(f'Evaluating {args.model} on {setting} setting with {extractor_model} extractor and {checker_model} checker')
-        # response_file = f'data/{setting}/{setting}_{args.model}_answers.json'
-        response_file = f'compare_other_approach/{ds}/{ds}_{args.model}_answers.json'
+        response_file = f'data/{setting}/{setting}_{args.model}_answers.json'
         response_data = json.load(open(response_file))
         # in case the order of response data is not aligned with ours
-        # id_to_data = {d['id']: d for d in json.load(open(f'data/{setting}/{ds}.json'))}
-        id_to_data = {d['id']: d for d in json.load(open(f'benchmark/data/{setting}/{ds}.json'))}
+        id_to_data = {d['id']: d for d in json.load(open(f'data/{setting}/{ds}.json'))}
         
         cnt = 0
         for r in tqdm(response_data):
@@ -90,20 +88,15 @@ def autocheck(extractor_model, checker_model):
 
                 for t in r[kg_key]:
                     if label_key not in t:
-                        if checker_model == 'nli' and ds != 'nq':
+                        if checker_model in ['nli', 'alignscore', 'repc'] and ds != 'nq':
                             max_reference_segment_length = 200
                         else:
                             max_reference_segment_length = 0
                             
-                        if checker_model == 'nli':
-                            claim_str = ' '.join(t['triplet'])
-                        else:
-                            claim_str = str(tuple(t['triplet']))
-
                         if checker is None:
                             checker = _get_checker(checker_model)
                         label = checker.check(
-                            claim=claim_str,
+                            claim=t['triplet'],
                             reference=reference,
                             question=d['question'],
                             response=r['response'],
@@ -135,7 +128,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--extractor', 
         type=str, 
-        choices=['gpt4', 'claude2', 'mixtral']
+        choices=['gpt4', 'claude2', 'mistral-sft']
     )
     parser.add_argument(
         '--checker', 
