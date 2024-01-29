@@ -3,8 +3,12 @@ import json
 from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
-from .extractor import Claude2Extractor, GPT4Extractor, MixtralExtractor
-from .checker import Claude2Checker, GPT4Checker, NLIChecker, AlignScoreChecker, RepCChecker
+from .extractor import (
+    Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor
+)
+from .checker import (
+    Claude2Checker, GPT4Checker, NLIChecker, AlignScoreChecker, RepCChecker
+)
 from .retriever import GoogleRetriever
 from .aggregator import strict_agg, soft_agg, major_agg
 
@@ -31,7 +35,7 @@ def get_args():
     )
     parser.add_argument(
         '--extractor_name', type=str, default="claude2",
-        choices=["gpt4", "claude2", "mixtral"],
+        choices=["gpt4", "claude2", "mistral", "mixtral"],
         help="Model used for extracting triplets. Default: claude2."
     )
     parser.add_argument(
@@ -126,6 +130,8 @@ def extract(args):
         extractor = GPT4Extractor()
     elif args.extractor_name == "mixtral":
         extractor = MixtralExtractor()
+    elif args.extractor_name == "mistral":
+        extractor = MistralExtractor()
     else:
         raise NotImplementedError
 
