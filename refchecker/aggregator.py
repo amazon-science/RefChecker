@@ -28,12 +28,13 @@ def strict_agg(results):
     """Aggregate results by zero-tolerance on negative labels."""
     if not results:
         return "Abstain"
+    ret = "Entailment"
     for result in results:
         if result == "Contradiction":
             return "Contradiction"
         if result == "Neutral":
-            return "Neutral"
-    return "Entailment"
+            ret = "Neutral"
+    return ret
 
 
 def major_agg(results):
