@@ -1,5 +1,7 @@
 import os
 import subprocess
+import tarfile
+from huggingface_hub import hf_hub_download
 from typing import Any, List
 
 from transformers import (
@@ -22,43 +24,86 @@ prompt_template_dict = {
             "assistant_end": "<|im_end|>\n"
         }
 }
-
 class RepCChecker(CheckerBase):
     def __init__(
         self,
         model='teknium/OpenHermes-2.5-Mistral-7B',
-        classifier='svm',
-        classifier_path='svm_anli_n1000_l15',
+        classifier='nn_ensemble',
+        classifier_dir='saved_models/repc',
         prompt_style='chatml',
-        selected_layer=15,
         selected_token=-1,
-        device=0
+        device=0,
+        **kwargs
     ):
         super().__init__()
         self.model = AutoModelForCausalLM.from_pretrained(
             model,
             device_map=device,
             torch_dtype=torch.float16,
+            cache_dir="/home/ubuntu/huggingface_models",
+            trust_remote_code=True,
+            use_auth_token="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",
+            use_safetensors=False
         )
         self.model.eval()
         self.tokenizer = AutoTokenizer.from_pretrained(model)
         self.prompt_style = prompt_style
-        self.selected_layer = selected_layer
         self.selected_token = selected_token
         self.device = device
-        self._download_classifier(classifier_path)
-        if classifier == "svm":
+        self.classifier_str = classifier
+        self.classifier_dir = classifier_dir
+        if classifier == "nn_ensemble":
+            self.n_train = 2000
+            expert_paths = [f"{self.classifier_dir}/upload/nn_anli_n{self.n_train}_l{i}" for i in range(self.model.config.num_hidden_layers)]
+            if not os.path.exists(f"{self.classifier_dir}/upload/nn_anli_n{self.n_train}_l31"):
+                hf_hub_download(repo_id="zthang/repe", filename="nn.tar.gz", local_dir=self.classifier_dir)
+                tar = tarfile.open(os.path.join(self.classifier_dir, "nn.tar.gz"), "r:gz")
+                tar.extractall(path=self.classifier_dir)
+                tar.close()
+            self.classifier = EnsembleClassifier(input_size=(self.model.config.num_hidden_layers) * 3,
+                                       output_size=3,
+                                       num_experts=self.model.config.num_hidden_layers,
+                                       expert_paths=expert_paths,
+                                       expert_type="nn",
+                                       classifier_type="mlp")
+            self.classifier_path = os.path.join(self.classifier_dir, "ensemble_mlp_nn_2000_anli_n2000_l0")
+            if not os.path.exists(self.classifier_path):
+                hf_hub_download(repo_id="zthang/repe", filename="ensemble_mlp_nn_2000_anli_n2000_l0", local_dir=self.classifier_dir)
+        elif classifier == "nn":
+            self.selected_layer = 17
+            self.n_train = 2000
+            self.input_size = 4096
+            self.hidden_size = 4096 // 4
+            self.classifier = PyTorchClassifier(input_size=self.input_size, hidden_size=self.hidden_size)
+            self.classifier_path = f"{self.classifier_dir}/nn/nn_anli_n{self.n_train}_l{self.selected_layer}"
+            if not os.path.exists(self.classifier_path):
+                hf_hub_download(repo_id="zthang/repe", filename=f"nn/nn_anli_n{self.n_train}_l{self.selected_layer}", local_dir=self.classifier_dir)
+        elif classifier == "svm_ensemble":
+            self.n_train = 1000
+            expert_paths = [f"{self.classifier_dir}/svm/svm_anli_n{self.n_train}_l{i}" for i in range(self.model.config.num_hidden_layers)]
+            if not os.path.exists(f"{self.classifier_dir}/svm/svm_anli_n{self.n_train}_l31"):
+                hf_hub_download(repo_id="zthang/repe", filename="svm.tar.gz", local_dir=self.classifier_dir)
+                tar = tarfile.open(os.path.join(self.classifier_dir, "svm.tar.gz"), "r:gz")
+                tar.extractall(path=self.classifier_dir)
+                tar.close()
+            self.classifier = EnsembleClassifier(input_size=(self.model.config.num_hidden_layers) * 3,
+                                       output_size=3,
+                                       num_experts=self.model.config.num_hidden_layers,
+                                       expert_paths=expert_paths,
+                                       expert_type="svm",
+                                       classifier_type="mlp")
+            self.classifier_path = os.path.join(self.classifier_dir, "ensemble_mlp_svm_1000_anli_n1000_l0")
+            if not os.path.exists(self.classifier_path):
+                hf_hub_download(repo_id="zthang/repe", filename="ensemble_mlp_svm_1000_anli_n1000_l0", local_dir=self.classifier_dir)
+        elif classifier == "svm":
+            self.selected_layer = 15
+            self.n_train = 1000
             self.classifier = SVM(kernel="rbf")
-            self.classifier.load(classifier_path)
-
-    def _download_classifier(self, classifier_path):
-        if not os.path.exists(classifier_path):
-            url = "https://huggingface.co/zthang/repe/resolve/main/svm_anli_n1000_l15"
-            command=["wget", "-O", classifier_path, url]
-            try:
-                download_state=subprocess.call(command)
-            except Exception as e:
-                print(e)
+            self.classifier_path = f"{self.classifier_dir}/svm/svm_anli_n{self.n_train}_l{self.selected_layer}"
+            if not os.path.exists(self.classifier_path):
+                hf_hub_download(repo_id="zthang/repe", filename=f"svm/svm_anli_n{self.n_train}_l{self.selected_layer}", local_dir=self.classifier_dir)
+        else:
+            raise ValueError("classifier must in [svm, nn, svm_ensemble, nn_ensemble.")
 
     def get_prompt(self, prompt_style, question, premise, hypothesis):
         return f"{prompt_template_dict[prompt_style]['system_begin']}Consider the NLI label between the user given premise and hypothesis.{prompt_template_dict[prompt_style]['system_end']}" \
@@ -84,8 +129,11 @@ class RepCChecker(CheckerBase):
             inputs = self.tokenizer(prompt, return_tensors="pt")
             input_ids = inputs["input_ids"].to(self.device)
             res = self.model(input_ids, output_hidden_states=True, use_cache=False)
-            hidden_states = res["hidden_states"][1:][self.selected_layer].cpu()
-            hidden_states = hidden_states[:, self.selected_token, :]
+            if self.classifier_str in ["svm", "nn"]:
+                hidden_states = res["hidden_states"][1:][self.selected_layer].cpu().numpy()
+                hidden_states = hidden_states[:, self.selected_token, :]
+            else:
+                hidden_states = torch.cat(res["hidden_states"][1:]).transpose(0, 1)[-1:].cpu().numpy()
             pred = self.classifier.predict(hidden_states)[0]
             preds.append(pred)
         ret = [LABELS[p] for p in preds]

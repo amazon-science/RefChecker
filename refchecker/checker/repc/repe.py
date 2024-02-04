@@ -3,7 +3,7 @@ import argparse
 from sklearnex import patch_sklearn, unpatch_sklearn
 # zth: sklearn accelerate package, without which svm will execute very slowly
 patch_sklearn()
-# os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 # os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -13,9 +13,9 @@ from tqdm import tqdm
 import json
 import random
 import itertools
-from evaluator import Evaluator
 from collections import defaultdict
 import spacy
+from peft import PeftModel
 from general import prompt_template_dict
 from ml_models import *
 nlp = spacy.load("en_core_web_sm")
@@ -65,7 +65,11 @@ def sentencise(text):
     """Split text into sentences"""
     return [sent.text for sent in nlp(text).sents]
 
-    
+def concat_id(model_name, data_id, claim_id):
+    return f"{model_name}+{data_id}+{claim_id}"
+
+def split_id(s):
+    return s.split("+")
 class LLM:
     # zth: IMPORTANT! you should replace the `cache_dir` to your path
     def __init__(self, model_path, device="auto"):
@@ -79,11 +83,18 @@ class LLM:
             use_auth_token="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",
             use_safetensors=False
         )
+        if args.lora_path:
+            self.model = PeftModel.from_pretrained(
+                self.model,
+                args.lora_path,
+                torch_dtype=torch.float16,
+            )
     # zth: get the logits of the last token for classification when under zero-shot or few-shot baseline
     def get_logits(self, prompt):
         input_ids = self.tokenizer(prompt, return_tensors="pt")["input_ids"].to(0)
         res = self.model(input_ids, output_hidden_states=True, use_cache=False)
-        return res.logits[0][-1].detach().cpu()
+        logits = self.model.lm_head(torch.stack(res.hidden_states[1:])).detach().cpu()
+        return logits[:, 0, -1, :]
 
     # zth: Given the data [[(question, sub_premise_0, hypothesis), (question, sub_premise_1, hypothesis)], [...]],
     # fill it into the template to get model input, then get the last token embedding in each transformer layer
@@ -208,12 +219,14 @@ class RepE:
                 references = json.load(open(f"data/{dataset}/{dataset}.json"))
                 for idx, data in tqdm(enumerate(chatgpt_answers)):
                     # zth: aggregate the human annotated triplet-level label into response-level label
+                    if len(data['claude2_response_kg_anno']) == 0:
+                        continue
                     label = aggregate_labels(data['claude2_response_kg_anno'])
                     res = []
                     for ctx in references[idx]['context']:
-                        # zth: split long context into short ones, so each sample will be a list of sub-triplets
+                        # zth: split long context into short ones, so each sample will be a list of quartet consists of (question, sub_context, response, id)
                         sub_context = split_context(ctx, repe.llm.tokenizer)
-                        res += ([[references[idx]['question'], sub, data['response']] for sub in sub_context])
+                        res += ([[references[idx]['question'], sub, data['response'], concat_id(kwargs['model'], data['id'], 0)] for sub in sub_context])
                     if label == "Entailment":
                         entailment.append(res)
                     elif label == "Neutral":
@@ -232,7 +245,7 @@ class RepE:
                             # zth: 为了和response level的代码返回值一致，这里目前的写法其实效率会比较低，首先要根据三元组的标签分发到
                             # entailment,neutral,contradict三个list里，然后inference的时候为了找到属于同一个response的所有三元组
                             # 这里会保存一个由id和model name组成的标识符。其实合理的做法应该是不需要三个list，而是一个label list即可。
-                            res += [[references[idx]['question'], sub, " ".join(data['claude2_response_kg'][i]), data['id']+kwargs['model']] for sub in sub_context]
+                            res += [[references[idx]['question'], sub, " ".join(data['claude2_response_kg'][i]), concat_id(kwargs['model'], data['id'], i)] for sub in sub_context]
                         if data['claude2_response_kg_anno'][i] == 'Entailment':
                             entailment.append(res)
                         elif data['claude2_response_kg_anno'][i] == 'Neutral':
@@ -240,22 +253,21 @@ class RepE:
                         elif data['claude2_response_kg_anno'][i] == 'Contradiction':
                             contradict.append(res)
             elif kwargs["level"] in ["sentence", "fact"]:
-                meta_data = json.load(open(f"data/{dataset}/{dataset}_metadata.json"))
-                reference_data = json.load(open(f"data/{dataset}/{dataset}.json"))
-                atomic_fact_data = json.load(open(f"data/{dataset}/atomic_facts/{dataset}_{kwargs['model']}_facts.json"))
-                references = [{**meta_data[i], **reference_data[i], **atomic_fact_data[i], **chatgpt_answers[i]} for i in range(len(meta_data)) if meta_data[i]["id"] == reference_data[i]["id"] == atomic_fact_data[i]["id"] == chatgpt_answers[i]["id"]]
-                assert len(references) == len(meta_data)
-                for idx, data in tqdm(enumerate(references)):
-                    label = aggregate_labels(data['claude2_response_kg_anno'])
+                data_all = json.load(open(f"outputs/{dataset}_test.json"))
+                for idx, data in tqdm(enumerate(data_all)):
+                    if len(data['answers'][kwargs['model']]["anno"]) == 0:
+                        continue
+                    label = aggregate_labels(data['answers'][kwargs['model']]["anno"])
                     if kwargs["level"] == "sentence":
-                        atomic_facts = [d[0] for d in data['atomic_facts']]
+                        atomic_facts = sentencise(data['answers'][kwargs['model']]["response"])
                     elif kwargs["level"] == "fact":
-                        atomic_facts = [f for d in data['atomic_facts'] for f in d[1]]
+                        atomic_facts = [f for d in data['answers'][kwargs['model']]['atomic_facts'] for f in d[1]]
                     for i in range(len(atomic_facts)):
                         res = []
-                        for ctx in references[idx]["context"]:
+                        for ctx in data_all[idx]["context"]:
                             sub_context = split_context(ctx, repe.llm.tokenizer)
-                            res += [[references[idx]['question'], sub, atomic_facts[i], data['id']+kwargs['model']] for sub in sub_context]
+                            res += [[data_all[idx]['question'], sub, atomic_facts[i], concat_id(kwargs['model'], data['id'], i)] for sub in sub_context]
+                        # zth: the label here is NOT the label of the corresponding sentence/fact
                         if label == 'Entailment':
                             entailment.append(res)
                         elif label == 'Neutral':
@@ -341,7 +353,7 @@ class RepE:
     def get_train_test_data(self, dataset, level, train_data, use_cache=False):
         cached_test_data = f"data/cached_{dataset}_{level}_chunked.pkl"
         if not os.path.exists(cached_test_data) or not use_cache:
-            models = ["alpaca_7B", "chatgpt", "davinci001", "falcon_40B_instruct", "claude2"]
+            models = args.response_models
             data_all = [self.get_stimulus(dataset, model=model, level=level) for model in models]
             data_test = {
                 category: [item for data in data_all for item in data[category]]
@@ -406,143 +418,27 @@ class RepE:
         test_set = data_test
         return training_set, test_set
 
-    def bschecker_pipeline(self, n_train=100, dataset="nq", level="response", train_data="nli_sliver", classifier="svm", selected_token=1, use_cache=False):
-        num2label = {0: "Entailment", 1: "Neutral", 2: "Contradiction"}
-        label2num = {"Entailment": 0, "Neutral": 1, "Contradiction": 2}
-        training_set, test_set = self.get_train_test_data(dataset, level, train_data, use_cache)
-        cache_file = f"cached_embeddings_nli/embeddings_{dataset}_{level}_{args.model_name.split('/')[-1]}_all.pkl"
-        if not os.path.exists(cache_file) or not use_cache:
-            train_template = self.get_template(f"bschecker_{level}" if train_data == "nli_sliver" else "nli")
-            # zth: nli_q template will fill {question}\n{premise} in the `Premise` field, which is the only difference
-            # from `nli` template since there is no question in ANLI. We only apply divide and conquer for test data.
-            test_template = self.get_template(f"bschecker_{level}" if train_data == "nli_sliver" else "nli_q")
-            embeddings_entailment = self.llm.get_last_token_embedding(data=training_set["entailment"], template=train_template, selected_token=selected_token)
-            embeddings_neutral = self.llm.get_last_token_embedding(data=training_set["neutral"], template=train_template, selected_token=selected_token)
-            embeddings_contradict = self.llm.get_last_token_embedding(data=training_set["contradict"], template=train_template, selected_token=selected_token)
-
-            embeddings_entailment_test, chunk_size_entailment = self.llm.get_last_token_embedding(data=test_set["entailment"], template=test_template, selected_token=selected_token)
-            embeddings_neutral_test, chunk_size_neutral = self.llm.get_last_token_embedding(data=test_set["neutral"], template=test_template, selected_token=selected_token)
-            embeddings_contradict_test, chunk_size_contradict = self.llm.get_last_token_embedding(data=test_set["contradict"], template=test_template, selected_token=selected_token)
-            if use_cache:
-                print(f"saving cached data to {cache_file}...")
-                pickle.dump([embeddings_entailment, embeddings_neutral, embeddings_contradict, embeddings_entailment_test, chunk_size_entailment, embeddings_neutral_test, chunk_size_neutral, embeddings_contradict_test, chunk_size_contradict], open(cache_file, "wb"))
-        else:
-            print(f"loading cached data from {cache_file}...")
-            # num_layer x num_example x dim
-            embeddings_entailment, embeddings_neutral, embeddings_contradict, embeddings_entailment_test, chunk_size_entailment, embeddings_neutral_test, chunk_size_neutral, embeddings_contradict_test, chunk_size_contradict = pickle.load(open(cache_file, "rb"))
-
-        # zth: merge the sub-prediction results
-        def process_predictions(embeddings, chunk_sizes, label_num, model):
-            predictions = []
-            pred_chunk = model.predict(embeddings.float().numpy())
-            pred_chunk = [num2label[p] for p in pred_chunk]
-            for i in range(1, len(chunk_sizes)):
-                pred = merge_ret(pred_chunk[chunk_sizes[i - 1]:chunk_sizes[i]])
-                predictions.append(label2num[pred])
-            labels = [label_num] * len(predictions)
-            return predictions, labels
-
-        def test(k=-1):
-            acc_layer = []
-            f1_e_layer = []
-            f1_n_layer = []
-            f1_c_layer = []
-            f1_m_layer = []
-            pred_layer = []
-
-            for i in range(self.llm.model.config.num_hidden_layers):
-                if classifier == "knn":
-                    model = KNN(k, dim=2)
-                elif classifier == "svm":
-                    model = SVM(kernel="rbf")
-                elif classifier == "nn":
-                    input_size = embeddings_entailment.size(-1)
-                    hidden_size = embeddings_entailment.size(-1)
-                    output_size = 3
-                    alpha = 0.001
-                    epochs = 300
-                    batch_size = 32
-                    lr = 0.001
-                    model = PyTorchClassifier(input_size, hidden_size, output_size, lr=lr, alpha=alpha, epochs=epochs, batch_size=batch_size, device=args.device)
-                elif classifier == "attn":
-                    hidden_size = embeddings_entailment.size(-1)
-                    output_size = 3
-                    alpha = 1e-5
-                    epochs = 10000
-                    batch_size = 128
-                    lr = 1e-5
-                    patience = 30
-                    model = AttentionClassifier(hidden_size, output_size, lr=lr, alpha=alpha, epochs=epochs, batch_size=batch_size, early_stop_patience=patience)
-
-                # zth: if using attention model, we need combine all the layer embeddings
-                if classifier != "attn":
-                    train_embedding_entailment = embeddings_entailment[i][:n_train]
-                    train_embedding_neutral = embeddings_neutral[i][:n_train]
-                    train_embedding_contradict = embeddings_contradict[i][:n_train]
-                    test_embedding_entailment = embeddings_entailment_test[i]
-                    test_embedding_neutral = embeddings_neutral_test[i]
-                    test_embedding_contradict = embeddings_contradict_test[i]
-                else:
-                    train_embedding_entailment = embeddings_entailment[:, :n_train, :].transpose(0, 1)
-                    train_embedding_neutral = embeddings_neutral[:, :n_train, :].transpose(0, 1)
-                    train_embedding_contradict = embeddings_contradict[:, :n_train, :].transpose(0, 1)
-                    test_embedding_entailment = embeddings_entailment_test.transpose(0, 1)
-                    test_embedding_neutral = embeddings_neutral_test.transpose(0, 1)
-                    test_embedding_contradict = embeddings_contradict_test.transpose(0, 1)
-
-                model.train(torch.concatenate((train_embedding_entailment, train_embedding_neutral, train_embedding_contradict), dim=0).float().numpy(), [0] * train_embedding_entailment.size(0) + [1] * train_embedding_neutral.size(0) + [2] * train_embedding_contradict.size(0))
-                predictions = []
-                labels = []
-                datasets = [
-                    (test_embedding_entailment, chunk_size_entailment, 0),
-                    (test_embedding_neutral, chunk_size_neutral, 1),
-                    (test_embedding_contradict, chunk_size_contradict, 2)
-                ]
-                for embeddings, chunk_sizes, label_num in datasets:
-                    pred, label = process_predictions(embeddings, chunk_sizes, label_num, model)
-                    predictions += pred
-                    labels += label
-
-                pred_layer.append([predictions, labels])
-
-                # zth: for the other 3 level, we need to aggregate the sub-labels into response level according to the
-                # identifier (data[-1][-1]) which is id+model_name
-                if level != "response":
-                    prediction_list = defaultdict(list)
-                    label_list = defaultdict(list)
-                    for idx, data in enumerate(test_set["entailment"] + test_set["neutral"] + test_set["contradict"]):
-                        prediction_list[data[-1][-1]].append(num2label[predictions[idx]])
-                        label_list[data[-1][-1]].append(num2label[labels[idx]])
-                    predictions = [label2num[aggregate_labels(prediction_list[key])] for key in prediction_list]
-                    labels = [label2num[aggregate_labels(label_list[key])] for key in prediction_list]
-
-                evaluator = Evaluator()
-                results = evaluator.evaluate(predictions, labels)
-                print(f"{i}-th layer:", results)
-                acc_layer.append(results["acc"])
-                f1_e_layer.append(results["macro_f1"][0])
-                f1_n_layer.append(results["macro_f1"][1])
-                f1_c_layer.append(results["macro_f1"][2])
-                f1_m_layer.append(results["macro_f1"]['macro'])
-                if classifier == "attn":
-                    break
-            pred_layer.append(test_set)
-            # pickle.dump(pred_layer, open(f"tmp/pred_layer_{k}.pkl", "wb"))
-
-        print(dataset)
-        if classifier != "knn":
-            test()
-        else:
-            for k in [1, 2, 5, 10]:
-                print(f"k {k}")
-                test(k=k)
+    def write_json(self, dataset, level, predictions, test_data, classifier, n_train):
+        data = json.load(open(f"outputs/{dataset}_test.json", "r"))
+        id2idx = {}
+        for idx, d in enumerate(data):
+            id2idx[d["id"]] = idx
+            for model in d["answers"]:
+                d["answers"][model][f"repc_{level[0]}level_{classifier}_n{n_train}"] = [-1 for _ in range(len(d["answers"][model][f"nlidc_{level[0]}level_ret"]))]
+        for idx, sample in enumerate(test_data):
+            for claim in sample:
+                model_name, data_id, claim_id = split_id(claim[-1])
+                data[id2idx[data_id]]["answers"][model_name][f"repc_{level[0]}level_{classifier}_n{n_train}"][int(claim_id)] = predictions[idx]
+        json.dump(data, open(f"outputs/{dataset}_test_{level}_{classifier}_n{n_train}.json", "w"))
 
     # zth: zero-shot baseline
-    def zero_shot_baseline(self, dataset, level):
+    def zero_shot_baseline(self, dataset, level, use_cache=False):
         num2label = {0: "Entailment", 1: "Neutral", 2: "Contradiction"}
         label2num = {"Entailment": 0, "Neutral": 1, "Contradiction": 2}
-        _, test_set = self.get_train_test_data(dataset, level, "anli")
-        predictions = []
+        _, test_set = self.get_train_test_data(dataset, level, "anli", use_cache=use_cache)
+        predictions_layer = []
+        for i in range(32):
+            predictions_layer.append([])
         labels = []
         first_idx = 0
         # zth: the first token id may be the start token, which should be skipped
@@ -559,32 +455,25 @@ class RepE:
                 for sub_sample in sample:
                     prompt = template(*sub_sample[:3])
                     logits = self.llm.get_logits(prompt)
-                    label_logits = torch.stack((logits[entailment_id], logits[neutral_id], logits[contradiction_id]))
-                    prediction = label_logits.argmax(dim=-1).tolist()
-                    sub_pred.append(num2label[prediction])
-                predictions.append(label2num[merge_ret(sub_pred)])
+                    label_logits = torch.stack((logits[:, entailment_id], logits[:, neutral_id], logits[:, contradiction_id]))
+                    prediction = label_logits.argmax(dim=0).tolist()
+                    sub_pred.append([num2label[p] for p in prediction])
+                for i in range(len(sub_pred[0])):
+                    predictions_layer[i].append(label2num[merge_ret([sub_pred[j][i] for j in range(len(sub_pred))])])
                 labels.append(label2num[key.capitalize() if key != "contradict" else "Contradiction"])
 
-        # zth: for the other 3 level, we need to aggregate the sub-labels into response level
-        if level != "response":
-            prediction_list = defaultdict(list)
-            label_list = defaultdict(list)
-            for idx, data in enumerate(test_set["entailment"] + test_set["neutral"] + test_set["contradict"]):
-                prediction_list[data[-1][-1]].append(num2label[predictions[idx]])
-                label_list[data[-1][-1]].append(num2label[labels[idx]])
-            predictions = [label2num[aggregate_labels(prediction_list[key])] for key in prediction_list]
-            labels = [label2num[aggregate_labels(label_list[key])] for key in prediction_list]
-
-        evaluator = Evaluator()
-        results = evaluator.evaluate(predictions, labels)
-        print(f"zero-shot results: {results}")
+        for i, predictions in enumerate(predictions_layer):
+            if i == len(predictions_layer) - 1:
+                self.write_json(dataset, level, [num2label[p] for p in predictions], test_set["entailment"] + test_set["neutral"] + test_set["contradict"], "zerosft4k" if args.lora_path else "zero", 0)
 
     # zth: few-shot baseline
-    def few_shot_baseline(self, dataset, level, num_examples=3):
+    def few_shot_baseline(self, dataset, level, num_examples=3, use_cache=False):
         num2label = {0: "Entailment", 1: "Neutral", 2: "Contradiction"}
         label2num = {"Entailment": 0, "Neutral": 1, "Contradiction": 2}
-        training_set, test_set = self.get_train_test_data(dataset, level, "anli")
-        predictions = []
+        training_set, test_set = self.get_train_test_data(dataset, level, "anli", use_cache=use_cache)
+        predictions_layer = []
+        for i in range(32):
+            predictions_layer.append([])
         labels = []
         few_shot_examples = []
         for key in training_set:
@@ -607,56 +496,13 @@ class RepE:
                     prompt = self.few_shot_template(args.model_name, *sub_sample[:3], few_shot_examples)
                     logits = self.llm.get_logits(prompt)
                     label_logits = torch.stack(
-                        (logits[entailment_id], logits[neutral_id], logits[contradiction_id]))
-                    prediction = label_logits.argmax(dim=-1).tolist()
-                    sub_pred.append(num2label[prediction])
-                predictions.append(label2num[merge_ret(sub_pred)])
+                        (logits[:, entailment_id], logits[:, neutral_id], logits[:, contradiction_id]))
+                    prediction = label_logits.argmax(dim=0).tolist()
+                    sub_pred.append([num2label[p] for p in prediction])
+                for i in range(len(sub_pred[0])):
+                    predictions_layer[i].append(label2num[merge_ret([sub_pred[j][i] for j in range(len(sub_pred))])])
                 labels.append(label2num[key.capitalize() if key != "contradict" else "Contradiction"])
 
-        # zth: for the other 3 level, we need to aggregate the sub-labels into response level
-        if level != "response":
-            prediction_list = defaultdict(list)
-            label_list = defaultdict(list)
-            for idx, data in enumerate(test_set["entailment"] + test_set["neutral"] + test_set["contradict"]):
-                prediction_list[data[-1][-1]].append(num2label[predictions[idx]])
-                label_list[data[-1][-1]].append(num2label[labels[idx]])
-            predictions = [label2num[aggregate_labels(prediction_list[key])] for key in prediction_list]
-            labels = [label2num[aggregate_labels(label_list[key])] for key in prediction_list]
-
-        evaluator = Evaluator()
-        results = evaluator.evaluate(predictions, labels)
-        print(f"few-shot results: {results}")
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model_name", type=str, default="name")
-    parser.add_argument("--classifier", type=str, default="svm")
-    parser.add_argument("--dataset", type=str, default="nq")
-    parser.add_argument("--level", type=str, default="triplet")
-    parser.add_argument("--selected_token", type=int, default=1)
-    parser.add_argument("--training_data", type=str, default="anli")
-    parser.add_argument("--n_train", type=int, default=100)
-    parser.add_argument("--baseline", type=str, default="")
-    parser.add_argument("--n_shot", type=int, default=3)
-    parser.add_argument("--device", type=str, default="auto")
-
-    args = parser.parse_args()
-    # zth: some recommended setting
-    use_cache = True
-    args.model_name = "teknium/OpenHermes-2.5-Mistral-7B"
-    args.training_data = "anli"
-    args.dataset = "nq"
-    args.level = "triplet"
-    args.classifier = "svm"
-    args.selected_token = 1
-    args.n_train = 500
-    print(args)
-
-    repe = RepE(args.model_name, device=args.device)
-
-    if args.baseline == "zero":
-        repe.zero_shot_baseline(dataset=args.dataset, level=args.level)
-    elif args.baseline == "few":
-        repe.few_shot_baseline(dataset=args.dataset, level=args.level, num_examples=args.n_shot)
-    else:
-        repe.bschecker_pipeline(dataset=args.dataset, n_train=args.n_train, level=args.level, train_data=args.training_data, classifier=args.classifier, selected_token=args.selected_token, use_cache=use_cache)
-
+        for i, predictions in enumerate(predictions_layer):
+            if i == len(predictions_layer) - 1:
+                self.write_json(dataset, level, [num2label[p] for p in predictions], test_set["entailment"] + test_set["neutral"] + test_set["contradict"], "few", num_examples)

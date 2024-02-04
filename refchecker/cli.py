@@ -49,6 +49,12 @@ def get_args():
         "Default: claude2."
     )
     parser.add_argument(
+        "--repc_classifier_name", type=str, default="nn_ensemble",
+        choices=["svm", "svm_ensemble", "nn", "nn_ensemble"],
+        help="Classifier Model used for RepC checker, only valid when RepC checker is used"
+        "Default: nn_ensemble, neural network classifier with layer ensemble."
+    )
+    parser.add_argument(
         "--retriever_name", type=str, default="google", choices=["google"],
         help="Model used for retrieving reference (currently only google is"
         " supported). Default: google."
@@ -164,7 +170,7 @@ def check(args):
     elif args.checker_name == "alignscore":
         checker = AlignScoreChecker()
     elif args.checker_name == "repc":
-        checker = RepCChecker()
+        checker = RepCChecker(classifier=args.repc_classifier_name)
     else:
         raise NotImplementedError
     
