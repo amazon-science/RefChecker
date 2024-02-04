@@ -215,7 +215,7 @@ class PyTorchClassifier:
     def load(self, filename):
         checkpoint = torch.load(filename)
         self.model.load_state_dict(checkpoint['model_state_dict'])
-        self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+        # self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         self.epochs = checkpoint['epoch']
         self.criterion = checkpoint['loss']
         self.patience = checkpoint['patience']

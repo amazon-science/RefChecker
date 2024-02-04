@@ -38,7 +38,7 @@ class RepCChecker(CheckerBase):
         super().__init__()
         self.model = AutoModelForCausalLM.from_pretrained(
             model,
-            device_map=device,
+            device_map="cuda:1",
             torch_dtype=torch.float16,
             cache_dir="/home/ubuntu/huggingface_models",
             trust_remote_code=True,
@@ -54,11 +54,11 @@ class RepCChecker(CheckerBase):
         self.classifier_dir = classifier_dir
         if classifier == "nn_ensemble":
             self.n_train = 2000
-            expert_paths = [f"{self.classifier_dir}/upload/nn_anli_n{self.n_train}_l{i}" for i in range(self.model.config.num_hidden_layers)]
-            if not os.path.exists(f"{self.classifier_dir}/upload/nn_anli_n{self.n_train}_l31"):
+            expert_paths = [f"{self.classifier_dir}/nn/upload/nn_anli_n{self.n_train}_l{i}" for i in range(self.model.config.num_hidden_layers)]
+            if not os.path.exists(f"{self.classifier_dir}/nn/upload/nn_anli_n{self.n_train}_l31"):
                 hf_hub_download(repo_id="zthang/repe", filename="nn.tar.gz", local_dir=self.classifier_dir)
                 tar = tarfile.open(os.path.join(self.classifier_dir, "nn.tar.gz"), "r:gz")
-                tar.extractall(path=self.classifier_dir)
+                tar.extractall(path=os.path.join(self.classifier_dir, "nn"))
                 tar.close()
             self.classifier = EnsembleClassifier(input_size=(self.model.config.num_hidden_layers) * 3,
                                        output_size=3,
@@ -80,11 +80,11 @@ class RepCChecker(CheckerBase):
                 hf_hub_download(repo_id="zthang/repe", filename=f"nn/nn_anli_n{self.n_train}_l{self.selected_layer}", local_dir=self.classifier_dir)
         elif classifier == "svm_ensemble":
             self.n_train = 1000
-            expert_paths = [f"{self.classifier_dir}/svm/svm_anli_n{self.n_train}_l{i}" for i in range(self.model.config.num_hidden_layers)]
-            if not os.path.exists(f"{self.classifier_dir}/svm/svm_anli_n{self.n_train}_l31"):
+            expert_paths = [f"{self.classifier_dir}/svm/upload/svm_anli_n{self.n_train}_l{i}" for i in range(self.model.config.num_hidden_layers)]
+            if not os.path.exists(f"{self.classifier_dir}/svm/upload/svm_anli_n{self.n_train}_l31"):
                 hf_hub_download(repo_id="zthang/repe", filename="svm.tar.gz", local_dir=self.classifier_dir)
                 tar = tarfile.open(os.path.join(self.classifier_dir, "svm.tar.gz"), "r:gz")
-                tar.extractall(path=self.classifier_dir)
+                tar.extractall(path=os.path.join(self.classifier_dir, "svm"))
                 tar.close()
             self.classifier = EnsembleClassifier(input_size=(self.model.config.num_hidden_layers) * 3,
                                        output_size=3,
@@ -104,6 +104,7 @@ class RepCChecker(CheckerBase):
                 hf_hub_download(repo_id="zthang/repe", filename=f"svm/svm_anli_n{self.n_train}_l{self.selected_layer}", local_dir=self.classifier_dir)
         else:
             raise ValueError("classifier must in [svm, nn, svm_ensemble, nn_ensemble.")
+        self.classifier.load(self.classifier_path)
 
     def get_prompt(self, prompt_style, question, premise, hypothesis):
         return f"{prompt_template_dict[prompt_style]['system_begin']}Consider the NLI label between the user given premise and hypothesis.{prompt_template_dict[prompt_style]['system_end']}" \
@@ -127,7 +128,7 @@ class RepCChecker(CheckerBase):
         for i in range(N1):
             prompt = self.get_prompt(prompt_style=self.prompt_style, question=question, premise=references[i], hypothesis=claims[i])
             inputs = self.tokenizer(prompt, return_tensors="pt")
-            input_ids = inputs["input_ids"].to(self.device)
+            input_ids = inputs["input_ids"].to(self.model.device)
             res = self.model(input_ids, output_hidden_states=True, use_cache=False)
             if self.classifier_str in ["svm", "nn"]:
                 hidden_states = res["hidden_states"][1:][self.selected_layer].cpu().numpy()
