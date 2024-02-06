@@ -51,7 +51,7 @@ def get_args():
     parser.add_argument(
         "--repc_classifier_name", type=str, default="nn_ensemble",
         choices=["svm", "svm_ensemble", "nn", "nn_ensemble"],
-        help="Classifier Model used for RepC checker, only valid when RepC checker is used"
+        help="Classifier Model used for RepC checker, only valid when RepC checker is used. "
         "Default: nn_ensemble, neural network classifier with layer ensemble."
     )
     parser.add_argument(

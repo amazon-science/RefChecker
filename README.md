@@ -101,12 +101,15 @@ options:
               Output path to the result json file.
   --cache_dir CACHE_DIR
               Path to the cache directory. Default: ./.cache.
-  --extractor_name {gpt4,claude2,mixtral}
+  --extractor_name {gpt4,claude2,mixtral,mistral}
               Model used for extracting triplets. Default: claude2.
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
-  --checker_name {gpt4,claude2,nli,alignscore}
+  --checker_name {gpt4,claude2,nli,alignscore,repc}
               Model used for checking whether the triplets are factual. Default: claude2.
+  --repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}
+              Classifier Model used for RepC checker, only valid when RepC checker is used.
+              Default: nn_ensemble, neural network classifier with layer ensemble.
   --retriever_name {google}
               Model used for retrieving reference (currently only google is supported).
               Default: google.
