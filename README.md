@@ -75,9 +75,10 @@ We provide a command-line interface to run RefChecker in a console:
 ```
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
-                     [--extractor_name {gpt4,claude2,mixtral}]
+                     [--extractor_name {gpt4,claude2,mixtral,mistral}]
                      [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
-                     [--checker_name {gpt4,claude2,nli,alignscore}]
+                     [--checker_name {gpt4,claude2,nli,alignscore,repc}]
+                     [--repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
                      [--openai_key OPENAI_KEY]
