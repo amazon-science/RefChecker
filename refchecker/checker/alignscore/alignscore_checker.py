@@ -1,7 +1,7 @@
 import os
 import subprocess
 from typing import List
-from urllib import request
+from tqdm import tqdm
 
 from ..checker_base import CheckerBase
 from .inference import Inferencer
@@ -16,13 +16,15 @@ class AlignScoreChecker(CheckerBase):
     def __init__(
         self,
         ckpt_path='alignscore.ckpt',
-        device=0
+        device=0,
+        batch_size=16
     ):
         super().__init__()
         self._download_ckpt(ckpt_path)
         self.scorer = Inferencer(
             ckpt_path, model="roberta-large", device=device, verbose=False
         )
+        self.batch_size = batch_size
     
     def _download_ckpt(self, ckpt_path):
         if not os.path.exists(ckpt_path):
@@ -36,19 +38,24 @@ class AlignScoreChecker(CheckerBase):
     @torch.no_grad()
     def _check(
         self,
-        claims: List,
-        references: List,
-        response: str,
-        question: str,
+        claims: List[List[str]],
+        references: List[str],
+        responses: List[str],
+        questions: List[str],
     ):
         N1, N2 = len(references), len(claims)
         assert N1 == N2, f"Batches must be of the same length. {N1} != {N2}"
         if isinstance(claims[0], list):
             assert len(claims[0]) == 3
             claims = [f"{c[0]} {c[1]} {c[2]}" for c in claims]
-        scores = self.scorer.inference(premise=references, hypo=claims)[-1]
-        preds = scores.argmax(dim=-1)
-        ret = [LABELS[p] for p in preds]
+        batch_preds = []
+        for i in tqdm(range(0, len(claims), self.batch_size)):
+            batch_claims = claims[i:i + self.batch_size]
+            batch_references = references[i:i + self.batch_size]
+            scores = self.scorer.inference(premise=batch_references, hypo=batch_claims)[-1]
+            preds = scores.argmax(dim=-1)
+            batch_preds.extend(preds)
+        ret = [LABELS[p] for p in batch_preds]
 
         return ret
 
