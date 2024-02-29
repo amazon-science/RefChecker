@@ -1,6 +1,6 @@
 import os
 import subprocess
-from typing import List
+from typing import List, Union
 from tqdm import tqdm
 
 from ..checker_base import CheckerBase
@@ -19,6 +19,19 @@ class AlignScoreChecker(CheckerBase):
         device=0,
         batch_size=16
     ):
+        """
+        Initializes the AlignScoreChecker with the specified checkpoint path, device, and batch size.
+
+        Parameters
+        ----------
+        ckpt_path : str, optional
+            The path to the AlignScore checkpoint file, defaults to 'alignscore.ckpt'.
+        device : int, optional
+            The device to run inference on, defaults to 0.
+        batch_size : int, optional
+            The batch size for inference, defaults to 16.
+        """
+
         super().__init__()
         self._download_ckpt(ckpt_path)
         self.scorer = Inferencer(
@@ -38,11 +51,32 @@ class AlignScoreChecker(CheckerBase):
     @torch.no_grad()
     def _check(
         self,
-        claims: List[List[str]],
+        claims: List[Union[str, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str],
     ):
+        """
+        Batch checking claims against references.
+
+        Parameters
+        ----------
+        claims : List[Union[str, List[str]]]
+            List of claim triplets.
+        references : List[str]
+            List of reference passages (split according to 'max_reference_segment_length').
+        responses : List[str]
+            List of model response texts.
+        questions : List[str]
+            List of questions corresponding to each triplet.
+
+        Returns
+        -------
+        ret : List[str]
+            List of labels for the checking results.
+
+        """
+
         N1, N2 = len(references), len(claims)
         assert N1 == N2, f"Batches must be of the same length. {N1} != {N2}"
         if isinstance(claims[0], list):

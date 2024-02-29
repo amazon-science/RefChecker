@@ -64,6 +64,29 @@ def get_model_batch_response(
         n_choices=1,
         max_new_tokens=500
 ):
+    """
+    Get batch generation results with given prompts.
+
+    Parameters
+    ----------
+    prompts : List[str]
+        List of prompts for generation.
+    temperature : float, optional
+        The generation temperature, use greedy decoding when setting
+        temperature=0, defaults to 0.
+    model : str, optional
+        The model for generation, defaults to 'gpt-4'.
+    n_choices : int, optional
+        How many samples to return for each prompt input, defaults to 1.
+    max_new_tokens : int, optional
+        Maximum number of newly generated tokens, defaults to 500.
+
+    Returns
+    -------
+    response_list : List[str]
+        List of generated text.
+    """
+
     if not prompts or len(prompts) == 0:
         raise ValueError("Invalid input.")
 

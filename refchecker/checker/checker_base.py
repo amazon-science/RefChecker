@@ -26,6 +26,13 @@ def merge_multi_psg_ret(ret):
 
 class CheckerBase:
     def __init__(self) -> None:
+        """
+        Initializer for the CheckerBase class.
+
+        Initialize labels for 'Entailment', 'Neutral', and 'Contradiction'.
+        Also initializes a list of all labels.
+        """
+
         self.label_entailment = 'Entailment'
         self.label_neutral = 'Neutral'
         self.label_contradiction = 'Contradiction'
@@ -33,15 +40,38 @@ class CheckerBase:
 
     def check(
         self, 
-        claim: List[List[List[str]]],
+        claim: List[List[Union[str, List[str]]]],
         reference: Union[List[str], List[List[str]]],
         response: List[str] = None,
         question: List[str] = None,
         max_reference_segment_length: int = 200, 
     ):
-        if response == None:
+        """
+        Check claims against references.
+
+        Parameters
+        ----------
+        claim : List[List[Union[str, List[str]]]]
+            List consists of the triplets extracted from each given example.
+        reference : Union[List[str], List[List[str]]]
+            List of reference passages for each given example.
+        response : List[str], optional
+            List of model response texts, defaults to None.
+        question : List[str], optional
+            List of questions for each given example, defaults to None.
+        max_reference_segment_length : int, optional
+            Maximum length of each reference segment, defaults to 200.
+
+        Returns
+        -------
+        ret_group_triplet : List[List[str]]
+            Grouped triplet checking results corresponding to each given example.
+
+        """
+
+        if response is None:
             response = [None] * len(claim)
-        if question == None:
+        if question is None:
             question = [None] * len(claim)
         input_flattened = []
         input_ids = []
@@ -76,9 +106,31 @@ class CheckerBase:
 
     def _check(
         self,
-        claims: List[str],
+        claims: List[Union[str, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str]
     ):
+        """
+        Internal method for checking claims against references.
+
+        This method should be implemented by subclasses.
+
+        Parameters
+        ----------
+        claims : List[Union[str, List[str]]]
+            List of claims to be checked.
+        references : List[str]
+            List of reference passages.
+        responses : List[str]
+            List of model response texts.
+        questions : List[str]
+            List of questions.
+
+        Returns
+        -------
+        List[str]
+            List of checking results.
+        """
+
         raise NotImplementedError

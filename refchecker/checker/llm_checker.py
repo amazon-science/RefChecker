@@ -1,5 +1,5 @@
 import os
-from typing import List
+from typing import List, Union
 from tqdm import tqdm
 
 from .checker_base import CheckerBase
@@ -54,6 +54,18 @@ class LLMChecker(CheckerBase):
         model,
         batch_size=16
     ) -> None:
+        """
+        Initializer for the LLMChecker class.
+
+        Initializes LLMChecker with the provided model and batch size.
+
+        Parameters:
+        -----------
+        model : str
+            The name or identifier of the language model to use.
+        batch_size : int, optional
+            Batch size for checking, defaults to 16.
+        """
 
         super().__init__()
         self.prompt_temp = LLM_CHECKING_PROMPT
@@ -65,14 +77,37 @@ class LLMChecker(CheckerBase):
             self.model = 'gpt-4'
         elif model == 'claude2':
             self.model = 'bedrock/anthropic.claude-v2' if os.environ.get('AWS_REGION_NAME') else 'claude-2'
+        else:
+            raise ValueError('The model you specified is not supported.')
 
     def _check(
         self,
-        claims: List[List[str]],
+        claims: List[Union[str, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str],
     ):
+        """
+        Batch checking claims against references.
+
+        Parameters
+        ----------
+        claims : List[Union[str, List[str]]]
+            List of claim triplets.
+        references : List[str]
+            List of reference passages (split according to 'max_reference_segment_length').
+        responses : List[str]
+            List of model response texts.
+        questions : List[str]
+            List of questions corresponding to each triplet.
+
+        Returns
+        -------
+        ret : List[str]
+            List of labels for the checking results.
+
+        """
+
         ret_labels = []
         prompt_list = []
         for claim, reference, question in zip(claims, references, questions):

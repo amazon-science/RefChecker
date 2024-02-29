@@ -2,7 +2,7 @@ import os
 from tqdm import tqdm
 import tarfile
 from huggingface_hub import hf_hub_download
-from typing import Any, List
+from typing import Any, List, Union
 
 from transformers import (
     AutoTokenizer, AutoModelForCausalLM
@@ -35,6 +35,27 @@ class RepCChecker(CheckerBase):
         device=0,
         batch_size=16
     ):
+        """
+        Initializes the RepCChecker with the specified parameters.
+
+        Parameters
+        ----------
+        model : str, optional
+            The name or identifier of the RepC backbone to use, defaults to 'teknium/OpenHermes-2.5-Mistral-7B'.
+        classifier : str, optional
+            The type of classifier to use, must be one of ['svm', 'nn', 'svm_ensemble', 'nn_ensemble'], defaults to 'nn_ensemble'.
+        classifier_dir : str, optional
+            The directory to save/load the classifier model, defaults to 'saved_models/repc'.
+        prompt_style : str, optional
+            The style of the prompt to use, defaults to 'chatml'.
+        selected_token : int, optional
+            The selected token index to obtain the embedding used for classification, defaults to -1 (the last token).
+        device : int, optional
+            The device to run classifier on, defaults to 0.
+        batch_size : int, optional
+            The batch size for the backbone model, defaults to 16.
+        """
+
         super().__init__()
         self.model = AutoModelForCausalLM.from_pretrained(
             model,
@@ -113,11 +134,32 @@ class RepCChecker(CheckerBase):
     @torch.no_grad()
     def _check(
         self,
-        claims: List[List[str]],
+        claims: List[Union[str, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str],
     ):
+        """
+        Batch checking claims against references.
+
+        Parameters
+        ----------
+        claims : List[Union[str, List[str]]]
+            List of claim triplets.
+        references : List[str]
+            List of reference passages (split according to 'max_reference_segment_length').
+        responses : List[str]
+            List of model response texts.
+        questions : List[str]
+            List of questions corresponding to each triplet.
+
+        Returns
+        -------
+        ret : List[str]
+            List of labels for the checking results.
+
+        """
+
         N1, N2 = len(references), len(claims)
         assert N1 == N2, f"Batches must be of the same length. {N1} != {N2}"
         if isinstance(claims[0], list):

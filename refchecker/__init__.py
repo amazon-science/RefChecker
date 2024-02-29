@@ -1,6 +1,5 @@
 from .checker import (
-    Claude2Checker, 
-    GPT4Checker, 
+    LLMChecker,
     NLIChecker, 
     AlignScoreChecker,
     RepCChecker
