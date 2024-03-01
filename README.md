@@ -86,6 +86,8 @@ usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--aws_bedrock_region AWS_BEDROCK_REGION]
                      [--use_retrieval]
                      [--serper_api_key SERPER_API_KEY]
+                     [--batch_size_extractor BATCH_SIZE_EXTRACTOR]
+                     [--batch_size_checker BATCH_SIZE_CHECKER]
                      [{extract,check,extract-check}]
 
 positional arguments:
@@ -136,6 +138,10 @@ options:
   --serper_api_key SERPER_API_KEY
               Path to the serper api key file. Required if the google retriever is
               used.
+  --batch_size_extractor BATCH_SIZE_EXTRACTOR
+              Batch size for batching inference of eatractor. Default: 16.
+  --batch_size_checker BATCH_SIZE_CHECKER
+              Batch size for batching inference of checker. Default: 16.
 ```
 
 To extract claim triplets from LLM-generated responses, do:
