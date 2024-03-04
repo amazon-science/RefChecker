@@ -1,31 +1,28 @@
 ## Checker
 
-Our hallucination checkers take as input a reference document from retrieval or provided by users when querying LLMs, output a hallucination label chosen from `["Entailment", "Neutral", "Contradiction"]`. We provide [Claude2Checker](claude2_checker.py), [GPT4Checker](gpt4_checker.py) and [NLIChecker](nli_checker.py) with the usage demonstrated below.
+Our hallucination checkers take as input a list of reference documents from retrieval or provided by users when querying LLMs, output a label list with each element chosen from `["Entailment", "Neutral", "Contradiction"]`. We provide [LLMChecker](llm_checker.py), and [NLIChecker](nli_checker.py) with the usage demonstrated below.
 
 ```python
 >>> from refchecker.checker import NLIChecker
 
 >>> checker = NLIChecker()
->>> reference = (
+>>> references = [
         "`` I Dreamed a Dream '' is a song from the musical Les Mis\u00e9rables . "
         "It is a solo that is sung by the character Fantine during the first act . "
         "The music is by Claude - Michel Sch\u00f6nberg , with orchestrations by "
         "John Cameron . The English lyrics are by Neil Diamond And Herbert Kretzmer ,"
         " based on the original French libretto by Alain Boublil and Jean - Marc "
         "Natel from the original French production ."
-    )
+    ] # each element is the reference or list of references for each input example.
+>>> claims = [[["I Dreamed a Dream", "originally from", "the stage musical Les Mis\u00e9rables"],
+               ["I Dreamed a Dream", "written by", "Claude-Michel Sch\u00f6nberg and Alain Boublil"],
+               ["Anne Hathaway", "sang I Dreamed a Dream in", "the 2012 film adaptation of Les Mis\u00e9rables"]]]
+# each element is the claims for each input example.
 >>> checker.check(
-        ["I Dreamed a Dream", "originally from", "the stage musical Les Mis\u00e9rables"],
-        reference
-    )  # Entailment
->>> checker.check(
-        ["I Dreamed a Dream", "written by", "Claude-Michel Sch\u00f6nberg and Alain Boublil"],
-        reference
-    )  # Contradiction
->>> checker.check(
-        ["Anne Hathaway", "sang I Dreamed a Dream in", "the 2012 film adaptation of Les Mis\u00e9rables"],
-        reference
-    ) # Neutral
+        claims,
+        references
+    )  # [['Entailment', 'Contradiction', 'Neutral']]
+
 ```
 
 For LLM-based checkers, we query LLMs with the following prompt to get the prediction:
