@@ -75,7 +75,7 @@ def get_model_batch_response(
         The generation temperature, use greedy decoding when setting
         temperature=0, defaults to 0.
     model : str, optional
-        The model for generation, defaults to 'gpt-4'.
+        The model for generation, defaults to 'gpt-3.5-turbo'.
     n_choices : int, optional
         How many samples to return for each prompt input, defaults to 1.
     max_new_tokens : int, optional
@@ -106,6 +106,7 @@ def get_model_batch_response(
         message_list.append(messages)
     import litellm
     litellm.suppress_debug_info = True
+    litellm.drop_params=True
     while True:
         try:
             responses = batch_completion(

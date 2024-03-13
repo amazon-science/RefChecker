@@ -14,6 +14,13 @@ class ExtractorBase:
             claims = self.extract_claim_triplets(
                 response=response,
                 question=question,
+                max_new_tokens=max_new_tokens
+            )
+        elif self.claim_format == 'subsentence':
+            claims = self.extract_subsentence_claims(
+                response=response,
+                question=question,
+                max_new_tokens=max_new_tokens
             )
         return claims
 
@@ -21,6 +28,14 @@ class ExtractorBase:
         self,
         response,
         question=None, 
+        max_new_tokens=500
+    ):
+        raise NotImplementedError
+
+    def extract_subsentence_claims(
+        self,
+        response,
+        question=None,
         max_new_tokens=500
     ):
         raise NotImplementedError
