@@ -4,7 +4,7 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
 from .extractor import (
-    Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor
+    Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor, ClaudeExtractor
 )
 from .checker import (
     LLMChecker, NLIChecker, AlignScoreChecker, RepCChecker
@@ -34,19 +34,24 @@ def get_args():
         help="Path to the cache directory. Default: ./.cache"
     )
     parser.add_argument(
-        '--extractor_name', type=str, default="claude2",
-        choices=["gpt4", "claude2", "mistral", "mixtral"],
-        help="Model used for extracting triplets. Default: claude2."
+        '--extractor_name', type=str, default="claude3",
+        choices=["gpt4", "claude2", "claude3", "mistral", "mixtral"],
+        help="Model used for extracting triplets. Default: claude3."
     )
     parser.add_argument(
         '--extractor_max_new_tokens', type=int, default=500,
         help="Max generated tokens of the extractor, set a larger value for longer documents. Default: 500"
     )
     parser.add_argument(
-        "--checker_name", type=str, default="claude2",
-        choices=["gpt4", "claude2", "nli", "alignscore", "repc"],
+        '--claim_format', type=str, default='subsentence',
+        choices=['triplet', 'subsentence'],
+        help='The format of the extracted claims. Default: subsentence'
+    )
+    parser.add_argument(
+        "--checker_name", type=str, default="claude3",
+        choices=["gpt4", "claude2", "claude3", "nli", "alignscore", "repc"],
         help="Model used for checking whether the triplets are factual. "
-        "Default: claude2."
+        "Default: claude3."
     )
     parser.add_argument(
         "--repc_classifier_name", type=str, default="nn_ensemble",
@@ -138,16 +143,20 @@ def main():
 
 def extract(args):
     # initialize models
-    if args.extractor_name == "claude2":
-        extractor = Claude2Extractor()
-    elif args.extractor_name == "gpt4":
-        extractor = GPT4Extractor()
-    elif args.extractor_name == "mixtral":
-        extractor = MixtralExtractor()
-    elif args.extractor_name == "mistral":
-        extractor = MistralExtractor()
+    if args.claim_format == 'subsentence':
+        if args.extractor_name in ["claude3"]:
+            extractor = ClaudeExtractor(model=args.extractor_name)
     else:
-        raise NotImplementedError
+        if args.extractor_name == "claude2":
+            extractor = Claude2Extractor()
+        elif args.extractor_name == "gpt4":
+            extractor = GPT4Extractor()
+        elif args.extractor_name == "mixtral":
+            extractor = MixtralExtractor()
+        elif args.extractor_name == "mistral":
+            extractor = MistralExtractor()
+        else:
+            raise NotImplementedError
 
     # load data
     with open(args.input_path, "r") as fp:
@@ -160,8 +169,12 @@ def extract(args):
         assert "response" in item, "response field is required"
         response = item["response"]
         question = item.get("question", None)
-        triplets = extractor.extract_claim_triplets(response, question, max_new_tokens=args.extractor_max_new_tokens)
-        out_item = {**item, **{"triplets": triplets}}
+        if args.claim_format == 'subsentence':
+            claims = extractor.extract_subsentence_claims(response, question, max_new_tokens=args.extractor_max_new_tokens)
+            claims = [c.text for c in claims]
+        else:
+            claims = extractor.extract_claim_triplets(response, question, max_new_tokens=args.extractor_max_new_tokens)
+        out_item = {**item, **{"claims": claims}}
         output_data.append(out_item)
     with open(args.output_path, "w") as fp:
         json.dump(output_data, fp, indent=2)
@@ -169,7 +182,7 @@ def extract(args):
 
 def check(args):
     # initialize models
-    if args.checker_name in ["gpt4", "claude2"]:
+    if args.checker_name in ["gpt4", "claude2", "claude3"]:
         checker = LLMChecker(model=args.checker_name, batch_size=args.batch_size_checker)
     elif args.checker_name == "nli":
         checker = NLIChecker(batch_size=args.batch_size_checker)
@@ -200,14 +213,14 @@ def check(args):
     with open(args.input_path, "r") as fp:
         input_data = json.load(fp)
     
-    # check triplets
+    # check claims
     print('Checking')
-    triplet_list = []
+    claim_list = []
     reference_list = []
     question_list = []
     for item in input_data:
-        assert "triplets" in item, "triplets field is required"
-        triplets = item["triplets"]
+        assert "claims" in item, "claims field is required"
+        claims = item["claims"]
         if args.use_retrieval:
             reference = retriever.retrieve(item["response"])
             item["reference"] = reference
@@ -216,11 +229,11 @@ def check(args):
                 "reference field is required if retriever is not used."
             reference = item["reference"]
         question = item.get("question", None)
-        triplet_list.append(triplets)
+        claim_list.append(claims)
         reference_list.append(reference)
         question_list.append(question)
 
-    results = checker.check(triplet_list, reference_list, question=question_list)
+    results = checker.check(claim_list, reference_list, question=question_list)
     agg_results = [agg_fn(r) for r in results]
     output_data = [{
         **input_data[i],
