@@ -7,7 +7,7 @@ from .extractor import (
     Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor
 )
 from .checker import (
-    Claude2Checker, GPT4Checker, NLIChecker, AlignScoreChecker, RepCChecker
+    LLMChecker, NLIChecker, AlignScoreChecker, RepCChecker
 )
 from .retriever import GoogleRetriever
 from .aggregator import strict_agg, soft_agg, major_agg
@@ -47,6 +47,12 @@ def get_args():
         choices=["gpt4", "claude2", "nli", "alignscore", "repc"],
         help="Model used for checking whether the triplets are factual. "
         "Default: claude2."
+    )
+    parser.add_argument(
+        "--repc_classifier_name", type=str, default="nn_ensemble",
+        choices=["svm", "svm_ensemble", "nn", "nn_ensemble"],
+        help="Classifier Model used for RepC checker, only valid when RepC checker is used. "
+        "Default: nn_ensemble, neural network classifier with layer ensemble."
     )
     parser.add_argument(
         "--retriever_name", type=str, default="google", choices=["google"],
@@ -89,6 +95,14 @@ def get_args():
         help="Path to the serper api key file. Required if the google retriever"
         " is used."
     )
+    parser.add_argument(
+        "--batch_size_extractor", type=int, default=16,
+        help="Batch size for extractor."
+    )
+    parser.add_argument(
+        "--batch_size_checker", type=int, default=16,
+        help="Batch size for checker."
+    )
 
     return parser.parse_args()
 
@@ -103,7 +117,7 @@ def main():
         with open(args.anthropic_key, "r") as fp:
             os.environ["ANTHROPIC_API_KEY"] = fp.read().strip()
     if args.aws_bedrock_region:
-        os.environ["aws_bedrock_region"] = args.aws_bedrock_region
+        os.environ["AWS_REGION_NAME"] = args.aws_bedrock_region
     if args.serper_api_key:
         os.environ["SERPER_API_KEY"] = args.serper_api_key
 
@@ -155,16 +169,14 @@ def extract(args):
 
 def check(args):
     # initialize models
-    if args.checker_name == "claude2":
-        checker = Claude2Checker()
-    elif args.checker_name == "gpt4":
-        checker = GPT4Checker()
+    if args.checker_name in ["gpt4", "claude2"]:
+        checker = LLMChecker(model=args.checker_name, batch_size=args.batch_size_checker)
     elif args.checker_name == "nli":
-        checker = NLIChecker()
+        checker = NLIChecker(batch_size=args.batch_size_checker)
     elif args.checker_name == "alignscore":
-        checker = AlignScoreChecker()
+        checker = AlignScoreChecker(batch_size=args.batch_size_checker)
     elif args.checker_name == "repc":
-        checker = RepCChecker()
+        checker = RepCChecker(classifier=args.repc_classifier_name, batch_size=args.batch_size_checker)
     else:
         raise NotImplementedError
     
@@ -190,8 +202,10 @@ def check(args):
     
     # check triplets
     print('Checking')
-    output_data = []
-    for item in tqdm(input_data):
+    triplet_list = []
+    reference_list = []
+    question_list = []
+    for item in input_data:
         assert "triplets" in item, "triplets field is required"
         triplets = item["triplets"]
         if args.use_retrieval:
@@ -202,19 +216,19 @@ def check(args):
                 "reference field is required if retriever is not used."
             reference = item["reference"]
         question = item.get("question", None)
-        results = [
-            checker.check(t, reference, question=question)
-            for t in triplets
-        ]
-        agg_results = agg_fn(results)
-        out_item = {
-            **item,
-            **{
-                "Y": agg_results,
-                "ys": results,
-            }
+        triplet_list.append(triplets)
+        reference_list.append(reference)
+        question_list.append(question)
+
+    results = checker.check(triplet_list, reference_list, question=question_list)
+    agg_results = [agg_fn(r) for r in results]
+    output_data = [{
+        **input_data[i],
+        **{
+            "Y": agg_results[i],
+            "ys": results[i],
         }
-        output_data.append(out_item)
+    } for i in range(len(input_data))]
     with open(args.output_path, "w") as fp:
         json.dump(output_data, fp, indent=2)
 

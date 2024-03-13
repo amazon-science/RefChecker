@@ -10,6 +10,7 @@ from openai import APIError as OpenAIAPIError
 from openai import Timeout as OpenAITimeout
 import anthropic
 from anthropic import HUMAN_PROMPT, AI_PROMPT
+from litellm import batch_completion
 
 
 # Setup spaCy NLP
@@ -55,6 +56,80 @@ def split_text(text, segment_len=200):
         segments.append(" ".join(seg))
     return segments
 
+
+def get_model_batch_response(
+        prompts,
+        temperature=0,
+        model='gpt-3.5-turbo',
+        n_choices=1,
+        max_new_tokens=500
+):
+    """
+    Get batch generation results with given prompts.
+
+    Parameters
+    ----------
+    prompts : List[str]
+        List of prompts for generation.
+    temperature : float, optional
+        The generation temperature, use greedy decoding when setting
+        temperature=0, defaults to 0.
+    model : str, optional
+        The model for generation, defaults to 'gpt-4'.
+    n_choices : int, optional
+        How many samples to return for each prompt input, defaults to 1.
+    max_new_tokens : int, optional
+        Maximum number of newly generated tokens, defaults to 500.
+
+    Returns
+    -------
+    response_list : List[str]
+        List of generated text.
+    """
+
+    if not prompts or len(prompts) == 0:
+        raise ValueError("Invalid input.")
+
+    message_list = []
+    for prompt in prompts:
+        if len(prompt) == 0:
+            raise ValueError("Invalid prompt.")
+        if isinstance(prompt, str):
+            messages = [{
+                'role': 'user',
+                'content': prompt
+            }]
+        elif isinstance(prompt, list):
+            messages = prompt
+        else:
+            raise ValueError("Invalid prompt type.")
+        message_list.append(messages)
+    import litellm
+    litellm.suppress_debug_info = True
+    while True:
+        try:
+            responses = batch_completion(
+                model=model,
+                messages=message_list,
+                temperature=temperature,
+                n=n_choices,
+                max_tokens=max_new_tokens
+            )
+            if n_choices == 1:
+                response_list = [r.choices[0].message.content for r in responses]
+            else:
+                response_list = [[res.message.content for res in r.choices] for r in responses]
+            for r in response_list:
+                if not r or len(r) == 0:
+                    raise ValueError(f'{model} API returns None or empty string')
+            return response_list
+        except Exception as e:
+            if isinstance(e, OpenAIRateLimitError) or isinstance(e, OpenAIAPIError) or isinstance(e, OpenAITimeout):
+                print(f"{e} [sleep 10 seconds]")
+                time.sleep(10)
+                continue
+            print(e)
+            return None
 
 def get_openai_model_response(
     prompt, 

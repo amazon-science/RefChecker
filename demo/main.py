@@ -14,7 +14,7 @@ from transformers import (
 from spacy.lang.en import English
 
 from miscellaneous import htmls #pre-defined visual components for showing the top step-by-step progress bar 
-from refchecker import GPT4Extractor, Claude2Extractor, GPT4Checker, Claude2Checker, NLIChecker
+from refchecker import GPT4Extractor, Claude2Extractor, LLMChecker, NLIChecker
 from refchecker.retriever import GoogleRetriever
 
 
@@ -42,7 +42,7 @@ if args.extractor == 'gpt4' or args.checker == 'gpt4':
     assert os.environ.get('OPENAI_API_KEY')
 
 if args.extractor == 'claude2' or args.checker == 'claude2':
-    assert os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('aws_bedrock_region')
+    assert os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('AWS_REGION_NAME')
 
 if args.enable_search:
     assert os.environ.get('SERPER_API_KEY')
@@ -162,20 +162,20 @@ def extract_triplet(text):
     return ret
 
 @st.cache_data(show_spinner=False)
-def check_it(text, triplet):
+def check_it(text_list, triplet_list):
     r"""
     Parameters
     ----------
-    text : str
-        The reference text.
-    triplet: str
-        The string of a triplet.
+    text_list : List[str]
+        List of the reference text.
+    triplet_list: List[List[str]]
+        List consists of the triplets for each input example.
     Returns
     -------
-    str
-        one from pre-defined labels, ['Entailment', 'Neutral', 'Contradiction']
+    List[List[str]]
+        List of labels for each input example, one from pre-defined labels, ['Entailment', 'Neutral', 'Contradiction']
     """
-    outs = st.session_state['checker'].check(triplet, text)
+    outs = st.session_state['checker'].check(triplet_list, text_list)
     return outs
 
 @st.cache_data(show_spinner=False)
@@ -227,12 +227,12 @@ def get_models():
         extractor = Claude2Extractor()
     
     checker = None
-    if args.checker == 'gpt4':
-        checker = GPT4Checker()
-    elif args.checker == 'claude2':
-        checker = Claude2Checker()
+    if args.checker in ["gpt4", "claude2"]:
+        checker = LLMChecker(model=args.checker)
     elif args.checker == 'nli':
         checker = NLIChecker()
+    else:
+        raise NotImplementedError
     
     assert extractor
     assert checker
@@ -405,10 +405,13 @@ if check_button or auto_run_flag:
         elif st.session_state['progress'] == 2: # need to check and predict labels 
             labeled_triplets = st.session_state['labeled_triplets']
             with st.spinner(text='Checking'):
+                triplet_list = []
                 for i in range(len(labeled_triplets)):
-                    outs = check_it(text_ref, " ".join(labeled_triplets[i][1:4]))
-                    label = outs
-                    labeled_triplets[i][0] = label
+                    triplet_list.append(" ".join(labeled_triplets[i][1:4]))
+                outs = check_it([text_ref], [triplet_list])
+                labels = outs[0]
+                for i in range(len(labeled_triplets)):
+                    labeled_triplets[i][0] = labels[i]
             
                 st.session_state['labeled_triplets'] = labeled_triplets
                 bad_num = len([x for x in labeled_triplets if x[0]=='Contradiction'])
@@ -427,6 +430,26 @@ if check_button or auto_run_flag:
                 _sents_ref = st.session_state['nlp'](text_ref)
                 sents_ref = [x.text_with_ws for x in _sents_ref.sents]
                 labeled_triplets = st.session_state['labeled_triplets']
+                sent_check_list = []
+                sent_ref_list = []
+                triplet_check_list = []
+                triplet_ref_list = []
+                for j in range(len(sents_check)):
+                    triplet_check_list_tmp = []
+                    for i in range(len(labeled_triplets)):
+                        triplet_check_list_tmp.append(" ".join(labeled_triplets[i][1:4]))
+                    triplet_check_list.append(triplet_check_list_tmp)
+                    sent_check_list.append(sents_check[j])
+
+                for j in range(len(sents_ref)):
+                    triplet_ref_list_tmp = []
+                    for i in range(len(labeled_triplets)):
+                        triplet_ref_list_tmp.append(" ".join(labeled_triplets[i][1:4]))
+                    triplet_ref_list.append(triplet_ref_list_tmp)
+                    sent_ref_list.append(sents_ref[j])
+
+                labels_check = check_it(sent_check_list, triplet_check_list)
+                labels_ref = check_it(sent_ref_list, triplet_ref_list)
                 for i in range(len(labeled_triplets)):
                     label = labeled_triplets[i][0]
                     loc_checks = []
@@ -434,14 +457,14 @@ if check_button or auto_run_flag:
                     valid_checks = []
                     valid_refs = []
                     for j in range(len(sents_check)):
-                        _label = check_it(sents_check[j], " ".join(labeled_triplets[i][1:4]))
-                        if _label == 'Entailment': 
+                        _label = labels_check[j][i]
+                        if _label == 'Entailment':
                             loc_checks.append(loc_it(sents_check[j], labeled_triplets[i][1:4]))
                             valid_checks.append(j)
                         else:
                             loc_checks.append(header(sents_check[j]))
                     for j in range(len(sents_ref)):
-                        _label = check_it(sents_ref[j], " ".join(labeled_triplets[i][1:4]))
+                        _label = labels_ref[j][i]
                         if _label == 'Entailment':
                             loc_refs.append(loc_it(sents_ref[j], labeled_triplets[i][1:4]))
                             valid_refs.append(j)

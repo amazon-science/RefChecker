@@ -75,9 +75,10 @@ We provide a command-line interface to run RefChecker in a console:
 ```
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
-                     [--extractor_name {gpt4,claude2,mixtral}]
+                     [--extractor_name {gpt4,claude2,mixtral,mistral}]
                      [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
-                     [--checker_name {gpt4,claude2,nli,alignscore}]
+                     [--checker_name {gpt4,claude2,nli,alignscore,repc}]
+                     [--repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
                      [--openai_key OPENAI_KEY]
@@ -85,6 +86,8 @@ usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--aws_bedrock_region AWS_BEDROCK_REGION]
                      [--use_retrieval]
                      [--serper_api_key SERPER_API_KEY]
+                     [--batch_size_extractor BATCH_SIZE_EXTRACTOR]
+                     [--batch_size_checker BATCH_SIZE_CHECKER]
                      [{extract,check,extract-check}]
 
 positional arguments:
@@ -101,12 +104,15 @@ options:
               Output path to the result json file.
   --cache_dir CACHE_DIR
               Path to the cache directory. Default: ./.cache.
-  --extractor_name {gpt4,claude2,mixtral}
+  --extractor_name {gpt4,claude2,mixtral,mistral}
               Model used for extracting triplets. Default: claude2.
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
-  --checker_name {gpt4,claude2,nli,alignscore}
+  --checker_name {gpt4,claude2,nli,alignscore,repc}
               Model used for checking whether the triplets are factual. Default: claude2.
+  --repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}
+              Classifier Model used for RepC checker, only valid when RepC checker is used.
+              Default: nn_ensemble, neural network classifier with layer ensemble.
   --retriever_name {google}
               Model used for retrieving reference (currently only google is supported).
               Default: google.
@@ -132,6 +138,10 @@ options:
   --serper_api_key SERPER_API_KEY
               Path to the serper api key file. Required if the google retriever is
               used.
+  --batch_size_extractor BATCH_SIZE_EXTRACTOR
+              Batch size for batching inference of eatractor. Default: 16.
+  --batch_size_checker BATCH_SIZE_CHECKER
+              Batch size for batching inference of checker. Default: 16.
 ```
 
 To extract claim triplets from LLM-generated responses, do:
