@@ -99,7 +99,6 @@ class ClaudeExtractor(ExtractorBase):
             n_choices=1,
             max_new_tokens=max_new_tokens
         )[0]
-        print(claude_response)
         if claude_response and len(claude_response):
             claims = process_extraction_response(claude_response, excluded_content_prefix='### Text')
             return claims

@@ -2,6 +2,7 @@ from typing import List, Union
 from itertools import groupby
 
 from ..utils import split_text
+from ..claim_utils import Claim
 
 
 def merge_ret(ret):
@@ -40,7 +41,7 @@ class CheckerBase:
 
     def check(
         self, 
-        claim: List[List[Union[str, List[str]]]],
+        claim: List[List[Union[str, Claim, List[str]]]],
         reference: Union[List[str], List[List[str]]],
         response: List[str] = None,
         question: List[str] = None,
@@ -51,7 +52,7 @@ class CheckerBase:
 
         Parameters
         ----------
-        claim : List[List[Union[str, List[str]]]]
+        claim : List[List[Union[str, Claim, List[str]]]]
             List consists of the triplets extracted from each given example.
         reference : Union[List[str], List[List[str]]]
             List of reference passages for each given example.
