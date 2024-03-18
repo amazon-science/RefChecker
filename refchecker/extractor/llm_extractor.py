@@ -1,9 +1,14 @@
+from typing import List
+
 from .extractor_base import ExtractorBase
-from ..claim_utils import *
-from ..utils import get_model_batch_response
+from ..utils import (
+    get_model_batch_response, 
+    get_llm_full_name
+)
+from ..base import RCText, ExtractionResult
 
 
-CLAUDE_CLAIM_EXTRACTION_PROMPT = """You are an AI assistant, you can help to extract claims from a given text. In addition, you should attribute the claims to the sentences followed by the sentence ids.
+LLM_CLAIM_EXTRACTION_PROMPT = """You are an AI assistant, you can help to extract claims from a given text. In addition, you should attribute the claims to the sentences followed by the sentence ids.
 Each claim should satisfy the following criteria:
 * A claim is a piece of `knowledge` in the text, the basic element of a `knowledge` is a triplet `(head entity, relation, tail entity)` used in Knowledge Graph, or `(subject, predicate, object)` used in Semantics.
 * A claim should be fine-grained. One claim should not contain more than one pieces of knowledge.
@@ -63,22 +68,94 @@ Now please generate the claims from the following text. You should always follow
 ### Claims
 """
 
+LLM_TRIPLET_EXTRACTION_PROMPT_Q = \
+"""Given a question and a candidate answer to the question, please extract a KG from the candidate answer condition on the question and represent the KG with triples formatted with ("subject", "predicate", "object"), each triplet in a line.
+Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
 
-class ClaudeExtractor(ExtractorBase):
+Here are some in-context examples:
+
+### Question:
+Given these paragraphs about the Tesla bot, what is its alias?
+
+### Candidate Answer:
+Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial Intelligence (AI) Day event on August 19, 2021.
+
+### KG:
+("Optimus", "is", "robotic humanoid")
+("Optimus", "under development by", "Tesla, Inc.")
+("Optimus", "also known as", "Tesla Bot")
+("Tesla, Inc.", "announced", "Optimus")
+("Announcement of Optimus", "occurred at", "Artificial Intelligence (AI) Day event")
+("Artificial Intelligence (AI) Day event", "held on", "August 19, 2021")
+("Artificial Intelligence (AI) Day event", "organized by", "Tesla, Inc.")
+
+### Question:
+here is some text about Andre Weiss, how many years was Andre at University of Dijon in Paris?
+
+### Candidate Answer:
+11 years
+
+### KG:
+("Andre Weiss at University of Dijon in Paris", "duration", "11 years")
+
+
+Now generate the KG for the following candidate answer based on the provided question:
+
+### Question:
+{q}
+
+### Candidate Answer:
+{a}
+
+### KG:
+"""
+
+LLM_TRIPLET_EXTRACTION_PROMPT = \
+"""Given an input text, please extract a KG from the text and represent the KG with triples formatted with ("subject", "predicate", "object"), each triplet in a line. Please note that this is an EXTRACTION task, so DO NOT care about whether the content of the candidate answer is factual or not, just extract the triplets from it.
+
+Here are some in-context examples:
+
+### Input:
+Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial Intelligence (AI) Day event on August 19, 2021.
+
+### KG:
+("Optimus", "is", "robotic humanoid")
+("Optimus", "under development by", "Tesla, Inc.")
+("Optimus", "also known as", "Tesla Bot")
+("Tesla, Inc.", "announced", "Optimus")
+("Announcement of Optimus", "occurred at", "Artificial Intelligence (AI) Day event")
+("Artificial Intelligence (AI) Day event", "held on", "August 19, 2021")
+("Artificial Intelligence (AI) Day event", "organized by", "Tesla, Inc.")
+
+### Input:
+The song "Here Comes the Boom" was originally released by American rock band Nelly in 2002 for the soundtrack of the film "The Longest Yard."
+
+### KG:
+("The song 'Here Comes the Boom'", "originally released by", "American rock band Nelly")
+("The song 'Here Comes the Boom'", "released in", "2002")
+("The song 'Here Comes the Boom'", "featured in", "soundtrack of the film 'The Longest Yard'")
+("American rock band Nelly", "released", "The song 'Here Comes the Boom'")
+("The Longest Yard", "had soundtrack featuring", "The song 'Here Comes the Boom'")
+
+
+Now generate the KG for the provided input text:
+
+### Input:
+{input_text}
+
+### KG:
+"""
+
+
+class LLMExtractor(ExtractorBase):
     def __init__(
         self, 
-        claim_format: str = 'sub-sentence',
-        model: str = 'claude3'
+        claim_format: str = 'subsentence',
+        model: str = 'claude3-sonnet'
     ) -> None:
         super().__init__(claim_format)
         
-        assert model in ['claude2', 'claude2.1', 'claude3']
-        if model == 'claude2':
-            self.model = 'anthropic.claude-v2'
-        elif model == 'claude2.1':
-            self.model = 'anthropic.claude-v2:1'
-        elif model == 'claude3':
-            self.model = 'anthropic.claude-3-sonnet-20240229-v1:0'
+        self.model = get_llm_full_name(model)
     
     def extract_subsentence_claims(
         self, 
@@ -86,11 +163,11 @@ class ClaudeExtractor(ExtractorBase):
         question=None, 
         max_new_tokens=500
     ):
-        response = Response(response)
-        indexed_response_text = response.get_indexed_response(condense_newlines=True)
+        rc_response = RCText(response)
+        indexed_response_text = rc_response.get_indexed_response(condense_newlines=True)
         if question and len(question):
             indexed_response_text = question + ' ' + indexed_response_text
-        prompt = CLAUDE_CLAIM_EXTRACTION_PROMPT.format(text=indexed_response_text)
+        prompt = LLM_CLAIM_EXTRACTION_PROMPT.format(text=indexed_response_text)
         
         claude_response = get_model_batch_response(
             prompts=[prompt],
@@ -99,7 +176,56 @@ class ClaudeExtractor(ExtractorBase):
             n_choices=1,
             max_new_tokens=max_new_tokens
         )[0]
+        
+        claims = None
+        error_info = None
         if claude_response and len(claude_response):
-            claims = process_extraction_response(claude_response, excluded_content_prefix='### Text')
-            return claims
-        return []
+            claims = self.parse_claims(claude_response, excluded_content_prefix='### Text')
+        else:
+            error_info = 'Something wrong with the Extractor API'
+        result = ExtractionResult(
+            claims=claims,
+            question=question,
+            response=rc_response,
+            extractor_response=claude_response,
+            error_info=error_info
+        )
+        return result
+
+    def extract_claim_triplets(
+        self, 
+        response, 
+        question=None, 
+        max_new_tokens=500
+    ):
+        if question is None:
+            prompt = LLM_TRIPLET_EXTRACTION_PROMPT.format(
+                input_text=response
+            )
+        else:
+            prompt = LLM_TRIPLET_EXTRACTION_PROMPT_Q.format(
+                q=question,
+                a=response
+            )
+
+        claude_response = get_model_batch_response(
+            prompts=[prompt],
+            temperature=0,
+            model=self.model,
+            n_choices=1,
+            max_new_tokens=max_new_tokens
+        )[0]
+
+        error_info = None
+        if claude_response and len(claude_response):
+            claims = self.parse_claims(claude_response, '###')
+        else:
+            error_info = 'Something wrong with the Extractor API'
+        result = ExtractionResult(
+            claims=claims,
+            question=question,
+            response=response,
+            extractor_response=claude_response,
+            error_info=error_info
+        )
+        return result

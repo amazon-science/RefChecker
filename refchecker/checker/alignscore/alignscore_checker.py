@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 from ..checker_base import CheckerBase
 from .inference import Inferencer
-from ...claim_utils import Claim
+from ...base import RCClaim
 
 import torch
 
@@ -52,7 +52,7 @@ class AlignScoreChecker(CheckerBase):
     @torch.no_grad()
     def _check(
         self,
-        claims: List[Union[str, Claim, List[str]]],
+        claims: List[Union[str, RCClaim, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str],
@@ -83,7 +83,7 @@ class AlignScoreChecker(CheckerBase):
         if isinstance(claims[0], list):
             assert len(claims[0]) == 3
             claims = [f"{c[0]} {c[1]} {c[2]}" for c in claims]
-        elif isinstance(claims[0], Claim):
+        elif isinstance(claims[0], RCClaim):
             claims = [c.text for c in claims]
         batch_preds = []
         for i in tqdm(range(0, len(claims), self.batch_size)):

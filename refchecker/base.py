@@ -1,24 +1,10 @@
 import re
+from typing import List, Union
 
 from spacy.lang.en import English
 
 
-class Claim:
-    def __init__(self, 
-                 text,
-                 attributed_sent_ids
-                 ) -> None:
-        self.text = text
-        self.attributed_sent_ids = attributed_sent_ids
-
-    def __repr__(self) -> str:
-        ret = self.text + ' '
-        for sid in self.attributed_sent_ids:
-            ret += f'[{sid}]'
-        return ret 
-
-
-class Sentence:
+class RCSentence:
     def __init__(self, sentence_text, is_blank) -> None:
         self.text = sentence_text
         self.is_blank = is_blank
@@ -26,8 +12,15 @@ class Sentence:
     def __repr__(self) -> str:
         return self.text
 
+    def to_dict(self):
+        return {'text': self.text, 'is_blank': self.is_blank}
+    
+    @classmethod
+    def from_dict(cls, sent_dict: dict):
+        return cls(text=sent_dict['text'], is_blank=sent_dict['is_blank'])
+        
 
-class Response:
+class RCText:
     def __init__(self, response_text) -> None:
         self.orig_text = response_text
         
@@ -56,7 +49,7 @@ class Response:
                     start_idx = start_idx
                     break
             if len(prefix):
-                sents.append(Sentence(prefix, is_blank=True))
+                sents.append(RCSentence(prefix, is_blank=True))
             
             surfix = ''
             end_idx = len(s_text) - 1
@@ -67,9 +60,9 @@ class Response:
                 else:
                     break
             if len(s_text[start_idx: end_idx+1]):
-                sents.append(Sentence(s_text[start_idx: end_idx+1], is_blank=False))
+                sents.append(RCSentence(s_text[start_idx: end_idx+1], is_blank=False))
             if len(surfix):
-                sents.append(Sentence(surfix, is_blank=True))
+                sents.append(RCSentence(surfix, is_blank=True))
         
         self.sentences = sents
         sent_id = 1
@@ -103,21 +96,65 @@ class Response:
         return self.sentences[self._sent_id_to_index[sent_id]]
 
 
-def process_extraction_response(
-    response, 
-    excluded_content_prefix='### Text'
-):
-    response = response.strip()
-    if excluded_content_prefix and excluded_content_prefix in response:
-        response = response[:response.index(excluded_content_prefix)]
-    
-    claims = []
-    for c in re.findall(r'.*[\[\d+\]]+', response):
-        sent_ids = []
-        first_sid_index = None
-        for sid in re.finditer(r'\[\d+\]', c):
-            if first_sid_index is None:
-                first_sid_index = sid.start()
-            sent_ids.append(sid.group()[1:-1])
-        claims.append(Claim(text=c[:first_sid_index].strip(), attributed_sent_ids=sent_ids))
-    return claims
+class RCClaim:
+    def __init__(
+        self, 
+        format: str,
+        content: Union[str, list],
+        attributed_sent_ids: List[str]
+    ) -> None:
+        self.format = format
+        self.content = content
+        self.attributed_sent_ids = attributed_sent_ids
+
+    def __repr__(self) -> str:
+        if self.format == 'triplet':
+            return f'("{self.content[0]}", "{self.content[1]}", "{self.content[2]}")'
+        elif self.format == 'subsentence':
+            ret = self.content + ' '
+            for sid in self.attributed_sent_ids:
+                ret += f'[{sid}]'
+            return ret
+        else:
+            raise ValueError(f'Unknown Claim Format: {self.format}')        
+
+    def get_content(self, preserve_triplet_form=False):
+        if self.format == 'triplet':
+            if preserve_triplet_form:
+                return f'("{self.content[0]}", "{self.content[1]}", "{self.content[2]}")'
+            else:
+                return f'{self.content[0]} {self.content[1]} {self.content[2]}'
+        else:
+            return self.content
+
+    def to_dict(self):
+        ret = {
+            'format': self.format,
+            'content': self.content,
+            'attributed_sent_ids': self.attributed_sent_ids
+        }
+        return ret
+
+    @classmethod
+    def from_dict(cls, claim_dict: dict):
+        return cls(
+            format=claim_dict['format'],
+            content=claim_dict['content'],
+            attributed_sent_ids=claim_dict['attributed_sent_ids']
+        )
+
+
+class ExtractionResult:
+    def __init__(
+        self, 
+        claims: List[RCClaim],
+        question: str,
+        response: Union[str, RCText],
+        extractor_response: str = None,
+        error_info: str = None
+    ) -> None:
+        self.claims = claims
+        self.question = question
+        self.response = response
+        self.extractor_response = extractor_response
+        self.error_info = error_info

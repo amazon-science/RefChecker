@@ -24,6 +24,14 @@ bedrock = None
 anthropic_client = None
 
 
+def get_llm_full_name(llm_name):
+    if llm_name == 'claude3-sonnet':
+        return 'anthropic.claude-3-sonnet-20240229-v1:0' if os.environ.get('AWS_REGION_NAME') else 'claude-3-sonnet-20240229'
+    elif llm_name == 'claude3-haiku':
+        return 'anthropic.claude-3-haiku-20240307-v1:0' if os.environ.get('AWS_REGION_NAME') else 'claude-3-haiku-20240307'
+    return llm_name
+
+
 def sentencize(text):
     """Split text into sentences"""
     global nlp

@@ -3,16 +3,22 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-from torch.optim.lr_scheduler import StepLR
 from torch.utils.data import DataLoader, TensorDataset
 import pickle
-import joblib
 from sklearn.neighbors import NeighborhoodComponentsAnalysis, KNeighborsClassifier
 from sklearn.pipeline import Pipeline
 from sklearn import svm
-from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+try:
+    from sklearnex import patch_sklearn
+    # zth: sklearn accelerate package, without which svm will execute very slowly
+    patch_sklearn()
+except:
+    print("Warning: scikit-learn-intelex not installed, sklearn acceleration for the RepC checker is not enabled.")
+    pass
+
+
 class KNN:
     # zth: two methods supported: knn and nca (with parameters, and need to specify the dimension, default to 2)
     def __init__(self, k, variance="knn", dim=2):
