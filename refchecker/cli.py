@@ -35,7 +35,7 @@ def get_args():
         help="Path to the cache directory. Default: ./.cache"
     )
     parser.add_argument(
-        '--extractor_name', type=str, default="claude3",
+        '--extractor_name', type=str, default="claude3-sonnet",
         choices=["claude3-sonnet", "claude3-haiku", "mistral", "mixtral", "gpt-4", "gpt-3.5-turbo"],
         help="Model used for extracting triplets. Default: claude3-sonnet."
     )
@@ -49,7 +49,7 @@ def get_args():
         help='The format of the extracted claims. Default: subsentence'
     )
     parser.add_argument(
-        "--checker_name", type=str, default="claude3",
+        "--checker_name", type=str, default="claude3-sonnet",
         choices=["claude3-sonnet", "claude3-haiku", "nli", "alignscore", "repc", "gpt-4", "gpt-3.5-turbo"],
         help="Model used for checking whether the triplets are factual. "
         "Default: claude3-sonnet."

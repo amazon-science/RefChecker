@@ -80,9 +80,10 @@ We provide a command-line interface to run RefChecker in a console:
 ```
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
-                     [--extractor_name {gpt4,claude2,mixtral,mistral}]
+                     [--extractor_name {claude3-sonnet, claude3-haiku, mistral, mixtral, gpt-4, gpt-3.5-turbo}]
                      [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
-                     [--checker_name {gpt4,claude2,nli,alignscore,repc}]
+                     [--claim_format {triplet, subsentence}]
+                     [--checker_name {claude3-sonnet, claude3-haiku, nli, alignscore, repc, gpt-4, gpt-3.5-turbo}]
                      [--repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
@@ -97,9 +98,9 @@ usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
 
 positional arguments:
   {extract,check,extract-check}
-     extract:       Extract triplets from provided responses.
-     check:         Check whether the provided triplets are factual.
-     extract-check: Extract triplets and check whether they are factual.
+     extract:       Extract claims from provided responses.
+     check:         Check whether the provided claims are factual.
+     extract-check: Extract claims and check whether they are factual.
 
 options:
   -h, --help  show this help message and exit
@@ -109,12 +110,14 @@ options:
               Output path to the result json file.
   --cache_dir CACHE_DIR
               Path to the cache directory. Default: ./.cache.
-  --extractor_name {gpt4,claude2,mixtral,mistral}
-              Model used for extracting triplets. Default: claude2.
+  --extractor_name {claude3-sonnet, claude3-haiku, mistral, mixtral, gpt-4, gpt-3.5-turbo}
+              Model used for extracting claims. Default: claude3-sonnet.
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
-  --checker_name {gpt4,claude2,nli,alignscore,repc}
-              Model used for checking whether the triplets are factual. Default: claude2.
+  --claim_format {triplet, subsentence}
+              The format of the extracted claims. Default: subsentence
+  --checker_name {claude3-sonnet, claude3-haiku, nli, alignscore, repc, gpt-4, gpt-3.5-turbo}
+              Model used for checking whether the claims are factual. Default: claude3-sonnet.
   --repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}
               Classifier Model used for RepC checker, only valid when RepC checker is used.
               Default: nn_ensemble, neural network classifier with layer ensemble.
@@ -181,7 +184,7 @@ The input json file contains a list of
 ```json
 {
    "response": "",  # required, the response to be checked
-   "triplets": [
+   "claims": [
        ["head1", "relation1", "tail1"],
        ["head2", "relation2", "tail2"],
        ...
