@@ -69,6 +69,11 @@ pip install -e .
 python -m spacy download en_core_web_sm
 ```
 
+Install optional dependencies to use open source extractors (Mistral, Mixtral) or enable acceleration for RepCChecker.
+```bash
+pip install -e .[open-extractor,repcex]
+```
+
 ### Usage
 We provide a command-line interface to run RefChecker in a console:
 

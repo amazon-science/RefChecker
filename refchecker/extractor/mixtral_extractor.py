@@ -1,7 +1,11 @@
 from .extractor_base import ExtractorBase
 
 import torch
-from vllm import LLM, SamplingParams
+try:
+    from vllm import LLM, SamplingParams
+except:
+    print("Warning: vllm not installed, MixtralExtractor will not work.")
+    pass
 from typing import List, Tuple
 
 one_digit_tensor = torch.ones((1, 1), dtype=torch.long)
