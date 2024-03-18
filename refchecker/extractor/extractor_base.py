@@ -1,4 +1,6 @@
 import re
+from typing import List, Union
+from ..base import RCText, RCClaim
 
 
 class ExtractorBase:
@@ -6,23 +8,23 @@ class ExtractorBase:
         self,
         claim_format:str='triplet'
     ) -> None:
+        assert claim_format in ['triplet', 'subsentence']
         self.claim_format = claim_format
 
     def extract(self, response, question=None, max_new_tokens=500):
-        claims = None
         if self.claim_format == 'triplet':
-            claims = self.extract_claim_triplets(
+            result = self.extract_claim_triplets(
                 response=response,
                 question=question,
                 max_new_tokens=max_new_tokens
             )
         elif self.claim_format == 'subsentence':
-            claims = self.extract_subsentence_claims(
+            result = self.extract_subsentence_claims(
                 response=response,
                 question=question,
                 max_new_tokens=max_new_tokens
             )
-        return claims
+        return result
 
     def extract_claim_triplets(
         self,
@@ -39,6 +41,35 @@ class ExtractorBase:
         max_new_tokens=500
     ):
         raise NotImplementedError
+
+    def parse_claims(
+        self,
+        response, 
+        excluded_content_prefix
+    ):
+        response = response.strip()
+        if excluded_content_prefix and excluded_content_prefix in response:
+            response = response[:response.index(excluded_content_prefix)]
+        
+        if self.claim_format == 'triplet':
+            return self._parse_claim_triplets(response)
+        elif self.claim_format == 'subsentence':
+            claims = []
+            for c in re.findall(r'.*[\[\d+\]]+', response):
+                sent_ids = []
+                first_sid_index = None
+                for sid in re.finditer(r'\[\d+\]', c):
+                    if first_sid_index is None:
+                        first_sid_index = sid.start()
+                    sent_ids.append(sid.group()[1:-1])
+                claims.append(RCClaim(
+                    format=self.claim_format,
+                    content=c[:first_sid_index].strip(), 
+                    attributed_sent_ids=sent_ids
+                ))
+            return claims
+        else:
+            raise ValueError(f'Unknown Claim Format: {self.format}')
 
     def _parse_claim_triplets(self, text):
         ret = []
@@ -63,7 +94,8 @@ class ExtractorBase:
             if tuple(t) not in final_triple_set:
                 final_triple_set.append(tuple(t))
         
-        return [list(t) for t in final_triple_set]
+        # return [list(t) for t in final_triple_set]
+        return [RCClaim('triplet', list(t), None) for t in final_triple_set]
 
     def _parse_triplets(self, pattern, text, triple_length=3):
         triplets = []

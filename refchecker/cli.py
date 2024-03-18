@@ -4,13 +4,14 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
 from .extractor import (
-    Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor, ClaudeExtractor
+    LLMExtractor, MistralExtractor, MixtralExtractor
 )
 from .checker import (
     LLMChecker, NLIChecker, AlignScoreChecker, RepCChecker
 )
 from .retriever import GoogleRetriever
 from .aggregator import strict_agg, soft_agg, major_agg
+from .base import RCClaim
 
 
 def get_args():
@@ -35,8 +36,8 @@ def get_args():
     )
     parser.add_argument(
         '--extractor_name', type=str, default="claude3",
-        choices=["gpt4", "claude2", "claude3", "mistral", "mixtral"],
-        help="Model used for extracting triplets. Default: claude3."
+        choices=["claude3-sonnet", "claude3-haiku", "mistral", "mixtral", "gpt-4", "gpt-3.5-turbo"],
+        help="Model used for extracting triplets. Default: claude3-sonnet."
     )
     parser.add_argument(
         '--extractor_max_new_tokens', type=int, default=500,
@@ -49,9 +50,9 @@ def get_args():
     )
     parser.add_argument(
         "--checker_name", type=str, default="claude3",
-        choices=["gpt4", "claude2", "claude3", "nli", "alignscore", "repc"],
+        choices=["claude3-sonnet", "claude3-haiku", "nli", "alignscore", "repc", "gpt-4", "gpt-3.5-turbo"],
         help="Model used for checking whether the triplets are factual. "
-        "Default: claude3."
+        "Default: claude3-sonnet."
     )
     parser.add_argument(
         "--repc_classifier_name", type=str, default="nn_ensemble",
@@ -143,18 +144,14 @@ def main():
 
 def extract(args):
     # initialize models
-    if args.claim_format == 'subsentence':
-        if args.extractor_name in ["claude3"]:
-            extractor = ClaudeExtractor(model=args.extractor_name)
+    if args.extractor_name in ["claude3-sonnet", "claude3-haiku", "gpt-4", "gpt-3.5-turbo"]:
+        extractor = LLMExtractor(claim_format=args.claim_format, model=args.extractor_name)
     else:
-        if args.extractor_name == "claude2":
-            extractor = Claude2Extractor()
-        elif args.extractor_name == "gpt4":
-            extractor = GPT4Extractor()
-        elif args.extractor_name == "mixtral":
-            extractor = MixtralExtractor()
+        assert args.claim_format == 'triplet'
+        if args.extractor_name == "mixtral":
+            extractor = MixtralExtractor(claim_format=args.claim_format)
         elif args.extractor_name == "mistral":
-            extractor = MistralExtractor()
+            extractor = MistralExtractor(claim_format=args.claim_format)
         else:
             raise NotImplementedError
 
@@ -169,11 +166,8 @@ def extract(args):
         assert "response" in item, "response field is required"
         response = item["response"]
         question = item.get("question", None)
-        if args.claim_format == 'subsentence':
-            claims = extractor.extract_subsentence_claims(response, question, max_new_tokens=args.extractor_max_new_tokens)
-            claims = [c.text for c in claims]
-        else:
-            claims = extractor.extract_claim_triplets(response, question, max_new_tokens=args.extractor_max_new_tokens)
+        extraction_result = extractor.extract(response, question, max_new_tokens=args.extractor_max_new_tokens)
+        claims = [c.to_dict() for c in extraction_result.claims]
         out_item = {**item, **{"claims": claims}}
         output_data.append(out_item)
     with open(args.output_path, "w") as fp:
@@ -182,7 +176,7 @@ def extract(args):
 
 def check(args):
     # initialize models
-    if args.checker_name in ["gpt4", "claude2", "claude3"]:
+    if args.checker_name in ["claude3-sonnet", "claude3-haiku", "gpt-4", "gpt-3.5-turbo"]:
         checker = LLMChecker(model=args.checker_name, batch_size=args.batch_size_checker)
     elif args.checker_name == "nli":
         checker = NLIChecker(batch_size=args.batch_size_checker)
@@ -220,7 +214,7 @@ def check(args):
     question_list = []
     for item in input_data:
         assert "claims" in item, "claims field is required"
-        claims = item["claims"]
+        claims = [RCClaim.from_dict(c) for c in item['claims']]
         if args.use_retrieval:
             reference = retriever.retrieve(item["response"])
             item["reference"] = reference
@@ -233,7 +227,9 @@ def check(args):
         reference_list.append(reference)
         question_list.append(question)
 
+    print(claim_list)
     results = checker.check(claim_list, reference_list, question=question_list)
+    print(results)
     agg_results = [agg_fn(r) for r in results]
     output_data = [{
         **input_data[i],

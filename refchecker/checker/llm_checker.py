@@ -3,8 +3,8 @@ from typing import List, Union
 from tqdm import tqdm
 
 from .checker_base import CheckerBase
-from ..utils import get_model_batch_response
-from ..claim_utils import Claim
+from ..utils import get_model_batch_response, get_llm_full_name
+from ..base import RCClaim
 
 
 LLM_CHECKING_PROMPT_Q = \
@@ -93,20 +93,11 @@ class LLMChecker(CheckerBase):
         self.prompt_temp_subsent = SUBSENTENCE_CLAIM_CHECKING_PROMPT
         
         self.batch_size = batch_size
-        if model not in ['gpt4', 'claude2', 'claude3']:
-            self.model = model
-        elif model == 'gpt4':
-            self.model = 'gpt-4'
-        elif model == 'claude2':
-            self.model = 'bedrock/anthropic.claude-v2' if os.environ.get('AWS_REGION_NAME') else 'claude-2'
-        elif model == 'claude3':
-            self.model = 'anthropic.claude-3-sonnet-20240229-v1:0' if os.environ.get('AWS_REGION_NAME') else 'claude-3-sonnet-20240229'
-        else:
-            raise ValueError('The model you specified is not supported.')
+        self.model = get_llm_full_name(model)
 
     def _check(
         self,
-        claims: List[Union[str, Claim, List[str]]],
+        claims: List[RCClaim],
         references: List[str],
         responses: List[str],
         questions: List[str],
@@ -116,7 +107,7 @@ class LLMChecker(CheckerBase):
 
         Parameters
         ----------
-        claims : List[Union[str, Claim, List[str]]]
+        claims : List[RCClaim]
             List of claims.
         references : List[str]
             List of reference passages (split according to 'max_reference_segment_length').
@@ -130,37 +121,30 @@ class LLMChecker(CheckerBase):
         ret : List[str]
             List of labels for the checking results.
 
-        """
-        is_subsentence_claims = False
-        
+        """        
         ret_labels = []
         prompt_list = []
         for claim, reference, question in zip(claims, references, questions):
-            if isinstance(claim, list):
-                assert len(claim) == 3
-                claim = f"({claim[0]}, {claim[1]}, {claim[2]})"
-            elif isinstance(claim, Claim):
-                claim = claim.text
-                is_subsentence_claims = True
+            claim_text = claim.get_content(preserve_triplet_form=True)
             
-            if is_subsentence_claims:
+            if claim.format == 'subsentence':
                 if question and len(question):
                     reference = question + ' ' + reference
                 prompt = self.prompt_temp_subsent.format(
                     reference=reference,
-                    claim=claim
+                    claim=claim_text
                 )
             else:
                 if question is None:
                     prompt = self.prompt_temp.format(
                         reference=reference,
-                        claim=claim
+                        claim=claim_text
                     )
                 else:
                     prompt = self.prompt_temp_wq.format(
                         question=question,
                         reference=reference,
-                        claim=claim
+                        claim=claim_text
                     )
             prompt_list.append(prompt)
 

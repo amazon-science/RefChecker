@@ -2,7 +2,7 @@ from typing import List, Union
 from itertools import groupby
 
 from ..utils import split_text
-from ..claim_utils import Claim
+from ..base import RCClaim
 
 
 def merge_ret(ret):
@@ -41,7 +41,7 @@ class CheckerBase:
 
     def check(
         self, 
-        claim: List[List[Union[str, Claim, List[str]]]],
+        claim: List[List[RCClaim]],
         reference: Union[List[str], List[List[str]]],
         response: List[str] = None,
         question: List[str] = None,
@@ -52,8 +52,8 @@ class CheckerBase:
 
         Parameters
         ----------
-        claim : List[List[Union[str, Claim, List[str]]]]
-            List consists of the triplets extracted from each given example.
+        claim : List[List[RCClaim]]
+            List consists of the claims extracted from each given example.
         reference : Union[List[str], List[List[str]]]
             List of reference passages for each given example.
         response : List[str], optional
@@ -65,10 +65,11 @@ class CheckerBase:
 
         Returns
         -------
-        ret_group_triplet : List[List[str]]
+        results : List[List[str]]
             Grouped triplet checking results corresponding to each given example.
 
         """
+        batch_example_nums = [len(c) for c in claim]
 
         if response is None:
             response = [None] * len(claim)
@@ -103,11 +104,19 @@ class CheckerBase:
         ret_merge_psg = [[merge_multi_psg_ret([item[0] for item in group])] + key[:-1] for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])]
         ret_group_triplet = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
 
-        return ret_group_triplet
+        results = []
+        i = 0
+        for n in batch_example_nums:
+            if n > 0:
+                results.append(ret_group_triplet[i])
+                i += 1
+            else:
+                results.append([])
+        return results
 
     def _check(
         self,
-        claims: List[Union[str, List[str]]],
+        claims: List[RCClaim],
         references: List[str],
         responses: List[str],
         questions: List[str]
@@ -119,7 +128,7 @@ class CheckerBase:
 
         Parameters
         ----------
-        claims : List[Union[str, List[str]]]
+        claims : List[RCClaim]
             List of claims to be checked.
         references : List[str]
             List of reference passages.

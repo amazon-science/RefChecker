@@ -5,8 +5,7 @@ from .checker import (
     RepCChecker
 )
 from .extractor import (
-    Claude2Extractor, 
-    GPT4Extractor, 
+    LLMExtractor, 
     MixtralExtractor,
     MistralExtractor
 )
@@ -15,55 +14,50 @@ from .extractor import (
 class RefChecker:
     def __init__(
         self,
-        claim_extractor_model:str='claude2',
-        claim_format:str='triplet',
-        checker_model:str='claude2'
+        extractor_name:str='claude3-sonnet',
+        claim_format:str='subsentence',
+        checker_name:str='claude3-sonnet'
     ) -> None:
-        self.claim_format = claim_format
-        if self.claim_format != 'triplet':
-            raise 'We currently only support claim-triplet'
+        if claim_format not in ['triplet', 'subsentence']:
+            raise 'We currently only support claim formats of \'triplet\' and \'subsentence\''
         
-        if claim_extractor_model == 'claude2':
-            self.claim_extractor = Claude2Extractor(claim_format=claim_format)
-        elif claim_extractor_model == 'gpt4':
-            self.claim_extractor = GPT4Extractor(claim_format=claim_format)
+        if extractor_name.startswith('claude3') or extractor_name.startswith('gpt'):
+            self.extractor = LLMExtractor(claim_format=claim_format, model=extractor_name)
+        elif extractor_name == 'mistral':
+            assert claim_format == 'triplet', 'The Mistral extractor currently only supports triplet claims'
+            self.extractor = MistralExtractor(claim_format=claim_format)
+        elif extractor_name == 'mixtral':
+            assert claim_format == 'triplet', 'The Mixtral extractor currently only supports triplet claims'
+            self.extractor = MixtralExtractor(claim_format=claim_format)
         
-        if checker_model == 'claude2':
-            self.bc = Claude2Checker()
+        if checker_name.startswith('claude3') or checker_name.startswith('gpt'):
+            self.checker = LLMChecker(model=checker_name)
             self.max_reference_segment_length = 0
-        elif checker_model == 'gpt4':
-            self.bc = GPT4Checker()
-            self.max_reference_segment_length = 0
-        elif checker_model == 'nli':
-            self.bc = NLIChecker()
+        elif checker_name == 'nli':
+            self.checker = NLIChecker()
+            self.max_reference_segment_length = 200
+        elif checker_name == 'alignscore':
+            self.checker = AlignScoreChecker()
             self.max_reference_segment_length = 200
         
     def check(
         self,
-        question,
         response,
-        reference
+        reference,
+        question=None,
+        max_new_tokens=500
     ):
-        claims = self.claim_extractor.extract(
+        extraction_result = self.extractor.extract(
             question=question,
-            response=response
+            response=response,
+            max_new_tokens=max_new_tokens
         )
         
-        results = []
-        for claim in claims:
-            claim_str = claim
-            if self.claim_format == 'triplet':
-                claim_str = ' '.join(claim)
-                
-            label = self.bc.check(
-                claim=claim_str,
-                reference=reference,
-                question=question,
-                response=response,
-                max_reference_segment_length=self.max_reference_segment_length
-            )
-            results.append({
-                'claim': claim,
-                'label': label
-            })
-        return results
+        checking_result = self.checker.check(
+            claim=[extraction_result.claims],
+            reference=[reference],
+            question=[question],
+            max_reference_segment_length=self.max_reference_segment_length
+        )
+        
+        return extraction_result.claims, checking_result[0]
