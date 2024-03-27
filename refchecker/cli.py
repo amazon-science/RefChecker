@@ -4,7 +4,7 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
 from .extractor import (
-    Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor
+    Claude2Extractor, GPT4Extractor, MistralExtractor, MixtralExtractor, LLMExtractor
 )
 from .checker import (
     LLMChecker, NLIChecker, AlignScoreChecker, RepCChecker
@@ -34,8 +34,8 @@ def get_args():
         help="Path to the cache directory. Default: ./.cache"
     )
     parser.add_argument(
-        '--extractor_name', type=str, default="claude2",
-        choices=["gpt4", "claude2", "mistral", "mixtral"],
+        '--extractor_name', type=str, default="claude3-sonnet",
+        choices=["gpt4", "claude2", "mistral", "mixtral", "claude3-sonnet", "claude3-haiku"],
         help="Model used for extracting triplets. Default: claude2."
     )
     parser.add_argument(
@@ -43,8 +43,8 @@ def get_args():
         help="Max generated tokens of the extractor, set a larger value for longer documents. Default: 500"
     )
     parser.add_argument(
-        "--checker_name", type=str, default="claude2",
-        choices=["gpt4", "claude2", "nli", "alignscore", "repc"],
+        "--checker_name", type=str, default="claude3-sonnet",
+        choices=["gpt4", "claude2", "nli", "alignscore", "repc", "claude3-sonnet", "claude3-haiku"],
         help="Model used for checking whether the triplets are factual. "
         "Default: claude2."
     )
@@ -138,10 +138,8 @@ def main():
 
 def extract(args):
     # initialize models
-    if args.extractor_name == "claude2":
-        extractor = Claude2Extractor()
-    elif args.extractor_name == "gpt4":
-        extractor = GPT4Extractor()
+    if args.extractor_name in ["gpt4", "claude2", "claude3-sonnet", "claude3-haiku"]:
+        extractor = LLMExtractor(model=args.extractor_name)
     elif args.extractor_name == "mixtral":
         extractor = MixtralExtractor()
     elif args.extractor_name == "mistral":
@@ -169,7 +167,7 @@ def extract(args):
 
 def check(args):
     # initialize models
-    if args.checker_name in ["gpt4", "claude2"]:
+    if args.checker_name in ["gpt4", "claude2", "claude3-sonnet", "claude3-haiku"]:
         checker = LLMChecker(model=args.checker_name, batch_size=args.batch_size_checker)
     elif args.checker_name == "nli":
         checker = NLIChecker(batch_size=args.batch_size_checker)

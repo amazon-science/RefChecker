@@ -71,12 +71,16 @@ class LLMChecker(CheckerBase):
         self.prompt_temp = LLM_CHECKING_PROMPT
         self.prompt_temp_wq = LLM_CHECKING_PROMPT_Q
         self.batch_size = batch_size
-        if model not in ['gpt4', 'claude2']:
+        if model not in ['gpt4', 'claude2', 'claude3-sonnet', 'claude3-haiku']:
             self.model = model
         elif model == 'gpt4':
             self.model = 'gpt-4'
         elif model == 'claude2':
             self.model = 'bedrock/anthropic.claude-v2' if os.environ.get('AWS_REGION_NAME') else 'claude-2'
+        elif model == 'claude3-sonnet':
+            self.model = 'anthropic.claude-3-sonnet-20240229-v1:0' if os.environ.get('AWS_REGION_NAME') else 'claude-3-sonnet-20240229'
+        elif model == 'claude3-haiku':
+            self.model = 'anthropic.claude-3-haiku-20240307-v1:0' if os.environ.get('AWS_REGION_NAME') else 'claude-3-haiku-20240307'
         else:
             raise ValueError('The model you specified is not supported.')
 
