@@ -80,9 +80,9 @@ We provide a command-line interface to run RefChecker in a console:
 ```
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
-                     [--extractor_name {gpt4,claude2,mixtral,mistral}]
+                     [--extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}]
                      [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
-                     [--checker_name {gpt4,claude2,nli,alignscore,repc}]
+                     [--checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc}]
                      [--repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
@@ -109,12 +109,12 @@ options:
               Output path to the result json file.
   --cache_dir CACHE_DIR
               Path to the cache directory. Default: ./.cache.
-  --extractor_name {gpt4,claude2,mixtral,mistral}
-              Model used for extracting triplets. Default: claude2.
+  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}
+              Model used for extracting triplets. Default: claude3-sonnet.
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
-  --checker_name {gpt4,claude2,nli,alignscore,repc}
-              Model used for checking whether the triplets are factual. Default: claude2.
+  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc}
+              Model used for checking whether the triplets are factual. Default: claude3-sonnet.
   --repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}
               Classifier Model used for RepC checker, only valid when RepC checker is used.
               Default: nn_ensemble, neural network classifier with layer ensemble.
@@ -154,7 +154,7 @@ To extract claim triplets from LLM-generated responses, do:
 refchecker-cli extract \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2,mixtral}
+  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}
 ```
 
 The input json file contains a list of
@@ -173,7 +173,7 @@ To check hallucinations at triplet level, do:
 refchecker-cli check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --checker_name {gpt4,claude2,nli,alignscore} \
+  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc} \
   --aggregator_name {strict,soft,major}
 ```
 
@@ -217,8 +217,8 @@ Finally, you can use the whole extraction and checking pipeline by:
 refchecker-cli extract-check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2,mixtral} \
-  --checker_name {gpt4,claude2,nli,alignscore} \
+  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral} \
+  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc} \
   --aggregator_name {strict,soft,major} \
   <other optional flags>
 ```

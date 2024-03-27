@@ -36,7 +36,7 @@ def get_args():
     parser.add_argument(
         '--extractor_name', type=str, default="claude3-sonnet",
         choices=["gpt4", "claude2", "mistral", "mixtral", "claude3-sonnet", "claude3-haiku"],
-        help="Model used for extracting triplets. Default: claude2."
+        help="Model used for extracting triplets. Default: claude3-sonnet."
     )
     parser.add_argument(
         '--extractor_max_new_tokens', type=int, default=500,
@@ -46,7 +46,7 @@ def get_args():
         "--checker_name", type=str, default="claude3-sonnet",
         choices=["gpt4", "claude2", "nli", "alignscore", "repc", "claude3-sonnet", "claude3-haiku"],
         help="Model used for checking whether the triplets are factual. "
-        "Default: claude2."
+        "Default: claude3-sonnet."
     )
     parser.add_argument(
         "--repc_classifier_name", type=str, default="nn_ensemble",
