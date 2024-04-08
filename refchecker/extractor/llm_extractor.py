@@ -3,6 +3,8 @@ import os
 from .extractor_base import ExtractorBase
 from ..utils import get_model_batch_response
 
+from tqdm import tqdm
+
 
 LLM_TRIPLET_EXTRACTION_PROMPT_Q = \
 """Given a question and a candidate answer to the question, please extract a KG from the candidate answer condition on the question and represent the KG with triples formatted with ("subject", "predicate", "object").
@@ -87,7 +89,8 @@ class LLMExtractor(ExtractorBase):
     def __init__(
         self,
         claim_format:str='triplet',
-        model='claude3-sonnet'
+        model='claude3-sonnet',
+        batch_size=16
     ) -> None:
         super().__init__(claim_format=claim_format)
         if self.claim_format == 'triplet':
@@ -106,29 +109,63 @@ class LLMExtractor(ExtractorBase):
             self.model = 'anthropic.claude-3-haiku-20240307-v1:0' if os.environ.get('AWS_REGION_NAME') else 'claude-3-haiku-20240307'
         else:
             raise ValueError('The model you specified is not supported.')
+
+        self.batch_size = batch_size
     
-    def extract_claim_triplets(self, response, question=None, max_new_tokens=500):
-        if question is None:
-            prompt = self.prompt_temp.format(
-                input_text=response
-            )
-        else:
-            prompt = self.prompt_temp_wq.format(
-                q=question,
-                a=response
-            )
-        response = get_model_batch_response(
-            [prompt],
-            temperature=0,
-            model=self.model,
-            max_new_tokens=max_new_tokens
-        )[0]
-        if response and len(response):
-            kg_str = None
-            if '###' in response:
-                kg_str = response[:response.index('###')]
+    def extract_claim_triplets(
+        self, response, question, max_new_tokens=500
+    ):
+        """Extract KG triplets from the response text.
+
+        Parameters
+        ----------
+        response : List[str]
+            List of model response texts.
+        question : List[str|None]
+            List of questions corresponding to each response.
+        max_new_tokens : int, optional
+            Maximum number of tokens to generate, defaults to 500.
+
+        Returns
+        -------
+        List[List[Tuple[str, str, str]]]
+            List of extracted KG triplets for each response.
+        """
+        prompt_list = []
+        triplets_list = []
+        for r, q in zip(response, question):
+            if q is None:
+                prompt = self.prompt_temp.format(
+                    input_text=r
+                )
             else:
-                kg_str = response
-            triplets = self._parse_claim_triplets(kg_str)
-            return triplets
-        return []
+                prompt = self.prompt_temp_wq.format(
+                    q=q,
+                    a=r
+                )
+            prompt_list.append(prompt)
+
+        for i in tqdm(
+            range(0, len(prompt_list), self.batch_size),
+            desc=f'Extracting KG triplets (bsz={self.batch_size})', ncols=80
+        ):
+            batch_prompts = prompt_list[i:i+self.batch_size]
+            llm_responses = get_model_batch_response(
+                batch_prompts,
+                temperature=0,
+                model=self.model,
+                max_new_tokens=max_new_tokens
+            )
+            for llm_response in llm_responses:
+                if llm_response and len(llm_response):
+                    kg_str = None
+                    if '###' in llm_response:
+                        kg_str = llm_response[:llm_response.index('###')]
+                    else:
+                        kg_str = llm_response
+                    triplets = self._parse_claim_triplets(kg_str)
+                    triplets_list.append(triplets)
+                else:
+                    triplets_list.append([])
+        
+        return triplets_list

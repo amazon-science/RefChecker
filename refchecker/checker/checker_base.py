@@ -44,7 +44,8 @@ class CheckerBase:
         reference: Union[List[str], List[List[str]]],
         response: List[str] = None,
         question: List[str] = None,
-        max_reference_segment_length: int = 200, 
+        max_reference_segment_length: int = 200,
+        merge_psg: bool = True
     ):
         """
         Check claims against references.
@@ -61,6 +62,8 @@ class CheckerBase:
             List of questions for each given example, defaults to None.
         max_reference_segment_length : int, optional
             Maximum length of each reference segment, defaults to 200.
+        merge_psg : bool, optional
+            Whether to merge results from multiple passages, defaults to True.
 
         Returns
         -------
@@ -99,7 +102,16 @@ class CheckerBase:
 
         ret = [[x] + y for x, y in zip(ret, input_ids)]
         ret_merge_seg = [[merge_ret([item[0] for item in group])] + key[:-1] for key, group in groupby(ret, key=lambda x: x[1:])]
-        ret_merge_psg = [[merge_multi_psg_ret([item[0] for item in group])] + key[:-1] for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])]
+        if merge_psg:
+            ret_merge_psg = [
+                [merge_multi_psg_ret([item[0] for item in group])] + key[:-1] 
+                for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
+            ]
+        else:
+            ret_merge_psg = [
+                [[item[0] for item in group]] + key[:-1]
+                for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
+            ]
         ret_group_triplet = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
 
         return ret_group_triplet
