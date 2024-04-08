@@ -6,7 +6,7 @@ from ..base import RCText, RCClaim
 class ExtractorBase:
     def __init__(
         self,
-        claim_format:str='triplet'
+        claim_format:str='subsentence'
     ) -> None:
         assert claim_format in ['triplet', 'subsentence']
         self.claim_format = claim_format

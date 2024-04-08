@@ -95,6 +95,12 @@ class RCText:
         assert self._sent_id_to_index[sent_id] < len(self.sentences)
         return self.sentences[self._sent_id_to_index[sent_id]]
 
+    def to_dict(self):
+        return {
+            'sents': [s.to_dict() for s in self.sentences],
+            'sent_id_to_index': self._sent_id_to_index
+        }
+
 
 class RCClaim:
     def __init__(
@@ -151,10 +157,8 @@ class ExtractionResult:
         question: str,
         response: Union[str, RCText],
         extractor_response: str = None,
-        error_info: str = None
     ) -> None:
         self.claims = claims
         self.question = question
         self.response = response
         self.extractor_response = extractor_response
-        self.error_info = error_info
