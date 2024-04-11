@@ -45,7 +45,8 @@ class ExtractorBase:
     def parse_claims(
         self,
         response, 
-        excluded_content_prefix
+        excluded_content_prefix,
+        response_sentence_ids=None
     ):
         response = response.strip()
         if excluded_content_prefix and excluded_content_prefix in response:
@@ -55,18 +56,27 @@ class ExtractorBase:
             return self._parse_claim_triplets(response)
         elif self.claim_format == 'subsentence':
             claims = []
-            for c in re.findall(r'.*[\[\d+\]]+', response):
+            # for c in re.findall(r'.*[\[\d+\]]+', response):
+            for c in re.findall(r'.*[\[(\d+(?:,\s*\d+)*)\]]', response):
                 sent_ids = []
                 first_sid_index = None
-                for sid in re.finditer(r'\[\d+\]', c):
+                for sid in re.finditer(r'\[(\d+(?:,\s*\d+)*)\]', c):
                     if first_sid_index is None:
                         first_sid_index = sid.start()
-                    sent_ids.append(sid.group()[1:-1])
-                claims.append(RCClaim(
-                    format=self.claim_format,
-                    content=c[:first_sid_index].strip(), 
-                    attributed_sent_ids=sent_ids
-                ))
+                    sent_id_str = sid.group()[1:-1]
+                    if ',' in sent_id_str:
+                        for _id in sent_id_str.split(','):
+                            _id = _id.strip()
+                            sent_ids.append(_id)
+                    else:
+                        sent_ids.append(sid.group()[1:-1])
+                sent_ids = [_id for _id in sent_ids if _id in response_sentence_ids]
+                if len(sent_ids):
+                    claims.append(RCClaim(
+                        format=self.claim_format,
+                        content=c[:first_sid_index].strip(), 
+                        attributed_sent_ids=sent_ids
+                    ))
             return claims
         else:
             raise ValueError(f'Unknown Claim Format: {self.format}')

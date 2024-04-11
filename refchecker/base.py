@@ -5,19 +5,21 @@ from spacy.lang.en import English
 
 
 class RCSentence:
-    def __init__(self, sentence_text, is_blank) -> None:
+    def __init__(self, sentence_text, is_blank, start=None, end=None) -> None:
         self.text = sentence_text
         self.is_blank = is_blank
+        self.start = start
+        self.end = end
 
     def __repr__(self) -> str:
         return self.text
 
     def to_dict(self):
-        return {'text': self.text, 'is_blank': self.is_blank}
+        return {'text': self.text, 'is_blank': self.is_blank, 'start': self.start, 'end': self.end}
     
     @classmethod
     def from_dict(cls, sent_dict: dict):
-        return cls(text=sent_dict['text'], is_blank=sent_dict['is_blank'])
+        return cls(text=sent_dict['text'], is_blank=sent_dict['is_blank'], start=sent_dict['start'], end=sent_dict['end'])
         
 
 class RCText:
@@ -60,7 +62,7 @@ class RCText:
                 else:
                     break
             if len(s_text[start_idx: end_idx+1]):
-                sents.append(RCSentence(s_text[start_idx: end_idx+1], is_blank=False))
+                sents.append(RCSentence(s_text[start_idx: end_idx+1], is_blank=False, start=s.start, end=s.end))
             if len(surfix):
                 sents.append(RCSentence(surfix, is_blank=True))
         
@@ -94,6 +96,9 @@ class RCText:
         assert sent_id in self._sent_id_to_index, "Invalid sentence ID"
         assert self._sent_id_to_index[sent_id] < len(self.sentences)
         return self.sentences[self._sent_id_to_index[sent_id]]
+
+    def get_sentence_ids(self):
+        return list(self._sent_id_to_index.keys())
 
     def to_dict(self):
         return {

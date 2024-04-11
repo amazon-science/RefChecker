@@ -94,7 +94,6 @@ def get_model_batch_response(
     response_list : List[str]
         List of generated text.
     """
-
     if not prompts or len(prompts) == 0:
         raise ValueError("Invalid input.")
 
@@ -114,7 +113,7 @@ def get_model_batch_response(
         message_list.append(messages)
     import litellm
     litellm.suppress_debug_info = True
-    litellm.drop_params=True
+    # litellm.drop_params=True
     while True:
         try:
             responses = batch_completion(

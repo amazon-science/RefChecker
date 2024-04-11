@@ -132,7 +132,10 @@ class LLMExtractor(ExtractorBase):
 
             if llm_responses and len(llm_responses):
                 for _j, res in enumerate(llm_responses):
-                    claims = self.parse_claims(res, excluded_content_prefix='### Text')
+                    claims = self.parse_claims(
+                        res, 
+                        excluded_content_prefix='### Text', 
+                        response_sentence_ids=rc_responses[_i + _j].get_sentence_ids())
                     result = ExtractionResult(
                         claims=claims,
                         question=question,
