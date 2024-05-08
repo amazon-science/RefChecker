@@ -11,33 +11,38 @@ class ExtractorBase:
         assert claim_format in ['triplet', 'subsentence']
         self.claim_format = claim_format
 
-    def extract(self, response, question=None, max_new_tokens=500):
+    def extract(
+        self, 
+        batch_responses, 
+        batch_questions=None, 
+        max_new_tokens=500
+    ):
         if self.claim_format == 'triplet':
             result = self.extract_claim_triplets(
-                response=response,
-                question=question,
+                batch_responses=batch_responses,
+                batch_questions=batch_questions,
                 max_new_tokens=max_new_tokens
             )
         elif self.claim_format == 'subsentence':
             result = self.extract_subsentence_claims(
-                response=response,
-                question=question,
+                batch_responses=batch_responses,
+                batch_questions=batch_questions,
                 max_new_tokens=max_new_tokens
             )
         return result
 
     def extract_claim_triplets(
         self,
-        response,
-        question=None, 
+        batch_responses,
+        batch_questions=None, 
         max_new_tokens=500
     ):
         raise NotImplementedError
 
     def extract_subsentence_claims(
         self,
-        response,
-        question=None,
+        batch_responses,
+        batch_questions=None,
         max_new_tokens=500
     ):
         raise NotImplementedError
@@ -45,12 +50,16 @@ class ExtractorBase:
     def parse_claims(
         self,
         response, 
-        excluded_content_prefix,
+        claim_starting_prefix=None,
+        excluded_content_prefix=None,
         response_sentence_ids=None
     ):
         response = response.strip()
         if excluded_content_prefix and excluded_content_prefix in response:
             response = response[:response.index(excluded_content_prefix)]
+        
+        if claim_starting_prefix and claim_starting_prefix in response:
+            response = response[response.index(claim_starting_prefix) + len(claim_starting_prefix):]
         
         if self.claim_format == 'triplet':
             return self._parse_claim_triplets(response)

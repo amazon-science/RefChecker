@@ -72,7 +72,8 @@ class LLMChecker(CheckerBase):
     def __init__(
         self,
         model,
-        batch_size=16
+        batch_size=16,
+        api_base=None
     ) -> None:
         """
         Initializer for the LLMChecker class.
@@ -97,7 +98,7 @@ class LLMChecker(CheckerBase):
 
     def _check(
         self,
-        claims: List[RCClaim],
+        claims: List[Union[str, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str],
@@ -107,7 +108,7 @@ class LLMChecker(CheckerBase):
 
         Parameters
         ----------
-        claims : List[RCClaim]
+        claims : List[Union[str, List[str]]]
             List of claims.
         references : List[str]
             List of reference passages (split according to 'max_reference_segment_length').
@@ -125,16 +126,9 @@ class LLMChecker(CheckerBase):
         ret_labels = []
         prompt_list = []
         for claim, reference, question in zip(claims, references, questions):
-            claim_text = claim.get_content(preserve_triplet_form=True)
+            claim_text = str(claim)
             
-            if claim.format == 'subsentence':
-                if question and len(question):
-                    reference = question + ' ' + reference
-                prompt = self.prompt_temp_subsent.format(
-                    reference=reference,
-                    claim=claim_text
-                )
-            else:
+            if isinstance(claim, list) and len(claim) == 3:
                 if question is None:
                     prompt = self.prompt_temp.format(
                         reference=reference,
@@ -146,6 +140,15 @@ class LLMChecker(CheckerBase):
                         reference=reference,
                         claim=claim_text
                     )
+            elif isinstance(claim, str):
+                if question and len(question):
+                    reference = question + ' ' + reference
+                prompt = self.prompt_temp_subsent.format(
+                    reference=reference,
+                    claim=claim_text
+                )
+            else:
+                raise f'Unknown claim format: {type(claim)}'
             prompt_list.append(prompt)
 
         for i in tqdm(range(0, len(prompt_list), self.batch_size)):

@@ -74,9 +74,10 @@ from .extractor_prompts import *
 class LLMExtractor(ExtractorBase):
     def __init__(
         self, 
-        claim_format: str = 'subsentence',
+        claim_format: str = 'triplet',
         model: str = 'claude3-sonnet',
-        batch_size=16
+        batch_size=16,
+        api_base=None
     ) -> None:
         super().__init__(claim_format)
         
@@ -85,8 +86,8 @@ class LLMExtractor(ExtractorBase):
     
     def extract_subsentence_claims(
         self, 
-        response, 
-        question=None, 
+        batch_responses, 
+        batch_questions=None, 
         max_new_tokens=500
     ):
         """Extract subsentence claims from the response text.
@@ -107,14 +108,14 @@ class LLMExtractor(ExtractorBase):
         prompt_list = []
         result_list = []
         rc_responses = []
-        for _i, r in enumerate(response):
+        for _i, r in enumerate(batch_responses):
             rc_r = RCText(r)
             indexed_r_text = rc_r.get_indexed_response(condense_newlines=True)
             q = None
-            if question:
-                q = question[_i]
+            if batch_questions:
+                q = batch_questions[_i]
             if q and len(q):
-                prompt = LLM_CLAIM_EXTRACTION_PROMPT_Q.format(q=q, r=indexed_r_text)
+                prompt = LLM_Triplet_To_Claim_PROMPT_Q.format(q=q, r=indexed_r_text)
             else:
                 raise NotImplementedError
             prompt_list.append(prompt)
@@ -134,11 +135,11 @@ class LLMExtractor(ExtractorBase):
                 for _j, res in enumerate(llm_responses):
                     claims = self.parse_claims(
                         res, 
-                        excluded_content_prefix='### Text', 
+                        claim_starting_prefix='### Claims',
+                        excluded_content_prefix='### Question', 
                         response_sentence_ids=rc_responses[_i + _j].get_sentence_ids())
                     result = ExtractionResult(
                         claims=claims,
-                        question=question,
                         response=rc_responses[_i + _j],
                         extractor_response=res,
                     )
@@ -149,8 +150,8 @@ class LLMExtractor(ExtractorBase):
 
     def extract_claim_triplets(
         self, 
-        response, 
-        question=None, 
+        batch_responses, 
+        batch_questions=None, 
         max_new_tokens=500
     ):
         """Extract KG triplets from the response text.
@@ -171,18 +172,18 @@ class LLMExtractor(ExtractorBase):
         prompt_list = []
         result_list = []
         
-        for _i, r in enumerate(response):
+        for _i, r in enumerate(batch_responses):
             q = None
-            if question:
-                q = question[_i]
+            if batch_questions:
+                q = batch_questions[_i]
             if q is None:
                 prompt = LLM_TRIPLET_EXTRACTION_PROMPT.format(
-                    input_text=response
+                    input_text=r
                 )
             else:
                 prompt = LLM_TRIPLET_EXTRACTION_PROMPT_Q.format(
                     q=q,
-                    a=response
+                    a=r
                 )
             prompt_list.append(prompt)
         
@@ -196,15 +197,13 @@ class LLMExtractor(ExtractorBase):
                 max_new_tokens=max_new_tokens
             )
 
-            error_info = None
             if llm_responses and len(llm_responses):
                 for res in llm_responses:
                     claims = self.parse_claims(res, '###')
                     result = ExtractionResult(
                         claims=claims,
-                        question=question,
-                        response=response,
-                        extractor_response=res,
+                        response=None,
+                        extractor_response=res
                     )
                     result_list.append(result)
             else:

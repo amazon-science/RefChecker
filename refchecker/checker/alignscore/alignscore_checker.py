@@ -52,7 +52,7 @@ class AlignScoreChecker(CheckerBase):
     @torch.no_grad()
     def _check(
         self,
-        claims: List[Union[str, RCClaim, List[str]]],
+        claims: List[Union[str, List[str]]],
         references: List[str],
         responses: List[str],
         questions: List[str],
@@ -62,7 +62,7 @@ class AlignScoreChecker(CheckerBase):
 
         Parameters
         ----------
-        claims : List[Union[str, Claim, List[str]]]
+        claims : List[Union[str, List[str]]]
             List of claims.
         references : List[str]
             List of reference passages (split according to 'max_reference_segment_length').
@@ -83,8 +83,7 @@ class AlignScoreChecker(CheckerBase):
         if isinstance(claims[0], list):
             assert len(claims[0]) == 3
             claims = [f"{c[0]} {c[1]} {c[2]}" for c in claims]
-        elif isinstance(claims[0], RCClaim):
-            claims = [c.text for c in claims]
+        
         batch_preds = []
         for i in tqdm(range(0, len(claims), self.batch_size)):
             batch_claims = claims[i:i + self.batch_size]

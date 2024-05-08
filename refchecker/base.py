@@ -159,11 +159,9 @@ class ExtractionResult:
     def __init__(
         self, 
         claims: List[RCClaim],
-        question: str,
         response: Union[str, RCText],
         extractor_response: str = None,
     ) -> None:
         self.claims = claims
-        self.question = question
         self.response = response
         self.extractor_response = extractor_response

@@ -1,10 +1,9 @@
 import argparse
 import json
 from tqdm import tqdm
+import os
 
 from refchecker import (
-    GPT4Extractor, 
-    Claude2Extractor, 
     MistralExtractor,
     LLMChecker,
     NLIChecker,
@@ -12,36 +11,44 @@ from refchecker import (
     RepCChecker
 )
 
+from refchecker.extractor import LLMExtractor
+from refchecker.checker import LLMChecker
+
 
 def _get_checker(checker_model):
     checker = None
-    if checker_model in ["gpt4", "claude2"]:
-        checker = LLMChecker(model=checker_model)
-    elif checker_model == 'nli':
+    if checker_model == 'nli':
         checker = NLIChecker()
     elif checker_model == 'alignscore':
-        checker = AlignScoreChecker()
+        checker = AlignScoreChecker(
+            batch_size=args.batch_size
+        )
     elif checker_model == 'repc':
         checker = RepCChecker()
     else:
-        raise NotImplementedError
+        checker = LLMChecker(
+            model=checker_model,
+            api_base=args.api_base,
+            batch_size=args.batch_size
+        )
     return checker
 
 
 def _get_extractor(extractor_model):
     claim_extractor = None
-    if extractor_model == 'gpt4':
-        claim_extractor = GPT4Extractor()
-    elif extractor_model == 'claude2':
-        claim_extractor = Claude2Extractor()
-    elif extractor_model == 'mistral-sft':
+    if extractor_model == 'mistral-sft':
         claim_extractor = MistralExtractor()
+    else:
+        claim_extractor = LLMExtractor(
+            claim_format=args.claim_format,
+            model=extractor_model,
+            api_base=args.api_base,
+            batch_size=args.batch_size
+        )
     return claim_extractor
 
 
-def autocheck(extractor_model, checker_model):
-    print(extractor_model, checker_model)
-    
+def autocheck(extractor_model, checker_model):    
     claim_extractor = None
     checker = None
 
@@ -50,83 +57,113 @@ def autocheck(extractor_model, checker_model):
         ["nq", "msmarco", "dolly"]
     ):
         print(f'Evaluating {args.model} on {setting} setting with {extractor_model} extractor and {checker_model} checker')
-        response_file = f'human_annotations_v1/{setting}/{ds}_{args.model}_answers.json'
-        response_data = json.load(open(response_file))
+        
+        input_dir = os.path.join('human_annotations_v1', setting)
+        response_filename = f'{ds}_{args.model}_answers.json'
+        output_dir = os.path.join(args.output_dir, setting)
+        if not os.path.exists(output_dir):
+            os.mkdir(output_dir)
+        output_filename = os.path.join(output_dir, response_filename)
+        
+        if os.path.exists(output_filename):
+            response_data = json.load(open(output_filename))
+        else:
+            response_data = json.load(open(os.path.join(input_dir, response_filename)))
         # in case the order of response data is not aligned with ours
         id_to_data = {d['id']: d for d in json.load(open(f'data/{setting}/{ds}.json'))}
         
-        cnt = 0
+        # === Extraction ===
+        batch_questions = []
+        batch_responses = []
         kg_key = f'{extractor_model}_response_kg'
-        for r in tqdm(response_data):
+        for r in response_data:
             d = id_to_data[r['id']]
-
-            # claim extraction
+            r['question'] = d['question']
+            r['context'] = d['context']
             if kg_key not in r:
-                if claim_extractor is None:
-                    claim_extractor = _get_extractor(extractor_model)
-                claims = claim_extractor.extract(
-                    question=d['question'],
-                    response=r['response']
-                )
-                if claims is not None:
-                    r[kg_key] = [{'triplet': t} for t in claims]
-                    json.dump(response_data, open(response_file, 'w'), indent=4)
+                batch_questions.append(r['question'])
+                batch_responses.append(r['response'])
+        
+        if len(batch_responses):
+            if claim_extractor is None:
+                claim_extractor = _get_extractor(extractor_model)
+            
+            print(f'Running Claim Extraction on {len(batch_responses)} examples...')
+            extraction_results = claim_extractor.extract(
+                batch_responses=batch_responses,
+                batch_questions=batch_questions,
+                max_new_tokens=1000
+            )
 
-        claim_list = []
-        reference_list = []
-        question_list = []
-        response_list = []
-        idx_list = []
+            assert len(extraction_results) == len(batch_responses)
+            
+            _i = 0
+            for r in response_data:
+                if kg_key not in r:
+                    r[kg_key] = [{'claim': c.content, 'attributed_sent_ids': c.attributed_sent_ids} for c in extraction_results[_i].claims]
+                    r['extraction_orig_response'] = extraction_results[_i].extractor_response
+                    _i += 1
+
+            json.dump(response_data, open(output_filename, 'w'), indent=4)
+
+        # # === Checking ===
+        batch_claims = []
+        batch_references = []
+        batch_questions = []
+        batch_responses = []
+        
         label_key = f'{checker_model}_label'
-        for r_idx, r in enumerate(response_data):
-            d = id_to_data[r['id']]
-            # checking
-            if kg_key in r and len(r[kg_key]):
-                triplets = []
-                ids = []
-                # reference
-                if checker_model == 'nli':
-                    reference = []
-                    for pi, psg in enumerate(d['context']):
-                        reference.append(f'Passage {pi}: {psg}')
-                else:
-                    reference = ''
-                    for pi, psg in enumerate(d['context']):
-                        reference += f'Passage {pi}: {psg}\n'
-
-                for t_idx, t in enumerate(r[kg_key]):
-                    if label_key not in t:
-                        triplets.append(t['triplet'])
-                        ids.append((r_idx, t_idx))
-                if len(triplets) > 0:
-                    claim_list.append(triplets)
-                    reference_list.append(reference)
-                    question_list.append(d['question'])
-                    response_list.append(r['response'])
-                    idx_list.append(ids)
+        for r in response_data:
+            if kg_key in r:
+                claims = [c['claim'] for c in r[kg_key] if label_key not in c]
+                if len(claims):
+                    batch_claims.append(claims)
+                    _references = []
+                    if len(r['context']) > 1:
+                        for pi, psg in enumerate(r['context']):
+                            _references.append(f'Passage {pi}: {psg}')
+                    else:
+                        for pi, psg in enumerate(r['context']):
+                            _references.append(psg)
+                    batch_references.append(_references)
+                    
+                    batch_questions.append(r['question'])
+                    batch_responses.append(r['response'])
 
         if checker_model in ['nli', 'alignscore', 'repc'] and ds != 'nq':
             max_reference_segment_length = 200
         else:
             max_reference_segment_length = 0
 
-        if checker is None:
-            checker = _get_checker(checker_model)
-        labels = checker.check(
-            claim=claim_list,
-            reference=reference_list,
-            question=question_list,
-            response=response_list,
-            max_reference_segment_length=max_reference_segment_length
-        )
-        for idx_example, labels_example in enumerate(labels):
-            for l_idx, label in enumerate(labels_example):
-                if label:
-                    r_idx = idx_list[idx_example][l_idx][0]
-                    t_idx = idx_list[idx_example][l_idx][1]
-                    response_data[r_idx][kg_key][t_idx][label_key] = label
-                    json.dump(response_data, open(response_file, 'w'), indent=4)
-
+        if len(batch_claims):
+            print(f'Running Checking on {len(batch_claims)} examples...')
+            if checker is None:
+                checker = _get_checker(checker_model)
+            
+            checking_results = checker.check(
+                batch_claims=batch_claims,
+                batch_references=batch_references,
+                batch_questions=batch_questions,
+                batch_responses=batch_responses,
+                max_reference_segment_length=max_reference_segment_length,
+                merge_psg=True
+            )
+            _i = 0
+            for r in response_data:
+                d = id_to_data[r['id']]
+                if kg_key in r:
+                    claims = [c['claim'] for c in r[kg_key] if label_key not in c]
+                    if len(claims):
+                        labels = checking_results[_i]
+                        _j = 0
+                        for claim in r[kg_key]:
+                            if label_key not in claim:
+                                claim[label_key] = labels[_j]
+                                _j += 1
+                        _i += 1
+            json.dump(response_data, open(output_filename, 'w'), indent=4)
+        
+        cnt = 0
         for r in response_data:
             if kg_key in r:
                 is_checking_finished = True
@@ -141,22 +178,21 @@ def autocheck(extractor_model, checker_model):
 
 
 def main():
+    if not os.path.exists(args.output_dir):
+        os.mkdir(args.output_dir)
+    
     autocheck(args.extractor, args.checker)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str)
-    parser.add_argument(
-        '--extractor', 
-        type=str, 
-        choices=['gpt4', 'claude2', 'mistral-sft']
-    )
-    parser.add_argument(
-        '--checker', 
-        type=str, 
-        choices=['gpt4', 'claude2', 'nli', 'alignscore', 'repc']
-    )
+    parser.add_argument('--extractor', type=str)
+    parser.add_argument('--claim_format', type=str, choices=['triplet', 'subsentence'])
+    parser.add_argument('--checker', type=str)
+    parser.add_argument('--api_base', type=str)
+    parser.add_argument('--batch_size', type=int, default=100)
+    parser.add_argument('--output_dir', type=str)
 
     args = parser.parse_args()
 
