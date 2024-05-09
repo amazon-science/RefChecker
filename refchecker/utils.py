@@ -70,7 +70,8 @@ def get_model_batch_response(
         temperature=0,
         model='gpt-3.5-turbo',
         n_choices=1,
-        max_new_tokens=500
+        max_new_tokens=500,
+        api_base=None
 ):
     """
     Get batch generation results with given prompts.
@@ -121,7 +122,8 @@ def get_model_batch_response(
                 messages=message_list,
                 temperature=temperature,
                 n=n_choices,
-                max_tokens=max_new_tokens
+                max_tokens=max_new_tokens,
+                api_base=api_base
             )
             if n_choices == 1:
                 response_list = [r.choices[0].message.content for r in responses]
