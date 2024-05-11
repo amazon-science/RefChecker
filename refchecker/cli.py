@@ -139,11 +139,15 @@ def main():
 def extract(args):
     # initialize models
     if args.extractor_name in ["gpt4", "claude2", "claude3-sonnet", "claude3-haiku"]:
-        extractor = LLMExtractor(model=args.extractor_name)
+        extractor = LLMExtractor(
+            model=args.extractor_name, batch_size=args.batch_size_extractor
+        )
     elif args.extractor_name == "mixtral":
-        extractor = MixtralExtractor()
+        raise NotImplementedError("batched mixtral extracto to be implemented")
+        # extractor = MixtralExtractor()
     elif args.extractor_name == "mistral":
-        extractor = MistralExtractor()
+        raise NotImplementedError("batched mistral extractor to be implemented")
+        # extractor = MistralExtractor()
     else:
         raise NotImplementedError
 
@@ -153,14 +157,23 @@ def extract(args):
     
     # extract triplets
     print('Extracting')
-    output_data = []
+    question_list = []
+    response_list = []
     for item in tqdm(input_data):
         assert "response" in item, "response field is required"
         response = item["response"]
         question = item.get("question", None)
-        triplets = extractor.extract_claim_triplets(response, question, max_new_tokens=args.extractor_max_new_tokens)
-        out_item = {**item, **{"triplets": triplets}}
-        output_data.append(out_item)
+        question_list.append(question)
+        response_list.append(response)
+
+    triplets = extractor.extract_claim_triplets(
+        response_list, question_list,
+        max_new_tokens=args.extractor_max_new_tokens
+    )
+    output_data = [
+        {**input_data[i], **{"triplets": triplets[i]}}
+        for i in range(len(input_data))
+    ]
     with open(args.output_path, "w") as fp:
         json.dump(output_data, fp, indent=2)
 
