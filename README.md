@@ -39,11 +39,13 @@ You can explore RefChecker in the following ways:
 ## ❤️ Citation
 If you use RefChecker in your work, please cite us:
 ```bibtex
-@article{hu-etal-2023-refchecker,
-  title = {RefChecker for Fine-grained Hallucination Detection},
-  author = {Xiangkun Hu and Dongyu Ru and Qipeng Guo and Lin Qiu and Zheng Zhang},
-  year = {2023},
-  url = {https://github.com/amazon-science/RefChecker},
+@article{hu2024refchecker,
+      title={RefChecker: Reference-based Fine-grained Hallucination Checker and Benchmark for Large Language Models}, 
+      author={Xiangkun Hu and Dongyu Ru and Lin Qiu and Qipeng Guo and Tianhang Zhang and Yang Xu and Yun Luo and Pengfei Liu and Yue Zhang and Zheng Zhang},
+      year={2024},
+      eprint={2405.14486},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 <a id='demo_website'></a>
