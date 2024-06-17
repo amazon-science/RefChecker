@@ -39,11 +39,13 @@ You can explore RefChecker in the following ways:
 ## ❤️ Citation
 If you use RefChecker in your work, please cite us:
 ```bibtex
-@article{hu-etal-2023-refchecker,
-  title = {RefChecker for Fine-grained Hallucination Detection},
-  author = {Xiangkun Hu and Dongyu Ru and Qipeng Guo and Lin Qiu and Zheng Zhang},
-  year = {2023},
-  url = {https://github.com/amazon-science/RefChecker},
+@article{hu2024refchecker,
+      title={RefChecker: Reference-based Fine-grained Hallucination Checker and Benchmark for Large Language Models}, 
+      author={Xiangkun Hu and Dongyu Ru and Lin Qiu and Qipeng Guo and Tianhang Zhang and Yang Xu and Yun Luo and Pengfei Liu and Yue Zhang and Zheng Zhang},
+      year={2024},
+      eprint={2405.14486},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 <a id='demo_website'></a>
@@ -115,7 +117,7 @@ options:
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
   --claim_format {triplet, subsentence}
-              The format of the extracted claims. Default: subsentence
+              The format of the extracted claims. Default: triplet
   --checker_name {claude3-sonnet, claude3-haiku, nli, alignscore, repc, gpt-4, gpt-3.5-turbo}
               Model used for checking whether the claims are factual. Default: claude3-sonnet.
   --repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}
@@ -157,7 +159,7 @@ To extract claim triplets from LLM-generated responses, do:
 refchecker-cli extract \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2,mixtral}
+  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}
 ```
 
 The input json file contains a list of
@@ -176,7 +178,7 @@ To check hallucinations at triplet level, do:
 refchecker-cli check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --checker_name {gpt4,claude2,nli,alignscore} \
+  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc} \
   --aggregator_name {strict,soft,major}
 ```
 
@@ -220,8 +222,8 @@ Finally, you can use the whole extraction and checking pipeline by:
 refchecker-cli extract-check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2,mixtral} \
-  --checker_name {gpt4,claude2,nli,alignscore} \
+  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral} \
+  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc} \
   --aggregator_name {strict,soft,major} \
   <other optional flags>
 ```

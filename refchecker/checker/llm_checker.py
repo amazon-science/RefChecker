@@ -96,6 +96,7 @@ class LLMChecker(CheckerBase):
         self.prompt_temp_subsent = SUBSENTENCE_CLAIM_CHECKING_PROMPT
         
         self.batch_size = batch_size
+        
         self.model = get_llm_full_name(model)
         self.api_base = api_base
         

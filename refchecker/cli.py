@@ -44,7 +44,7 @@ def get_args():
         help="Max generated tokens of the extractor, set a larger value for longer documents. Default: 500"
     )
     parser.add_argument(
-        '--claim_format', type=str, default='subsentence',
+        '--claim_format', type=str, default='triplet',
         choices=['triplet', 'subsentence'],
         help='The format of the extracted claims. Default: subsentence'
     )
@@ -161,7 +161,8 @@ def extract(args):
     
     # extract triplets
     print('Extracting')
-    output_data = []
+    question_list = []
+    response_list = []
     for item in tqdm(input_data):
         assert "response" in item, "response field is required"
         response = item["response"]
