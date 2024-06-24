@@ -5,6 +5,7 @@ from tqdm import tqdm
 
 from ..checker_base import CheckerBase
 from .inference import Inferencer
+from ...base import RCClaim
 
 import torch
 
@@ -62,7 +63,7 @@ class AlignScoreChecker(CheckerBase):
         Parameters
         ----------
         claims : List[Union[str, List[str]]]
-            List of claim triplets.
+            List of claims.
         references : List[str]
             List of reference passages (split according to 'max_reference_segment_length').
         responses : List[str]
@@ -82,6 +83,7 @@ class AlignScoreChecker(CheckerBase):
         if isinstance(claims[0], list):
             assert len(claims[0]) == 3
             claims = [f"{c[0]} {c[1]} {c[2]}" for c in claims]
+        
         batch_preds = []
         for i in tqdm(range(0, len(claims), self.batch_size)):
             batch_claims = claims[i:i + self.batch_size]

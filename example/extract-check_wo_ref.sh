@@ -3,10 +3,8 @@
 refchecker-cli extract-check \
   --input_path example/example_in.json \
   --output_path example/example_out.json \
-  --extractor_name gpt4 \
+  --extractor_name bedrock/anthropic.claude-3-sonnet-20240229-v1:0 \
   --extractor_max_new_tokens 1000 \
-  --checker_name gpt4 \
+  --checker_name bedrock/anthropic.claude-3-sonnet-20240229-v1:0 \
   --aggregator_name soft \
-  --openai_key "<path to your key file>" \
-  --use_retrieval \
-  --serper_api_key "<path to your key file>"
+  --use_retrieval

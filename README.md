@@ -37,6 +37,8 @@ You can explore RefChecker in the following ways:
 - [12/07/2023] RefChecker 0.1 release.
 
 ## ❤️ Citation
+Please check out the paper here: https://arxiv.org/pdf/2405.14486 
+
 If you use RefChecker in your work, please cite us:
 ```bibtex
 @article{hu2024refchecker,
@@ -76,32 +78,180 @@ Install optional dependencies to use open source extractors (Mistral, Mixtral) o
 pip install -e .[open-extractor,repcex]
 ```
 
-### Usage
+### Code Examples
+
+#### Choose Models for the Extractor and Checker
+
+We use [litellm](https://docs.litellm.ai/) as to invoke the LLMs. Please check the document for how to setup the model for different LLM providers: https://docs.litellm.ai/docs/providers . We give some examples below:
+
+
+- Amazon Bedrock
+
+```python
+import os
+from refchecker import LLMExtractor, LLMChecker
+
+
+# Setup the enviroment variables if you are not using AWS EC2 instance
+# If you are using AWS EC2, make sure your region has the access to the model
+os.environ["AWS_ACCESS_KEY_ID"] = "<your_aws_access_key_id>"
+os.environ["AWS_SECRET_ACCESS_KEY"] = "<your_aws_secret_access_key>"
+os.environ["AWS_REGION_NAME"] = "<your_aws_region_name>"
+
+# Claude 3 Sonnet from Amazon Bedrock
+model = 'bedrock/anthropic.claude-3-sonnet-20240229-v1:0'
+
+extractor = LLMExtractor(model=model, batch_size=8)
+checker = LLMChecker(model=model, batch_size=8)
+```
+
+You can also setup the enviroment variables in terminal to avoid disclosing these information in the code:
+```bash
+export AWS_ACCESS_KEY_ID=<your_aws_access_key_id>
+export AWS_SECRET_ACCESS_KEY=<your_aws_secret_access_key>
+export AWS_REGION_NAME=<your_aws_region_name>
+```
+
+- OpenAI
+
+```python
+import os
+from refchecker import LLMExtractor, LLMChecker
+
+
+os.environ["OPENAI_API_KEY"] = "<your_openai_api_key>"
+
+# GPT-4o from OpenAI
+model = 'gpt-4o'
+
+extractor = LLMExtractor(model=model, batch_size=8)
+checker = LLMChecker(model=model, batch_size=8)
+```
+
+- Open source LLMs
+
+Please use [vllm](https://github.com/vllm-project/vllm) to setup the API server for open source LLMs. For example, use the following command to deploy a Llama 3 8B hosted on HuggingFace:
+
+```bash
+python -m vllm.entrypoints.openai.api_server \
+  --model meta-llama/Meta-Llama-3-8B-Instruct \
+  --tensor-parallel-size 8 \
+  --dtype auto \
+  --api-key sk-123456789 \
+  --gpu-memory-utilization 0.9 \
+  --port 5000
+```
+
+Then we can initilize the extractor and checker with `api_base`:
+
+```python
+import os
+from refchecker import LLMExtractor, LLMChecker
+
+# Use the same API key in the above command
+os.environ["OPENAI_API_KEY"] = "sk-123456789"
+
+# Note the prefix "openai/" here
+model = "openai/meta-llama/Meta-Llama-3-8B-Instruct"
+api_base = "http://0.0.0.0:5000/v1"
+extractor = LLMExtractor(model=model, batch_size=8, api_base=api_base)
+checker = LLMChecker(model=model, batch_size=8, api_base=api_base)
+```
+
+- Fine-tuned Mistral 7B Claim Extractor
+
+We fine-tuned a Mistral 7B model for claim extraction. Deploy it with vllm:
+
+```bash
+python -m vllm.entrypoints.openai.api_server \
+  --model dongyru/Mistral-7B-Claim-Extractor \
+  --tensor-parallel-size 8 \
+  --dtype auto \
+  --api-key sk-123456789 \
+  --gpu-memory-utilization 0.9 \
+  --port 5000
+```
+
+Then we can initilize the extractor as follows:
+```python
+extractor = LLMExtractor(
+  model="openai/dongyru/Mistral-7B-Claim-Extractor", 
+  batch_size=8, 
+  api_base="http://0.0.0.0:5000/v1"
+)
+```
+
+- Non-LLM based Checkers
+
+We also offer non-LLM checker for efficent checking:
+
+```python
+from refchecker import AlignScoreChecker, NLIChecker
+
+
+# Details see paper: https://arxiv.org/abs/2305.16739
+checker = AlignScoreChecker(device=0, batch_size=128)
+
+# See https://huggingface.co/ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
+checker = NLIChecker(device=0, batch_size=128)
+```
+
+#### Run Extraction and Checking
+
+Both the extractor and checker takes a batch of inputs:
+
+```python
+# Batch of questions (optional)
+questions = ['question 1', 'question 2']
+# Batch of model responses
+responses = ['response 1', 'response 2']
+
+extraction_results = extractor.extract(
+    batch_responses=responses,
+    batch_questions=questions,
+    max_new_tokens=1000
+)
+
+batch_claims = [[c.content for c in res.claims] for  res in extraction_results]
+
+references = ['reference 1', 'reference 2']
+batch_labels = checker.check(
+    batch_claims=batch_claims,
+    batch_references=references,
+    max_reference_segment_length=0
+)
+```
+
+The `extraction_results` is a list of `RCClaim` objects defined in [refchecker/base.py](refchecker/base.py).
+
+
+
+### Command Line Interface
+
 We provide a command-line interface to run RefChecker in a console:
 
 ```
 usage: refchecker-cli [-h] --input_path INPUT_PATH --output_path OUTPUT_PATH
                      [--cache_dir CACHE_DIR]
-                     [--extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}]
+                     [--extractor_name EXTRACTOR_NAME]
                      [--extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS]
-                     [--checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc}]
+                     [--claim_format {triplet, subsentence}]
+                     [--checker_name CHECKER_NAME]
+                     [--extractor_api_base EXTRACTOR_API_BASE]
+                     [--checker_api_base CHECKER_API_BASE]
                      [--repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}]
                      [--retriever_name {google}]
                      [--aggregator_name {strict,soft,major}]
-                     [--openai_key OPENAI_KEY]
-                     [--anthropic_key ANTHROPIC_KEY]
-                     [--aws_bedrock_region AWS_BEDROCK_REGION]
                      [--use_retrieval]
-                     [--serper_api_key SERPER_API_KEY]
                      [--batch_size_extractor BATCH_SIZE_EXTRACTOR]
                      [--batch_size_checker BATCH_SIZE_CHECKER]
                      [{extract,check,extract-check}]
 
 positional arguments:
   {extract,check,extract-check}
-     extract:       Extract triplets from provided responses.
-     check:         Check whether the provided triplets are factual.
-     extract-check: Extract triplets and check whether they are factual.
+     extract:       Extract claims from provided responses.
+     check:         Check whether the provided claims are factual.
+     extract-check: Extract claims and check whether they are factual.
 
 options:
   -h, --help  show this help message and exit
@@ -111,12 +261,18 @@ options:
               Output path to the result json file.
   --cache_dir CACHE_DIR
               Path to the cache directory. Default: ./.cache.
-  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}
-              Model used for extracting triplets. Default: claude3-sonnet.
+  --extractor_name EXTRACTOR_NAME
+              Model used for extracting claims. Default: bedrock/anthropic.claude-3-sonnet-20240229-v1:0
   --extractor_max_new_tokens EXTRACTOR_MAX_NEW_TOKENS
               Max generated tokens of the extractor, set a larger value for longer documents. Default: 500
-  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc}
-              Model used for checking whether the triplets are factual. Default: claude3-sonnet.
+  --claim_format {triplet, subsentence}
+              The format of the extracted claims. Default: triplet
+  --checker_name CHECKER_NAME
+              Model used for checking whether the claims are factual. Default: bedrock/anthropic.claude-3-sonnet-20240229-v1:0
+  --extractor_api_base EXTRACTOR_API_BASE
+              API base URL if using vllm for deploying the extractor.
+  --checker_api_base CHECKER_API_BASE
+              API base URL if using vllm for deploying the checker
   --repc_classifier_name {svm,svm_ensemble,nn,nn_ensemble}
               Classifier Model used for RepC checker, only valid when RepC checker is used.
               Default: nn_ensemble, neural network classifier with layer ensemble.
@@ -131,14 +287,6 @@ options:
               Entailment. Otherwise, the response is Neutral.
               *  soft:   The ratio of each category is calculated.
               *  major:  The category with the most votes is selected.
-  --openai_key OPENAI_KEY
-              Path to the openai api key file. Required if openAI models are used.
-  --anthropic_key ANTHROPIC_KEY
-              Path to the Anthropic api key file. Required if the Anthropic Claude2
-              api is used.
-  --aws_bedrock_region AWS_BEDROCK_REGION
-              AWS region where the Amazon Bedrock api is deployed. Required if the 
-              Amazon Bedrock api is used.
   --use_retriever  
               Whether to use retrieval to find the reference for checking. Required
               if the reference field in input data is not provided.
@@ -156,7 +304,8 @@ To extract claim triplets from LLM-generated responses, do:
 refchecker-cli extract \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral}
+  --extractor_name {EXTRACTOR_NAME} \
+  --extractor_api_base {EXTRACTOR_API_BASE}
 ```
 
 The input json file contains a list of
@@ -168,14 +317,15 @@ The input json file contains a list of
 }
 ```
 
-In the output json file, each item is added with a `triplets` field, containing a list of `[head, relation, tail]`.
+In the output json file, each item is added with a `claims` field, containing a list of `[head, relation, tail]`.
 
 To check hallucinations at triplet level, do:
 ```bash
 refchecker-cli check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc} \
+  --checker_name {CHECKER_NAME} \
+  --checker_api_base {CHECKER_API_BASE} \
   --aggregator_name {strict,soft,major}
 ```
 
@@ -183,7 +333,7 @@ The input json file contains a list of
 ```json
 {
    "response": "",  # required, the response to be checked
-   "triplets": [
+   "claims": [
        ["head1", "relation1", "tail1"],
        ["head2", "relation2", "tail2"],
        ...
@@ -219,8 +369,10 @@ Finally, you can use the whole extraction and checking pipeline by:
 refchecker-cli extract-check \
   --input_path {INPUT_PATH} \
   --output_path {OUTPUT_PATH} \
-  --extractor_name {gpt4,claude2,claude3-sonnet,claude3-haiku,mixtral,mistral} \
-  --checker_name {gpt4,claude2,claude3-sonnet,claude3-haiku,nli,alignscore,repc} \
+  --extractor_name {EXTRACTOR_NAME} \
+  --checker_name {CHECKER_NAME} \
+  --extractor_api_base {EXTRACTOR_API_BASE} \
+  --checker_api_base {CHECKER_API_BASE} \
   --aggregator_name {strict,soft,major} \
   <other optional flags>
 ```

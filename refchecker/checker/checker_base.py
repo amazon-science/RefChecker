@@ -2,6 +2,7 @@ from typing import List, Union
 from itertools import groupby
 
 from ..utils import split_text
+from ..base import RCClaim
 
 
 def merge_ret(ret):
@@ -40,10 +41,10 @@ class CheckerBase:
 
     def check(
         self, 
-        claim: List[List[Union[str, List[str]]]],
-        reference: Union[List[str], List[List[str]]],
-        response: List[str] = None,
-        question: List[str] = None,
+        batch_claims: List[List[Union[str, List[str]]]],
+        batch_references: Union[List[str], List[List[str]]],
+        batch_responses: List[str] = None,
+        batch_questions: List[str] = None,
         max_reference_segment_length: int = 200,
         merge_psg: bool = True
     ):
@@ -52,13 +53,13 @@ class CheckerBase:
 
         Parameters
         ----------
-        claim : List[List[Union[str, List[str]]]]
-            List consists of the triplets extracted from each given example.
-        reference : Union[List[str], List[List[str]]]
+        batch_claims : List[List[Union[str, List[str]]]]
+            List consists of the claims extracted from each given example.
+        batch_references : Union[List[str], List[List[str]]]
             List of reference passages for each given example.
-        response : List[str], optional
+        batch_responses : List[str], optional
             List of model response texts, defaults to None.
-        question : List[str], optional
+        batch_questions : List[str], optional
             List of questions for each given example, defaults to None.
         max_reference_segment_length : int, optional
             Maximum length of each reference segment, defaults to 200.
@@ -67,31 +68,34 @@ class CheckerBase:
 
         Returns
         -------
-        ret_group_triplet : List[List[str]]
+        results : List[List[str]]
             Grouped triplet checking results corresponding to each given example.
 
         """
+        assert len(batch_claims) == len(batch_references)
+        
+        batch_example_nums = [len(claims) for claims in batch_claims]
 
-        if response is None:
-            response = [None] * len(claim)
-        if question is None:
-            question = [None] * len(claim)
+        if batch_responses is None:
+            batch_responses = [None] * len(batch_claims)
+        if batch_questions is None:
+            batch_questions = [None] * len(batch_claims)
         input_flattened = []
         input_ids = []
-        for idx, (c, ref, res, q) in enumerate(zip(claim, reference, response, question)):
-            if isinstance(ref, str):
-                ref = [ref]
+        for idx, (claims, references, resonses, questions) in enumerate(zip(batch_claims, batch_references, batch_responses, batch_questions)):
+            if isinstance(references, str):
+                references = [references]
             segments_all_psg = []
-            for psg in ref:
+            for psg in references:
                 if max_reference_segment_length > 0:
                     segments = split_text(psg, max_reference_segment_length)
                 else:
                     segments = [psg]
                 segments_all_psg.append(segments)
-            for c_idx, t in enumerate(c):
+            for c_idx, claim in enumerate(claims):
                 for idx_psg, seg_psg in enumerate(segments_all_psg):
                     for seg in seg_psg:
-                        input_flattened.append([t, seg, res, q])
+                        input_flattened.append([claim, seg, resonses, questions])
                         input_ids.append([idx, c_idx, idx_psg])
         ret = self._check(
                 claims=[inp[0] for inp in input_flattened],
@@ -114,11 +118,19 @@ class CheckerBase:
             ]
         ret_group_triplet = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
 
-        return ret_group_triplet
+        results = []
+        i = 0
+        for n in batch_example_nums:
+            if n > 0:
+                results.append(ret_group_triplet[i])
+                i += 1
+            else:
+                results.append([])
+        return results
 
     def _check(
         self,
-        claims: List[Union[str, List[str]]],
+        claims: List[RCClaim],
         references: List[str],
         responses: List[str],
         questions: List[str]
@@ -130,7 +142,7 @@ class CheckerBase:
 
         Parameters
         ----------
-        claims : List[Union[str, List[str]]]
+        claims : List[RCClaim]
             List of claims to be checked.
         references : List[str]
             List of reference passages.
