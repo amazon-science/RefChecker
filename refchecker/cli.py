@@ -3,9 +3,7 @@ import json
 from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
-from .extractor import (
-    LLMExtractor, MistralExtractor, MixtralExtractor
-)
+from .extractor import LLMExtractor
 from .checker import (
     LLMChecker, NLIChecker, AlignScoreChecker, RepCChecker
 )
@@ -18,9 +16,9 @@ def get_args():
     parser = ArgumentParser(formatter_class=RawTextHelpFormatter)
     parser.add_argument(
         "mode", nargs="?", choices=["extract", "check", "extract-check"],
-        help="extract:       Extract triplets from provided responses.\n"
-             "check:         Check whether the provided triplets are factual.\n"
-             "extract-check: Extract triplets and check whether they are factual."
+        help="extract:       Extract claims from provided responses.\n"
+             "check:         Check whether the provided claims are factual.\n"
+             "extract-check: Extract claims and check whether they are factual."
     )
     parser.add_argument(
         "--input_path", type=str, required=True,
@@ -35,9 +33,8 @@ def get_args():
         help="Path to the cache directory. Default: ./.cache"
     )
     parser.add_argument(
-        '--extractor_name', type=str, default="claude3-sonnet",
-        choices=["claude3-sonnet", "claude3-haiku", "mistral", "mixtral", "gpt-4", "gpt-3.5-turbo"],
-        help="Model used for extracting triplets. Default: claude3-sonnet."
+        '--extractor_name', type=str, default="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
+        help="Model used for extracting triplets. Default: bedrock/anthropic.claude-3-sonnet-20240229-v1:0"
     )
     parser.add_argument(
         '--extractor_max_new_tokens', type=int, default=500,
@@ -49,10 +46,17 @@ def get_args():
         help='The format of the extracted claims. Default: subsentence'
     )
     parser.add_argument(
-        "--checker_name", type=str, default="claude3-sonnet",
-        choices=["claude3-sonnet", "claude3-haiku", "nli", "alignscore", "repc", "gpt-4", "gpt-3.5-turbo"],
+        "--checker_name", type=str, default="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
         help="Model used for checking whether the triplets are factual. "
-        "Default: claude3-sonnet."
+        "Default: Claude 3 Sonnet"
+    )
+    parser.add_argument(
+        "--extractor_api_base", type=str,
+        help="API base URL if using vllm for deploying the extractor"
+    )
+    parser.add_argument(
+        "--checker_api_base", type=str,
+        help="API base URL if using vllm for deploying the checker"
     )
     parser.add_argument(
         "--repc_classifier_name", type=str, default="nn_ensemble",
@@ -77,29 +81,9 @@ def get_args():
              "*  major:  The category with the most votes is selected."
     )
     parser.add_argument(
-        "--openai_key", type=str, default="",
-        help="Path to the openai api key file. Required if openAI models are"
-        " used."
-    )
-    parser.add_argument(
-        "--anthropic_key", type=str, default="",
-        help="Path to the Anthropic api key file. Required if the Anthropic "
-        "Claude2 api is used."
-    )
-    parser.add_argument(
-        "--aws_bedrock_region", type=str, default="",
-        help="AWS region where the Amazon Bedrock api is deployed. Required if "
-        "the Amazon Bedrock api is used."
-    )
-    parser.add_argument(
         "--use_retrieval", action="store_true",
         help="Whether to use retrieval to find the reference for checking. "
         "Required if the reference\nfield in input data is not provided."
-    )
-    parser.add_argument(
-        "--serper_api_key", type=str, default="",
-        help="Path to the serper api key file. Required if the google retriever"
-        " is used."
     )
     parser.add_argument(
         "--batch_size_extractor", type=int, default=16,
@@ -116,16 +100,16 @@ def get_args():
 def main():
     args = get_args()
     # set environment variables
-    if args.openai_key:
-        with open(args.openai_key, "r") as fp:
-            os.environ["OPENAI_API_KEY"] = fp.read().strip()
-    if args.anthropic_key:
-        with open(args.anthropic_key, "r") as fp:
-            os.environ["ANTHROPIC_API_KEY"] = fp.read().strip()
-    if args.aws_bedrock_region:
-        os.environ["AWS_REGION_NAME"] = args.aws_bedrock_region
-    if args.serper_api_key:
-        os.environ["SERPER_API_KEY"] = args.serper_api_key
+    # if args.openai_key:
+    #     with open(args.openai_key, "r") as fp:
+    #         os.environ["OPENAI_API_KEY"] = fp.read().strip()
+    # if args.anthropic_key:
+    #     with open(args.anthropic_key, "r") as fp:
+    #         os.environ["ANTHROPIC_API_KEY"] = fp.read().strip()
+    # if args.aws_bedrock_region:
+    #     os.environ["AWS_REGION_NAME"] = args.aws_bedrock_region
+    # if args.serper_api_key:
+    #     os.environ["SERPER_API_KEY"] = args.serper_api_key
 
     if args.mode == "extract":
         extract(args)
@@ -144,16 +128,11 @@ def main():
 
 def extract(args):
     # initialize models
-    if args.extractor_name in ["claude3-sonnet", "claude3-haiku", "gpt-4", "gpt-3.5-turbo"]:
-        extractor = LLMExtractor(claim_format=args.claim_format, model=args.extractor_name)
-    else:
-        assert args.claim_format == 'triplet'
-        if args.extractor_name == "mixtral":
-            extractor = MixtralExtractor(claim_format=args.claim_format)
-        elif args.extractor_name == "mistral":
-            extractor = MistralExtractor(claim_format=args.claim_format)
-        else:
-            raise NotImplementedError
+    extractor = LLMExtractor(
+        claim_format=args.claim_format, 
+        model=args.extractor_name, 
+        api_base=args.extractor_api_base
+    )
 
     # load data
     with open(args.input_path, "r") as fp:
@@ -161,32 +140,35 @@ def extract(args):
     
     # extract triplets
     print('Extracting')
-    question_list = []
-    response_list = []
-    for item in tqdm(input_data):
-        assert "response" in item, "response field is required"
-        response = item["response"]
-        question = item.get("question", None)
-        extraction_result = extractor.extract(response, question, max_new_tokens=args.extractor_max_new_tokens)
-        claims = [c.to_dict() for c in extraction_result.claims]
-        out_item = {**item, **{"claims": claims}}
-        output_data.append(out_item)
+    question_list = [d['question'] for d in input_data]
+    response_list = [d['response'] for d in input_data]
+    
+    extraction_results = extractor.extract(
+        batch_responses=response_list, 
+        batch_questions=question_list, 
+        max_new_tokens=args.extractor_max_new_tokens
+    )
+    for res, d in zip(extraction_results, input_data):
+        d['claims'] = [c.content for c in res.claims]
+    
     with open(args.output_path, "w") as fp:
-        json.dump(output_data, fp, indent=2)
+        json.dump(input_data, fp, indent=2)
 
 
 def check(args):
     # initialize models
-    if args.checker_name in ["claude3-sonnet", "claude3-haiku", "gpt-4", "gpt-3.5-turbo"]:
-        checker = LLMChecker(model=args.checker_name, batch_size=args.batch_size_checker)
-    elif args.checker_name == "nli":
+    if args.checker_name == "nli":
         checker = NLIChecker(batch_size=args.batch_size_checker)
     elif args.checker_name == "alignscore":
         checker = AlignScoreChecker(batch_size=args.batch_size_checker)
     elif args.checker_name == "repc":
         checker = RepCChecker(classifier=args.repc_classifier_name, batch_size=args.batch_size_checker)
     else:
-        raise NotImplementedError
+        checker = LLMChecker(
+            model=args.checker_name, 
+            batch_size=args.batch_size_checker,
+            api_base=args.extractor_api_base
+        )
     
     retriever = None
     if args.use_retrieval:
@@ -215,7 +197,7 @@ def check(args):
     question_list = []
     for item in input_data:
         assert "claims" in item, "claims field is required"
-        claims = [RCClaim.from_dict(c) for c in item['claims']]
+        claims = item['claims']
         if args.use_retrieval:
             reference = retriever.retrieve(item["response"])
             item["reference"] = reference
@@ -228,10 +210,12 @@ def check(args):
         reference_list.append(reference)
         question_list.append(question)
 
-    print(claim_list)
-    results = checker.check(claim_list, reference_list, question=question_list)
-    print(results)
+    results = checker.check(
+        batch_claims=claim_list, 
+        batch_references=reference_list, 
+        batch_questions=question_list)
     agg_results = [agg_fn(r) for r in results]
+    
     output_data = [{
         **input_data[i],
         **{

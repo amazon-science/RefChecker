@@ -4,7 +4,6 @@ from tqdm import tqdm
 import os
 
 from refchecker import (
-    MistralExtractor,
     LLMChecker,
     NLIChecker,
     AlignScoreChecker,
@@ -35,16 +34,12 @@ def _get_checker(checker_model):
 
 
 def _get_extractor(extractor_model):
-    claim_extractor = None
-    if extractor_model == 'mistral-sft':
-        claim_extractor = MistralExtractor()
-    else:
-        claim_extractor = LLMExtractor(
-            claim_format=args.claim_format,
-            model=extractor_model,
-            api_base=args.api_base,
-            batch_size=args.batch_size
-        )
+    claim_extractor = LLMExtractor(
+        claim_format=args.claim_format,
+        model=extractor_model,
+        api_base=args.api_base,
+        batch_size=args.batch_size
+    )
     return claim_extractor
 
 

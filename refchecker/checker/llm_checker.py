@@ -2,8 +2,6 @@ import os
 from typing import List, Union
 from tqdm import tqdm
 
-from vllm import LLM, SamplingParams
-
 from .checker_base import CheckerBase
 from ..utils import get_model_batch_response, get_llm_full_name
 from ..base import RCClaim
@@ -73,9 +71,9 @@ Your answer should always be only a single word in ['Entailment', 'Neutral', 'Co
 class LLMChecker(CheckerBase):
     def __init__(
         self,
-        model,
-        batch_size=16,
-        api_base=None
+        model: str = 'bedrock/anthropic.claude-3-sonnet-20240229-v1:0',
+        batch_size: int = 16,
+        api_base: str = None
     ) -> None:
         """
         Initializer for the LLMChecker class.
@@ -99,16 +97,6 @@ class LLMChecker(CheckerBase):
         
         self.model = get_llm_full_name(model)
         self.api_base = api_base
-        
-        if model in ['meta-llama/Meta-Llama-3-70B-Instruct']:
-        # if False:
-            self.llm = LLM(
-                model=model,
-                trust_remote_code=True,
-                tensor_parallel_size=8
-            )
-        else:
-            self.llm = None
 
     def _check(
         self,
@@ -167,21 +155,15 @@ class LLMChecker(CheckerBase):
 
         for i in tqdm(range(0, len(prompt_list), self.batch_size)):
             batch_prompts = prompt_list[i:i + self.batch_size]
-            if self.llm:
-                sampling_params = SamplingParams(temperature=0, max_tokens=10)
-                outputs = self.llm.generate(batch_prompts, sampling_params=sampling_params, use_tqdm=False)
-                llm_responses = []
-                for output in outputs:
-                    generated_text = output.outputs[0].text
-                    llm_responses.append(generated_text)
-            else:
-                llm_responses = get_model_batch_response(
-                    prompts=batch_prompts,
-                    temperature=0,
-                    model=self.model,
-                    max_new_tokens=10,
-                    api_base=self.api_base
-                )
+
+            llm_responses = get_model_batch_response(
+                prompts=batch_prompts,
+                temperature=0,
+                model=self.model,
+                max_new_tokens=10,
+                api_base=self.api_base
+            )
+            
             for llm_response in llm_responses:
                 if llm_response and len(llm_response):
                     label = None

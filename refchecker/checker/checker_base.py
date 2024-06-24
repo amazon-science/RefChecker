@@ -72,6 +72,8 @@ class CheckerBase:
             Grouped triplet checking results corresponding to each given example.
 
         """
+        assert len(batch_claims) == len(batch_references)
+        
         batch_example_nums = [len(claims) for claims in batch_claims]
 
         if batch_responses is None:

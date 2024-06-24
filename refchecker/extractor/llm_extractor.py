@@ -1,8 +1,6 @@
 from typing import List
 from tqdm import tqdm
 
-from vllm import LLM, SamplingParams
-
 from .extractor_base import ExtractorBase
 from ..utils import (
     get_model_batch_response, 
@@ -17,25 +15,15 @@ class LLMExtractor(ExtractorBase):
     def __init__(
         self, 
         claim_format: str = 'triplet',
-        model: str = 'claude3-sonnet',
-        batch_size=16,
-        api_base=None
+        model: str = 'bedrock/anthropic.claude-3-sonnet-20240229-v1:0',
+        batch_size: int = 16,
+        api_base: str = None
     ) -> None:
         super().__init__(claim_format)
         
         self.model = get_llm_full_name(model)
         self.batch_size = batch_size
         self.api_base = api_base
-        
-        if model in ['meta-llama/Meta-Llama-3-70B-Instruct']:
-        # if False:
-            self.llm = LLM(
-                model=model,
-                trust_remote_code=True,
-                tensor_parallel_size=8
-            )
-        else:
-            self.llm = None
     
     def extract_subsentence_claims(
         self, 
@@ -143,22 +131,14 @@ class LLMExtractor(ExtractorBase):
         for _i in tqdm(range(0, len(prompt_list), self.batch_size)):
             batch_prompts = prompt_list[_i:_i+self.batch_size]
             
-            if self.llm:
-                sampling_params = SamplingParams(temperature=0, max_tokens=max_new_tokens)
-                outputs = self.llm.generate(batch_prompts, sampling_params=sampling_params, use_tqdm=False)
-                llm_responses = []
-                for output in outputs:
-                    generated_text = output.outputs[0].text
-                    llm_responses.append(generated_text)
-            else:
-                llm_responses = get_model_batch_response(
-                    prompts=batch_prompts,
-                    temperature=0,
-                    model=self.model,
-                    n_choices=1,
-                    max_new_tokens=max_new_tokens,
-                    api_base=self.api_base
-                )
+            llm_responses = get_model_batch_response(
+                prompts=batch_prompts,
+                temperature=0,
+                model=self.model,
+                n_choices=1,
+                max_new_tokens=max_new_tokens,
+                api_base=self.api_base
+            )
 
             if llm_responses and len(llm_responses):
                 for res in llm_responses:
