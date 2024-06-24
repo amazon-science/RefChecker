@@ -20,14 +20,12 @@ torch = "^2.3"
 transformers = "^4.41"
 rank-bm25 = "^0.2"
 beautifulsoup4 = "^4.12"
-#diskcache = "^5.6.3"
 anthropic = "^0.29"
-#datasets = "^2.15.0"
-#plotly = "^5.18.0"
+plotly = "^5.22"
 nltk = "^3.8"
 pytorch_lightning = "^2.3"  # for alignscore
 scikit-learn = "^1.5"
-#accelerate = "^0.26.1"
+accelerate = "^0.31"
 litellm = "^1.40"
 
 # optional dependencies required by specific modules
