@@ -10,7 +10,7 @@ authors = [
     "Zheng Zhang <zhaz@amazon.com>"
 ]
 readme = "README.md"
-licence = "Apache-2.0"
+license = "Apache-2.0"
 
 [tool.poetry.dependencies]
 python = "^3.10"
