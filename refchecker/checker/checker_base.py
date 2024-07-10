@@ -46,7 +46,9 @@ class CheckerBase:
         batch_responses: List[str] = None,
         batch_questions: List[str] = None,
         max_reference_segment_length: int = 200,
-        merge_psg: bool = True
+        merge_psg: bool = True,
+        is_joint: bool = False,
+        with_rationale: bool = False
     ):
         """
         Check claims against references.
@@ -74,59 +76,73 @@ class CheckerBase:
         """
         assert len(batch_claims) == len(batch_references)
         
-        batch_example_nums = [len(claims) for claims in batch_claims]
-
-        if batch_responses is None:
-            batch_responses = [None] * len(batch_claims)
-        if batch_questions is None:
-            batch_questions = [None] * len(batch_claims)
-        input_flattened = []
-        input_ids = []
-        for idx, (claims, references, resonses, questions) in enumerate(zip(batch_claims, batch_references, batch_responses, batch_questions)):
-            if isinstance(references, str):
-                references = [references]
-            segments_all_psg = []
-            for psg in references:
-                if max_reference_segment_length > 0:
-                    segments = split_text(psg, max_reference_segment_length)
-                else:
-                    segments = [psg]
-                segments_all_psg.append(segments)
-            for c_idx, claim in enumerate(claims):
-                for idx_psg, seg_psg in enumerate(segments_all_psg):
-                    for seg in seg_psg:
-                        input_flattened.append([claim, seg, resonses, questions])
-                        input_ids.append([idx, c_idx, idx_psg])
-        ret = self._check(
-                claims=[inp[0] for inp in input_flattened],
-                references=[inp[1] for inp in input_flattened],
-                responses=[inp[2] for inp in input_flattened],
-                questions=[inp[3] for inp in input_flattened],
+        if is_joint:
+            # joint checking is for LLM-based checkers only, and it doesn't need merge_psg
+            labels, rationales = self._check(
+                claims=batch_claims, 
+                references=batch_references, 
+                responses=batch_responses,
+                questions=batch_questions,
+                is_joint=True,
+                with_rationale=with_rationale
             )
-
-        ret = [[x] + y for x, y in zip(ret, input_ids)]
-        ret_merge_seg = [[merge_ret([item[0] for item in group])] + key[:-1] for key, group in groupby(ret, key=lambda x: x[1:])]
-        if merge_psg:
-            ret_merge_psg = [
-                [merge_multi_psg_ret([item[0] for item in group])] + key[:-1] 
-                for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
-            ]
+            return labels, rationales
         else:
-            ret_merge_psg = [
-                [[item[0] for item in group]] + key[:-1]
-                for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
-            ]
-        ret_group_triplet = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
+            batch_example_nums = [len(claims) for claims in batch_claims]
 
-        results = []
-        i = 0
-        for n in batch_example_nums:
-            if n > 0:
-                results.append(ret_group_triplet[i])
-                i += 1
+            if batch_responses is None:
+                batch_responses = [None] * len(batch_claims)
+            if batch_questions is None:
+                batch_questions = [None] * len(batch_claims)
+            
+            input_flattened = []
+            input_ids = []
+            for idx, (claims, references, resonses, questions) in enumerate(zip(batch_claims, batch_references, batch_responses, batch_questions)):
+                if isinstance(references, str):
+                    references = [references]
+                segments_all_psg = []
+                for psg in references:
+                    if max_reference_segment_length > 0:
+                        segments = split_text(psg, max_reference_segment_length)
+                    else:
+                        segments = [psg]
+                    segments_all_psg.append(segments)
+                for c_idx, claim in enumerate(claims):
+                    for idx_psg, seg_psg in enumerate(segments_all_psg):
+                        for seg in seg_psg:
+                            input_flattened.append([claim, seg, resonses, questions])
+                            input_ids.append([idx, c_idx, idx_psg])
+            ret = self._check(
+                    claims=[inp[0] for inp in input_flattened],
+                    references=[inp[1] for inp in input_flattened],
+                    responses=[inp[2] for inp in input_flattened],
+                    questions=[inp[3] for inp in input_flattened],
+                    is_joint=False
+                )
+
+            ret = [[x] + y for x, y in zip(ret, input_ids)]
+            ret_merge_seg = [[merge_ret([item[0] for item in group])] + key[:-1] for key, group in groupby(ret, key=lambda x: x[1:])]
+            if merge_psg:
+                ret_merge_psg = [
+                    [merge_multi_psg_ret([item[0] for item in group])] + key[:-1] 
+                    for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
+                ]
             else:
-                results.append([])
-        return results
+                ret_merge_psg = [
+                    [[item[0] for item in group]] + key[:-1]
+                    for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
+                ]
+            ret_group_triplet = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
+
+            results = []
+            i = 0
+            for n in batch_example_nums:
+                if n > 0:
+                    results.append(ret_group_triplet[i])
+                    i += 1
+                else:
+                    results.append([])
+            return results
 
     def _check(
         self,

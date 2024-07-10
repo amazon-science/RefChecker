@@ -1,72 +1,12 @@
-import os
+import re
 from typing import List, Union
 from tqdm import tqdm
+import numpy as np
 
 from .checker_base import CheckerBase
 from ..utils import get_model_batch_response, get_llm_full_name
-from ..base import RCClaim
+from .checker_prompts import *
 
-
-LLM_CHECKING_PROMPT_Q = \
-"""I have a claim that made by a language model to a question, please help me for checking whether the claim can be entailed according to the provided reference which is related to the question. 
-The reference is a list of passages, and the claim is represented as a triplet formatted with ("subject", "predicate", "object").
-
-If the claim is supported by ANY passage in the reference, answer 'Entailment'. 
-If NO passage in the reference entail the claim, and the claim is contradicted with some passage in the reference, answer 'Contradiction'.
-If NO passage entail or contradict with claim, or DOES NOT contain information to verify the claim, answer 'Neutral'. 
-
-Please DO NOT use your own knowledge for the judgement, just compare the reference and the claim to get the answer.
-
-### Question:
-{question}
-
-### Reference:
-{reference}
-
-### Claim:
-{claim}
-
-Your answer should always be only a single word in ['Entailment', 'Neutral', 'Contradiction']. DO NOT add explanations or you own reasoning to the output.
-"""
-
-LLM_CHECKING_PROMPT = \
-"""I have a claim that made by a language model, please help me for checking whether the claim can be entailed according to the provided reference. 
-The reference is a list of passages, and the claim is represented as a triplet formatted with ("subject", "predicate", "object").
-
-If the claim is supported by ANY passage in the reference, answer 'Entailment'. 
-If NO passage in the reference entail the claim, and the claim is contradicted with some passage in the reference, answer 'Contradiction'.
-If NO passage entail or contradict with claim, or DOES NOT contain information to verify the claim, answer 'Neutral'. 
-
-Please DO NOT use your own knowledge for the judgement, just compare the reference and the claim to get the answer.
-
-### Reference:
-{reference}
-
-### Claim:
-{claim}
-
-Your answer should always be only a single word in ['Entailment', 'Neutral', 'Contradiction']. DO NOT add explanations or you own reasoning to the output.
-"""
-
-
-SUBSENTENCE_CLAIM_CHECKING_PROMPT = \
-"""I have a claim that made by a language model, please help me for checking whether the claim can be entailed according to the provided reference. 
-The reference is a list of passages, and the claim is a sentence.
-
-If the claim is supported by ANY passage in the reference, answer 'Entailment'. 
-If NO passage in the reference entail the claim, and the claim is contradicted with some passage in the reference, answer 'Contradiction'.
-If NO passage entail or contradict with claim, or DOES NOT contain information to verify the claim, answer 'Neutral'. 
-
-Please DO NOT use your own knowledge for the judgement, just compare the reference and the claim to get the answer.
-
-### Reference:
-{reference}
-
-### Claim:
-{claim}
-
-Your answer should always be only a single word in ['Entailment', 'Neutral', 'Contradiction']. DO NOT add explanations or you own reasoning to the output.
-"""
 
 class LLMChecker(CheckerBase):
     def __init__(
@@ -100,10 +40,12 @@ class LLMChecker(CheckerBase):
 
     def _check(
         self,
-        claims: List[Union[str, List[str]]],
-        references: List[str],
-        responses: List[str],
-        questions: List[str],
+        claims: List[Union[str, List[str], List[List[str]]]],
+        references: List[Union[str, List[str]]],
+        responses: List[str] = None,
+        questions: List[str] = None,
+        is_joint: bool = False,
+        with_rationale: bool = False
     ):
         """
         Batch checking claims against references.
@@ -124,56 +66,200 @@ class LLMChecker(CheckerBase):
         ret : List[str]
             List of labels for the checking results.
 
-        """        
-        ret_labels = []
-        prompt_list = []
-        for claim, reference, question in zip(claims, references, questions):
-            claim_text = str(claim)
-            
-            if isinstance(claim, list) and len(claim) == 3:
-                if question is None:
-                    prompt = self.prompt_temp.format(
-                        reference=reference,
-                        claim=claim_text
-                    )
+        """
+        if is_joint:
+            batch_claim_nums = [len(claims_per_batch) for claims_per_batch in claims]
+            batch_ref_nums = []
+            for ref_per_batch in references:
+                if isinstance(ref_per_batch, str):
+                    batch_ref_nums.append(1)
                 else:
-                    prompt = self.prompt_temp_wq.format(
-                        question=question,
-                        reference=reference,
-                        claim=claim_text
-                    )
-            elif isinstance(claim, str):
-                if question and len(question):
-                    reference = question + ' ' + reference
-                prompt = self.prompt_temp_subsent.format(
-                    reference=reference,
-                    claim=claim_text
+                    assert isinstance(ref_per_batch, list)
+                    batch_ref_nums.append(len(ref_per_batch))
+            
+            prompt_template = JOINT_CHECKING_PROMPT_Q_WITH_RATIONALE if with_rationale else JOINT_CHECKING_PROMPT_Q
+            
+            prompt_list = []
+            prompt_ids = [] # for setting the limit of max num of claims
+            claim_nums = []
+            p_id = 0
+            for claims_per_batch, references_per_batch, question_per_batch in zip(claims, references, questions):
+                if len(claims_per_batch) == 0:
+                    continue
+                # if isinstance(claims_per_batch[0], list) and len(claims_per_batch[0]) == 3:
+                #     claims_per_batch = [' '.join(c) for c in claims_per_batch]
+                    
+                if isinstance(references_per_batch, str):
+                    references_per_batch = [references_per_batch]
+                
+                for ref in references_per_batch:
+                    _claim_cnt = 0
+                    claims_text = ''
+                    # for _ci, c in enumerate(claims_per_batch):
+                    #     claims_text += f'---\nClaim ID: {_ci}\nClaim: {c}\n---\n\n'
+                    
+                    for _ci, c in enumerate(claims_per_batch):
+                        claims_text += f'("{c[0]}", "{c[1]}", "{c[2]}")\n'
+                        _claim_cnt += 1
+                        if _claim_cnt >= 5 or _ci == len(claims_per_batch) - 1:
+                            prompt = prompt_template.replace('[QUESTION]', question_per_batch)
+                            prompt = prompt.replace('[REFERENCE]', ref)
+                            prompt = prompt.replace('[CLAIMS]', claims_text.strip())
+                            prompt_list.append(prompt)
+                            
+                            prompt_ids.append(p_id)
+                            claim_nums.append(_claim_cnt)
+                            _claim_cnt = 0
+                            claims_text = ''
+                            
+                    p_id += 1
+            # print(prompt_ids)
+            labels_list = []
+            rationale_list = []
+            for i in tqdm(range(0, len(prompt_list), self.batch_size)):
+                batch_prompts = prompt_list[i:i + self.batch_size]
+
+                llm_responses = get_model_batch_response(
+                    prompts=batch_prompts,
+                    temperature=0,
+                    model=self.model,
+                    max_new_tokens=100,
+                    api_base=self.api_base
                 )
-            else:
-                raise f'Unknown claim format: {type(claim)}'
-            prompt_list.append(prompt)
-
-        for i in tqdm(range(0, len(prompt_list), self.batch_size)):
-            batch_prompts = prompt_list[i:i + self.batch_size]
-
-            llm_responses = get_model_batch_response(
-                prompts=batch_prompts,
-                temperature=0,
-                model=self.model,
-                max_new_tokens=10,
-                api_base=self.api_base
-            )
-            
-            for llm_response in llm_responses:
-                if llm_response and len(llm_response):
-                    label = None
-                    if self.label_contradiction.lower() in llm_response.lower():
-                        label = self.label_contradiction
-                    elif self.label_entailment.lower() in llm_response.lower():
-                        label = self.label_entailment
+                
+                for llm_response in llm_responses:
+                    if llm_response:
+                        # checking_results = self._parse_joint_checking_format(llm_response, with_rationale)
+                        # labels = [l['label'] for l in checking_results]
+                        # labels_list.append(labels)
+                        # if with_rationale:
+                        #     rationale_list.append([l['rationale'] for l in checking_results])
+                        labels = self._parse_joint_checking_labels(llm_response)
+                        labels_list.append(labels)
                     else:
-                        label = self.label_neutral
-                    ret_labels.append(label)
+                        raise 'API returns None or empty string'
+            
+            # pad labels with Neutral
+            assert len(claim_nums) == len(labels_list)
+            for _i, claim_n in enumerate(claim_nums):
+                if len(labels_list[_i]) < claim_n:
+                    labels_list[_i] = labels_list[_i] + ['Neutral'] * (claim_n - len(labels_list[_i]))
+                elif len(labels_list[_i]) > claim_n:
+                    labels_list[_i] = labels_list[_i][:claim_n]
+            # merge labels
+            merged_label_list = []
+            for _i, _pid in enumerate(prompt_ids):
+                if _i > 0 and _pid == prompt_ids[_i - 1]:
+                    merged_label_list[-1] += labels_list[_i]
                 else:
-                    raise 'API returns None or empty string'
-        return ret_labels
+                    merged_label_list.append(labels_list[_i])
+            # print(merged_label_list)
+            ret_labels = []
+            ret_rationales = []
+            _index = 0
+            for _i, claim_num in enumerate(batch_claim_nums):
+                if claim_num > 0:
+                    one_batch_labels = merged_label_list[_index: _index + batch_ref_nums[_i]] # [ref_num, claim_num]
+                    # print(one_batch_labels)
+                    if len(rationale_list):
+                        one_batch_rationles = rationale_list[_index: _index + batch_ref_nums[_i]]
+
+                    _index += batch_ref_nums[_i]
+                    
+                    one_batch_labels = np.array(one_batch_labels).transpose(1, 0)
+                    if len(rationale_list):
+                        one_batch_rationles = np.array(one_batch_rationles).transpose(1, 0)
+                    if batch_ref_nums[_i] == 1:
+                        one_batch_labels = one_batch_labels.squeeze(-1)
+                        if len(rationale_list):
+                            one_batch_rationles = one_batch_rationles.squeeze(-1)
+                    ret_labels.append(one_batch_labels.tolist())
+                    if len(rationale_list):
+                        ret_rationales.append(one_batch_rationles.tolist())
+                else:
+                    ret_labels.append([])
+                    ret_rationales.append([])
+            return ret_labels, ret_rationales
+        else:
+            ret_labels = []
+            prompt_list = []
+            for claim, reference, question in zip(claims, references, questions):
+                claim_text = str(claim)
+                
+                if isinstance(claim, list) and len(claim) == 3:
+                    if question is None:
+                        prompt = self.prompt_temp.format(
+                            reference=reference,
+                            claim=claim_text
+                        )
+                    else:
+                        prompt = self.prompt_temp_wq.format(
+                            question=question,
+                            reference=reference,
+                            claim=claim_text
+                        )
+                elif isinstance(claim, str):
+                    if question and len(question):
+                        reference = question + ' ' + reference
+                    prompt = self.prompt_temp_subsent.format(
+                        reference=reference,
+                        claim=claim_text
+                    )
+                else:
+                    raise f'Unknown claim format: {type(claim)}'
+                prompt_list.append(prompt)
+
+            for i in tqdm(range(0, len(prompt_list), self.batch_size)):
+                batch_prompts = prompt_list[i:i + self.batch_size]
+
+                llm_responses = get_model_batch_response(
+                    prompts=batch_prompts,
+                    temperature=0,
+                    model=self.model,
+                    max_new_tokens=10,
+                    api_base=self.api_base
+                )
+                
+                for llm_response in llm_responses:
+                    if llm_response and len(llm_response):
+                        label = None
+                        if self.label_contradiction.lower() in llm_response.lower():
+                            label = self.label_contradiction
+                        elif self.label_entailment.lower() in llm_response.lower():
+                            label = self.label_entailment
+                        else:
+                            label = self.label_neutral
+                        ret_labels.append(label)
+                    else:
+                        raise 'API returns None or empty string'
+            return ret_labels
+    
+    def _parse_joint_checking_format(self, text, with_rationale):
+        if with_rationale:
+            pattern = r'---\s*Claim ID:\s*(\d+)\s*Rationale:(.*?)\s*Label:(.*?)\s*---'
+            matches = re.findall(pattern, text, re.DOTALL)
+            results = []
+            for match in matches:
+                results.append({
+                    "claim_id": int(match[0]),
+                    "rationale": match[1].strip(),
+                    "label": match[2].strip()
+                })
+        else:
+            pattern = r'---\s*Claim ID:\s*(\d+)\s*Label:(.*?)\s*---'
+            matches = re.findall(pattern, text, re.DOTALL)
+            results = []
+            for match in matches:
+                results.append({
+                    "claim_id": int(match[0]),
+                    "label": match[1].strip()
+                })
+        
+        results = sorted(results, key=lambda x: x['claim_id'])
+        return results
+
+    def _parse_joint_checking_labels(self, text):
+        pattern = r'\b(Entailment|Neutral|Contradiction)\b'
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        parsed_labels = [label.title() for label in matches]
+        return parsed_labels
