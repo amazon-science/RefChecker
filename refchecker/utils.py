@@ -127,9 +127,9 @@ def get_model_batch_response(
                 response_list = [r.choices[0].message.content for r in responses]
             else:
                 response_list = [[res.message.content for res in r.choices] for r in responses]
-            for r in response_list:
-                if not r or len(r) == 0:
-                    raise ValueError(f'{model} API returns None or empty string')
+            # for r in response_list:
+            #     if not r or len(r) == 0:
+            #         raise ValueError(f'{model} API returns None or empty string')
             return response_list
         else:
             exception = None
