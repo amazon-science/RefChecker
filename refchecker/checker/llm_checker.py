@@ -44,8 +44,7 @@ class LLMChecker(CheckerBase):
         references: List[Union[str, List[str]]],
         responses: List[str] = None,
         questions: List[str] = None,
-        is_joint: bool = False,
-        with_rationale: bool = False
+        is_joint: bool = False
     ):
         """
         Batch checking claims against references.
@@ -60,7 +59,9 @@ class LLMChecker(CheckerBase):
             List of model response texts.
         questions : List[str]
             List of questions corresponding to each triplet.
-
+        is_joint: bool, optional
+            Whether perform joint checking for claims to accelerate the checking process.
+        
         Returns
         -------
         ret : List[str]
@@ -77,7 +78,7 @@ class LLMChecker(CheckerBase):
                     assert isinstance(ref_per_batch, list)
                     batch_ref_nums.append(len(ref_per_batch))
             
-            prompt_template = JOINT_CHECKING_PROMPT_Q_WITH_RATIONALE if with_rationale else JOINT_CHECKING_PROMPT_Q
+            prompt_template = JOINT_CHECKING_PROMPT_Q
             
             prompt_list = []
             prompt_ids = [] # for setting the limit of max num of claims
@@ -86,8 +87,6 @@ class LLMChecker(CheckerBase):
             for claims_per_batch, references_per_batch, question_per_batch in zip(claims, references, questions):
                 if len(claims_per_batch) == 0:
                     continue
-                # if isinstance(claims_per_batch[0], list) and len(claims_per_batch[0]) == 3:
-                #     claims_per_batch = [' '.join(c) for c in claims_per_batch]
                     
                 if isinstance(references_per_batch, str):
                     references_per_batch = [references_per_batch]
@@ -95,8 +94,6 @@ class LLMChecker(CheckerBase):
                 for ref in references_per_batch:
                     _claim_cnt = 0
                     claims_text = ''
-                    # for _ci, c in enumerate(claims_per_batch):
-                    #     claims_text += f'---\nClaim ID: {_ci}\nClaim: {c}\n---\n\n'
                     
                     for _ci, c in enumerate(claims_per_batch):
                         claims_text += f'("{c[0]}", "{c[1]}", "{c[2]}")\n'
@@ -113,9 +110,8 @@ class LLMChecker(CheckerBase):
                             claims_text = ''
                             
                     p_id += 1
-            # print(prompt_ids)
+            
             labels_list = []
-            rationale_list = []
             for i in tqdm(range(0, len(prompt_list), self.batch_size)):
                 batch_prompts = prompt_list[i:i + self.batch_size]
 
@@ -129,11 +125,6 @@ class LLMChecker(CheckerBase):
                 
                 for llm_response in llm_responses:
                     if llm_response:
-                        # checking_results = self._parse_joint_checking_format(llm_response, with_rationale)
-                        # labels = [l['label'] for l in checking_results]
-                        # labels_list.append(labels)
-                        # if with_rationale:
-                        #     rationale_list.append([l['rationale'] for l in checking_results])
                         labels = self._parse_joint_checking_labels(llm_response)
                         labels_list.append(labels)
                     else:
@@ -153,33 +144,22 @@ class LLMChecker(CheckerBase):
                     merged_label_list[-1] += labels_list[_i]
                 else:
                     merged_label_list.append(labels_list[_i])
-            # print(merged_label_list)
+            
             ret_labels = []
-            ret_rationales = []
             _index = 0
             for _i, claim_num in enumerate(batch_claim_nums):
                 if claim_num > 0:
                     one_batch_labels = merged_label_list[_index: _index + batch_ref_nums[_i]] # [ref_num, claim_num]
-                    # print(one_batch_labels)
-                    if len(rationale_list):
-                        one_batch_rationles = rationale_list[_index: _index + batch_ref_nums[_i]]
 
                     _index += batch_ref_nums[_i]
                     
                     one_batch_labels = np.array(one_batch_labels).transpose(1, 0)
-                    if len(rationale_list):
-                        one_batch_rationles = np.array(one_batch_rationles).transpose(1, 0)
                     if batch_ref_nums[_i] == 1:
                         one_batch_labels = one_batch_labels.squeeze(-1)
-                        if len(rationale_list):
-                            one_batch_rationles = one_batch_rationles.squeeze(-1)
                     ret_labels.append(one_batch_labels.tolist())
-                    if len(rationale_list):
-                        ret_rationales.append(one_batch_rationles.tolist())
                 else:
                     ret_labels.append([])
-                    ret_rationales.append([])
-            return ret_labels, ret_rationales
+            return ret_labels
         else:
             ret_labels = []
             prompt_list = []
@@ -233,30 +213,6 @@ class LLMChecker(CheckerBase):
                     else:
                         raise 'API returns None or empty string'
             return ret_labels
-    
-    def _parse_joint_checking_format(self, text, with_rationale):
-        if with_rationale:
-            pattern = r'---\s*Claim ID:\s*(\d+)\s*Rationale:(.*?)\s*Label:(.*?)\s*---'
-            matches = re.findall(pattern, text, re.DOTALL)
-            results = []
-            for match in matches:
-                results.append({
-                    "claim_id": int(match[0]),
-                    "rationale": match[1].strip(),
-                    "label": match[2].strip()
-                })
-        else:
-            pattern = r'---\s*Claim ID:\s*(\d+)\s*Label:(.*?)\s*---'
-            matches = re.findall(pattern, text, re.DOTALL)
-            results = []
-            for match in matches:
-                results.append({
-                    "claim_id": int(match[0]),
-                    "label": match[1].strip()
-                })
-        
-        results = sorted(results, key=lambda x: x['claim_id'])
-        return results
 
     def _parse_joint_checking_labels(self, text):
         pattern = r'\b(Entailment|Neutral|Contradiction)\b'

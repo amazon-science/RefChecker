@@ -47,8 +47,7 @@ class CheckerBase:
         batch_questions: List[str] = None,
         max_reference_segment_length: int = 200,
         merge_psg: bool = True,
-        is_joint: bool = False,
-        with_rationale: bool = False
+        is_joint: bool = False
     ):
         """
         Check claims against references.
@@ -67,6 +66,8 @@ class CheckerBase:
             Maximum length of each reference segment, defaults to 200.
         merge_psg : bool, optional
             Whether to merge results from multiple passages, defaults to True.
+        is_joint: bool, optional
+            Whether perform joint checking for claims to accelerate the checking process.
 
         Returns
         -------
@@ -78,15 +79,14 @@ class CheckerBase:
         
         if is_joint:
             # joint checking is for LLM-based checkers only, and it doesn't need merge_psg
-            labels, rationales = self._check(
+            labels = self._check(
                 claims=batch_claims, 
                 references=batch_references, 
                 responses=batch_responses,
                 questions=batch_questions,
-                is_joint=True,
-                with_rationale=with_rationale
+                is_joint=True
             )
-            return labels, rationales
+            return labels
         else:
             batch_example_nums = [len(claims) for claims in batch_claims]
 
