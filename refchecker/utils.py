@@ -122,16 +122,16 @@ def get_model_batch_response(
             max_tokens=max_new_tokens,
             api_base=api_base
         )
-        if all([isinstance(r, ModelResponse) for r in responses]):
+        try:
+            assert all([isinstance(r, ModelResponse) for r in responses])
             if n_choices == 1:
                 response_list = [r.choices[0].message.content for r in responses]
             else:
                 response_list = [[res.message.content for res in r.choices] for r in responses]
-            # for r in response_list:
-            #     if not r or len(r) == 0:
-            #         raise ValueError(f'{model} API returns None or empty string')
+            
+            assert all([r is not None for r in response_list])
             return response_list
-        else:
+        except:
             exception = None
             for e in responses:
                 if isinstance(e, ModelResponse):

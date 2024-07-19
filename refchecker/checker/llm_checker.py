@@ -121,12 +121,12 @@ class LLMChecker(CheckerBase):
                     prompts=batch_prompts,
                     temperature=0,
                     model=self.model,
-                    max_new_tokens=100,
+                    max_new_tokens=joint_check_num * 10 + 100,
                     api_base=self.api_base
                 )
                 
                 for llm_response in llm_responses:
-                    if llm_response:
+                    if llm_response is not None:
                         labels = self._parse_joint_checking_labels(llm_response)
                         labels_list.append(labels)
                     else:
