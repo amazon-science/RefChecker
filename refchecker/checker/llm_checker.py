@@ -44,7 +44,8 @@ class LLMChecker(CheckerBase):
         references: List[Union[str, List[str]]],
         responses: List[str] = None,
         questions: List[str] = None,
-        is_joint: bool = False
+        is_joint: bool = False,
+        joint_check_num: int = 5
     ):
         """
         Batch checking claims against references.
@@ -61,7 +62,8 @@ class LLMChecker(CheckerBase):
             List of questions corresponding to each triplet.
         is_joint: bool, optional
             Whether perform joint checking for claims to accelerate the checking process.
-        
+        joint_check_num: int, optional
+            Number of claims to check jointly in one prompt. Defaults to 5.
         Returns
         -------
         ret : List[str]
@@ -98,7 +100,7 @@ class LLMChecker(CheckerBase):
                     for _ci, c in enumerate(claims_per_batch):
                         claims_text += f'("{c[0]}", "{c[1]}", "{c[2]}")\n'
                         _claim_cnt += 1
-                        if _claim_cnt >= 5 or _ci == len(claims_per_batch) - 1:
+                        if _claim_cnt >= joint_check_num or _ci == len(claims_per_batch) - 1:
                             prompt = prompt_template.replace('[QUESTION]', question_per_batch)
                             prompt = prompt.replace('[REFERENCE]', ref)
                             prompt = prompt.replace('[CLAIMS]', claims_text.strip())

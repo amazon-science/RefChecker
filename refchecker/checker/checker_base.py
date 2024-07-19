@@ -47,7 +47,8 @@ class CheckerBase:
         batch_questions: List[str] = None,
         max_reference_segment_length: int = 200,
         merge_psg: bool = True,
-        is_joint: bool = False
+        is_joint: bool = False,
+        joint_check_num: int = 5
     ):
         """
         Check claims against references.
@@ -68,7 +69,9 @@ class CheckerBase:
             Whether to merge results from multiple passages, defaults to True.
         is_joint: bool, optional
             Whether perform joint checking for claims to accelerate the checking process.
-
+        joint_check_num: int, optional
+            Number of claims to check jointly in one prompt. Defaults to 5.
+        
         Returns
         -------
         results : List[List[str]]
@@ -84,7 +87,8 @@ class CheckerBase:
                 references=batch_references, 
                 responses=batch_responses,
                 questions=batch_questions,
-                is_joint=True
+                is_joint=True,
+                joint_check_num=joint_check_num
             )
             return labels
         else:
