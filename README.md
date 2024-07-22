@@ -34,6 +34,7 @@ You can explore RefChecker in the following ways:
 
 <a id='news'></a>
 ## 🔥 News
+- [07/22/2024] Add support for joint checking the claims for better checking efficency.
 - [06/24/2024] RefChecker supports most of the LLMs by employing litellm and vllm.
 - [05/23/2024] RefChecker paper is on Arxiv: https://arxiv.org/pdf/2405.14486 
 - [12/07/2023] RefChecker 0.1 release.
