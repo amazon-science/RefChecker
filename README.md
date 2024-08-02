@@ -21,7 +21,7 @@ RefChecker provides a standardized assessment framework to identify subtle hallu
     2. Noisy Context: the prompt is a question as well as a list of retrieved document (eg. RAG).
     3. Accurate Context: the prompt is a question as well as one document (eg. Summarization).
 - **Human Evaluation** - RefChecker includes 2.1k [human annotated LLM’s responses](#benchmark_dataset) consist of 300 test samples, each responded by 7 popular LLMs: GPT4, GPT-3.5-Turbo, InstructGPT, Falcon (Falcon-40B-Instruct), Alpaca (Alpaca-7B), LLaMA2(70B-Chat) and Claude 2. We will release the data and results upon approval.
-- **Modular Architecture** — RefChecker is a 3-stage pipeline, consisting of a [claim extractor](https://github.com/amazon-science/RefChecker/tree/main/RefChecker/extractor) $E$, a [hallucination checker](https://github.com/amazon-science/RefChecker/tree/main/RefChecker/checker) $C$, and [aggregation rules](#aggregation) $\tau$. They can be invoked and configured individually from command-line. Other than the 3 core stages, there are 3 auxiliary components:
+- **Modular Architecture** — RefChecker is a 3-stage pipeline, consisting of a [claim extractor](#extraction) $E$, a [hallucination checker](#checking) $C$, and [aggregation rules](#aggregation) $\tau$. They can be invoked and configured individually from command-line. Other than the 3 core stages, there are 3 auxiliary components:
     1. human labeling tool (coming soon) to label claims,
     2. call to search engine for Zero Context setting
     3. a [localization model](#localization) to map each knowledge triple back to the corresponding snippets of the reference.
@@ -316,6 +316,7 @@ The input json file contains a list of
 {
    "response": "",  # required, the response to be checked
    "question": "",  # optional if the question is not important (e.g., in summarization)
+   "reference": "", # required, the reference for checking
    ...
 }
 ```
@@ -480,10 +481,13 @@ Sometimes, the LLM declines to answer questions by generating responses such as 
 
 Using automatic hallucination checker is a more scalable way for evaluating LLMs. Our automatic hallucination checker is a 3-stage pipeline, consisting of a knowledge extraction model $E$, a checker $C$, and aggregation rules $\tau$. Initially, we utilize $E$ to decompose the input text $T$ into a set of knowledge triplets $k_{1:N}$​. Each of these triplets undergoes verification by $C$. Subsequently, based on predefined rules $\tau$, the individual results $y_{1:N}$​ are aggregated to determine the overall hallucination label $Y$ for the given text. We delve into the specifics of each component in the subsequent parts and also elaborate on our strategies for enhancing the checker's performance through self-supervision.
 
-#### Triplet Extraction
+<a id='extraction'></a>
+
+#### Claim Extraction
 
 Our checking framework hinges on a key assumption: the decomposition of the original text into triplets facilitates finer-grained detection and more accurate evaluation. The extraction of these triplets plays a pivotal role in achieving this objective. We use LLMs to extract knowledge triplets from the given text. See [refchecker/extractor](https://github.com/amazon-science/RefChecker/tree/main/refchecker/extractor) for further details and the usage of the knowledge extraction model.
 
+<a id='checking'></a>
 
 #### Checker
 
