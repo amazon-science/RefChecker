@@ -81,6 +81,10 @@ class CheckerBase:
         assert len(batch_claims) == len(batch_references)
         
         if is_joint:
+            if batch_responses is None:
+                batch_responses = [None] * len(batch_claims)
+            if batch_questions is None:
+                batch_questions = [None] * len(batch_claims)
             # joint checking is for LLM-based checkers only, and it doesn't need merge_psg
             labels = self._check(
                 claims=batch_claims, 

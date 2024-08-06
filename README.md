@@ -145,14 +145,18 @@ python -m vllm.entrypoints.openai.api_server \
   --port 5000
 ```
 
+Setup the api key:
+
+```bash
+export OPENAI_API_KEY=sk-123456789
+```
+
 Then we can initilize the extractor and checker with `api_base`:
 
 ```python
 import os
 from refchecker import LLMExtractor, LLMChecker
 
-# Use the same API key in the above command
-os.environ["OPENAI_API_KEY"] = "sk-123456789"
 
 # Note the prefix "openai/" here
 model = "openai/meta-llama/Meta-Llama-3-8B-Instruct"

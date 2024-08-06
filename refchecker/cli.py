@@ -140,7 +140,7 @@ def extract(args):
     
     # extract triplets
     print('Extracting')
-    question_list = [d['question'] for d in input_data]
+    question_list = [d.get('question', None) for d in input_data]
     response_list = [d['response'] for d in input_data]
     
     extraction_results = extractor.extract(
@@ -167,7 +167,7 @@ def check(args):
         checker = LLMChecker(
             model=args.checker_name, 
             batch_size=args.batch_size_checker,
-            api_base=args.extractor_api_base
+            api_base=args.checker_api_base
         )
     
     retriever = None

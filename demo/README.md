@@ -35,8 +35,6 @@ Execute the following command to run the demo:
 ```bash
 streamlit run demo/main.py \
     --server.port={port} -- \ # set the deploy port
-    --extractor={gpt4, claude2} \ # choose the extractor
-    --checker={gpt4, claude2, nli} \ # choose the checker
     --enable_search # enable Google search
 ```
 

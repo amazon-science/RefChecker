@@ -14,22 +14,36 @@ from transformers import (
 from spacy.lang.en import English
 
 from miscellaneous import htmls #pre-defined visual components for showing the top step-by-step progress bar 
-from refchecker import GPT4Extractor, Claude2Extractor, LLMChecker, NLIChecker
+from refchecker import LLMExtractor, LLMChecker
 from refchecker.retriever import GoogleRetriever
 
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '--extractor', 
-    type=str, 
-    choices=['gpt4', 'claude2'],
-    required=True
+    '--extractor', type=str, default="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
+    help="Model used for extracting triplets. Default: bedrock/anthropic.claude-3-sonnet-20240229-v1:0"
 )
 parser.add_argument(
-    '--checker', 
-    type=str, 
-    choices=['gpt4', 'claude2', 'nli'],
-    required=True
+    '--extractor_max_new_tokens', type=int, default=1000,
+    help="Max generated tokens of the extractor, set a larger value for longer documents. Default: 500"
+)
+parser.add_argument(
+    '--claim_format', type=str, default='triplet',
+    choices=['triplet', 'subsentence'],
+    help='The format of the extracted claims. Default: subsentence'
+)
+parser.add_argument(
+    "--checker", type=str, default="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
+    help="Model used for checking whether the triplets are factual. "
+    "Default: Claude 3 Sonnet"
+)
+parser.add_argument(
+    "--extractor_api_base", type=str,
+    help="API base URL if using vllm for deploying the extractor"
+)
+parser.add_argument(
+    "--checker_api_base", type=str,
+    help="API base URL if using vllm for deploying the checker"
 )
 parser.add_argument(
     '--enable_search', 
@@ -37,12 +51,6 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
-
-if args.extractor == 'gpt4' or args.checker == 'gpt4':
-    assert os.environ.get('OPENAI_API_KEY')
-
-if args.extractor == 'claude2' or args.checker == 'claude2':
-    assert os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('AWS_REGION_NAME')
 
 if args.enable_search:
     assert os.environ.get('SERPER_API_KEY')
@@ -156,10 +164,14 @@ def extract_triplet(text):
     list
         a list of list, such as [['head', 'relation', 'tail']] 
     """
-    ret = st.session_state['extractor'].extract(text)
-    if ret is None:
+    ret = st.session_state['extractor'].extract(
+        batch_responses=[text],
+        max_new_tokens=args.extractor_max_new_tokens
+    )[0]
+    claims = [c.content for c in ret.claims]
+    if claims is None:
         return [["API", "didn't", "work"]]
-    return ret
+    return claims
 
 @st.cache_data(show_spinner=False)
 def check_it(text_list, triplet_list):
@@ -175,7 +187,11 @@ def check_it(text_list, triplet_list):
     List[List[str]]
         List of labels for each input example, one from pre-defined labels, ['Entailment', 'Neutral', 'Contradiction']
     """
-    outs = st.session_state['checker'].check(triplet_list, text_list)
+    outs = st.session_state['checker'].check(
+        batch_claims=triplet_list, 
+        batch_references=text_list,
+        max_reference_segment_length=0
+    )
     return outs
 
 @st.cache_data(show_spinner=False)
@@ -220,19 +236,24 @@ def search_it(text):
 def get_models():
     nlp = English()
     nlp.add_pipe("sentencizer")
-    extractor = None
-    if args.extractor == 'gpt4':
-        extractor = GPT4Extractor()
-    elif args.extractor == 'claude2':
-        extractor = Claude2Extractor()
+    extractor = LLMExtractor(
+        claim_format=args.claim_format, 
+        model=args.extractor, 
+        api_base=args.extractor_api_base
+    )
     
     checker = None
-    if args.checker in ["gpt4", "claude2"]:
-        checker = LLMChecker(model=args.checker)
-    elif args.checker == 'nli':
-        checker = NLIChecker()
+    if args.checker == "nli":
+        from refchecker import NLIChecker
+        checker = NLIChecker(batch_size=1)
+    elif args.checker == "alignscore":
+        from refchecker import AlignScoreChecker
+        checker = AlignScoreChecker(batch_size=1)
     else:
-        raise NotImplementedError
+        checker = LLMChecker(
+            model=args.checker, 
+            api_base=args.checker_api_base
+        )
     
     assert extractor
     assert checker
