@@ -90,16 +90,18 @@ We use [litellm](https://docs.litellm.ai/) as to invoke the LLMs. Please check t
 
 - Amazon Bedrock
 
+# Setup the enviroment variables if you are not using AWS EC2 instance
+# If you are using AWS EC2, make sure your region has the access to the model
+```bash
+export AWS_ACCESS_KEY_ID=<your_aws_access_key_id>
+export AWS_SECRET_ACCESS_KEY=<your_aws_secret_access_key>
+export AWS_REGION_NAME=<your_aws_region_name>
+```
+
+
 ```python
 import os
 from refchecker import LLMExtractor, LLMChecker
-
-
-# Setup the enviroment variables if you are not using AWS EC2 instance
-# If you are using AWS EC2, make sure your region has the access to the model
-os.environ["AWS_ACCESS_KEY_ID"] = "<your_aws_access_key_id>"
-os.environ["AWS_SECRET_ACCESS_KEY"] = "<your_aws_secret_access_key>"
-os.environ["AWS_REGION_NAME"] = "<your_aws_region_name>"
 
 # Claude 3 Sonnet from Amazon Bedrock
 model = 'bedrock/anthropic.claude-3-sonnet-20240229-v1:0'
