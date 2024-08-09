@@ -57,7 +57,7 @@ class GoogleRetriever:
         """Use LLM to generate query to search on the Internet to get relevant
         information. Currently only single query is generated."""
         prompt = PROMPT_FOR_QUERY_GEN % paragraph
-        query = get_model_batch_response(prompt, model='gpt-3.5-turbo', temperature=0)
+        query = get_model_batch_response([prompt], model='gpt-3.5-turbo', temperature=0)[0]
         if query is None:
             raise RuntimeError(
                 "Retriever: Empty response from LLM for query generation."
