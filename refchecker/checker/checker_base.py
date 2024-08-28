@@ -94,6 +94,11 @@ class CheckerBase:
                 is_joint=True,
                 joint_check_num=joint_check_num
             )
+            if merge_psg:
+                labels = [
+                    [merge_multi_psg_ret(claim_labels) for claim_labels in item_labels]
+                    for item_labels in labels
+                ]
             return labels
         else:
             batch_example_nums = [len(claims) for claims in batch_claims]

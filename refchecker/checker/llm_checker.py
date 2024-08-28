@@ -156,8 +156,8 @@ class LLMChecker(CheckerBase):
                     _index += batch_ref_nums[_i]
                     
                     one_batch_labels = np.array(one_batch_labels).transpose(1, 0)
-                    if batch_ref_nums[_i] == 1:
-                        one_batch_labels = one_batch_labels.squeeze(-1)
+                    # if batch_ref_nums[_i] == 1:
+                    #     one_batch_labels = one_batch_labels.squeeze(-1)
                     ret_labels.append(one_batch_labels.tolist())
                 else:
                     ret_labels.append([])
