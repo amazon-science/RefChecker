@@ -48,7 +48,8 @@ class CheckerBase:
         max_reference_segment_length: int = 200,
         merge_psg: bool = True,
         is_joint: bool = False,
-        joint_check_num: int = 5
+        joint_check_num: int = 5,
+        **kwargs
     ):
         """
         Check claims against references.
@@ -92,7 +93,8 @@ class CheckerBase:
                 responses=batch_responses,
                 questions=batch_questions,
                 is_joint=True,
-                joint_check_num=joint_check_num
+                joint_check_num=joint_check_num,
+                **kwargs
             )
             if merge_psg:
                 labels = [
@@ -162,7 +164,8 @@ class CheckerBase:
         claims: List[RCClaim],
         references: List[str],
         responses: List[str],
-        questions: List[str]
+        questions: List[str],
+        **kwargs
     ):
         """
         Internal method for checking claims against references.

@@ -45,7 +45,8 @@ class LLMChecker(CheckerBase):
         responses: List[str] = None,
         questions: List[str] = None,
         is_joint: bool = False,
-        joint_check_num: int = 5
+        joint_check_num: int = 5,
+        **kwargs
     ):
         """
         Batch checking claims against references.
@@ -122,7 +123,8 @@ class LLMChecker(CheckerBase):
                     temperature=0,
                     model=self.model,
                     max_new_tokens=joint_check_num * 10 + 100,
-                    api_base=self.api_base
+                    api_base=self.api_base,
+                    **kwargs
                 )
                 
                 for llm_response in llm_responses:
@@ -199,7 +201,8 @@ class LLMChecker(CheckerBase):
                     temperature=0,
                     model=self.model,
                     max_new_tokens=10,
-                    api_base=self.api_base
+                    api_base=self.api_base,
+                    **kwargs
                 )
                 
                 for llm_response in llm_responses:

@@ -29,7 +29,8 @@ class LLMExtractor(ExtractorBase):
         self, 
         batch_responses, 
         batch_questions=None, 
-        max_new_tokens=500
+        max_new_tokens=500,
+        **kwargs
     ):
         """Extract subsentence claims from the response text.
         Parameters
@@ -69,7 +70,8 @@ class LLMExtractor(ExtractorBase):
                 temperature=0,
                 model=self.model,
                 n_choices=1,
-                max_new_tokens=max_new_tokens
+                max_new_tokens=max_new_tokens,
+                **kwargs
             )
 
             if llm_responses and len(llm_responses):
@@ -93,7 +95,8 @@ class LLMExtractor(ExtractorBase):
         self, 
         batch_responses, 
         batch_questions=None, 
-        max_new_tokens=500
+        max_new_tokens=500,
+        **kwargs
     ):
         """Extract KG triplets from the response text.
         Parameters
@@ -133,11 +136,12 @@ class LLMExtractor(ExtractorBase):
             
             llm_responses = get_model_batch_response(
                 prompts=batch_prompts,
-                temperature=0,
+                temperature=1e-5,
                 model=self.model,
                 n_choices=1,
                 max_new_tokens=max_new_tokens,
-                api_base=self.api_base
+                api_base=self.api_base,
+                **kwargs
             )
 
             if llm_responses and len(llm_responses):

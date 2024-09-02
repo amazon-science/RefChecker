@@ -69,7 +69,8 @@ def get_model_batch_response(
         temperature=0,
         n_choices=1,
         max_new_tokens=500,
-        api_base=None
+        api_base=None,
+        **kwargs
 ):
     """
     Get batch generation results with given prompts.
@@ -120,7 +121,8 @@ def get_model_batch_response(
             temperature=temperature,
             n=n_choices,
             max_tokens=max_new_tokens,
-            api_base=api_base
+            api_base=api_base,
+            **kwargs
         )
         try:
             assert all([isinstance(r, ModelResponse) for r in responses])

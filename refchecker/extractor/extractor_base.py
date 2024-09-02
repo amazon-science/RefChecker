@@ -15,19 +15,22 @@ class ExtractorBase:
         self, 
         batch_responses, 
         batch_questions=None, 
-        max_new_tokens=500
+        max_new_tokens=500,
+        **kwargs
     ):
         if self.claim_format == 'triplet':
             result = self.extract_claim_triplets(
                 batch_responses=batch_responses,
                 batch_questions=batch_questions,
-                max_new_tokens=max_new_tokens
+                max_new_tokens=max_new_tokens,
+                **kwargs
             )
         elif self.claim_format == 'subsentence':
             result = self.extract_subsentence_claims(
                 batch_responses=batch_responses,
                 batch_questions=batch_questions,
-                max_new_tokens=max_new_tokens
+                max_new_tokens=max_new_tokens,
+                **kwargs
             )
         return result
 
@@ -35,7 +38,8 @@ class ExtractorBase:
         self,
         batch_responses,
         batch_questions=None, 
-        max_new_tokens=500
+        max_new_tokens=500,
+        **kwargs
     ):
         raise NotImplementedError
 
@@ -43,7 +47,8 @@ class ExtractorBase:
         self,
         batch_responses,
         batch_questions=None,
-        max_new_tokens=500
+        max_new_tokens=500,
+        **kwargs
     ):
         raise NotImplementedError
 
