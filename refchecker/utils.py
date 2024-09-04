@@ -100,7 +100,7 @@ def get_model_batch_response(
 
     if sagemaker_client is not None:
         parameters = {
-            "max_length": max_new_tokens,
+            "max_new_tokens": max_new_tokens,
             "temperature": temperature,
             "num_beams": 1,
             "do_sample": False,
