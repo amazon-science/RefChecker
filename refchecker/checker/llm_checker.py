@@ -46,6 +46,7 @@ class LLMChecker(CheckerBase):
         questions: List[str] = None,
         is_joint: bool = False,
         joint_check_num: int = 5,
+        sagemaker_client=None,
         **kwargs
     ):
         """
@@ -124,6 +125,7 @@ class LLMChecker(CheckerBase):
                     model=self.model,
                     max_new_tokens=joint_check_num * 10 + 100,
                     api_base=self.api_base,
+                    sagemaker_client=sagemaker_client,
                     **kwargs
                 )
                 
@@ -202,6 +204,7 @@ class LLMChecker(CheckerBase):
                     model=self.model,
                     max_new_tokens=10,
                     api_base=self.api_base,
+                    sagemaker_client=sagemaker_client,
                     **kwargs
                 )
                 

@@ -70,6 +70,7 @@ def get_model_batch_response(
         n_choices=1,
         max_new_tokens=500,
         api_base=None,
+        sagemaker_client=None,
         **kwargs
 ):
     """
@@ -97,55 +98,83 @@ def get_model_batch_response(
     if not prompts or len(prompts) == 0:
         raise ValueError("Invalid input.")
 
-    message_list = []
-    for prompt in prompts:
-        if len(prompt) == 0:
-            raise ValueError("Invalid prompt.")
-        if isinstance(prompt, str):
-            messages = [{
-                'role': 'user',
-                'content': prompt
-            }]
-        elif isinstance(prompt, list):
-            messages = prompt
-        else:
-            raise ValueError("Invalid prompt type.")
-        message_list.append(messages)
-    import litellm
-    litellm.suppress_debug_info = True
-    # litellm.drop_params=True
-    while True:
-        responses = batch_completion(
-            model=model,
-            messages=message_list,
-            temperature=temperature,
-            n=n_choices,
-            max_tokens=max_new_tokens,
-            api_base=api_base,
-            **kwargs
-        )
-        try:
-            assert all([isinstance(r, ModelResponse) for r in responses])
-            if n_choices == 1:
-                response_list = [r.choices[0].message.content for r in responses]
+    if sagemaker_client is not None:
+        parameters = {
+            "max_length": max_new_tokens,
+            "temperature": temperature,
+            "num_beams": 1,
+            "do_sample": False,
+            "top_p": 0.9,
+            "logits_processor" : None,
+            # "remove_invalid_values" : True
+        }
+        response_list = []
+        for prompt in prompts:
+            r = sagemaker_client.invoke_endpoint(
+                EndpointName=model,
+                Body=json.dumps(
+                    {
+                        "inputs": prompt,
+                        "parameters": parameters,
+                    }
+                ),
+                ContentType="application/json",
+            )
+
+            r = json.loads(r['Body'].read().decode('utf8'))
+            response = r['outputs'][0]
+            response_list.append(response)
+        return response_list
+    else:
+        message_list = []
+        for prompt in prompts:
+            if len(prompt) == 0:
+                raise ValueError("Invalid prompt.")
+            if isinstance(prompt, str):
+                messages = [{
+                    'role': 'user',
+                    'content': prompt
+                }]
+            elif isinstance(prompt, list):
+                messages = prompt
             else:
-                response_list = [[res.message.content for res in r.choices] for r in responses]
-            
-            assert all([r is not None for r in response_list])
-            return response_list
-        except:
-            exception = None
-            for e in responses:
-                if isinstance(e, ModelResponse):
-                    continue
-                elif isinstance(e, OpenAIRateLimitError) or isinstance(e, OpenAIAPIError) or isinstance(e, OpenAITimeout):
-                    exception = e
-                    break
+                raise ValueError("Invalid prompt type.")
+            message_list.append(messages)
+        import litellm
+        litellm.suppress_debug_info = True
+        # litellm.drop_params=True
+        while True:
+            responses = batch_completion(
+                model=model,
+                messages=message_list,
+                temperature=temperature,
+                n=n_choices,
+                max_tokens=max_new_tokens,
+                api_base=api_base,
+                **kwargs
+            )
+            try:
+                assert all([isinstance(r, ModelResponse) for r in responses])
+                if n_choices == 1:
+                    response_list = [r.choices[0].message.content for r in responses]
                 else:
-                    print('Exit with the following error:')
-                    print(e)
-                    return None
-            
-            print(f"{exception} [sleep 10 seconds]")
-            time.sleep(10)
-            continue
+                    response_list = [[res.message.content for res in r.choices] for r in responses]
+                
+                assert all([r is not None for r in response_list])
+                return response_list
+            except:
+                exception = None
+                for e in responses:
+                    if isinstance(e, ModelResponse):
+                        continue
+                    elif isinstance(e, OpenAIRateLimitError) or isinstance(e, OpenAIAPIError) or isinstance(e, OpenAITimeout):
+                        exception = e
+                        break
+                    else:
+                        print('Exit with the following error:')
+                        print(e)
+                        return None
+                
+                print(f"{exception} [sleep 10 seconds]")
+                time.sleep(10)
+                continue

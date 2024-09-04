@@ -30,6 +30,7 @@ class LLMExtractor(ExtractorBase):
         batch_responses, 
         batch_questions=None, 
         max_new_tokens=500,
+        sagemaker_client=None,
         **kwargs
     ):
         """Extract subsentence claims from the response text.
@@ -71,6 +72,8 @@ class LLMExtractor(ExtractorBase):
                 model=self.model,
                 n_choices=1,
                 max_new_tokens=max_new_tokens,
+                api_base=self.api_base,
+                sagemaker_client=sagemaker_client,
                 **kwargs
             )
 
@@ -96,6 +99,7 @@ class LLMExtractor(ExtractorBase):
         batch_responses, 
         batch_questions=None, 
         max_new_tokens=500,
+        sagemaker_client=None,
         **kwargs
     ):
         """Extract KG triplets from the response text.
@@ -141,6 +145,7 @@ class LLMExtractor(ExtractorBase):
                 n_choices=1,
                 max_new_tokens=max_new_tokens,
                 api_base=self.api_base,
+                sagemaker_client=sagemaker_client,
                 **kwargs
             )
 

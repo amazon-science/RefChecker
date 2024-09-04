@@ -49,6 +49,7 @@ class CheckerBase:
         merge_psg: bool = True,
         is_joint: bool = False,
         joint_check_num: int = 5,
+        sagemaker_client=None,
         **kwargs
     ):
         """
@@ -94,6 +95,7 @@ class CheckerBase:
                 questions=batch_questions,
                 is_joint=True,
                 joint_check_num=joint_check_num,
+                sagemaker_client=sagemaker_client,
                 **kwargs
             )
             if merge_psg:
@@ -132,7 +134,8 @@ class CheckerBase:
                     references=[inp[1] for inp in input_flattened],
                     responses=[inp[2] for inp in input_flattened],
                     questions=[inp[3] for inp in input_flattened],
-                    is_joint=False
+                    is_joint=False,
+                    sagemaker_client=sagemaker_client
                 )
 
             ret = [[x] + y for x, y in zip(ret, input_ids)]
