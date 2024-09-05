@@ -48,6 +48,7 @@ class LLMChecker(CheckerBase):
         joint_check_num: int = 5,
         sagemaker_client=None,
         sagemaker_params=None,
+        sagemaker_get_response_func=None,
         **kwargs
     ):
         """
@@ -128,6 +129,7 @@ class LLMChecker(CheckerBase):
                     api_base=self.api_base,
                     sagemaker_client=sagemaker_client,
                     sagemaker_params=sagemaker_params,
+                    sagemaker_get_response_func=sagemaker_get_response_func,
                     **kwargs
                 )
                 
@@ -208,6 +210,7 @@ class LLMChecker(CheckerBase):
                     api_base=self.api_base,
                     sagemaker_client=sagemaker_client,
                     sagemaker_params=sagemaker_params,
+                    sagemaker_get_response_func=sagemaker_get_response_func,
                     **kwargs
                 )
                 

@@ -72,6 +72,7 @@ def get_model_batch_response(
         api_base=None,
         sagemaker_client=None,
         sagemaker_params=None,
+        sagemaker_get_response_func=None,
         **kwargs
 ):
     """
@@ -120,9 +121,11 @@ def get_model_batch_response(
                 ),
                 ContentType="application/json",
             )
-
-            r = json.loads(r['Body'].read().decode('utf8'))
-            response = r['outputs'][0]
+            if sagemaker_get_response_func is not None:
+                response = sagemaker_get_response_func(r)
+            else:
+                r = json.loads(r['Body'].read().decode('utf8'))
+                response = r['outputs'][0]
             response_list.append(response)
         return response_list
     else:

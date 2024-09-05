@@ -51,6 +51,7 @@ class CheckerBase:
         joint_check_num: int = 5,
         sagemaker_client=None,
         sagemaker_params=None,
+        sagemaker_get_response_func=None,
         **kwargs
     ):
         """
@@ -98,6 +99,7 @@ class CheckerBase:
                 joint_check_num=joint_check_num,
                 sagemaker_client=sagemaker_client,
                 sagemaker_params=sagemaker_params,
+                sagemaker_get_response_func=sagemaker_get_response_func,
                 **kwargs
             )
             if merge_psg:
@@ -138,7 +140,8 @@ class CheckerBase:
                     questions=[inp[3] for inp in input_flattened],
                     is_joint=False,
                     sagemaker_client=sagemaker_client,
-                    sagemaker_params=sagemaker_params
+                    sagemaker_params=sagemaker_params,
+                    sagemaker_get_response_func=sagemaker_get_response_func
                 )
 
             ret = [[x] + y for x, y in zip(ret, input_ids)]
