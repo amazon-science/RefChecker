@@ -102,6 +102,7 @@ class LLMExtractor(ExtractorBase):
         batch_questions=None, 
         max_new_tokens=500,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
     ):
         """Extract KG triplets from the response text.
