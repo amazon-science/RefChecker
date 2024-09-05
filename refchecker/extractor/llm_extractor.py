@@ -31,6 +31,7 @@ class LLMExtractor(ExtractorBase):
         batch_questions=None, 
         max_new_tokens=500,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
     ):
         """Extract subsentence claims from the response text.
@@ -74,6 +75,7 @@ class LLMExtractor(ExtractorBase):
                 max_new_tokens=max_new_tokens,
                 api_base=self.api_base,
                 sagemaker_client=sagemaker_client,
+                sagemaker_params=sagemaker_params,
                 **kwargs
             )
 
@@ -146,6 +148,7 @@ class LLMExtractor(ExtractorBase):
                 max_new_tokens=max_new_tokens,
                 api_base=self.api_base,
                 sagemaker_client=sagemaker_client,
+                sagemaker_params=sagemaker_params,
                 **kwargs
             )
 

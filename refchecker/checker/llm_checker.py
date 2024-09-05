@@ -47,6 +47,7 @@ class LLMChecker(CheckerBase):
         is_joint: bool = False,
         joint_check_num: int = 5,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
     ):
         """
@@ -126,6 +127,7 @@ class LLMChecker(CheckerBase):
                     max_new_tokens=joint_check_num * 10 + 100,
                     api_base=self.api_base,
                     sagemaker_client=sagemaker_client,
+                    sagemaker_params=sagemaker_params,
                     **kwargs
                 )
                 
@@ -205,6 +207,7 @@ class LLMChecker(CheckerBase):
                     max_new_tokens=10,
                     api_base=self.api_base,
                     sagemaker_client=sagemaker_client,
+                    sagemaker_params=sagemaker_params,
                     **kwargs
                 )
                 

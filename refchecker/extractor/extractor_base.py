@@ -17,6 +17,7 @@ class ExtractorBase:
         batch_questions=None, 
         max_new_tokens=500,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
     ):
         if self.claim_format == 'triplet':
@@ -25,6 +26,7 @@ class ExtractorBase:
                 batch_questions=batch_questions,
                 max_new_tokens=max_new_tokens,
                 sagemaker_client=sagemaker_client,
+                sagemaker_params=sagemaker_params,
                 **kwargs
             )
         elif self.claim_format == 'subsentence':
@@ -33,6 +35,7 @@ class ExtractorBase:
                 batch_questions=batch_questions,
                 max_new_tokens=max_new_tokens,
                 sagemaker_client=sagemaker_client,
+                sagemaker_params=sagemaker_params,
                 **kwargs
             )
         return result
@@ -43,6 +46,7 @@ class ExtractorBase:
         batch_questions=None, 
         max_new_tokens=500,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
     ):
         raise NotImplementedError
@@ -53,6 +57,7 @@ class ExtractorBase:
         batch_questions=None,
         max_new_tokens=500,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
     ):
         raise NotImplementedError

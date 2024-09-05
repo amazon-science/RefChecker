@@ -71,6 +71,7 @@ def get_model_batch_response(
         max_new_tokens=500,
         api_base=None,
         sagemaker_client=None,
+        sagemaker_params=None,
         **kwargs
 ):
     """
@@ -108,6 +109,8 @@ def get_model_batch_response(
             "logits_processor" : None,
             # "remove_invalid_values" : True
         }
+        if sagemaker_params is not None:
+            parameters.update(sagemaker_params)
         response_list = []
         for prompt in prompts:
             r = sagemaker_client.invoke_endpoint(
