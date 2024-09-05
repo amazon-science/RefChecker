@@ -102,15 +102,12 @@ def get_model_batch_response(
     if sagemaker_client is not None:
         parameters = {
             "max_new_tokens": max_new_tokens,
-            "temperature": temperature,
-            "num_beams": 1,
-            "do_sample": False,
-            "top_p": 0.9,
-            "logits_processor" : None,
-            # "remove_invalid_values" : True
+            "temperature": temperature
         }
         if sagemaker_params is not None:
-            parameters.update(sagemaker_params)
+            for k, v in sagemaker_params.items():
+                if k in parameters:
+                    parameters[k] = v
         response_list = []
         for prompt in prompts:
             r = sagemaker_client.invoke_endpoint(
