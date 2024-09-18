@@ -98,8 +98,8 @@ def get_model_batch_response(
     if not prompts or len(prompts) == 0:
         raise ValueError("Invalid input.")
     
-    if custom_func is not None:
-        return custom_func(prompts)
+    if custom_llm_api_func is not None:
+        return custom_llm_api_func(prompts)
     else:
         message_list = []
         for prompt in prompts:
