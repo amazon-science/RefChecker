@@ -46,6 +46,9 @@ class LLMChecker(CheckerBase):
         questions: List[str] = None,
         is_joint: bool = False,
         joint_check_num: int = 5,
+        sagemaker_client=None,
+        sagemaker_params=None,
+        sagemaker_get_response_func=None,
         custom_llm_api_func=None,
         **kwargs
     ):
@@ -125,6 +128,9 @@ class LLMChecker(CheckerBase):
                     model=self.model,
                     max_new_tokens=joint_check_num * 10 + 100,
                     api_base=self.api_base,
+                    sagemaker_client=sagemaker_client,
+                    sagemaker_params=sagemaker_params,
+                    sagemaker_get_response_func=sagemaker_get_response_func,
                     custom_llm_api_func=custom_llm_api_func,
                     **kwargs
                 )
@@ -204,6 +210,9 @@ class LLMChecker(CheckerBase):
                     model=self.model,
                     max_new_tokens=10,
                     api_base=self.api_base,
+                    sagemaker_client=sagemaker_client,
+                    sagemaker_params=sagemaker_params,
+                    sagemaker_get_response_func=sagemaker_get_response_func,
                     custom_llm_api_func=custom_llm_api_func,
                     **kwargs
                 )

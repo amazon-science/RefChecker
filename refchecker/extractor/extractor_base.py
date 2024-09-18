@@ -16,6 +16,9 @@ class ExtractorBase:
         batch_responses, 
         batch_questions=None, 
         max_new_tokens=500,
+        sagemaker_client=None,
+        sagemaker_params=None,
+        sagemaker_get_response_func=None,
         custom_llm_api_func=None,
         **kwargs
     ):
@@ -24,6 +27,9 @@ class ExtractorBase:
                 batch_responses=batch_responses,
                 batch_questions=batch_questions,
                 max_new_tokens=max_new_tokens,
+                sagemaker_client=sagemaker_client,
+                sagemaker_params=sagemaker_params,
+                sagemaker_get_response_func=sagemaker_get_response_func,
                 custom_llm_api_func=custom_llm_api_func,
                 **kwargs
             )
@@ -32,6 +38,9 @@ class ExtractorBase:
                 batch_responses=batch_responses,
                 batch_questions=batch_questions,
                 max_new_tokens=max_new_tokens,
+                sagemaker_client=sagemaker_client,
+                sagemaker_params=sagemaker_params,
+                sagemaker_get_response_func=sagemaker_get_response_func,
                 custom_llm_api_func=custom_llm_api_func,
                 **kwargs
             )
@@ -42,6 +51,9 @@ class ExtractorBase:
         batch_responses,
         batch_questions=None, 
         max_new_tokens=500,
+        sagemaker_client=None,
+        sagemaker_params=None,
+        sagemaker_get_response_func=None,
         custom_llm_api_func=None,
         **kwargs
     ):
@@ -52,6 +64,9 @@ class ExtractorBase:
         batch_responses,
         batch_questions=None,
         max_new_tokens=500,
+        sagemaker_client=None,
+        sagemaker_params=None,
+        sagemaker_get_response_func=None,
         custom_llm_api_func=None,
         **kwargs
     ):
