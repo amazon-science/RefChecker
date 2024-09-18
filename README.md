@@ -70,15 +70,15 @@ You can first setup a [demo website](./demo/) and then use the web UI to try Ref
 ## 🚀 Quick Start
 
 ### Setup Environment
-First create a python environment using conda or virtualenv. Clone this repo and change path into the root directory. Then install:
+First create a python environment using conda or virtualenv. Then install:
 ```bash
-pip install -e .
+pip install refchecker
 python -m spacy download en_core_web_sm
 ```
 
 Install optional dependencies to use open source extractors (Mistral, Mixtral) or enable acceleration for RepCChecker.
 ```bash
-pip install -e .[open-extractor,repcex]
+pip install refchecker[open-extractor,repcex]
 ```
 
 ### Code Examples

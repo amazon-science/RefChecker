@@ -70,9 +70,7 @@ def get_model_batch_response(
         n_choices=1,
         max_new_tokens=500,
         api_base=None,
-        sagemaker_client=None,
-        sagemaker_params=None,
-        sagemaker_get_response_func=None,
+        custom_llm_api_func=None,
         **kwargs
 ):
     """
@@ -99,35 +97,9 @@ def get_model_batch_response(
     """
     if not prompts or len(prompts) == 0:
         raise ValueError("Invalid input.")
-
-    if sagemaker_client is not None:
-        parameters = {
-            "max_new_tokens": max_new_tokens,
-            "temperature": temperature
-        }
-        if sagemaker_params is not None:
-            for k, v in sagemaker_params.items():
-                if k in parameters:
-                    parameters[k] = v
-        response_list = []
-        for prompt in prompts:
-            r = sagemaker_client.invoke_endpoint(
-                EndpointName=model,
-                Body=json.dumps(
-                    {
-                        "inputs": prompt,
-                        "parameters": parameters,
-                    }
-                ),
-                ContentType="application/json",
-            )
-            if sagemaker_get_response_func is not None:
-                response = sagemaker_get_response_func(r)
-            else:
-                r = json.loads(r['Body'].read().decode('utf8'))
-                response = r['outputs'][0]
-            response_list.append(response)
-        return response_list
+    
+    if custom_func is not None:
+        return custom_func(prompts)
     else:
         message_list = []
         for prompt in prompts:

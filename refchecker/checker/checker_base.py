@@ -49,9 +49,7 @@ class CheckerBase:
         merge_psg: bool = True,
         is_joint: bool = False,
         joint_check_num: int = 5,
-        sagemaker_client=None,
-        sagemaker_params=None,
-        sagemaker_get_response_func=None,
+        custom_llm_api_func=None,
         **kwargs
     ):
         """
@@ -97,9 +95,7 @@ class CheckerBase:
                 questions=batch_questions,
                 is_joint=True,
                 joint_check_num=joint_check_num,
-                sagemaker_client=sagemaker_client,
-                sagemaker_params=sagemaker_params,
-                sagemaker_get_response_func=sagemaker_get_response_func,
+                custom_llm_api_func=custom_llm_api_func,
                 **kwargs
             )
             if merge_psg:
@@ -139,9 +135,7 @@ class CheckerBase:
                     responses=[inp[2] for inp in input_flattened],
                     questions=[inp[3] for inp in input_flattened],
                     is_joint=False,
-                    sagemaker_client=sagemaker_client,
-                    sagemaker_params=sagemaker_params,
-                    sagemaker_get_response_func=sagemaker_get_response_func
+                    custom_llm_api_func=custom_llm_api_func,
                 )
 
             ret = [[x] + y for x, y in zip(ret, input_ids)]
