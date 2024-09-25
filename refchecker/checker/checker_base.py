@@ -43,11 +43,10 @@ class CheckerBase:
         self, 
         batch_claims: List[List[Union[str, List[str]]]],
         batch_references: Union[List[str], List[List[str]]],
-        batch_responses: List[str] = None,
         batch_questions: List[str] = None,
-        max_reference_segment_length: int = 200,
-        merge_psg: bool = True,
-        is_joint: bool = False,
+        max_reference_segment_length: int = 0,
+        merge_psg: bool = False,
+        is_joint: bool = True,
         joint_check_num: int = 5,
         sagemaker_client=None,
         sagemaker_params=None,
@@ -64,14 +63,12 @@ class CheckerBase:
             List consists of the claims extracted from each given example.
         batch_references : Union[List[str], List[List[str]]]
             List of reference passages for each given example.
-        batch_responses : List[str], optional
-            List of model response texts, defaults to None.
         batch_questions : List[str], optional
             List of questions for each given example, defaults to None.
         max_reference_segment_length : int, optional
-            Maximum length of each reference segment, defaults to 200.
+            Maximum length of each reference segment, defaults to 0.
         merge_psg : bool, optional
-            Whether to merge results from multiple passages, defaults to True.
+            Whether to merge results from multiple passages, defaults to False.
         is_joint: bool, optional
             Whether perform joint checking for claims to accelerate the checking process.
         joint_check_num: int, optional
@@ -84,18 +81,33 @@ class CheckerBase:
 
         """
         assert len(batch_claims) == len(batch_references)
+        if batch_questions is None:
+            batch_questions = [None] * len(batch_claims)
+        
+        # check whether the claims or references are empty
+        valid_batch_claims = []
+        valid_batch_references = []
+        valid_batch_questions = []
+        
+        empty_claim_indices = set()
+        empty_ref_indices = set()
+        for index, (claims, references, questions) in enumerate(zip(batch_claims, batch_references, batch_questions)):
+            if len(claims) == 0:
+                empty_claim_indices.add(index)
+            if isinstance(references, list) and len(references) == 0:
+                empty_ref_indices.add(index)
+
+            if index not in empty_claim_indices and index not in empty_ref_indices:
+                valid_batch_claims.append(claims)
+                valid_batch_references.append(references)
+                valid_batch_questions.append(questions)
         
         if is_joint:
-            if batch_responses is None:
-                batch_responses = [None] * len(batch_claims)
-            if batch_questions is None:
-                batch_questions = [None] * len(batch_claims)
             # joint checking is for LLM-based checkers only, and it doesn't need merge_psg
             labels = self._check(
-                claims=batch_claims, 
-                references=batch_references, 
-                responses=batch_responses,
-                questions=batch_questions,
+                claims=valid_batch_claims, 
+                references=valid_batch_references, 
+                questions=valid_batch_questions,
                 is_joint=True,
                 joint_check_num=joint_check_num,
                 sagemaker_client=sagemaker_client,
@@ -109,18 +121,10 @@ class CheckerBase:
                     [merge_multi_psg_ret(claim_labels) for claim_labels in item_labels]
                     for item_labels in labels
                 ]
-            return labels
         else:
-            batch_example_nums = [len(claims) for claims in batch_claims]
-
-            if batch_responses is None:
-                batch_responses = [None] * len(batch_claims)
-            if batch_questions is None:
-                batch_questions = [None] * len(batch_claims)
-            
             input_flattened = []
             input_ids = []
-            for idx, (claims, references, resonses, questions) in enumerate(zip(batch_claims, batch_references, batch_responses, batch_questions)):
+            for idx, (claims, references, questions) in enumerate(zip(valid_batch_claims, valid_batch_references, valid_batch_questions)):
                 if isinstance(references, str):
                     references = [references]
                 segments_all_psg = []
@@ -133,13 +137,12 @@ class CheckerBase:
                 for c_idx, claim in enumerate(claims):
                     for idx_psg, seg_psg in enumerate(segments_all_psg):
                         for seg in seg_psg:
-                            input_flattened.append([claim, seg, resonses, questions])
+                            input_flattened.append([claim, seg, questions])
                             input_ids.append([idx, c_idx, idx_psg])
             ret = self._check(
                     claims=[inp[0] for inp in input_flattened],
                     references=[inp[1] for inp in input_flattened],
-                    responses=[inp[2] for inp in input_flattened],
-                    questions=[inp[3] for inp in input_flattened],
+                    questions=[inp[2] for inp in input_flattened],
                     is_joint=False,
                     sagemaker_client=sagemaker_client,
                     sagemaker_params=sagemaker_params,
@@ -159,17 +162,22 @@ class CheckerBase:
                     [[item[0] for item in group]] + key[:-1]
                     for key, group in groupby(ret_merge_seg, key=lambda x: x[1:])
                 ]
-            ret_group_triplet = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
+            labels = [[item[0] for item in group] for key, group in groupby(ret_merge_psg, key=lambda x: x[1:])]
 
-            results = []
-            i = 0
-            for n in batch_example_nums:
-                if n > 0:
-                    results.append(ret_group_triplet[i])
-                    i += 1
-                else:
-                    results.append([])
-            return results
+        # filling the results with empty claims or references
+        final_labels = []
+        cur_i = 0
+        for index, (claims, references) in enumerate(zip(batch_claims, batch_references)):
+            if index in empty_claim_indices:
+                final_labels.append([])
+            elif index in empty_ref_indices:
+                final_labels.append([[]] * len(claims))
+            else:
+                final_labels.append(labels[cur_i])
+                cur_i += 1
+        
+        return final_labels # [batch_size, claim_num, reference_num]
+
 
     def _check(
         self,

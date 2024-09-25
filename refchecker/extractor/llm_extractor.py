@@ -2,13 +2,9 @@ from typing import List
 from tqdm import tqdm
 
 from .extractor_base import ExtractorBase
-from ..utils import (
-    get_model_batch_response, 
-    get_llm_full_name
-)
+from ..utils import get_model_batch_response
 from ..base import RCText, ExtractionResult
 from .extractor_prompts import *
-
 
 
 class LLMExtractor(ExtractorBase):
@@ -21,7 +17,7 @@ class LLMExtractor(ExtractorBase):
     ) -> None:
         super().__init__(claim_format)
         
-        self.model = get_llm_full_name(model)
+        self.model = model
         self.batch_size = batch_size
         self.api_base = api_base
     

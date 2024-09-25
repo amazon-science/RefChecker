@@ -4,7 +4,7 @@ from tqdm import tqdm
 import numpy as np
 
 from .checker_base import CheckerBase
-from ..utils import get_model_batch_response, get_llm_full_name
+from ..utils import get_model_batch_response
 from .checker_prompts import *
 
 
@@ -35,14 +35,13 @@ class LLMChecker(CheckerBase):
         
         self.batch_size = batch_size
         
-        self.model = get_llm_full_name(model)
+        self.model = model
         self.api_base = api_base
 
     def _check(
         self,
         claims: List[Union[str, List[str], List[List[str]]]],
         references: List[Union[str, List[str]]],
-        responses: List[str] = None,
         questions: List[str] = None,
         is_joint: bool = False,
         joint_check_num: int = 5,

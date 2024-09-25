@@ -135,8 +135,9 @@ class ExtractorBase:
         # deduplication
         final_triple_set = []
         for t in ret:
-            if tuple(t) not in final_triple_set:
-                final_triple_set.append(tuple(t))
+            t = tuple(t)
+            if t not in final_triple_set and t != ('subject', 'predicate', 'object'):
+                final_triple_set.append(t)
         
         # return [list(t) for t in final_triple_set]
         return [RCClaim('triplet', list(t), None) for t in final_triple_set]
