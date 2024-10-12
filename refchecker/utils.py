@@ -150,6 +150,7 @@ def get_model_batch_response(
                 n=n_choices,
                 max_tokens=max_new_tokens,
                 api_base=api_base,
+                max_workers=None,
                 **kwargs
             )
             try:
