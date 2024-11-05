@@ -70,6 +70,8 @@ st.markdown("""
         </style>
         """, unsafe_allow_html=True)
 
+inference_device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+
 st.write("### RefChecker Demo")
 
 LABELS = ["Entailment", "Neutral", "Contradiction"]
@@ -84,9 +86,9 @@ class Localizer(object):
         path_or_name = "princeton-nlp/sup-simcse-roberta-large" #'xlm-roberta-base' 
         self.model = AutoModelForSequenceClassification.from_pretrained(
             path_or_name
-        ).to(0)
+        ).to(inference_device)
         self.tokenizer = AutoTokenizer.from_pretrained(path_or_name)
-        self.device = 0
+        self.device = inference_device
 
     def loc(self, seq, tri, threshold=[0.65, 0.6, 0.65]):
         tokens = []
@@ -190,7 +192,8 @@ def check_it(text_list, triplet_list):
     outs = st.session_state['checker'].check(
         batch_claims=triplet_list, 
         batch_references=text_list,
-        max_reference_segment_length=0
+        max_reference_segment_length=0,
+        is_joint=False
     )
     return outs
 
@@ -245,10 +248,10 @@ def get_models():
     checker = None
     if args.checker == "nli":
         from refchecker import NLIChecker
-        checker = NLIChecker(batch_size=1)
+        checker = NLIChecker(batch_size=1, device=inference_device)
     elif args.checker == "alignscore":
         from refchecker import AlignScoreChecker
-        checker = AlignScoreChecker(batch_size=1)
+        checker = AlignScoreChecker(batch_size=1, device=inference_device)
     else:
         checker = LLMChecker(
             model=args.checker, 
@@ -409,6 +412,7 @@ if check_button or auto_run_flag:
     else:
         if st.session_state['progress'] ==0: # need to perform triplet extraction
             triplets = extract_triplet(text_check)
+            #labeled triplets is a list with first element the classification result
             st.session_state['labeled_triplets'] = [[""]+x+[text_check, text_ref] for x in triplets]
             st.session_state['progress'] += 1
             st.rerun()
@@ -432,7 +436,7 @@ if check_button or auto_run_flag:
                 outs = check_it([text_ref], [triplet_list])
                 labels = outs[0]
                 for i in range(len(labeled_triplets)):
-                    labeled_triplets[i][0] = labels[i]
+                    labeled_triplets[i][0] = labels[i][0]
             
                 st.session_state['labeled_triplets'] = labeled_triplets
                 bad_num = len([x for x in labeled_triplets if x[0]=='Contradiction'])
@@ -472,20 +476,19 @@ if check_button or auto_run_flag:
                 labels_check = check_it(sent_check_list, triplet_check_list)
                 labels_ref = check_it(sent_ref_list, triplet_ref_list)
                 for i in range(len(labeled_triplets)):
-                    label = labeled_triplets[i][0]
                     loc_checks = []
                     loc_refs = []
                     valid_checks = []
                     valid_refs = []
                     for j in range(len(sents_check)):
-                        _label = labels_check[j][i]
+                        _label = labels_check[j][i][0]
                         if _label == 'Entailment':
                             loc_checks.append(loc_it(sents_check[j], labeled_triplets[i][1:4]))
                             valid_checks.append(j)
                         else:
                             loc_checks.append(header(sents_check[j]))
                     for j in range(len(sents_ref)):
-                        _label = labels_ref[j][i]
+                        _label = labels_ref[j][i][0]
                         if _label == 'Entailment':
                             loc_refs.append(loc_it(sents_ref[j], labeled_triplets[i][1:4]))
                             valid_refs.append(j)
@@ -512,7 +515,7 @@ if check_button or auto_run_flag:
 
                     labeled_triplets[i][4] = loc_check
                     labeled_triplets[i][5] = loc_ref
-            
+                    
             st.session_state['labeled_triplets'] = labeled_triplets
             st.session_state['progress'] += 1
             st.rerun()
