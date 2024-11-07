@@ -10,6 +10,12 @@ def soft_agg(results):
             "Contradiction": 0.0,
             "Abstain": 1.0,
         }
+    
+    if all(len(result) == 1 for result in results): 
+        for i in range(len(results)):
+            if len(results[i]) == 1:
+                results[i] = results[i][0]
+    
     total = len(results)
     agg = {
         "Entailment": 0.0,
@@ -28,6 +34,12 @@ def strict_agg(results):
     """Aggregate results by zero-tolerance on negative labels."""
     if not results:
         return "Abstain"
+    
+    if all(len(result) == 1 for result in results): 
+        for i in range(len(results)):
+            if len(results[i]) == 1:
+                results[i] = results[i][0]
+
     ret = "Entailment"
     for result in results:
         if result == "Contradiction":
@@ -41,5 +53,11 @@ def major_agg(results):
     """Aggregate results by majority vote."""
     if not results:
         return "Abstain"
+
+    if all(len(result) == 1 for result in results): 
+        for i in range(len(results)):
+            if len(results[i]) == 1:
+                results[i] = results[i][0]
+    
     agg = Counter(results)
     return agg.most_common(1)[0][0]

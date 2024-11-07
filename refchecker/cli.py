@@ -4,9 +4,8 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from tqdm import tqdm
 
 from .extractor import LLMExtractor
-from .checker import (
-    LLMChecker, NLIChecker, AlignScoreChecker, RepCChecker
-)
+from .checker import LLMChecker
+
 from .retriever import GoogleRetriever
 from .aggregator import strict_agg, soft_agg, major_agg
 from .base import RCClaim
@@ -158,10 +157,13 @@ def extract(args):
 def check(args):
     # initialize models
     if args.checker_name == "nli":
+        from .checker.nli_checker import NLIChecker
         checker = NLIChecker(batch_size=args.batch_size_checker)
     elif args.checker_name == "alignscore":
+        from .checker.alignscore.alignscore_checker import AlignScoreChecker
         checker = AlignScoreChecker(batch_size=args.batch_size_checker)
     elif args.checker_name == "repc":
+        from .checker.repc.repc_checker import RepCChecker
         checker = RepCChecker(classifier=args.repc_classifier_name, batch_size=args.batch_size_checker)
     else:
         checker = LLMChecker(

@@ -8,7 +8,7 @@ import torch
 import streamlit as st
 import streamlit.components.v1 as components
 from transformers import (
-    AutoModel, AutoTokenizer, AutoModelForSequenceClassification
+    AutoTokenizer, AutoModelForSequenceClassification
 )
 
 from spacy.lang.en import English
@@ -247,10 +247,10 @@ def get_models():
     
     checker = None
     if args.checker == "nli":
-        from refchecker import NLIChecker
+        from refchecker.checker.nli_checker import NLIChecker
         checker = NLIChecker(batch_size=1, device=inference_device)
     elif args.checker == "alignscore":
-        from refchecker import AlignScoreChecker
+        from refchecker.checker.alignscore.alignscore_checker import AlignScoreChecker
         checker = AlignScoreChecker(batch_size=1, device=inference_device)
     else:
         checker = LLMChecker(
