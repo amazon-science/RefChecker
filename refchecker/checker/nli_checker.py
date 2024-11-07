@@ -43,10 +43,9 @@ class NLIChecker(CheckerBase):
     @torch.no_grad()
     def _check(
         self,
-        claims: List[RCClaim],
-        references: List[str],
-        responses: List[str],
-        questions: List[str],
+        claims: List[Union[str, List[str], List[List[str]]]],
+        references: List[Union[str, List[str]]],
+        **kwargs
     ):
         """
         Batch checking claims against references.
@@ -71,7 +70,7 @@ class NLIChecker(CheckerBase):
 
         N1, N2 = len(references), len(claims)
         assert N1 == N2, f"Batches must be of the same length. {N1} != {N2}"
-        claims = [c.get_content() for c in claims]
+        # claims = [c.get_content() for c in claims]
         batch_preds = []
         for i in tqdm(range(0, len(claims), self.batch_size)):
             batch_claims = claims[i:i + self.batch_size]

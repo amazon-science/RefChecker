@@ -54,8 +54,8 @@ class AlignScoreChecker(CheckerBase):
         self,
         claims: List[Union[str, List[str]]],
         references: List[str],
-        responses: List[str],
-        questions: List[str],
+        **kwargs
+        
     ):
         """
         Batch checking claims against references.
