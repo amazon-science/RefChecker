@@ -114,6 +114,7 @@ You can also setup the enviroment variables in terminal to avoid disclosing thes
 ```bash
 export AWS_ACCESS_KEY_ID=<your_aws_access_key_id>
 export AWS_SECRET_ACCESS_KEY=<your_aws_secret_access_key>
+export AWS_SESSION_TOKEN=<your_aws_session_token>
 export AWS_REGION_NAME=<your_aws_region_name>
 ```
 
