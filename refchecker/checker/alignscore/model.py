@@ -1,6 +1,7 @@
 import math
 from typing import Optional, Tuple
-from transformers import AdamW, get_linear_schedule_with_warmup, AutoConfig
+from transformers import get_linear_schedule_with_warmup, AutoConfig
+from torch.optim import AdamW
 from transformers import BertForPreTraining, BertModel, RobertaModel, AlbertModel, AlbertForMaskedLM, RobertaForMaskedLM
 import torch
 import torch.nn as nn
